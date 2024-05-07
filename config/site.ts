@@ -10,11 +10,11 @@ export const siteConfig = {
 		},
 		{
 			label: "AI数字员工",
-			href: "/docs",
+			href: "/AIBeing",
 		},
 		{
 			label: "直播",
-			href: "/pricing",
+			href: "/live",
 		},
 		{
 			label: "数字名片",

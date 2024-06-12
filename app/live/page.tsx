@@ -1,6 +1,5 @@
 "use client"
 import BubbleText from "@/components/BubbleText";
-import ShuffleHero from "@/components/SuffleHero";
 import WaterDropGrid from "@/components/WaterDropGrid";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import { useState } from "react";
@@ -610,7 +609,7 @@ export default function Live() {
 					<WaterDropGrid />
 				</div>
 
-				<div className="flex justify-center items-center">
+				<div className="flex justify-center items-start">
 					<WaterDropGrid />
 					<div className=" p-24 max-w-5xl w-[30%] text-left">
 						<div className="pb-4"><BubbleText content={"音乐教育"} /></div>
@@ -618,21 +617,17 @@ export default function Live() {
 					</div>
 				</div>
 
-				<div className="flex justify-center items-center">
+				<div className="flex justify-center items-start">
 					<div className=" p-24 max-w-5xl w-[30%] text-left">
 						<div className="pb-4"><BubbleText content={"音乐内容生产平台"} /></div>
 						<p className="text-black text-lg">奥森小冰的音乐创作能力，已经完成生产线生产所必须的创造力模块，并已在联通沃音乐等平台完成了工业化使用的考验。奥森小冰与联通沃音乐的合作，依托奥森小冰作词、作曲、编曲的端到端音乐创作能力，同时为数亿用户提供100/20演出季主题曲《HOPE》，帮助上海大剧院探索表演艺术、剧场舞台领域的破圈式举措。再如，奥森小冰受邀与著名音乐人马伯骞联合为Burberry的新品系列创作推广单曲《Runway2.0》，赋能品牌实现数字化转型升级，共同为用户带来独特的品牌体验。又如，奥森小冰为山东卫视创作2018春晚主题曲《幸福出发》，助力传统卫视树立新颖独特的形象。</p>
 					</div>
-					<ShuffleHero />
-				</div>
-
-				<div className="flex justify-center items-center">
-					<ShuffleHero />
 					<div className=" p-24 max-w-5xl w-[30%] text-left">
 						<div className="pb-4"><BubbleText content={"视频音乐平台、影视配乐"} /></div>
 						<p className="text-black text-lg">奥森小冰正持续面向视频音乐平台、影视配乐领域输出音乐生产能力。面向视频音乐平台，奥森小冰可以为音乐人提供源源不断的创作灵感，并为视频内容自动配乐。面向影视配乐领域，奥森小冰可以为影视剧批量生产符合主题、情感及场景的音乐素材，并为音乐人提供主题曲创作灵感。/20演出季主题曲《HOPE》，帮助上海大剧院探索表演艺术、剧场舞台领域的破圈式举措。再如，奥森小冰受邀与著名音乐人马伯骞联合为Burberry的新品系列创作推广单曲《Runway2.0》，赋能品牌实现数字化转型升级，共同为用户带来独特的品牌体验。又如，奥森小冰为山东卫视创作2018春晚主题曲《幸福出发》，助力传统卫视树立新颖独特的形象。</p>
 					</div>
 				</div>
+
 			 </div>
 
 

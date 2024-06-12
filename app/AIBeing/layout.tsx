@@ -4,7 +4,7 @@ export default function DocsLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<section className="w-full">
+		<section className="max-w-full overflow-x-hidden overflow-y-hidden">
 			<div>
 				{children}
 			</div>

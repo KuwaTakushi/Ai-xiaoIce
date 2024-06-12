@@ -4,8 +4,8 @@ export default function PricingLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<section className="w-full">
-			<div className="w-full">
+		<section className="w-full overflow-y-hidden overflow-x-hidden bg-white" >
+			<div>
 				{children}
 			</div>
 		</section>

@@ -8,28 +8,20 @@ import {
 	NavbarItem,
 	NavbarMenuItem,
 } from "@nextui-org/navbar";
-import { Button } from "@nextui-org/button";
-import { Kbd } from "@nextui-org/kbd";
-import { Link } from "@nextui-org/link";
-import { Input } from "@nextui-org/input";
-
+import Link from 'next/link';
 import { link as linkStyles } from "@nextui-org/theme";
-
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
 import clsx from "clsx";
 
-import { ThemeSwitch } from "@/components/theme-switch";
-import {
-	HeartFilledIcon,
-} from "@/components/icons";
-
-import { Logo } from "@/components/icons";
-
 export const Navbar = () => {
+	const handleOpenNewPage = () => {
+		window.open('', '_blank'); // 替换'/new-page'为您要打开的页面路径
+	  };
+
 	return (
-		<NextUINavbar maxWidth="xl" position="static" className="bg-black text-white p-2">
-			<img width={80} src="https://business.xiaoice.com/img/layout/logo.png?v=8Us60SLZRUUB5lg7GHER7wpy12FVk7mLNMIpRETqfA0" alt="png" />
+		<NextUINavbar shouldHideOnScroll={true} maxWidth="lg" position="static" className=" text-white p-2 bg-none rounded-sm bg-[#000887]">
+			<img className=" object-cover w-64 mr-12" src="logo.png" alt="png" />
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="center">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
@@ -45,8 +37,10 @@ export const Navbar = () => {
 								)}
 								color="foreground"
 								href={item.href}
-							>
-								{item.label}
+								>
+									<div className="relative inline-block">
+									<span className=" relative z-10">{item.label}</span>
+								</div>
 							</NextLink>
 						</NavbarItem>
 					))}
@@ -54,40 +48,35 @@ export const Navbar = () => {
 			</NavbarContent>
 
 			<NavbarContent
-				className="hidden sm:flex basis-1/5 sm:basis-full"
+				className="hidden sm:flex basis-1/5 sm:basis-full "
 				justify="end"
 			>
 				<NavbarItem className="hidden md:flex">
-				<button className='relative inline-flex h-12 overflow-hidden rounded-3xl p-[1px] focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50'>
-				<span className='absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]' />
-				<span className='inline-flex h-full w-full cursor-pointer items-center justify-center rounded-3xl bg-gray-950 px-8 py-1 text-sm font-medium text-gray-50 backdrop-blur-3xl'>
-					联系我们
-				</span>
-				</button>
+					<Link href="http://t1.ink/f/h9ulpg">
+						<button className='relative inline-flex h-12 overflow-hidden rounded-xl p-[1px] focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50'>
+							<span className='absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]' />
+							<span className='inline-flex h-full w-full cursor-pointer items-center justify-center rounded-xl bg-gray-950 px-8 py-1 text-sm font-medium text-gray-50 backdrop-blur-3xl'>
+								联系我们
+							</span>
+						</button>
+					</Link>
 				</NavbarItem>
 			</NavbarContent>
 
-			<NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
 
-				<ThemeSwitch />
+
+			<NavbarContent className="sm:hidden basis-1 pl-4 " justify="end">
 				<NavbarMenuToggle />
 			</NavbarContent>
-			<NavbarMenu>
-				<div className="mx-4 mt-2 flex flex-col gap-2">
+			<NavbarMenu className="bg-[#000887]">
+				<div className="mx-4 mt-8 flex flex-col gap-2 space-y-4 divide-y divide-y-reverse bg-[#000887] divide-white divide-opacity-20">
 					{siteConfig.navMenuItems.map((item, index) => (
-						<NavbarMenuItem key={`${item}-${index}`}>
+						<NavbarMenuItem key={`${item}-${index}`} >
 							<Link
-								color={
-									index === 2
-										? "primary"
-										: index === siteConfig.navMenuItems.length - 1
-										? "danger"
-										: "foreground"
-								}
-								href="#"
-								size="lg"
+								className=" text-white divide-y"
+								href={item.href}
 							>
-								{item.label}
+							{item.label}
 							</Link>
 						</NavbarMenuItem>
 					))}

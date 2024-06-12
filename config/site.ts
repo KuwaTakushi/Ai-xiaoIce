@@ -18,45 +18,33 @@ export const siteConfig = {
 		},
 		{
 			label: "数字名片",
-			href: "/blog",
+			href: "/loT",
 		},
 		{
 			label: "招商加盟",
-			href: "/about",
+			href: "/Contact",
 		},
 	],
 	navMenuItems: [
 		{
-			label: "Profile",
-			href: "/profile",
+			label: "人工智能商业解决方案",
+			href: "/",
 		},
 		{
-			label: "Dashboard",
-			href: "/dashboard",
+			label: "AI数字员工",
+			href: "/AIBeing",
 		},
 		{
-			label: "Projects",
-			href: "/projects",
+			label: "直播",
+			href: "/live",
 		},
 		{
-			label: "Team",
-			href: "/team",
+			label: "数字名片",
+			href: "/loT",
 		},
 		{
-			label: "Calendar",
-			href: "/calendar",
-		},
-		{
-			label: "Settings",
-			href: "/settings",
-		},
-		{
-			label: "Help & Feedback",
-			href: "/help-feedback",
-		},
-		{
-			label: "Logout",
-			href: "/logout",
+			label: "招商加盟",
+			href: "/Contact",
 		},
 	],
 	links: {

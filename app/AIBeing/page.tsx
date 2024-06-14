@@ -84,7 +84,8 @@ export default function AIBeing() {
 				</div>
 			</div>
 
-			<div className="flex flex-col justify-center items-center bg-[#000887] text-white p-8">
+			<div className=" hidden">
+			<div className=" flex flex-col justify-center items-center bg-[#000887] text-white p-8">
 			 	<h1 className=" font-bold text-3xl">应用场景</h1>
 				<div className="flex justify-center pt-8">
 					<div className="flex w-full flex-col gap-8 justify-center items-center">
@@ -97,7 +98,7 @@ export default function AIBeing() {
 								</div>
 							}
 							>
-								<div className=" bg-slate-300 shadow-2xl flex rounded-xl p-6 mt-12 justify-center items-center mb-8">
+								<div className=" bg-[#edf3ff] shadow-2xl flex rounded-xl p-6 mt-12 justify-center items-center mb-8">
 								<div className="flex flex-col pr-4">
 										<p className=" font-bold text-3xl text-[#000887]">01</p>
 										<span className=" w-24 bg-[#000887] h-4 bg-opacity-50"> </span>
@@ -114,7 +115,7 @@ export default function AIBeing() {
 								</div>
 							}
 							>
-								<div className=" bg-slate-300 shadow-2xl flex rounded-xl p-6 mt-12 justify-center items-center mb-8">
+								<div className=" bg-[#edf3ff] shadow-2xl flex rounded-xl p-6 mt-12 justify-center items-center mb-8">
 									<div className="flex flex-col pr-4">
 										<p className=" font-bold text-3xl text-[#000887]">02</p>
 										<span className=" w-24 bg-[#2db2e2] h-4 bg-opacity-50"> </span>
@@ -131,7 +132,7 @@ export default function AIBeing() {
 								</div>
 							}
 							>
-								<div className=" bg-slate-300 shadow-2xl flex rounded-xl p-6 mt-12 justify-center items-center mb-8">
+								<div className=" bg-[#edf3ff] shadow-2xl flex rounded-xl p-6 mt-12 justify-center items-center mb-8">
 								<div className="flex flex-col pr-4">
 										<p className=" font-bold text-3xl text-[#000887]">03</p>
 										<span className=" w-24 bg-[#3af8bf] h-4 bg-opacity-50"> </span>
@@ -149,7 +150,7 @@ export default function AIBeing() {
 								</div>
 							}
 							>
-								<div className=" bg-slate-300 shadow-2xl flex rounded-xl p-6 mt-12 justify-center items-center mb-8">
+								<div className=" bg-[#edf3ff] shadow-2xl flex rounded-xl p-6 mt-12 justify-center items-center mb-8">
 								<div className="flex flex-col pr-4">
 										<p className=" font-bold text-3xl text-[#000887]">04</p>
 										<span className=" w-24 bg-[#3af8bf] h-4 bg-opacity-50"> </span>
@@ -162,9 +163,12 @@ export default function AIBeing() {
 					</div> 
 				</div>
 			</div>	
+			</div>
+
 		
 			{/** advantage_intro 电脑端 */}
-			<div className="hidden bg-[#000887] md:block justify-center bg-cover bg-no-repeat  text-base text-gray-700 flex items-center px-28 leading-10 overflow-hidden h-1/2 p-12">
+			<div className="hidden">
+			<div className="bg-[#000887] md:block justify-center bg-cover bg-no-repeat  text-base text-gray-700 flex items-center px-28 leading-10 overflow-hidden h-1/2 p-12">
 				{/** products */}
 				<div className="flex w-full gap-8 justify-center items-center -skew-x-14">
 					<div className="w-1/3 flex text-left flex-col transition-all skew-x-12 text-white">
@@ -294,6 +298,8 @@ export default function AIBeing() {
 
 				</div>
 			</div>
+			</div>
+
 
 
 				

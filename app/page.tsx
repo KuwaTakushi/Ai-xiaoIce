@@ -5,9 +5,9 @@
 "use client"
 import React, { useRef, useState } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { Modal, ModalBody, ModalContent, useDisclosure, Image, Radio, RadioGroup, Tab, Chip, Tabs, CardFooter, Card as NextUiCard } from "@nextui-org/react";
+import { useDisclosure, Image, Radio, RadioGroup, Tab, Chip, Tabs, CardFooter, Card as NextUiCard, ModalContent, Modal, ModalBody } from "@nextui-org/react";
 import { FloatingPhone } from "@/components/FloatingPhone";
-import { Carousel } from "@material-tailwind/react";
+import { Carousel, Dialog, DialogBody, DialogFooter, DialogHeader, Typography } from "@material-tailwind/react";
 
 const IMG_PADDING = 12;
 const BackgroundIconA = () => {
@@ -31,13 +31,21 @@ const BackgroundIconC = () => {
 
 export default function Home() {
   const [hoveredIndex, setActiveIndex] = useState<number | null>(null);
+  const [open, setOpen] = useState(10);
+
+  const {isOpen, onOpen, onOpenChange} = useDisclosure();
+
+  const handleOpen = (index: number) => {
+    setOpen(index);
+  }
+
 
   return (
     <div className="bg-white overflow-x-hidden text-black">
       <TextParallaxContent />
 
-      <div className=" mt-28 w-full flex-col flex justify-center items-center relative">
-        <div className=" absolute z-0 -top-6 opacity-50 left-1/2 -translate-x-12"><BackgroundIconA /></div>
+      <div className="pt-16 pb-8 mt-28 w-full flex-col flex justify-center items-center relative bg-[#edf3ff]">
+        <div className=" absolute z-0 top-6 opacity-50 left-1/2 -translate-x-12"><BackgroundIconA /></div>
         <h1 className="z-10 font-bold text-4xl text-[#000887]  pb-16">专业AI数字人形象</h1>
         <h2 className=" text-slate-500 pt-4 pb-8 text-xl">多行业直播场景适配，助力AI数字人直播</h2>
 
@@ -143,8 +151,8 @@ export default function Home() {
 
 
 
-      <div className=" mt-28 w-full flex-col flex justify-center items-center relative">
-        <div className=" absolute z-0 -top-6 opacity-50 left-1/2 -translate-x-12"><BackgroundIconB /></div>
+      <div className=" bg-[#edf3ff] pt-8 mt-28 w-full flex-col flex justify-center items-center relative">
+        <div className=" absolute z-0 top-0 opacity-50 left-1/2 -translate-x-12"><BackgroundIconB /></div>
         <h1 className="z-10 font-bold text-4xl text-[#000887] pb-8">客户寄语</h1>
 
         <div className=" md:grid md:grid-cols-3 flex flex-wrap justify-center items-center gap-12 max-w-full p-8">
@@ -162,13 +170,15 @@ export default function Home() {
               src={cards[0].url}
             />
             {hoveredIndex === cards[0].id && (
-              <div className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer">
+              <div
+                className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
+                onClick={onOpen}
+            >
                 <img width={70} src="https://business.xiaoice.com/img/play.png?v=-LoFVWmB1Rt5l_fg-Axds3laxN-pMqxY7OMyjckygbM" alt="" />
               </div>
             )}
 
             <CardFooter className="justify-center gap-12 before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-lg rounded-lg bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-              <p className="text-2xl bg-gradient-to-l from-purple-500 via-orange-500 to-yellow-500 text-transparent bg-clip-text font-bold">奥森小冰</p>
               <p className="text-2xl text-white font-bold">{`客户寄语 0${cards[0].id}`}</p>
             </CardFooter>
           </NextUiCard>
@@ -188,13 +198,15 @@ export default function Home() {
               src={cards[1].url}
             />
             {hoveredIndex === cards[1].id && (
-              <div className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer">
+              <div 
+                className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
+                onClick={() => {handleOpen(1)}}
+              >
                 <img width={70} src="https://business.xiaoice.com/img/play.png?v=-LoFVWmB1Rt5l_fg-Axds3laxN-pMqxY7OMyjckygbM" alt="" />
               </div>
             )}
 
             <CardFooter className="justify-center gap-12 before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-lg rounded-lg bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-              <p className="text-2xl bg-gradient-to-l from-purple-500 via-orange-500 to-yellow-500 text-transparent bg-clip-text font-bold">奥森小冰</p>
               <p className="text-2xl text-white font-bold">{`客户寄语 0${cards[1].id}`}</p>
             </CardFooter>
           </NextUiCard>
@@ -213,13 +225,15 @@ export default function Home() {
               src={cards[2].url}
             />
             {hoveredIndex === cards[2].id && (
-              <div className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer">
+              <div 
+                className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
+                onClick={() => {handleOpen(2)}}
+              >
                 <img width={70} src="https://business.xiaoice.com/img/play.png?v=-LoFVWmB1Rt5l_fg-Axds3laxN-pMqxY7OMyjckygbM" alt="" />
               </div>
             )}
 
             <CardFooter className="justify-center gap-12 before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-lg rounded-lg bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-              <p className="text-2xl bg-gradient-to-l from-purple-500 via-orange-500 to-yellow-500 text-transparent bg-clip-text font-bold">奥森小冰</p>
               <p className="text-2xl text-white font-bold">{`客户寄语 0${cards[2].id}`}</p>
             </CardFooter>
           </NextUiCard>
@@ -231,6 +245,7 @@ export default function Home() {
             className="border-none rounded-lg max-w-7xl w-110 relative"
             onMouseEnter={() => setActiveIndex(cards[3].id)}
             onMouseLeave={() => setActiveIndex(null)}
+            onClick={() => {handleOpen(3)}}
           >
             <img
               alt="Woman listing to music"
@@ -238,13 +253,15 @@ export default function Home() {
               src={cards[3].url}
             />
             {hoveredIndex === cards[3].id && (
-              <div className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer">
+              <div 
+                className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
+                onClick={() => {handleOpen(3)}}
+              >
                 <img width={70} src="https://business.xiaoice.com/img/play.png?v=-LoFVWmB1Rt5l_fg-Axds3laxN-pMqxY7OMyjckygbM" alt="" />
               </div>
             )}
 
             <CardFooter className="justify-center gap-12 before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-lg rounded-lg bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-              <p className="text-2xl bg-gradient-to-l from-purple-500 via-orange-500 to-yellow-500 text-transparent bg-clip-text font-bold">奥森小冰</p>
               <p className="text-2xl text-white font-bold">{`客户寄语 0${cards[3].id}`}</p>
             </CardFooter>
           </NextUiCard>
@@ -264,19 +281,22 @@ export default function Home() {
               src={cards[4].url}
             />
             {hoveredIndex === cards[4].id && (
-              <div className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer">
+              <div 
+                onClick={() => {handleOpen(4)}}
+                className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
+              >
                 <img width={70} src="https://business.xiaoice.com/img/play.png?v=-LoFVWmB1Rt5l_fg-Axds3laxN-pMqxY7OMyjckygbM" alt="" />
               </div>
             )}
 
             <CardFooter className="justify-center gap-12 before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-lg rounded-lg bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-              <p className="text-2xl bg-gradient-to-l from-purple-500 via-orange-500 to-yellow-500 text-transparent bg-clip-text font-bold">奥森小冰</p>
               <p className="text-2xl text-white font-bold">{`客户寄语 0${cards[4].id}`}</p>
             </CardFooter>
           </NextUiCard>
-
+          
 
         </div>
+        
       </div>
 
       <div className=" mt-28 w-full flex-col flex justify-center items-center relative bg-cover">
@@ -516,6 +536,8 @@ const Card = ({ card }: { card: any }) => {
             <p className="text-2xl text-white font-bold">{`客户寄语 0${cards[1].id}`}</p>
           </CardFooter>
         </NextUiCard>
+
+
     </div>
   );
 };

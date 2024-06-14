@@ -34,8 +34,8 @@ const DotGrid = () => {
     });
   };
 
-  const dots = [];
-  let index = 0;
+  const dots:JSX.Element[] = [];
+  let index:number = 0;
 
   for (let i = 0; i < GRID_WIDTH; i++) {
     for (let j = 0; j < GRID_HEIGHT; j++) {

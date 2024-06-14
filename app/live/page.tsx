@@ -84,20 +84,55 @@ export default function Live() {
 
 
 			{/** 电脑端 */}
-			<div className=" p-28  text-lg font-bold gap-24 mt-5  hidden md:block text-black">
-				<div className=" flex justify-center items-center divide-black divide-x mr-8">
-					<div className="flex flex-col justify-center items-center pr-8">
-						<img className=" object-cover w-24 pb-4" src="svg_1.png" alt="" />
-						<p>满足企业巨量和多样化设计需求</p>
+
+			<div className="p-16  text-lg font-bold flex-col text-center gap-24  hidden md:block text-black  pt-12">
+				<h1 className=" font-bold text-4xl text-[#00305a] pb-6">AI数字人直播</h1>
+				<div className=" flex justify-center items-center divide-black divide-x mr-8 gap-36">
+				<div className="  bg-sky-700 rounded-2xl shadow-xl shadow-sky-500">
+					<div className="group hover:rotate-12 duration-500 cursor-pointer group-hover:duration-500 overflow-hidden relative  rounded-2xl shadow-inner shadow-gray-50 flex flex-col justify-around items-center w-40 h-80 bg-neutral-900 text-gray-50">
+						<div className="p-8 justify-center text-center after:duration-500 before:duration-500 duration-500  group-hover:before:translate-x-11 group-hover:before:-translate-y-11  group-hover:after:translate-x-11 group-hover:after:translate-y-16 after:absolute after:w-12 after:h-12 after:bg-orange-400 after:rounded-full after:-z-10 after:blur-xl after:bottom-32 after:right-16 after:w-12 after:h-12 before:absolute before:w-20 before:h-20 before:bg-sky-400 before:rounded-full before:-z-10 before:blur-xl before:top-20 before:right-16 before:w-12 before:h-12 flex flex-col font-extrabold text-6xl z-10">
+							<span className="text-lg pb-4">AI文本驱动
+						</span>
+						</div>
+						<div className="flex flex-row justify-center text-sm font-thin items-center gap-1 font-thin">
+							<svg y="0" xmlns="http://www.w3.org/2000/svg" x="0" width="100" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" height="100" className="w-4 h-4 stroke-current">
+							<path stroke-width="8" stroke-linejoin="round" stroke-linecap="round" fill="none" d="M33.9,46V29.9a16.1,16.1,0,0,1,32.2,0M50,62v8.1m-24.1,16H74.1a8,8,0,0,0,8-8V54a8,8,0,0,0-8-8H25.9a8,8,0,0,0-8,8V78.1A8,8,0,0,0,25.9,86.1Z">
+							</path>
+						</svg></div>
+						</div>
 					</div>
-					<div className="flex flex-col justify-center items-center pl-12 pr-8">
-						<img className=" object-cover w-24 pb-4" src="svg_1.png" alt="" />
-						<p>音乐制作团队降本增效</p>
+
+
+					<div className="bg-sky-700 rounded-2xl shadow-xl shadow-sky-500">
+					<div className="group hover:rotate-12 duration-500 cursor-pointer group-hover:duration-500 overflow-hidden relative  rounded-2xl shadow-inner shadow-gray-50 flex flex-col justify-around items-center w-40 h-80 bg-neutral-900 text-gray-50">
+						<div className="p-8 justify-center text-center after:duration-500 before:duration-500 duration-500  group-hover:before:translate-x-11 group-hover:before:-translate-y-11  group-hover:after:translate-x-11 group-hover:after:translate-y-16 after:absolute after:w-12 after:h-12 after:bg-orange-400 after:rounded-full after:-z-10 after:blur-xl after:bottom-32 after:right-16 after:w-12 after:h-12 before:absolute before:w-20 before:h-20 before:bg-sky-400 before:rounded-full before:-z-10 before:blur-xl before:top-20 before:right-16 before:w-12 before:h-12 flex flex-col font-extrabold text-6xl z-10">
+							<span className="text-lg pb-4">数字人实时在线互动
+						</span>
+						</div>
+						<div className="flex flex-row justify-center text-sm font-thin items-center gap-1 font-thin">
+							<svg y="0" xmlns="http://www.w3.org/2000/svg" x="0" width="100" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" height="100" className="w-4 h-4 stroke-current">
+							<path stroke-width="8" stroke-linejoin="round" stroke-linecap="round" fill="none" d="M33.9,46V29.9a16.1,16.1,0,0,1,32.2,0M50,62v8.1m-24.1,16H74.1a8,8,0,0,0,8-8V54a8,8,0,0,0-8-8H25.9a8,8,0,0,0-8,8V78.1A8,8,0,0,0,25.9,86.1Z">
+							</path>
+						</svg></div>
+						</div>
 					</div>
-					<div className="flex flex-col justify-center items-center pl-12 pr-8">
-						<img className=" object-cover w-24 pb-4" src="svg_1.png" alt="" />
-						<p>降低创作门槛，赋能音乐爱好者</p>
+
+
+					<div className="bg-sky-700 rounded-2xl shadow-xl shadow-sky-500">
+					<div className="group hover:rotate-12 duration-500 cursor-pointer group-hover:duration-500 overflow-hidden relative  rounded-2xl shadow-inner shadow-gray-50 flex flex-col justify-around items-center w-40 h-80 bg-neutral-900 text-gray-50">
+						<div className="p-8 justify-center text-center after:duration-500 before:duration-500 duration-500  group-hover:before:translate-x-11 group-hover:before:-translate-y-11  group-hover:after:translate-x-11 group-hover:after:translate-y-16 after:absolute after:w-12 after:h-12 after:bg-orange-400 after:rounded-full after:-z-10 after:blur-xl after:bottom-32 after:right-16 after:w-12 after:h-12 before:absolute before:w-20 before:h-20 before:bg-sky-400 before:rounded-full before:-z-10 before:blur-xl before:top-20 before:right-16 before:w-12 before:h-12 flex flex-col font-extrabold text-6xl z-10">
+							<span className="text-lg pb-4">降低创作门槛，赋能音乐爱好者
+						</span>
+						</div>
+						<div className="flex flex-row justify-center text-sm font-thin items-center gap-1 font-thin">
+							<svg y="0" xmlns="http://www.w3.org/2000/svg" x="0" width="100" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" height="100" className="w-4 h-4 stroke-current">
+							<path stroke-width="8" stroke-linejoin="round" stroke-linecap="round" fill="none" d="M33.9,46V29.9a16.1,16.1,0,0,1,32.2,0M50,62v8.1m-24.1,16H74.1a8,8,0,0,0,8-8V54a8,8,0,0,0-8-8H25.9a8,8,0,0,0-8,8V78.1A8,8,0,0,0,25.9,86.1Z">
+							</path>
+						</svg></div>
+						</div>
 					</div>
+
+
 				</div>
 			</div>
 
@@ -128,12 +163,12 @@ export default function Live() {
 
 			{/** 电脑端 */}
 			{/** 一键生成高质量音乐作品 页面 */}
-			<div className=" p-36 hidden md:block text-black">
+			<div className=" p-36 hidden md:block text-black ">
 				<div className="flex justify-center gap-24 text-left">
 				<div className="flex flex-col justify-center w-72 shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] p-8 rounded-xl">
 					<img className=" object-cover w-24 pb-4" src="svg_1.png" alt="" />
-					<h2 className=" font-bold text-xl">一键生成高质量音乐作品</h2>
-					<p>输入一段文字描述或一张图片，模型即可自动生成一首独一无二的歌曲旋律，并根据曲风选择相应乐器音色生成伴奏，同时完成歌词创作。</p>
+					<h2 className=" font-bold text-xl">系统操作简便，无需人工监控</h2>
+					<p>系统操作简便，无需人工监控，大大减少了管理和维护的复杂性。</p>
 				</div>
 				<div className="flex flex-col justify-center w-72 shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] p-8 rounded-xl">
 					<img className=" object-cover w-24 pb-4" src="svg_1.png" alt="" />

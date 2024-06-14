@@ -28,7 +28,7 @@ export default function Live() {
     		<div className="bg-cover w-full h-110 p-12 flex justify-center md:justify-center text-center" style={{backgroundImage: "url('/bg-2.png')"}}>
 				<div className=" flex flex-col text-white w-65 md:w-[38%] mt-12 md:ml-44">
 					<h1 className=" font-bold md:text-5xl text-3xl mb-8">数字名片</h1>
-					<p className=" text-lg md:text-2xl">让座舱、家居中冷冰冰的中控系统，升级成为与用户一起出行、生活的虚拟好伙伴。在车载场景打造的车载智能助理，可实现全车级的语音控制，并可实时与用户进行自然而富有情感的互动，为用户带来可媲美人类的交流体验。在智能家居场景打造的智能语音助手，可实现系统级全覆盖的语音控制，在实现家居产品全方位联动的同时，主动学习用户的生活习惯和特点，打造有温度主动式的拟人陪伴。</p>
+					<p className=" text-lg md:text-2xl">数字名片是当代分享联系信息的创新方式。它们具有更高的互动性、成本效益和环保优势。你可以存储所有的联系信息和在线资料</p>
 				</div>
 			</div>
 

@@ -444,7 +444,7 @@ export default function Contact() {
 											</Chip>
 										)}
 									</div>
-									{isHovered == 1 ? (<p className="text-base">跨境电商主播</p>) : (<div className=" p-2"><p className=" text-base">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
+									{isHovered == 1 ? (<p className="text-base">跨境电商主播</p>) : (<div className=" p-2"><p className=" text-base transition-all duration-700 translate-x-3">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
 								</div>
 							</div>
 						</div>
@@ -455,8 +455,8 @@ export default function Contact() {
 						{/** item_big */}
 						<div className=" transition-all  duration-700 h-full -skew-x-12">
 							<div 
-								onMouseEnter={() => setIsHovered(0)} 
-								onMouseLeave={() => setIsHovered(1)} 
+								onMouseEnter={() => setIsHovered(2)} 
+								onMouseLeave={() => setIsHovered(3)} 
 								className=" skew-x-6 bg-right-5.2 bg-no-repeat  relative h-[800px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
 								style={{backgroundImage: `url("human2.png")`}}
 							>
@@ -471,11 +471,11 @@ export default function Contact() {
 													content: "drop-shadow shadow-black text-white",
 												}}
 												>
-												跨境电商主播
+												线下导购迎宾
 											</Chip>
 										)}
 									</div>
-									{isHovered == 1 ? (<p className="text-base">跨境电商主播</p>) : (<div className=" p-2"><p className=" text-base">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
+									{isHovered == 2 ? (<p className="text-base">线下导购迎宾</p>) : (<div className=" p-2"><p className=" text-base">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
 								</div>
 							</div>
 						</div>
@@ -484,8 +484,8 @@ export default function Contact() {
 						{/** item_big */}
 						<div className=" transition-all  duration-700 h-full -skew-x-12">
 							<div 
-								onMouseEnter={() => setIsHovered(0)} 
-								onMouseLeave={() => setIsHovered(1)} 
+								onMouseEnter={() => setIsHovered(4)} 
+								onMouseLeave={() => setIsHovered(5)} 
 								className=" skew-x-6 bg-right-5.2 bg-no-repeat  relative h-[800px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
 								style={{backgroundImage: `url("human3.png")`}}
 							>
@@ -500,11 +500,11 @@ export default function Contact() {
 													content: "drop-shadow shadow-black text-white",
 												}}
 												>
-												跨境电商主播
+												文旅宣传大使
 											</Chip>
 										)}
 									</div>
-									{isHovered == 1 ? (<p className="text-base">跨境电商主播</p>) : (<div className=" p-2"><p className=" text-base">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
+									{isHovered == 4 ? (<p className="text-base">文旅宣传大使</p>) : (<div className=" p-2"><p className=" text-base">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
 								</div>
 							</div>
 						</div>
@@ -513,15 +513,15 @@ export default function Contact() {
 						{/** item_big */}
 						<div className=" transition-all  duration-700 h-full -skew-x-12">
 							<div 
-								onMouseEnter={() => setIsHovered(0)} 
-								onMouseLeave={() => setIsHovered(1)} 
+								onMouseEnter={() => setIsHovered(6)} 
+								onMouseLeave={() => setIsHovered(7)} 
 								className=" skew-x-6 bg-right-5.2 bg-no-repeat  relative h-[800px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
 								style={{backgroundImage: `url("human4.png")`}}
 							>
 								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
 										<h2 className=" text-4xl">Rita</h2>
-										{isHovered == 0 && (
+										{isHovered == 6 && (
 											<Chip
 												variant="shadow"
 												classNames={{
@@ -529,11 +529,11 @@ export default function Contact() {
 													content: "drop-shadow shadow-black text-white",
 												}}
 												>
-												跨境电商主播
+												名人数字分身
 											</Chip>
 										)}
 									</div>
-									{isHovered == 1 ? (<p className="text-base">跨境电商主播</p>) : (<div className=" p-2"><p className=" text-base">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
+									{isHovered == 1 ? (<p className="text-base">名人数字分身</p>) : (<div className=" p-2"><p className=" text-base">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
 								</div>
 							</div>
 						</div>
@@ -543,8 +543,8 @@ export default function Contact() {
 						{/** item_big */}
 						<div className=" transition-all  duration-700 h-full -skew-x-12">
 							<div 
-								onMouseEnter={() => setIsHovered(0)} 
-								onMouseLeave={() => setIsHovered(1)} 
+								onMouseEnter={() => setIsHovered(8)} 
+								onMouseLeave={() => setIsHovered(9)} 
 								className=" skew-x-6 bg-right-5.2 bg-no-repeat  relative h-[800px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
 								style={{backgroundImage: `url("human.png")`}}
 							>
@@ -559,11 +559,11 @@ export default function Contact() {
 													content: "drop-shadow shadow-black text-white",
 												}}
 												>
-												跨境电商主播
+												名人数字分身
 											</Chip>
 										)}
 									</div>
-									{isHovered == 1 ? (<p className="text-base">跨境电商主播</p>) : (<div className=" p-2"><p className=" text-base">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
+									{isHovered === 9 ? (<p className="text-base">名人数字分身</p>) : (<div className=" p-2"><p className=" text-base">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
 								</div>
 							</div>
 						</div>
@@ -597,7 +597,7 @@ export default function Contact() {
 											content: "drop-shadow shadow-black text-white",
 										}}
 										>
-										跨境电商主播
+									企业数字员工
 									</Chip>
 								</div>
 								<div><p className=" text-xs">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>
@@ -622,7 +622,7 @@ export default function Contact() {
 											content: "drop-shadow shadow-black text-white",
 										}}
 										>
-										跨境电商主播
+										线下导购迎宾
 									</Chip>
 								</div>
 								<div><p className=" text-xs">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>
@@ -645,7 +645,7 @@ export default function Contact() {
 											content: "drop-shadow shadow-black text-white",
 										}}
 										>
-										跨境电商主播
+										文旅宣传大使
 									</Chip>
 								</div>
 								<div><p className=" text-xs">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>
@@ -669,7 +669,7 @@ export default function Contact() {
 											content: "drop-shadow shadow-black text-white",
 										}}
 										>
-										跨境电商主播
+										名人数字分身
 									</Chip>
 								</div>
 								<div><p className=" text-xs">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>

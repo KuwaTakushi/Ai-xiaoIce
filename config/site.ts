@@ -18,7 +18,7 @@ export const siteConfig = {
 		},
 		{
 			label: "数字名片",
-			href: "/loT",
+			href: "/mathCard",
 		},
 		{
 			label: "招商加盟",
@@ -40,7 +40,7 @@ export const siteConfig = {
 		},
 		{
 			label: "数字名片",
-			href: "/loT",
+			href: "/mathCard",
 		},
 		{
 			label: "招商加盟",

@@ -20,7 +20,7 @@ export const Navbar = () => {
 	  };
 
 	return (
-		<NextUINavbar shouldHideOnScroll={true} maxWidth="lg" position="static" className=" text-white p-2 bg-none rounded-sm bg-[#000887]">
+		<NextUINavbar maxWidth="lg" position="static" className=" text-white p-2 bg-none rounded-sm bg-[#000887]">
 			<img className=" object-cover w-64 mr-12" src="logo.png" alt="png" />
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="center">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">

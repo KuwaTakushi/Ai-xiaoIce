@@ -5,9 +5,10 @@
 "use client"
 import React, { useRef, useState } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { useDisclosure, Image, Radio, RadioGroup, Tab, Chip, Tabs, CardFooter, Card as NextUiCard, ModalContent, Modal, ModalBody } from "@nextui-org/react";
+import { useDisclosure, Image, Radio, RadioGroup, Tab, Chip, Tabs, CardFooter, Card as NextUiCard, ModalContent, ModalBody } from "@nextui-org/react";
 import { FloatingPhone } from "@/components/FloatingPhone";
 import { Carousel, Dialog, DialogBody, DialogFooter, DialogHeader, Typography } from "@material-tailwind/react";
+import Modal from 'react-bootstrap/Modal';
 
 const IMG_PADDING = 12;
 const BackgroundIconA = () => {
@@ -28,7 +29,6 @@ const BackgroundIconC = () => {
   );
 }
 
-
 export default function Home() {
   const [hoveredIndex, setActiveIndex] = useState<number | null>(null);
   const [open, setOpen] = useState(10);
@@ -46,14 +46,14 @@ export default function Home() {
 
       <div className="pt-16 pb-8 mt-28 w-full flex-col flex justify-center items-center relative bg-[#edf3ff]">
         <div className=" absolute z-0 top-6 opacity-50 left-1/2 -translate-x-12"><BackgroundIconA /></div>
-        <h1 className="z-10 font-bold text-4xl text-[#000887]  pb-16">专业AI数字人形象</h1>
+        <h1 className="z-10 font-bold text-4xl text-[#00305a]  pb-16">专业AI数字人形象</h1>
         <h2 className=" text-slate-500 pt-4 pb-8 text-xl">多行业直播场景适配，助力AI数字人直播</h2>
 
         <div className="md:block hidden">
           <div className="  flex gap-24 bg-gradient-to-bl from-indigo-600 via-purple-700 to-pink-800 w-full justify-center max-w-7xl rounded-full">
             <FloatingPhone context="智能场景互动" backgroundImage="https://business.xiaoice.com/img/join/huaxizi_poster.png?v=noQF7231AuE7a-ZciXkYh6FrpXp6dYkJvTWdTihf1cw"/>
-            <FloatingPhone context="实时AI" backgroundImage="https://business.xiaoice.com/img/join/huaxizi_poster.png?v=noQF7231AuE7a-ZciXkYh6FrpXp6dYkJvTWdTihf1cw"/>
-            <FloatingPhone context="适配各行业场景" backgroundImage="https://business.xiaoice.com/img/join/huaxizi_poster.png?v=noQF7231AuE7a-ZciXkYh6FrpXp6dYkJvTWdTihf1cw"/>
+            <FloatingPhone context="实时AI" backgroundImage="live_2.jpg"/>
+            <FloatingPhone context="适配各行业场景" backgroundImage="live_1.jpg"/>
           </div>
         </div>
         
@@ -63,10 +63,10 @@ export default function Home() {
             <FloatingPhone context="智能场景互动" backgroundImage="https://business.xiaoice.com/img/join/huaxizi_poster.png?v=noQF7231AuE7a-ZciXkYh6FrpXp6dYkJvTWdTihf1cw"/>
           </div>
           <div className="  flex gap-24 bg-gradient-to-bl  w-full justify-center bg-opacity-0">
-            <FloatingPhone context="实时AI" backgroundImage="https://business.xiaoice.com/img/join/huaxizi_poster.png?v=noQF7231AuE7a-ZciXkYh6FrpXp6dYkJvTWdTihf1cw"/>
+            <FloatingPhone context="实时AI" backgroundImage="live_2.jpg"/>
           </div>
           <div className="  flex gap-24 bg-gradient-to-bl  w-full justify-center bg-opacity-0">
-            <FloatingPhone context="适配各行业场景" backgroundImage="https://business.xiaoice.com/img/join/huaxizi_poster.png?v=noQF7231AuE7a-ZciXkYh6FrpXp6dYkJvTWdTihf1cw"/>
+            <FloatingPhone context="适配各行业场景" backgroundImage="live_1.jpg"/>
           </div>
         </Carousel>
         </div>
@@ -74,7 +74,7 @@ export default function Home() {
 
       <div className=" mt-28 w-full flex-col flex justify-center items-center relative">
         <div className=" absolute z-0 -top-6 opacity-50 left-1/2 -translate-x-12"><BackgroundIconA /></div>
-        <h1 className="z-10 font-bold text-4xl text-[#000887] pb-8">数字功能</h1>
+        <h1 className="z-10 font-bold text-4xl text-[#00305a] pb-8">数字功能</h1>
         <Tabs 
           aria-label="Options" 
           color="primary" 
@@ -89,20 +89,19 @@ export default function Home() {
           <Tab
             key="AI数字员工"
             title={
-              <div className="flex items-center space-x-2 md:w-64 w-36 font-bold md:text-2xl justify-center">
+              <div className="flex items-center space-x-2 md:w-64 w-20 font-bold md:text-2xl justify-center">
                 <span>AI数字员工</span>
-                <Chip size="sm" variant="faded">01</Chip>
               </div>
             }
           >
 
             <div className=" flex justify-between items-center gap-24 p-8 flex-wrap md:flex-nowrap">
-              <div className=" flex flex-col justify-start items-start min-h-48">
-                <p className=" text-2xl font-bold text-black">AI数字员工</p>
-                <p className=" max-w-lg text-lg">2019年，奥森小冰率先提出了数字人（AI Being）理念，并基于全球领先的完备人工智能奥森小冰框架，推出了数字专家和数字员工等完整产品线。奥森小冰的数字人具有不同的性格特征、态度观点、生物学特征、创造力、知识和技能，兼具情感交互能力、专业能力和内容生产能力，已被大众熟知，并应用在多个行业场景。随着数字人多样性（Diversity of AI Being）趋势的来临，每个人的日常工作和生活，将由更加丰富多彩的AI Beings所陪伴和环绕。</p>
+              <div className=" flex flex-col justify-start items-start min-h-48 text-[#00305a]">
+                <p className=" text-3xl font-bold pb-4">AI数字员工</p>
+                <p className=" max-w-lg text-lg">奥森小冰率先提出了数字人（AI Being）理念，并基于全球领先的完备人工智能奥森小冰框架，推出了数字专家和数字员工等完整产品线。奥森小冰的数字人具有不同的性格特征、态度观点、生物学特征、创造力、知识和技能，兼具情感交互能力、专业能力和内容生产能力，已被大众熟知，并应用在多个行业场景。随着数字人多样性（Diversity of AI Being）趋势的来临，每个人的日常工作和生活，将由更加丰富多彩的AI Beings所陪伴和环绕。</p>
               </div>
 
-              <div className=" overflow-hidden max-w-lg max-h-48">
+              <div className=" overflow-hidden max-w-lg">
                 <img className="w-96 bg-cover" src="https://business.xiaoice.com/img/join/huaxizi_poster.png?v=noQF7231AuE7a-ZciXkYh6FrpXp6dYkJvTWdTihf1cw" alt="" />
               </div>
             </div>
@@ -111,38 +110,54 @@ export default function Home() {
           <Tab
             key="内容生产"
             title={
-              <div className="flex items-center space-x-2 md:w-64 w-24 font-bold md:text-2xl justify-center">
+              <div className="flex items-center space-x-2 md:w-64 w-20 font-bold md:text-2xl justify-center">
                 <span>内容生产</span>
-                <Chip size="sm" variant="faded">02</Chip>
               </div>
             }
           >
             <div className=" flex justify-between items-center gap-24 p-4 flex-wrap md:flex-nowrap">
-              <div className=" flex flex-col justify-start items-start min-h-48">
-                <p className=" text-2xl font-bold text-black">内容生产</p>
+              <div className=" flex flex-col justify-start items-start min-h-48 text-[#00305a]">
+                <p className=" text-3xl font-bold  pb-4">内容生产</p>
                 <p className=" max-w-lg text-lg">奥森小冰是人工智能内容生产的先行者，拥有全球领先的核心技术并已形成完善的产品线。奥森小冰的人工智能内容生产，着眼于在达到与相应人类生产者同等质量水准的前提下，充分发挥人工智能快速学习、高并发与稳定性等特点，协助弥补 “ 高度定制化内容 ” 的供需关系短板</p>
               </div>
-              <div className=" overflow-hidden max-w-lg max-h-48">
-                <img className="w-96 bg-cover" src="https://business.xiaoice.com/img/join/huaxizi_poster.png?v=noQF7231AuE7a-ZciXkYh6FrpXp6dYkJvTWdTihf1cw" alt="" />
+              <div className=" overflow-hidden max-w-lg rounded-xl">
+                <img className="w-96 bg-cover" src="context.jpg" alt="" />
               </div>
             </div>
           </Tab>
           <Tab
             key="直播"
             title={
-              <div className="flex items-center space-x-2 md:w-64 w-24 font-bold md:text-2xl justify-center">
+              <div className="flex items-center space-x-2 md:w-64 w-20 font-bold md:text-2xl justify-center">
                 <span>数字直播</span>
-                <Chip size="sm" variant="faded">03</Chip>
               </div>
             }
           >
             <div className=" flex justify-between items-center gap-24 p-4 flex-wrap md:flex-nowrap">
-              <div className=" flex flex-col justify-start items-start min-h-48">
-                <p className=" text-2xl font-bold text-black">数字直播</p>
+              <div className=" flex flex-col justify-start items-start min-h-48 text-[#00305a]">
+                <p className=" text-3xl font-bold  pb-4">数字直播</p>
                 <p className=" max-w-lg text-lg">2019年，奥森小冰率先提出了数字人（AI Being）理念，并基于全球领先的完备人工智能奥森小冰框架，推出了数字专家和数字员工等完整产品线。奥森小冰的数字人具有不同的性格特征、态度观点、生物学特征、创造力、知识和技能，兼具情感交互能力、专业能力和内容生产能力，已被大众熟知，并应用在多个行业场景。随着数字人多样性（Diversity of AI Being）趋势的来临，每个人的日常工作和生活，将由更加丰富多彩的AI Beings所陪伴和环绕。</p>
               </div>
-              <div className=" overflow-hidden max-w-lg max-h-48">
-                <img className="w-96 bg-cover" src="https://business.xiaoice.com/img/join/huaxizi_poster.png?v=noQF7231AuE7a-ZciXkYh6FrpXp6dYkJvTWdTihf1cw" alt="" />
+              <div className=" overflow-hidden max-w-lg">
+                <img className="w-96 bg-cover" src="video_poster5.png" alt="" />
+              </div>
+            </div>
+          </Tab>
+          <Tab
+            key="数字名片"
+            title={
+              <div className="flex items-center space-x-2 md:w-64 w-20 font-bold md:text-2xl justify-center">
+                <span>数字名片</span>
+              </div>
+            }
+          >
+            <div className=" flex justify-between items-center gap-24 p-4 flex-wrap md:flex-nowrap">
+              <div className=" flex flex-col justify-start items-start min-h-48 text-[#00305a]">
+                <p className=" text-3xl font-bold pb-4">数字名片</p>
+                <p className=" max-w-lg text-lg">2019年，奥森小冰率先提出了数字人（AI Being）理念，并基于全球领先的完备人工智能奥森小冰框架，推出了数字专家和数字员工等完整产品线。奥森小冰的数字人具有不同的性格特征、态度观点、生物学特征、创造力、知识和技能，兼具情感交互能力、专业能力和内容生产能力，已被大众熟知，并应用在多个行业场景。随着数字人多样性（Diversity of AI Being）趋势的来临，每个人的日常工作和生活，将由更加丰富多彩的AI Beings所陪伴和环绕。</p>
+              </div>
+              <div className=" overflow-hidden max-w-lg">
+                <img className="w-96 bg-cover rounded-xl" src="context-bg.jpg" alt="" />
               </div>
             </div>
           </Tab>
@@ -153,7 +168,7 @@ export default function Home() {
 
       <div className=" bg-[#edf3ff] pt-8 mt-28 w-full flex-col flex justify-center items-center relative">
         <div className=" absolute z-0 top-0 opacity-50 left-1/2 -translate-x-12"><BackgroundIconB /></div>
-        <h1 className="z-10 font-bold text-4xl text-[#000887] pb-8">客户寄语</h1>
+        <h1 className="z-10 font-bold text-4xl text-[#00305a] pb-8">客户寄语</h1>
 
         <div className=" md:grid md:grid-cols-3 flex flex-wrap justify-center items-center gap-12 max-w-full p-8">
           <NextUiCard
@@ -174,12 +189,12 @@ export default function Home() {
                 className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
                 onClick={onOpen}
             >
-                <img width={70} src="https://business.xiaoice.com/img/play.png?v=-LoFVWmB1Rt5l_fg-Axds3laxN-pMqxY7OMyjckygbM" alt="" />
+                <img width={70} src="play.png" alt="" />
               </div>
             )}
 
             <CardFooter className="justify-center gap-12 before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-lg rounded-lg bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-              <p className="text-2xl text-white font-bold">{`客户寄语 0${cards[0].id}`}</p>
+              <p className="text-2xl text-[#00305a] font-bold">{`客户寄语 0${cards[0].id}`}</p>
             </CardFooter>
           </NextUiCard>
 
@@ -202,12 +217,12 @@ export default function Home() {
                 className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
                 onClick={() => {handleOpen(1)}}
               >
-                <img width={70} src="https://business.xiaoice.com/img/play.png?v=-LoFVWmB1Rt5l_fg-Axds3laxN-pMqxY7OMyjckygbM" alt="" />
+                <img width={70} src="play.png" alt="" />
               </div>
             )}
 
             <CardFooter className="justify-center gap-12 before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-lg rounded-lg bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-              <p className="text-2xl text-white font-bold">{`客户寄语 0${cards[1].id}`}</p>
+              <p className="text-2xl text-[#00305a] font-bold">{`客户寄语 0${cards[1].id}`}</p>
             </CardFooter>
           </NextUiCard>
 
@@ -229,12 +244,12 @@ export default function Home() {
                 className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
                 onClick={() => {handleOpen(2)}}
               >
-                <img width={70} src="https://business.xiaoice.com/img/play.png?v=-LoFVWmB1Rt5l_fg-Axds3laxN-pMqxY7OMyjckygbM" alt="" />
+                <img width={70} src="play.png" alt="" />
               </div>
             )}
 
             <CardFooter className="justify-center gap-12 before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-lg rounded-lg bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-              <p className="text-2xl text-white font-bold">{`客户寄语 0${cards[2].id}`}</p>
+              <p className="text-2xl text-[#00305a] font-bold">{`客户寄语 0${cards[2].id}`}</p>
             </CardFooter>
           </NextUiCard>
 
@@ -257,12 +272,12 @@ export default function Home() {
                 className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
                 onClick={() => {handleOpen(3)}}
               >
-                <img width={70} src="https://business.xiaoice.com/img/play.png?v=-LoFVWmB1Rt5l_fg-Axds3laxN-pMqxY7OMyjckygbM" alt="" />
+                <img width={70} src="play.png" alt="" />
               </div>
             )}
 
             <CardFooter className="justify-center gap-12 before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-lg rounded-lg bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-              <p className="text-2xl text-white font-bold">{`客户寄语 0${cards[3].id}`}</p>
+              <p className="text-2xl text-[#00305a] font-bold">{`客户寄语 0${cards[3].id}`}</p>
             </CardFooter>
           </NextUiCard>
 
@@ -285,14 +300,16 @@ export default function Home() {
                 onClick={() => {handleOpen(4)}}
                 className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
               >
-                <img width={70} src="https://business.xiaoice.com/img/play.png?v=-LoFVWmB1Rt5l_fg-Axds3laxN-pMqxY7OMyjckygbM" alt="" />
+                <img width={70} src="play.png" alt="" />
               </div>
             )}
 
             <CardFooter className="justify-center gap-12 before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-lg rounded-lg bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-              <p className="text-2xl text-white font-bold">{`客户寄语 0${cards[4].id}`}</p>
+              <p className="text-2xl text-[#00305a] font-bold">{`客户寄语 0${cards[4].id}`}</p>
             </CardFooter>
           </NextUiCard>
+        
+
           
 
         </div>
@@ -301,14 +318,14 @@ export default function Home() {
 
       <div className=" mt-28 w-full flex-col flex justify-center items-center relative bg-cover">
         <div className=" absolute z-0 -top-6 opacity-50 left-1/2 -translate-x-12"><BackgroundIconC /></div>
-        <h1 className="z-10 font-bold text-4xl text-[#000887] pb-8">生态合作伙伴</h1>
-        <img className=" md:max-w-7xl w-full object-cover" src="https://business.xiaoice.com/img/home/logo.png?v=-pfdMEKlplfktfXxOaO1zLgAIhghlr_GVuexryn6fAE" alt="" />
+        <h1 className="z-10 font-bold text-4xl text-[#00305a] pb-8">生态合作伙伴</h1>
+        <img className=" md:max-w-7xl w-full object-cover" src="parnent.png" alt="" />
       </div>
 
 
 
       <div className="md:p-12 md:mb-0 mb-4 flex justify-center items-center mt-24">
-        <div className="rounded-xl  flex justify-center flex-col space-y-3 items-center p-16 max-w-7xl w-full" style={{ backgroundImage: `url(bg-bottom.png)`}}>
+        <div className="rounded-xl  flex justify-center flex-col space-y-3 items-center p-16 max-w-7xl w-full bg-[#edf3ff]" style={{ backgroundImage: `url(bg-bottom.png)`}}>
           <h1 className="text-white font-bold text-3xl">奥森小冰</h1>
           <h1 className="text-white font-bold text-3xl text-center">探索AI虚拟数字人之旅</h1>
         </div>
@@ -502,13 +519,13 @@ const Card = ({ card }: { card: any }) => {
           />
           {hoveredIndex === cards[0].id && (
             <div className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer">
-              <img width={70} src="https://business.xiaoice.com/img/play.png?v=-LoFVWmB1Rt5l_fg-Axds3laxN-pMqxY7OMyjckygbM" alt="" />
+              <img width={70} src="play.png" alt="" />
             </div>
           )}
 
           <CardFooter className="justify-center gap-12 before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-lg rounded-lg bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
             <p className="text-2xl bg-gradient-to-l from-purple-500 via-orange-500 to-yellow-500 text-transparent bg-clip-text font-bold">奥森小冰</p>
-            <p className="text-2xl text-white font-bold">{`客户寄语 0${cards[0].id}`}</p>
+            <p className="text-2xl text-[#00305a] font-bold">{`客户寄语 0${cards[0].id}`}</p>
           </CardFooter>
         </NextUiCard>
 
@@ -527,13 +544,13 @@ const Card = ({ card }: { card: any }) => {
           />
           {hoveredIndex === cards[1].id && (
             <div className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer">
-              <img width={70} src="https://business.xiaoice.com/img/play.png?v=-LoFVWmB1Rt5l_fg-Axds3laxN-pMqxY7OMyjckygbM" alt="" />
+              <img width={70} src="play.png" alt="" />
             </div>
           )}
 
           <CardFooter className="justify-center gap-12 before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-lg rounded-lg bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
             <p className="text-2xl bg-gradient-to-l from-purple-500 via-orange-500 to-yellow-500 text-transparent bg-clip-text font-bold">奥森小冰</p>
-            <p className="text-2xl text-white font-bold">{`客户寄语 0${cards[1].id}`}</p>
+            <p className="text-2xl text-[#00305a] font-bold">{`客户寄语 0${cards[1].id}`}</p>
           </CardFooter>
         </NextUiCard>
 
@@ -684,7 +701,7 @@ const Content = () => {
                 <div>
                   <img src={card.url} alt={`Video Poster ${card.id}`} className="w-full h-auto" />
                   <div onClick={handlePlayVideo} className="absolute inset-0 z-5 bg-black opacity-30 flex justify-center items-center cursor-pointer" >
-                    <Image width={40} src="https://business.xiaoice.com/img/play.png?v=-LoFVWmB1Rt5l_fg-Axds3laxN-pMqxY7OMyjckygbM" alt="Home Page" />
+                    <Image width={40} src="play.png" alt="Home Page" />
                   </div>
                 </div>
             )}

@@ -3,8 +3,6 @@
 import { Chip, Tab, Tabs } from "@nextui-org/react";
 import { useState } from "react";
 import { Carousel } from "@material-tailwind/react";
-import { TiltCard } from "@/components/TiltCard";
-import { url } from "inspector";
 
 const BgIcon = () => {
 	return (
@@ -15,13 +13,14 @@ const BgIcon = () => {
 
 const BgIconB = () => {
 	return (
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 2600 2600"><g transform="matrix(1,0,0,1,0,0)"><circle r="53.5" cx="684" cy="684" stroke-width="4" stroke="#006fee" fill="none" opacity="0.1" transform="rotate(100, 400, 400)"></circle><circle r="61.541666666666664" cx="660.3333333333334" cy="660.3333333333334" stroke-width="5" stroke="#1f73ef" fill="none" opacity="0.175" transform="rotate(91.66666666666667, 400, 400)"></circle><circle r="69.58333333333333" cx="636.6666666666666" cy="636.6666666666666" stroke-width="6" stroke="#2c77f1" fill="none" opacity="0.25" transform="rotate(83.33333333333333, 400, 400)"></circle><circle r="77.625" cx="613" cy="613" stroke-width="7" stroke="#367af2" fill="none" opacity="0.32499999999999996" transform="rotate(75, 400, 400)"></circle><circle r="85.66666666666666" cx="589.3333333333334" cy="589.3333333333334" stroke-width="8" stroke="#3e7ef4" fill="none" opacity="0.4" transform="rotate(66.66666666666666, 400, 400)"></circle><circle r="93.70833333333333" cx="565.6666666666666" cy="565.6666666666666" stroke-width="9" stroke="#4581f5" fill="none" opacity="0.475" transform="rotate(58.33333333333333, 400, 400)"></circle><circle r="101.75" cx="542" cy="542" stroke-width="10" stroke="#4c85f7" fill="none" opacity="0.5499999999999999" transform="rotate(50, 400, 400)"></circle><circle r="109.79166666666666" cx="518.3333333333333" cy="518.3333333333333" stroke-width="11" stroke="#5288f8" fill="none" opacity="0.625" transform="rotate(41.666666666666664, 400, 400)"></circle><circle r="117.83333333333333" cx="494.66666666666663" cy="494.66666666666663" stroke-width="12" stroke="#578bf9" fill="none" opacity="0.7" transform="rotate(33.33333333333333, 400, 400)"></circle><circle r="125.875" cx="471" cy="471" stroke-width="13" stroke="#5d8efb" fill="none" opacity="0.7749999999999999" transform="rotate(25, 400, 400)"></circle><circle r="133.91666666666666" cx="447.3333333333333" cy="447.3333333333333" stroke-width="14" stroke="#6291fc" fill="none" opacity="0.85" transform="rotate(16.666666666666657, 400, 400)"></circle><circle r="141.95833333333331" cx="423.66666666666663" cy="423.66666666666663" stroke-width="15" stroke="#6694fe" fill="none" opacity="0.9249999999999999" transform="rotate(8.333333333333329, 400, 400)"></circle><circle r="150" cx="400" cy="400" stroke-width="16" stroke="#6b97ff" fill="none" opacity="0.9999999999999999" transform="rotate(0, 400, 400)"></circle></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 2600 2600"><g transform="matrix(1,0,0,1,0,0)"><circle r="53.5" cx="684" cy="684" strokeWidth="4" stroke="#006fee" fill="none" opacity="0.1" transform="rotate(100, 400, 400)"></circle><circle r="61.541666666666664" cx="660.3333333333334" cy="660.3333333333334" stroke-width="5" stroke="#1f73ef" fill="none" opacity="0.175" transform="rotate(91.66666666666667, 400, 400)"></circle><circle r="69.58333333333333" cx="636.6666666666666" cy="636.6666666666666" stroke-width="6" stroke="#2c77f1" fill="none" opacity="0.25" transform="rotate(83.33333333333333, 400, 400)"></circle><circle r="77.625" cx="613" cy="613" stroke-width="7" stroke="#367af2" fill="none" opacity="0.32499999999999996" transform="rotate(75, 400, 400)"></circle><circle r="85.66666666666666" cx="589.3333333333334" cy="589.3333333333334" stroke-width="8" stroke="#3e7ef4" fill="none" opacity="0.4" transform="rotate(66.66666666666666, 400, 400)"></circle><circle r="93.70833333333333" cx="565.6666666666666" cy="565.6666666666666" stroke-width="9" stroke="#4581f5" fill="none" opacity="0.475" transform="rotate(58.33333333333333, 400, 400)"></circle><circle r="101.75" cx="542" cy="542" stroke-width="10" stroke="#4c85f7" fill="none" opacity="0.5499999999999999" transform="rotate(50, 400, 400)"></circle><circle r="109.79166666666666" cx="518.3333333333333" cy="518.3333333333333" stroke-width="11" stroke="#5288f8" fill="none" opacity="0.625" transform="rotate(41.666666666666664, 400, 400)"></circle><circle r="117.83333333333333" cx="494.66666666666663" cy="494.66666666666663" stroke-width="12" stroke="#578bf9" fill="none" opacity="0.7" transform="rotate(33.33333333333333, 400, 400)"></circle><circle r="125.875" cx="471" cy="471" stroke-width="13" stroke="#5d8efb" fill="none" opacity="0.7749999999999999" transform="rotate(25, 400, 400)"></circle><circle r="133.91666666666666" cx="447.3333333333333" cy="447.3333333333333" stroke-width="14" stroke="#6291fc" fill="none" opacity="0.85" transform="rotate(16.666666666666657, 400, 400)"></circle><circle r="141.95833333333331" cx="423.66666666666663" cy="423.66666666666663" stroke-width="15" stroke="#6694fe" fill="none" opacity="0.9249999999999999" transform="rotate(8.333333333333329, 400, 400)"></circle><circle r="150" cx="400" cy="400" stroke-width="16" stroke="#6b97ff" fill="none" opacity="0.9999999999999999" transform="rotate(0, 400, 400)"></circle></g></svg>
 	);
 }
 
 export default function AIBeing() {
 	const [isHovered, setIsHovered] = useState(0);
-	const [activeIndex, setActiveIndex] = useState(0);
+	const [hoveredIndex, setActiveIndex] = useState<number | null>(null);
+	const [open, setOpen] = useState(10);
 
 	const handleClick = (index: number) => {
 		setActiveIndex(index);
@@ -59,7 +58,7 @@ export default function AIBeing() {
 
 	return (
 		<div>
-			<div className=" hidden md:block text-left bg-[#000887]">
+			<div className="hidden md:block text-left bg-[#000887]">
 				{/** 电脑端 */}
 				<div className="flex justify-between">
 				<div className="flex  items-left justify-center p-24 pl-48 flex-col relative text-white">
@@ -74,9 +73,9 @@ export default function AIBeing() {
 
 
 			{/** title 移动端 */}
-			<div className="flex flex-col md:hidden bg-[#11172c] p-4">
+			<div className="flex flex-col md:hidden bg-[#000887] p-4">
 				<div className=" relative">
-					<img className="object-cover" src="img5.png" alt="" />
+					<img className="object-cover" src="banner-2.jpg" alt="" />
 					<div className=" absolute top-12 left-9 flex flex-col justify-center text-start text-white mb-5">
 						<h1 className="font-bold text-2xl pb-3">AI数字员工</h1>
 						<p className=" text-sm">奥森小冰基于全球领先的完备人工智能奥森小冰框架，推出了数字专家和数字员工等完整产品线，从数据采集、训练到上线，最快仅需10小时。支持创建拥有情感交互能力、专业技能和内容生产能力的数字人，目前已被应用于多个工作和生活场景中。</p>
@@ -84,7 +83,7 @@ export default function AIBeing() {
 				</div>
 			</div>
 
-			<div className=" hidden">
+			<div className="hidden md:block">
 			<div className=" flex flex-col justify-center items-center bg-[#000887] text-white p-8">
 			 	<h1 className=" font-bold text-3xl">应用场景</h1>
 				<div className="flex justify-center pt-8">
@@ -162,23 +161,28 @@ export default function AIBeing() {
 						</Tabs>
 					</div> 
 				</div>
-			</div>	
+			</div>
 			</div>
 
 		
 			{/** advantage_intro 电脑端 */}
-			<div className="hidden">
-			<div className="bg-[#000887] md:block justify-center bg-cover bg-no-repeat  text-base text-gray-700 flex items-center px-28 leading-10 overflow-hidden h-1/2 p-12">
+			<div className="hidden md:block">
+			<div className="relative bg-[#000887] md:block flex-col space-y-8 justify-center text-center bg-cover bg-no-repeat  text-base text-gray-700 flex items-center px-28 leading-10 overflow-hidden p-12 pb-52">
 				{/** products */}
-				<div className="flex w-full gap-8 justify-center items-center -skew-x-14">
-					<div className="w-1/3 flex text-left flex-col transition-all skew-x-12 text-white">
-						<h2 className=" text-5xl pt-14 pb-24 mb-16">产品优势</h2>
-						<div className={`transition-all transform duration-1000 ${(isHovered % 2 !== 0) ? ' translate-y-28 opacity-0' : ' translate-y-14 opacity-100'}`}>
-							<h2 className=" text-2xl text-white font-bold">{titles[(isHovered)]}</h2>
-							<p className=" text-xl text-white">{contexts[isHovered]}</p>
+			    <div className="pb-12">
+					<h2 className=" text-5xl text-white">产品优势</h2>
+					<div className="">
+						<div className=" h-48">
+							<div className={` z-10 transition-all transform duration-1000 ${(isHovered % 2 !== 0) ? 'transition-all' : ' translate-y-14 opacity-100'}`}>
+								<h2 className="z-10 text-2xl text-white font-bold">{titles[(isHovered)]}</h2>
+								<p className="z-10 text-xl text-white">{contexts[isHovered]}</p>
+							</div>
 						</div>
 					</div>
+				</div>
+					
 
+				<div className="flex w-full gap-8 justify-center items-center -skew-x-14">
 					<div className=" gap-6 flex ml-24">
 						{/** item_big */}
 						<div className=" transition-all  duration-700 h-full -skew-x-12">
@@ -544,8 +548,20 @@ export default function AIBeing() {
 
 
 				<div className=" flex bg-[#edf3ff] w-full flex-col justify-center gap-12 md:gap-24 items-center p-4 md:p-20 flex-wrap  md:flex-nowrap">
-					<div className=" flex md:gap-16 justify-center flex-col-reverse md:flex-row">
-						<img className="max-w-xl object-cover h-110 p-2 -mt-16 md:-mt-0" src="video_poster5.png" alt="" />
+					<div
+						onMouseEnter={() => setActiveIndex(0)}
+						onMouseLeave={() => setActiveIndex(null)}
+						className=" flex md:gap-16 justify-center flex-col-reverse md:flex-row"
+					>
+						<div className=" relative">
+							<img className="max-w-xl object-cover h-110 p-2 -mt-16 md:-mt-0" src="video_poster5.png" alt="" />
+							{hoveredIndex === 0 && (
+								<div className="max-w-xl absolute top-0 left-0 inset-0 z-10 bg-black opacity-30 bg-opacity-5 flex justify-center items-center cursor-pointer rounded-xl h-110">
+								<img width={70} className=" object-cover" src="play.png" alt="" />
+								</div>
+							)}
+						</div>
+
 						<div className=" max-w-lg mb-20 flex items-center justify-around">
 							<div className=" flex flex-col text-left max-w-lg md:mt-4 flex-wrap md:p-0">
 								<h2 className=" text-[#00305a] pb-4 pt-8 md:pt-0 text-2xl md:text-4xl font-bold">红杉资本 – Hóng，分析师，数字员工</h2>
@@ -561,16 +577,32 @@ export default function AIBeing() {
 								<p className="text-[#00305a] text-sm md:text-xl">奥森小冰团队为著名经济学家郎咸平先生量身定制了数字孪生，将形象呈现与内容生产解耦，再经专业团队高效生产优质内容，即可在全球社交网络和媒体平台持续、稳定的输出观点与解读，以扩展所覆盖的用户层级与类型，从而大幅提升流量、IP影响力及商业收益。</p>
 							</div>
 						</div>
-
-						<img className="max-w-full object-cover md:h-110 -mt-8 md:-mt-0" src="video_poster3.png" alt="" />
+						
+						<div className="" onMouseEnter={() => setActiveIndex(1)} onMouseLeave={() => setActiveIndex(null)}>
+							<div className=" relative">
+								<img className="rounded-xl max-w-xl object-cover h-110 p-2 -mt-16 md:-mt-0" src="video_poster3.png" alt="" />
+								{hoveredIndex === 1 && (
+									<div className="max-w-xl absolute top-0 left-0 inset-0 z-10 bg-black opacity-30 bg-opacity-5 flex justify-center items-center cursor-pointer rounded-xl h-110">
+									<img width={70} className=" object-cover" src="play.png" alt="" />
+									</div>
+								)}
+							</div>
+						</div>
 
 					</div>
 				</div>
 
 
 				<div className=" flex bg-white w-full justify-center items-center gap-12 md:gap-24 p-4 md:p-20 flex-wrap-reverse md:flex-nowrap">
-						<div className="w-[580px] h-[400px]">
-							<img className="max-w-full object-cover" src="https://business.xiaoice.com/img/vhuman/video_poster1.png?v=0IJp3HYJN5s9zog-SMmp3ZSOQ0l5ZIFAPs2cxUY2BDg" alt="" />
+						<div className="" 						
+							onMouseEnter={() => setActiveIndex(2)}
+							onMouseLeave={() => setActiveIndex(null)}>
+							<img className="max-w-xl object-cover" src="video_poster4.png" alt="" />
+							{hoveredIndex === 2 && (
+								<div className="max-w-xl absolute top-0 left-0 inset-0 z-10 bg-black opacity-30 bg-opacity-5 flex justify-center items-center cursor-pointer rounded-xl h-110">
+									<img width={70} className=" object-cover" src="play.png" alt="" />
+								</div>
+							)}
 						</div>
 
 						<div className=" flex flex-col text-left max-w-[550px] flex-wrap ">

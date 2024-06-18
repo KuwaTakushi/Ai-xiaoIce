@@ -48,7 +48,7 @@ const Screen = ({backgroundImage, context}: {backgroundImage: string, context: s
   return (
     <div className="relative z-0 grid h-full w-full place-content-center overflow-hidden rounded-[20px] bg-white">
       {/* Example logo from logoispum */}
-      <img className="w-96 bg-cover" src={backgroundImage} alt="" />
+      <img className="w-96 h-100 bg-cover" src={backgroundImage} alt="" />
 
 
       <button className="absolute bottom-4 left-4 right-4 z-10 rounded-lg border-[1px] bg-white py-2 text-sm font-medium text-violet-500 backdrop-blur">

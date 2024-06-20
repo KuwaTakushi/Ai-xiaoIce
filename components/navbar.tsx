@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
 import {
 	Navbar as NextUINavbar,
 	NavbarContent,
@@ -13,14 +14,22 @@ import { link as linkStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
 import clsx from "clsx";
+import { useState } from "react";
 
 export const Navbar = () => {
+
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+	const handleClose = () => {
+	  setIsMenuOpen(false); 
+	};
+
 	const handleOpenNewPage = () => {
 		window.open('', '_blank'); // 替换'/new-page'为您要打开的页面路径
 	  };
 
 	return (
-		<NextUINavbar maxWidth="lg" position="static" className=" text-white p-2 bg-none rounded-sm bg-[#000887]">
+		<NextUINavbar maxWidth="lg" position="static" className=" text-white p-2 bg-none rounded-sm bg-[#2e3242]" isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
 			<img className=" object-cover w-64 mr-12" src="logo.png" alt="png" />
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="center">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
@@ -68,8 +77,9 @@ export const Navbar = () => {
 			<NavbarContent className="sm:hidden basis-1 pl-4 " justify="end">
 				<NavbarMenuToggle />
 			</NavbarContent>
-			<NavbarMenu className="bg-[#000887]">
-				<div className="mx-4 mt-8 flex flex-col gap-2 space-y-4 divide-y divide-y-reverse bg-[#000887] divide-white divide-opacity-20">
+
+			<NavbarMenu className="bg-[#2e3242]">
+				<div className="mx-4 mt-8 flex flex-col gap-2 space-y-4 divide-y divide-y-reverse bg-[#2e3242] divide-white divide-opacity-20">
 					{siteConfig.navMenuItems.map((item, index) => (
 						<NavbarMenuItem key={`${item}-${index}`} >
 							<Link

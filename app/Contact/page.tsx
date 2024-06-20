@@ -413,41 +413,41 @@ export default function Contact() {
 
 
 			<div className=" hidden md:block">
-			<div className=" flex justify-center w-full flex-col">
+				<div className=" flex justify-center w-full flex-col">
 
-				<div className=" bg-[#e9f1fc]">
-					<h1 className=" text-5xl mt-16">应用场景</h1>
-				</div>
+					<div className=" bg-[#e9f1fc]">
+						<h1 className=" text-5xl mt-16">应用场景</h1>
+					</div>
 
-				<div style={{backgroundImage: `url("https://business.xiaoice.com/img/vhuman/advantage_intro_bg.png")`}} className=" justify-center bg-cover bg-no-repeat w-full  text-base text-gray-700 flex items-center px-28 leading-10 overflow-hidden h-120 p-12">
-					<div className=" gap-6 flex ml-24">
-						{/** item_big */}
-						<div className=" transition-all  duration-700 h-full -skew-x-12">
-							<div 
-								onMouseEnter={() => setIsHovered(0)} 
-								onMouseLeave={() => setIsHovered(1)} 
-								className=" skew-x-6 bg-right-5.2 bg-no-repeat  relative h-[800px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
-								style={{backgroundImage: `url("https://business.xiaoice.com/img/vhuman/product_two1.png")`}}
-							>
-								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
-									<div className=" flex gap-4 p-4 justify-center items-center">
-										<h2 className=" text-4xl">Rita</h2>
-										{isHovered == 0 && (
-											<Chip
-												variant="shadow"
-												classNames={{
-													base: "bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
-													content: "drop-shadow shadow-black text-white",
-												}}
-												>
-												跨境电商主播
-											</Chip>
-										)}
+					<div style={{backgroundImage: `url("https://business.xiaoice.com/img/vhuman/advantage_intro_bg.png")`}} className=" justify-center bg-cover bg-no-repeat w-full  text-base text-gray-700 flex items-center px-28 leading-10 overflow-hidden h-120 p-12">
+						<div className=" gap-6 flex ml-24">
+							{/** item_big */}
+							<div className=" transition-all  duration-700 h-full -skew-x-12">
+								<div 
+									onMouseEnter={() => setIsHovered(0)} 
+									onMouseLeave={() => setIsHovered(1)} 
+									className=" skew-x-6 bg-right-5.2 bg-no-repeat  relative h-[800px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
+									style={{backgroundImage: `url("human_product_three1.png")`}}
+								>
+									<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
+										<div className=" flex gap-4 p-4 justify-center items-center">
+											<h2 className=" text-4xl">星怡</h2>
+											{isHovered == 0 && (
+												<Chip
+													variant="shadow"
+													classNames={{
+														base: "bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
+														content: "drop-shadow shadow-black text-white",
+													}}
+													>
+													跨境电商主播
+												</Chip>
+											)}
+										</div>
+										{isHovered == 1 ? (<p className="text-base">跨境电商主播</p>) : (<div className=" p-2"><p className=" text-base transition-all duration-700 translate-x-3">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
 									</div>
-									{isHovered == 1 ? (<p className="text-base">跨境电商主播</p>) : (<div className=" p-2"><p className=" text-base transition-all duration-700 translate-x-3">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
 								</div>
 							</div>
-						</div>
 
 
 
@@ -462,7 +462,7 @@ export default function Contact() {
 							>
 								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
-										<h2 className=" text-4xl">Rita</h2>
+										<h2 className=" text-4xl">招小影</h2>
 										{isHovered == 0 && (
 											<Chip
 												variant="shadow"
@@ -471,11 +471,11 @@ export default function Contact() {
 													content: "drop-shadow shadow-black text-white",
 												}}
 												>
-												线下导购迎宾
+												企业数字员工
 											</Chip>
 										)}
 									</div>
-									{isHovered == 2 ? (<p className="text-base">线下导购迎宾</p>) : (<div className=" p-2"><p className=" text-base">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
+									{isHovered == 2 ? (<p className="text-base">企业数字员工</p>) : (<div className=" p-2"><p className=" text-base">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
 								</div>
 							</div>
 						</div>
@@ -491,7 +491,7 @@ export default function Contact() {
 							>
 								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
-										<h2 className=" text-4xl">Rita</h2>
+										<h2 className=" text-4xl">TORBY</h2>
 										{isHovered == 0 && (
 											<Chip
 												variant="shadow"
@@ -500,11 +500,11 @@ export default function Contact() {
 													content: "drop-shadow shadow-black text-white",
 												}}
 												>
-												文旅宣传大使
+												线下导购迎宾
 											</Chip>
 										)}
 									</div>
-									{isHovered == 4 ? (<p className="text-base">文旅宣传大使</p>) : (<div className=" p-2"><p className=" text-base">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
+									{isHovered == 4 ? (<p className="text-base">线下导购迎宾</p>) : (<div className=" p-2"><p className=" text-base">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
 								</div>
 							</div>
 						</div>
@@ -520,7 +520,7 @@ export default function Contact() {
 							>
 								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
-										<h2 className=" text-4xl">Rita</h2>
+										<h2 className=" text-4xl">听枫</h2>
 										{isHovered == 6 && (
 											<Chip
 												variant="shadow"
@@ -529,11 +529,11 @@ export default function Contact() {
 													content: "drop-shadow shadow-black text-white",
 												}}
 												>
-												名人数字分身
+												文旅宣传大使
 											</Chip>
 										)}
 									</div>
-									{isHovered == 1 ? (<p className="text-base">名人数字分身</p>) : (<div className=" p-2"><p className=" text-base">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
+									{isHovered == 1 ? (<p className="text-base">文旅宣传大使</p>) : (<div className=" p-2"><p className=" text-base">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
 								</div>
 							</div>
 						</div>
@@ -546,11 +546,11 @@ export default function Contact() {
 								onMouseEnter={() => setIsHovered(8)} 
 								onMouseLeave={() => setIsHovered(9)} 
 								className=" skew-x-6 bg-right-5.2 bg-no-repeat  relative h-[800px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
-								style={{backgroundImage: `url("human.png")`}}
+								style={{backgroundImage: `url("human5.png")`}}
 							>
 								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
-										<h2 className=" text-4xl">Rita</h2>
+										<h2 className=" text-4xl">刘建宏</h2>
 										{isHovered == 0 && (
 											<Chip
 												variant="shadow"
@@ -575,14 +575,9 @@ export default function Contact() {
 			</div>
 
 
+
 			{/** 移动端 */}
 			<div className=" md:hidden text-black p-4 bg-cover bg-center" style={{backgroundImage: `url("https://business.xiaoice.com/img/vhuman/advantage_intro_bg.png")`}}>
-				<div className=" m-4 space-y-2">
-					<h2 className=" text-2xl pb-4">产品优势</h2>
-					<h2 className=" text-xl">形象定制</h2>
-					<p className=" text-sm">全新升级第三代神经网络渲染模型，仅需20分钟的有效数据，即可生成栩栩如生的数字人形象。支持多服装，多表情，多动作，让数字人更灵动。</p>
-				</div>
-
 				<div className=" flex overflow-x-auto whitespace-nowrap mt-3">
 					<div className=" relative">
 						<img className=" min-w-96" src="https://business.xiaoice.com/img/vhuman/product_one1.png" alt="" />
@@ -657,7 +652,7 @@ export default function Contact() {
 
 
 					<div className=" relative">
-						<img className="min-w-96" src="https://business.xiaoice.com/img/vhuman/product_four1.png" alt="" />
+						<img className="min-w-96" src="human5.png" alt="" />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">

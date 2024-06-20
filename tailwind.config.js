@@ -15,6 +15,10 @@ module.exports = {
         'huge': '150%', // 进一步放大背景图片
       },
 
+      '&:not(:hover)': {
+        display: 'none',
+      },
+
       skew: {
 
         '-8': '-8deg',

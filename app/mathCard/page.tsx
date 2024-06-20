@@ -27,53 +27,34 @@ export default function Live() {
     		<div className="bg-cover w-full h-110 p-12 flex justify-center md:justify-center text-center" style={{backgroundImage: "url('mathCard-bg.jpg')"}}>
 				<div className=" flex flex-col text-white w-65 md:w-[38%] mt-12 md:ml-44">
 					<h1 className=" font-bold md:text-5xl text-3xl mb-8">数字名片</h1>
-					<p className=" text-lg md:text-2xl">数字名片是当代分享联系信息的创新方式。它们具有更高的互动性、成本效益和环保优势。你可以存储所有的联系信息和在线资料</p>
+					<p className=" text-lg md:text-2xl">数字名片是传统纸质名片的数字化升级，它以更便捷、更智能的方式展现您的个人信息和联系方式。告别纸质名片的浪费和繁琐，数字名片让您只需轻轻一扫，就能将所有信息传递给对方。您可以定制专属的数字名片，设计独特的风格，展现您的个人魅力。许多平台还提供数据分析功能，帮助您了解名片的传播效果和用户行为。无论是商务社交还是个人推广，数字名片都将成为您不可或缺的工具。</p>
 				</div>
 			</div>
-
-
-			{/** 移动端 */}
-			<div className=" bg-slate-50 md:bg-white flex  items-center  p-4   gap-4  overflow-x-scroll  md:overflow-x-hidden whitespace-nowrap md:justify-center">
-				<div className=" mx-auto  flex flex-col justify-center items-left  bg-white p-4 pr-24">
-					<img className=" object-cover md:w-24 w-12" src="svg_1.png" alt="" />
-					<h2 className="font-bold  pb-4 pt-3 text-black">从冷冰冰的中控系统，升级为与用户一起出行、生活的好伙伴</h2>
-				</div>
-				
-				<div className=" mx-auto  flex flex-col justify-center items-left  bg-white p-4 pr-24">
-					<img className=" object-cover md:w-24 w-12" src="svg_2.png" alt="" />
-					<h2 className="font-bold  pb-4 pt-3 text-black">系统级全覆盖的语音控制，车载、家居产品全方位联动</h2>
-				</div>
-
-				<div className=" mx-auto  flex flex-col justify-center items-left  bg-white p-4 pr-24">
-					<img className=" object-cover md:w-24 w-12" src="svg_2.png" alt="" />
-					<h2 className="font-bold  pb-4 pt-3 text-black">自然而富有情感的声音与内容生成，可媲美人类的交互体验</h2>
-				</div>
-			</div>
-
-
+			
+			
 
 			{/** 一键生成高质量音乐作品 页面 */}
-			<div className=" text-left hidden md:block bg-white">
+			<div className=" text-center hidden md:block bg-white">
 				<div className="p-36 flex justify-center gap-24">
-				<div className="flex flex-col justify-center w-72 ">
-					<img className=" object-cover w-24 pb-4" src="svg_1.png" alt="" />
-					<h2 className=" font-bold text-xl ">一键生成高质量音乐作品</h2>
-					<p>输入一段文字描述或一张图片，模型即可自动生成一首独一无二的歌曲旋律，并根据曲风选择相应乐器音色生成伴奏，同时完成歌词创作。</p>
+				<div className="flex flex-col justify-center items-center w-72 shadow-md p-6 rounded-xl">
+					<img className=" object-cover w-24 pb-4" src="icon_1.png" alt="" />
+					<h2 className=" font-bold text-xl ">便捷高效</h2>
+					<p>用户可以通过手机扫描二维码或链接访问数字名片，获取联系方式、社交链接、个人简介等信息，省去了传统名片交换的繁琐步骤。</p>
 				</div>
-				<div className="flex flex-col justify-center w-72">
-					<img className=" object-cover w-24 pb-4" src="svg_1.png" alt="" />
-					<h2 className=" font-bold text-xl">海量生成作品，应用场景广泛</h2>
-					<p>可应用于各类音乐内容的创作，如流行歌曲、背景音乐，以及视频、有声故事、游戏、影视等各类场景中的配乐，大大降低音乐版权的采购成本。</p>
+				<div className="flex flex-col justify-center items-center w-72 shadow-md p-6 rounded-xl">
+					<img className=" object-cover w-24 pb-4" src="icon_2.png" alt="" />
+					<h2 className=" font-bold text-xl">个性化定制</h2>
+					<p>奥森小冰支持用户根据自身需求和品牌形象定制数字名片，设计独特的风格和版面，展现个性魅力。</p>
 				</div>
-				<div className="flex flex-col justify-center w-72">
-					<img className=" object-cover w-24 pb-4" src="svg_1.png" alt="" />
-					<h2 className=" font-bold text-xl">功能组合，灵活搭配</h2>
-					<p>包含听音记谱、人工智能作曲、人工智能编曲、人工智能作词、视频BGM创作等多种功能，支持灵活搭配。</p>
+				<div className="flex flex-col justify-center items-center w-72 shadow-md p-6 rounded-xl">
+					<img className=" object-cover w-24 pb-4" src="icon_3.png" alt="" />
+					<h2 className=" font-bold text-xl">环保节能</h2>
+					<p>减少纸质名片的浪费，符合环保理念。</p>
 				</div>
-				<div className="flex flex-col justify-center w-72">
-					<img className=" object-cover w-24 pb-4" src="svg_1.png" alt="" />
-					<h2 className=" font-bold text-xl">支持多并发需求，提供多种合作模式</h2>
-					<p>支持多并发需求，提供短期使用权、长期使用权、排他性使用权和所有权等多种合作模式，为每个音乐爱好者提供创作助理。</p>
+				<div className="flex flex-col justify-center items-center w-72 shadow-md p-6 rounded-xl">
+					<img className=" object-cover w-24 pb-4" src="icon_4.png" alt="" />
+					<h2 className=" font-bold text-xl">基于需求定制化的数字名片</h2>
+					<p>用户可以创建自己的数字名片网站，将个人信息、作品展示、联系方式等整合在一起，方便用户访问和了解。</p>
 				</div>
 				</div>
 			</div>
@@ -85,45 +66,45 @@ export default function Live() {
 					<AccordionItem key="1"
 						isCompact 
 						aria-label="Accordion 1" 
-						title="一键生成高质量音乐作品"
+						title="便捷高效"
 						startContent={
-							<img className=" object-cover w-8" src="svg_1.png" alt="" />
+							<img className=" object-cover w-8" src="icon_1.png" alt="" />
 						}
 					>
-						<p className="text-black text-sm">输入一段文字描述或一张图片，模型即可自动生成一首独一无二的歌曲旋律，并根据曲风选择相应乐器音色生成伴奏，同时完成歌词创作。</p>
+						<p className="text-black text-sm">用户可以通过手机扫描二维码或链接访问数字名片，获取联系方式、社交链接、个人简介等信息，省去了传统名片交换的繁琐步骤。</p>
 					</AccordionItem>
 					<AccordionItem 
 						key="2" 
 						isCompact 
 						aria-label="Accordion 2" 
-						title="海量生成作品，应用场景广泛"
+						title="个性化定制"
 						startContent={
-							<img className=" object-cover w-8" src="svg_2.png" alt="" />
+							<img className=" object-cover w-8" src="icon_2.png" alt="" />
 						}
 					>
-						<p className="text-black text-sm">可应用于各类音乐内容的创作，如流行歌曲、背景音乐，以及视频、有声故事、游戏、影视等各类场景中的配乐，大大降低音乐版权的采购成本。</p>
+						<p className="text-black text-sm">奥森小冰支持用户根据自身需求和品牌形象定制数字名片，设计独特的风格和版面，展现个性魅力。</p>
 					</AccordionItem>
 					<AccordionItem 
 						key="3" 
 						isCompact 
 						aria-label="Accordion 3" 
-						title="功能组合，灵活搭配"
+						title="环保节能"
 						startContent={
-							<img className=" object-cover w-8" src="svg_2.png" alt="" />
+							<img className=" object-cover w-8" src="icon_3.png" alt="" />
 						}
 					>
-						<p className="text-black text-sm">包含听音记谱、人工智能作曲、人工智能编曲、人工智能作词、视频BGM创作等多种功能，支持灵活搭配。</p>
+						<p className="text-black text-sm">减少纸质名片的浪费，符合环保理念。</p>
 					</AccordionItem>
 					<AccordionItem
 						key="4" 
 						isCompact 
 						aria-label="Accordion 4" 
-						title="支持多并发需求，提供多种合作模式"
+						title="基于需求定制化的数字名片"
 						startContent={
-							<img className=" object-cover w-8" src="svg_1.png" alt="" />
+							<img className=" object-cover w-8" src="icon_4.png" alt="" />
 						}
 					>
-					<p className="text-black text-sm">支持多并发需求，提供短期使用权、长期使用权、排他性使用权和所有权等多种合作模式，为每个音乐爱好者提供创作助理。</p>
+					<p className="text-black text-sm">用户可以创建自己的数字名片网站，将个人信息、作品展示、联系方式等整合在一起，方便用户访问和了解。</p>
 				</AccordionItem>
 			</Accordion>
 		</div>

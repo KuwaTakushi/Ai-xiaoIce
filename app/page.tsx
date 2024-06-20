@@ -5,7 +5,7 @@
 "use client"
 import React, { useRef, useState } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { useDisclosure, Image, Radio, RadioGroup, Tab, Chip, Tabs, CardFooter, Card as NextUiCard, ModalContent, ModalBody } from "@nextui-org/react";
+import { useDisclosure, Image, Radio, RadioGroup, Tab, Chip, Tabs, CardFooter, Card as NextUiCard, ModalContent, ModalBody, Link } from "@nextui-org/react";
 import { FloatingPhone } from "@/components/FloatingPhone";
 import { Carousel, Dialog, DialogBody, DialogFooter, DialogHeader, Typography } from "@material-tailwind/react";
 import Modal from 'react-bootstrap/Modal';
@@ -154,7 +154,7 @@ export default function Home() {
             <div className=" flex justify-between items-center gap-24 p-4 flex-wrap md:flex-nowrap">
               <div className=" flex flex-col justify-start items-start min-h-48 text-[#00305a]">
                 <p className=" text-3xl font-bold pb-4">数字名片</p>
-                <p className=" max-w-lg text-lg">2019年，奥森小冰率先提出了数字人（AI Being）理念，并基于全球领先的完备人工智能奥森小冰框架，推出了数字专家和数字员工等完整产品线。奥森小冰的数字人具有不同的性格特征、态度观点、生物学特征、创造力、知识和技能，兼具情感交互能力、专业能力和内容生产能力，已被大众熟知，并应用在多个行业场景。随着数字人多样性（Diversity of AI Being）趋势的来临，每个人的日常工作和生活，将由更加丰富多彩的AI Beings所陪伴和环绕。</p>
+                <p className=" max-w-lg text-lg">数字名片是传统纸质名片的数字化升级，它以更便捷、更智能的方式展现您的个人信息和联系方式。告别纸质名片的浪费和繁琐，数字名片让您只需轻轻一扫，就能将所有信息传递给对方。您可以定制专属的数字名片，设计独特的风格，展现您的个人魅力。许多平台还提供数据分析功能，帮助您了解名片的传播效果和用户行为。无论是商务社交还是个人推广，数字名片都将成为您不可或缺的工具。</p>
               </div>
               <div className=" overflow-hidden max-w-lg">
                 <img className="w-96 bg-cover rounded-xl" src="context-bg.jpg" alt="" />
@@ -429,7 +429,7 @@ const OverlayCopy = () => {
         {subHeaders[selectedVideo]}
       </p>
       <p className="mb-6 text-center text-xl md:mb-6 md:text-3xl md:mt-3 mt-3">
-        招商热线：400-188-5609
+        招商热线：13025507200
       </p>
 
       {/* 点 */}
@@ -460,9 +460,11 @@ const OverlayCopy = () => {
             现在点击以下链接，即可享受智能化的业务升级之旅。特惠底价，额度有限，马上就来创建您的专属AI数字员工吧~~
           </p>
 
-          <div className=" cursor-pointer mt-3 self-center md:self-start">
-            <img className=" w-36 md:w-60 md: ml-5" src="https://business.xiaoice.com/img/home/vhuman_btn.png?v=dR4GIst-GIV7cN2zEW8Gvy4ASZeG_K7G8ZU9Gbh-O9E" alt="" />
-          </div>
+          <Link href="http://t1.ink/f/h9ulpg">
+            <div className=" cursor-pointer mt-3 self-center md:self-start">
+              <img className=" w-36 md:w-60 md: ml-5" src="https://business.xiaoice.com/img/home/vhuman_btn.png?v=dR4GIst-GIV7cN2zEW8Gvy4ASZeG_K7G8ZU9Gbh-O9E" alt="" />
+            </div>
+          </Link>
 
         </div>
       </div>
@@ -472,27 +474,27 @@ const OverlayCopy = () => {
 
 const cards = [
   {
-    url: "https://business.xiaoice.com/img/home/video_poster1.png?v=7mlv8aSbkIzOgtcRbuavcTQp4NPwbQWzK98qqNxplio",
+    url: "customer_1.png",
     videoUrl: "video.mp4",
     id: 1,
   },
   {
-    url: "https://business.xiaoice.com/img/home/video_poster2.png?v=lK4_RwbyIq_-lAjjU-PfBxiCGeNPVe6Eb7G4naNYN_Q",
+    url: "customer_2.png",
     videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E5%AF%84%E8%AF%AD_%E5%9B%BD%E5%AE%B6%E7%BA%BA%E7%BB%87%E4%BA%A7%E5%93%81%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83.mp4",
     id: 2,
   },
   {
-    url: "https://business.xiaoice.com/img/home/video_poster3.png?v=3ktPj18I0w9ZVAi0gzN8VIZRXl1dqSGmZfETk56veOI",
+    url: "customer_3.png",
     videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E5%AF%84%E8%AF%AD_%E9%B2%81%E4%B8%B0%E7%BB%87%E6%9F%93.mp4",
     id: 3,
   },
   {
-    url: "https://business.xiaoice.com/img/home/video_poster4.png?v=shKDsbzakmxRf8EBUYfRI7PpVWC6G2WU71m0a3_zvkc",
+    url: "customer_4.png",
     videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E5%AF%84%E8%AF%AD_%E5%8D%8E%E4%BA%BA%E8%BF%90%E9%80%9A.mp4",
     id: 4,
   },
   {
-    url: "https://business.xiaoice.com/img/home/video_poster5.png?v=kn1QWDiaNe8ltKkv83ZW1fZr9wV8HngxOkb3NJ1sSEo",
+    url: "customer_5.png",
     videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E5%AF%84%E8%AF%AD_%E4%B8%8A%E9%9F%B3%E9%9F%B3%E5%B7%A5%E7%B3%BB.mp4",
     id: 5,
   },

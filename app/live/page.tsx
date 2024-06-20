@@ -43,15 +43,15 @@ export default function Live() {
 			<div className=" bg-slate-50 md:bg-white flex md:mt-24 md:justify-center items-center md:divide-x text-black md:divide-black p-4 md:p-16  gap-4 md:gap-0 md:overflow-x-hidden overflow-x-scroll whitespace-nowrap">
 				<div className="  w-96 md:w-[30%] flex flex-col justify-center items-left md:items-center md:mr-0 md:ml-0 bg-white p-4 pr-24 ">
 					<img className=" object-cover md:w-24 w-12" src="svg_1.png" alt="" />
-					<h2 className="font-bold md:text-2xl pb-4 pt-3">人工智能设计</h2>
-					<p className=" text-sm md:text-xl">短期内以低成本获得与世界</p>
-					<p className=" text-sm md:text-xl">著名品牌相匹敌的设计能力</p>
+					<h2 className="font-bold md:text-2xl pb-4 pt-3">实时响应互动</h2>
+					<p className=" text-sm md:text-xl">实时驱动数字人响应</p>
+					<p className=" text-sm md:text-xl">像真人一样完成直播互动对话</p>
 				</div>
 				
 				<div className=" w-96 md:w-[30%] flex flex-col justify-center items-left md:items-center  bg-white p-4 py-7 pr-24">
 					<img className=" object-cover md:w-24 w-12" src="svg_2.png" alt="" />
-					<h2 className="font-bold text-xl md:text-2xl pb-4">人工智能音乐</h2>
-					<p className=" text-sm md:text-xl">创作海量优质原创音乐内容</p>
+					<h2 className="font-bold text-xl md:text-2xl pb-4">形象丰富</h2>
+					<p className=" text-sm md:text-xl">支持不同的数字人直播场景和形象</p>
 				</div>
 			</div>
 
@@ -161,90 +161,6 @@ export default function Live() {
 			{/** 一键生成高质量音乐作品 页面 */}
 			<div className=" p-36 hidden md:block text-black">
 				<div className="flex justify-center gap-24 text-left">
-					<div
-						className="relative group cursor-pointer overflow-hidden duration-500 w-64 h-80 bg-white shadow-xl rounded-xl text-black p-5"
-					>
-						<div className="">
-								<div className="group-hover:scale-110 w-full rounded-xl">
-									<img className=" object-cover h-64" src="livebg_1.jpg" alt="" />
-								</div>
-								<div
-								className="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
-								>
-								<div
-									className="absolute -z-10 left-0 w-64 h-28 opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-[#edf3ff]"
-								></div>
-								<span className="text-xl font-bold">Hover me!</span>
-								<p className="group-hover:opacity-100 w-56 duration-500 opacity-0">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div
-						className="relative group cursor-pointer overflow-hidden duration-500 w-64 h-80 bg-white shadow-xl rounded-xl text-black p-5"
-					>
-						<div className="">
-								<div className="group-hover:scale-110 w-full rounded-xl">
-									<img className=" object-cover h-64" src="livebg_2.jpg" alt="" />
-								</div>
-								<div
-								className="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
-								>
-								<div
-									className="absolute -z-10 left-0 w-64 h-28 opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-[#edf3ff]"
-								></div>
-								<span className="text-xl font-bold">Hover me!</span>
-								<p className="group-hover:opacity-100 w-56 duration-500 opacity-0">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-							</div>
-						</div>
-					</div>
-
-
-					<div
-						className="relative group cursor-pointer overflow-hidden duration-500 w-64 h-80 bg-white shadow-xl rounded-xl text-black p-5"
-					>
-						<div className="">
-								<div className="group-hover:scale-110 w-full rounded-xl">
-									<img className=" object-cover h-64" src="livebg_3.jpg" alt="" />
-								</div>
-								<div
-								className="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
-								>
-								<div
-									className="absolute -z-10 left-0 w-64 h-28 opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-[#edf3ff]"
-								></div>
-								<span className="text-xl font-bold">Hover me!</span>
-								<p className="group-hover:opacity-100 w-56 duration-500 opacity-0">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div
-						className="relative group cursor-pointer overflow-hidden duration-500 w-64 h-80 bg-white shadow-xl rounded-xl text-black p-5"
-					>
-						<div className="">
-								<div className="group-hover:scale-110 w-full rounded-xl">
-									<img className=" object-cover h-64" src="livebg_4.jpg" alt="" />
-								</div>
-								<div
-								className="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
-								>
-								<div
-									className="absolute -z-10 left-0 w-64 h-28 opacity-0 duration-500 group-hover:opacity-50 group-hover:bg-[#edf3ff]"
-								></div>
-								<span className="text-xl font-bold">Hover me!</span>
-								<p className="group-hover:opacity-100 w-56 duration-500 opacity-0">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								</p>
-							</div>
-						</div>
-					</div>
 
 				</div>
 			</div>

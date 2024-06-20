@@ -1,8 +1,80 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
 import { Chip, Tab, Tabs } from "@nextui-org/react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Carousel } from "@material-tailwind/react";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Scrollbar, Mousewheel, Controller } from 'swiper/modules';
+
+
+const ProductSwiper = () => {
+
+	const datas = [
+		{
+			img: "human_product_one1.png",
+			date: "全新升级第三代神经网络渲染模型，仅需20分钟的有效数据，即可生成栩栩如生的数字人形象。支持多服装，多表情，多动作，让数字人更灵动。",
+			header: "跨境电商主播",
+			description: "在TikTok上用英语介绍活性炭控油去屑洗发水",
+		},
+		{
+			img: "human_product_two1.png",
+			date: "可通过手动输入文本生成视频，也可由AI全自动生成。云端实时渲染，快速输出视频画面。支持自定义场景，4K分辨率，多镜头角度，在线剪辑等。",
+			header: "展馆导览",
+			description: "在城市博物馆，为游客介绍这座城市发展历史及建设成就",
+		},
+		{
+			img: "human_product_three1.png",
+			date: "基于奥森小冰框架的人工智能创造能力（AIGC），数字人可实现对业务数据的快速学习，获得相应技能，稳定输出高质量文本，图片，音频，视频等内容。",
+			header: "知识种草",
+			description: "在抖音对出版社的图书进行带货",
+		},
+		{
+			img: "human_product_four1.png",
+			date: "拥有情感对话能力和多模态交互能力。可人声定制，支持多语种，多方言，7X24小时与用户进行实时交互。",
+			header: "地产经理",
+			description: "在地产销售大厅介绍楼盘的项目概况",
+		},
+	]
+
+	return (
+		<div className="flex">
+        <Swiper
+          modules={[Scrollbar]}
+          pagination={{ clickable: true }}
+        >
+          {datas.map((data, index) => {
+            return (
+              <SwiperSlide key={index}>
+				<div className=" flex overflow-x-auto whitespace-nowrap mt-3">
+					<div className=" relative flex">
+						<img className=" min-w-96" src={data.img} alt="" />
+						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
+							<div className=" flex flex-col">
+								<div className="flex gap-8">
+									<h2 className=" text-2xl">Rita</h2>
+									<Chip
+										variant="shadow"
+										classNames={{
+											base: "bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
+											content: "drop-shadow shadow-black text-white",
+										}}
+										>
+										跨境电商主播
+									</Chip>
+								</div>
+								<div><p className=" text-xs">{data.description}</p></div>
+							</div>
+						</div>
+					</div>
+					</div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </div>
+	);
+}
 
 const BgIcon = () => {
 	return (
@@ -16,6 +88,9 @@ const BgIconB = () => {
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 2600 2600"><g transform="matrix(1,0,0,1,0,0)"><circle r="53.5" cx="684" cy="684" strokeWidth="4" stroke="#006fee" fill="none" opacity="0.1" transform="rotate(100, 400, 400)"></circle><circle r="61.541666666666664" cx="660.3333333333334" cy="660.3333333333334" stroke-width="5" stroke="#1f73ef" fill="none" opacity="0.175" transform="rotate(91.66666666666667, 400, 400)"></circle><circle r="69.58333333333333" cx="636.6666666666666" cy="636.6666666666666" stroke-width="6" stroke="#2c77f1" fill="none" opacity="0.25" transform="rotate(83.33333333333333, 400, 400)"></circle><circle r="77.625" cx="613" cy="613" stroke-width="7" stroke="#367af2" fill="none" opacity="0.32499999999999996" transform="rotate(75, 400, 400)"></circle><circle r="85.66666666666666" cx="589.3333333333334" cy="589.3333333333334" stroke-width="8" stroke="#3e7ef4" fill="none" opacity="0.4" transform="rotate(66.66666666666666, 400, 400)"></circle><circle r="93.70833333333333" cx="565.6666666666666" cy="565.6666666666666" stroke-width="9" stroke="#4581f5" fill="none" opacity="0.475" transform="rotate(58.33333333333333, 400, 400)"></circle><circle r="101.75" cx="542" cy="542" stroke-width="10" stroke="#4c85f7" fill="none" opacity="0.5499999999999999" transform="rotate(50, 400, 400)"></circle><circle r="109.79166666666666" cx="518.3333333333333" cy="518.3333333333333" stroke-width="11" stroke="#5288f8" fill="none" opacity="0.625" transform="rotate(41.666666666666664, 400, 400)"></circle><circle r="117.83333333333333" cx="494.66666666666663" cy="494.66666666666663" stroke-width="12" stroke="#578bf9" fill="none" opacity="0.7" transform="rotate(33.33333333333333, 400, 400)"></circle><circle r="125.875" cx="471" cy="471" stroke-width="13" stroke="#5d8efb" fill="none" opacity="0.7749999999999999" transform="rotate(25, 400, 400)"></circle><circle r="133.91666666666666" cx="447.3333333333333" cy="447.3333333333333" stroke-width="14" stroke="#6291fc" fill="none" opacity="0.85" transform="rotate(16.666666666666657, 400, 400)"></circle><circle r="141.95833333333331" cx="423.66666666666663" cy="423.66666666666663" stroke-width="15" stroke="#6694fe" fill="none" opacity="0.9249999999999999" transform="rotate(8.333333333333329, 400, 400)"></circle><circle r="150" cx="400" cy="400" stroke-width="16" stroke="#6b97ff" fill="none" opacity="0.9999999999999999" transform="rotate(0, 400, 400)"></circle></g></svg>
 	);
 }
+
+  
+
 
 export default function AIBeing() {
 	const [isHovered, setIsHovered] = useState(0);
@@ -48,6 +123,18 @@ export default function AIBeing() {
 		6: "拥有情感对话能力和多模态交互能力。可人声定制，支持多语种，多方言，7X24小时与用户进行实时交互。",
 	}
 
+	const [currentContext, setCurrentContext] = useState(contexts[0]);
+	const [scrollPosition, setScrollPosition] = useState(0);
+
+	const breakpoints = [0, 384, 760, 1100];
+	useEffect(() => {
+		const index = breakpoints.findIndex(breakpoint => scrollPosition <= breakpoint);		
+		const contextIndex = index === -1 ? 0 : index;
+		setCurrentContext(contexts[contextIndex * 2] || contexts[0]);
+		console.log("当前文本", contexts[contextIndex]);
+	  }, [scrollPosition]);
+	
+
 	const handleMouseEnter = (value: number) => {
 		setIsHovered(value);
 	  };
@@ -55,6 +142,29 @@ export default function AIBeing() {
 	  const handleMouseLeave = (value: number) => {
 		setIsHovered(value);
 	  };
+	
+	  // 384  760  1100
+	  
+	  const scrollRef = useRef<HTMLDivElement>(null);
+	
+	  useEffect(() => {
+		const handleScroll = () => {
+		  	if (scrollRef.current) {
+				setScrollPosition(scrollRef.current.scrollLeft || 0); 
+				console.log('滚动位置：', scrollRef.current?.scrollLeft || 0); // 实时输出滚动位置
+			}
+		};
+	
+		if (scrollRef.current) {
+		  scrollRef.current.addEventListener('scroll', handleScroll);
+		}
+	
+		return () => {
+		  if (scrollRef.current) {
+			scrollRef.current.removeEventListener('scroll', handleScroll);
+		  }
+		};
+	  }, []);
 
 	return (
 		<div>
@@ -103,14 +213,14 @@ export default function AIBeing() {
 										<span className=" w-24 bg-[#000887] h-4 bg-opacity-50"> </span>
 										<p className=" text-black font-bold">支持直播推流，轻松满足电商带货、赛事解说、新闻资讯、娱乐播报等场景。</p>
 									</div>
-									<img className="bg-cover max-w-xl" src="https://business.xiaoice.com/img/vhuman/direct1.png" alt="" />
+									<img className="bg-cover max-w-xl" src="direct1.png" alt="" />
 								</div>
 							</Tab>
 							<Tab
 							key="b"
 							title={
 								<div className="flex items-center space-x-2 justify-center md:w-24 w-16">
-									<span>陪伴</span>
+									<span>企业</span>
 								</div>
 							}
 							>
@@ -120,14 +230,14 @@ export default function AIBeing() {
 										<span className=" w-24 bg-[#2db2e2] h-4 bg-opacity-50"> </span>
 										<p className=" text-black font-bold max-w-xl">定制完美形象，融合企业基因，打造品牌代言人、形象代言人、数字员工、数字专家等，可用于企业内外宣物料制作、营销Campaign创新、RPA数字人化等。</p>
 									</div>
-									<img className="bg-cover max-w-xl" src="https://business.xiaoice.com/img/vhuman/direct2.png" alt="" />
+									<img className="bg-cover max-w-xl" src="direct2.png" alt="" />
 								</div>
 							</Tab>
 							<Tab
 							key="a"
 							title={
 								<div className="flex items-center space-x-2 justify-center md:w-24 w-16">
-									<span>直播</span>
+									<span>陪伴</span>
 								</div>
 							}
 							>
@@ -135,9 +245,9 @@ export default function AIBeing() {
 								<div className="flex flex-col pr-4">
 										<p className=" font-bold text-3xl text-[#000887]">03</p>
 										<span className=" w-24 bg-[#3af8bf] h-4 bg-opacity-50"> </span>
-										<p className=" text-black font-bold">支持直播推流，轻松满足电商带货、赛事解说、新闻资讯、娱乐播报等场景。</p>
+										<p className=" text-black font-bold">拥有EQ和不同人设的数字人可以胜任生活助理、智能座舱助理、陪护师等需要情感交互的工作。</p>
 									</div>
-									<img className="bg-cover max-w-xl" src="https://business.xiaoice.com/img/vhuman/direct3.png" alt="" />
+									<img className="bg-cover max-w-xl" src="direct3.png" alt="" />
 								</div>
 							</Tab>
 
@@ -145,7 +255,7 @@ export default function AIBeing() {
 							key="f"
 							title={
 								<div className="flex items-center space-x-2 justify-center md:w-24 w-16">
-									<span>创业</span>
+									<span>创作</span>
 								</div>
 							}
 							>
@@ -153,9 +263,9 @@ export default function AIBeing() {
 								<div className="flex flex-col pr-4">
 										<p className=" font-bold text-3xl text-[#000887]">04</p>
 										<span className=" w-24 bg-[#3af8bf] h-4 bg-opacity-50"> </span>
-										<p className=" text-black font-bold">支持直播推流，轻松满足电商带货、赛事解说、新闻资讯、娱乐播报等场景。</p>
+										<p className=" text-black font-bold">拥有创造力的数字人可以辅助人类进行绘画、音乐、设计、诗歌等创作，如音乐制作人、服装设计师、插画师等。</p>
 									</div>
-									<img className="bg-cover max-w-xl" src="https://business.xiaoice.com/img/vhuman/direct3.png" alt="" />
+									<img className="bg-cover max-w-xl" src="direct4.png" alt="" />
 								</div>
 							</Tab>
 						</Tabs>
@@ -174,7 +284,7 @@ export default function AIBeing() {
 					<div className="">
 						<div className=" h-48">
 							<div className={` z-10 transition-all transform duration-1000 ${(isHovered % 2 !== 0) ? 'transition-all' : ' translate-y-14 opacity-100'}`}>
-								<h2 className="z-10 text-2xl text-white font-bold">{titles[(isHovered)]}</h2>
+								<h2 className="z-10 text-2xl text-white font-bold">{titles[isHovered]}</h2>
 								<p className="z-10 text-xl text-white">{contexts[isHovered]}</p>
 							</div>
 						</div>
@@ -190,7 +300,7 @@ export default function AIBeing() {
 								onMouseEnter={() => setIsHovered(0)} 
 								onMouseLeave={() => setIsHovered(1)} 
 								className=" skew-x-20 bg-right-5.2 bg-no-repeat  relative h-[780px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
-								style={{backgroundImage: `url("https://business.xiaoice.com/img/vhuman/product_one1.png")`}}
+								style={{backgroundImage: `url("human_product_one1.png")`}}
 							>
 								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
@@ -212,18 +322,20 @@ export default function AIBeing() {
 							</div>
 						</div>
 
+
+
 						{/** item_big */}
 						<div className=" transition-all  duration-700 h-full -skew-x-12">
 							<div 
 								onMouseEnter={() => setIsHovered(2)} 
 								onMouseLeave={() => setIsHovered(3)} 
 								className=" skew-x-20 bg-right-5.2 bg-no-repeat  relative h-[780px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
-								style={{backgroundImage: `url("https://business.xiaoice.com/img/vhuman/product_two1.png")`}}
+								style={{backgroundImage: `url("product_two1.png")`}}
 							>
 								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
-										<h2 className=" text-4xl">晓玲</h2>
-										{isHovered == 2 && (
+										<h2 className=" text-4xl">星怡</h2>
+										{isHovered == 4 && (
 											<Chip
 												variant="shadow"
 												classNames={{
@@ -235,7 +347,7 @@ export default function AIBeing() {
 											</Chip>
 										)}
 									</div>
-									{isHovered == 3 ? (<p className="text-base">展馆导览</p>) : (<div className=" p-2"><p className=" text-base">在城市博物馆，为游客介绍这座城市发展历史及建设成就</p></div>)}
+									{isHovered == 5 ? (<p className="text-base">展馆导览</p>) : (<div className=" p-2"><p className=" text-base">在城市博物馆，为游客介绍这座城市发展历史及建设成就</p></div>)}
 								</div>
 							</div>
 						</div>
@@ -246,7 +358,7 @@ export default function AIBeing() {
 								onMouseEnter={() => setIsHovered(4)} 
 								onMouseLeave={() => setIsHovered(5)} 
 								className=" skew-x-20 bg-right-5.2 bg-no-repeat  relative h-[780px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
-								style={{backgroundImage: `url("https://business.xiaoice.com/img/vhuman/product_three1.png")`}}
+								style={{backgroundImage: `url("product_three1.png")`}}
 							>
 								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
@@ -268,13 +380,14 @@ export default function AIBeing() {
 							</div>
 						</div>
 
+
 						{/** item_big */}
 						<div className=" transition-all  duration-700 h-full -skew-x-12">
 							<div 
 								onMouseEnter={() => setIsHovered(6)} 
 								onMouseLeave={() => setIsHovered(7)} 
 								className=" skew-x-20 bg-right-5.2 bg-no-repeat  relative h-[780px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
-								style={{backgroundImage: `url("https://business.xiaoice.com/img/vhuman/product_four1.png")`}}
+								style={{backgroundImage: `url("product_four1.png")`}}
 							>
 								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
@@ -298,26 +411,26 @@ export default function AIBeing() {
 
 
 					</div>
-
-
 				</div>
 			</div>
 			</div>
 
 
-
-				
 			{/** 移动端 */}
 			<div className=" md:hidden text-black p-4 bg-cover bg-center" style={{backgroundImage: `url("https://business.xiaoice.com/img/vhuman/advantage_intro_bg.png")`}}>
 				<div className=" m-4 space-y-2">
 					<h2 className=" text-2xl pb-4">产品优势</h2>
-					<h2 className=" text-xl">形象定制</h2>
-					<p className=" text-sm">全新升级第三代神经网络渲染模型，仅需20分钟的有效数据，即可生成栩栩如生的数字人形象。支持多服装，多表情，多动作，让数字人更灵动。</p>
+					<div className=" relative h-36">
+						<h2 className=" text-xl">形象定制</h2>
+						<p className=" absolute top-12 left-0 text-sm transition-all transform duration-1000 translate-y-3">{currentContext}</p>
+					</div>
 				</div>
 
-				<div className=" flex overflow-x-auto whitespace-nowrap mt-3">
+				<div className=" flex overflow-x-auto whitespace-nowrap mt-3" ref={scrollRef}>
+
+
 					<div className=" relative">
-						<img className=" min-w-96" src="https://business.xiaoice.com/img/vhuman/product_one1.png" alt="" />
+						<img className=" min-w-96" src="human_product_one1.png" alt="" />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">
@@ -342,7 +455,7 @@ export default function AIBeing() {
 
 
 					<div className=" relative">
-						<img className="min-w-96" src="https://business.xiaoice.com/img/vhuman/product_two1.png" alt="" />
+						<img className="min-w-96" src="human_product_two1.png" alt="" />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">
@@ -365,7 +478,7 @@ export default function AIBeing() {
 
 					
 					<div className="relative">
-						<img className="min-w-96" src="https://business.xiaoice.com/img/vhuman/product_three1.png" alt="" />
+						<img className="min-w-96" src="human_product_three1.png" alt="" />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">
@@ -389,7 +502,7 @@ export default function AIBeing() {
 
 
 					<div className=" relative">
-						<img className="min-w-96" src="https://business.xiaoice.com/img/vhuman/product_four1.png" alt="" />
+						<img className="min-w-96" src="human_product_four1.png" alt="" />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">
@@ -501,7 +614,7 @@ export default function AIBeing() {
 
 				<div className=" flex bg-[#edf3ff] w-full justify-center gap-2 md:gap-24 items-start p-4 md:p-20 flex-wrap-reverse">
 					<div className="md:w-[580px] md:h-[350px] pb-12 md:p-0">
-						<img width={580} src="https://business.xiaoice.com/img/vhuman/ani_image111.png?v=Q90qX5Q42LQhmegIhnMlqNEX87074phtiCQrRJLYp_A" alt="" />
+						<img width={580} src="ani_image111.png" alt="" />
 					</div>
 
 					<div className=" flex flex-col text-left max-w-[550px] md:mt-4 flex-wrap gap-4 md:gap-24">
@@ -518,14 +631,14 @@ export default function AIBeing() {
 					</div>
 
 					<div>
-						<img className="object-cover md:max-w-xl" src="https://business.xiaoice.com/img/vhuman/ani_image1.png?v=1ImfCyyeRH7BMmKoqg0tYq-RjNIxUQJimkmKcNTzg7Y" alt="" />
+						<img className="object-cover md:max-w-xl" src="ani_image5.png" alt="" />
 					</div>
 				</div>
 
 
 				<div className=" flex bg-white w-full justify-center gap-12 md:gap-12 items-start p-4 md:p-20 flex-wrap-reverse md:flex-nowrap ">
 					<div className="-mt-8 md:-mt-0">
-						<img className="object-cover  md:max-w-xl" src="https://business.xiaoice.com/img/vhuman/video_poster1.png?v=0IJp3HYJN5s9zog-SMmp3ZSOQ0l5ZIFAPs2cxUY2BDg" alt="" />
+						<img className="object-cover  md:max-w-xl" src="video_poster4.png" alt="" />
 					</div>
 
 					<div className=" flex flex-col text-left md:mt-0 mt-8 flex-wrap max-w-xl md:ml-8">
@@ -541,7 +654,7 @@ export default function AIBeing() {
 					</div>
 
 					<div className="md:w-[580px] md:h-[400px]">
-						<img className=" max-w-1/3 md:min-w-[300px]" src="https://business.xiaoice.com/img/vhuman/video_poster2.png?v=ldCL21HLdgmheNURw6Rtt1CeFK9YJK-3s2_5xsPlegQ" alt="" />
+						<img className=" max-w-1/3 md:min-w-[300px]" src="video_poster7.png" alt="" />
 					</div>
 				</div>
 
@@ -553,17 +666,17 @@ export default function AIBeing() {
 						onMouseLeave={() => setActiveIndex(null)}
 						className=" flex md:gap-16 justify-center flex-col-reverse md:flex-row"
 					>
-						<div className=" relative">
-							<img className="max-w-xl object-cover h-110 p-2 -mt-16 md:-mt-0" src="video_poster5.png" alt="" />
+						<div className=" relative mr-12">
+							<img className="md:max-w-xl max-w-xs object-cover mr-24 md:h-110 p-2 -mt-16 md:-mt-0" src="video_poster5.png" alt="" />
 							{hoveredIndex === 0 && (
-								<div className="max-w-xl absolute top-0 left-0 inset-0 z-10 bg-black opacity-30 bg-opacity-5 flex justify-center items-center cursor-pointer rounded-xl h-110">
+								<div className="max-w-xl absolute top-0 left-0 inset-0 z-10 bg-black opacity-30 bg-opacity-5 flex justify-center items-center cursor-pointer rounded-xl">
 								<img width={70} className=" object-cover" src="play.png" alt="" />
 								</div>
 							)}
 						</div>
 
-						<div className=" max-w-lg mb-20 flex items-center justify-around">
-							<div className=" flex flex-col text-left max-w-lg md:mt-4 flex-wrap md:p-0">
+						<div className=" max-w-lg mb-20 flex justify-around">
+							<div className=" flex flex-col text-left md:max-w-lg max-w-sm md:mt-4 flex-wrap md:p-0  pr-24 justify-center">
 								<h2 className=" text-[#00305a] pb-4 pt-8 md:pt-0 text-2xl md:text-4xl font-bold">红杉资本 – Hóng，分析师，数字员工</h2>
 								<p className="text-[#00305a] text-sm md:text-xl">2022年7月11日，红杉中国首位数字员工Hóng正式亮相，她是奥森小冰团队为红杉资本量身定制的数字人，基于深度神经网络渲染技术小样本学习，经过一周的训练期即诞生。结合奥森小冰框架的全域能力，Hóng将不断成长，并在红杉资本各个业务流程中承担重要职责。</p>
 							</div>

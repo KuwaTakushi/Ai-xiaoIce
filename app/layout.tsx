@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 	},
 	description: siteConfig.description,
 	icons: {
-		icon: "/favicon.ico",
+		icon: "/icon.png",
 	},
 };
 
@@ -115,7 +115,7 @@ const FixedButton = () => {
 						placement="left-start"
 						content={
 							<div className=" flex flex-col p-6 justify-center items-center rounded-xl ">
-							<img width={100} src="http://business.xiaoice.com/img/layout/qrcode.png?v=OSuFknDfrpycsL6rd1tJ3atFvkFiNPI_ChXUbcr-9jw" alt="" />
+							<img width={100} src="contact.jpg" alt="" />
 							<p className=" mt-4 text-lg">
 								微信扫码, 添加客服
 							</p>
@@ -142,7 +142,7 @@ const FixedButton = () => {
 						placement="left-start"
 						content={
 							<div className=" flex flex-col p-6 justify-center items-center rounded-xl ">
-							<img width={100} src="http://business.xiaoice.com/img/layout/qrcode.png?v=OSuFknDfrpycsL6rd1tJ3atFvkFiNPI_ChXUbcr-9jw" alt="" />
+							<img width={100} src="contact.jpg" alt="" />
 							<p className=" mt-4 text-lg">
 								扫一扫 添加好友
 							</p>
@@ -171,9 +171,9 @@ const FixedButton = () => {
 				</PopoverTrigger>
 				<PopoverContent>
 					<div className=" flex flex-col p-4 justify-center items-center">
-						<img width={100} src="http://business.xiaoice.com/img/layout/qrcode.png?v=OSuFknDfrpycsL6rd1tJ3atFvkFiNPI_ChXUbcr-9jw" alt="" />
+						<img width={100} src="contact.jpg" alt="" />
 						<p className=" mt-4 text-lg">
-							扫一扫 添加好友
+							扫一扫 添加奥森小冰好友
 						</p>
 					</div>
 
@@ -225,9 +225,8 @@ export default function RootLayout({
 										</div>
 
 										<div className=" space-y-4 pt-6 md:text-base pr-10">
-											<p> 京ICP备 2020040356号-2 </p>
-											<p> 京ICP证 B2-20220705</p>
-											<p> 京公网安备 11010802034035号 </p>
+											<p> 粤ICP备2024267174号-1 </p>
+											<p> 粤ICP备2024267174号 </p>
 											<p>前往⽇本⼩冰りんな站 </p>
 											<p>网站地图  XML地图</p>	
 										</div>

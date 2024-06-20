@@ -1,113 +1,17 @@
-/* eslint-disable @next/next/no-img-element */
 "use client"
 import { Chip, Tab, Tabs } from "@nextui-org/react";
 import { useEffect, useRef, useState } from "react";
 import { Carousel } from "@material-tailwind/react";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Scrollbar, Mousewheel, Controller } from 'swiper/modules';
-
-
-const ProductSwiper = () => {
-
-	const datas = [
-		{
-			img: "human_product_one1.png",
-			date: "全新升级第三代神经网络渲染模型，仅需20分钟的有效数据，即可生成栩栩如生的数字人形象。支持多服装，多表情，多动作，让数字人更灵动。",
-			header: "跨境电商主播",
-			description: "在TikTok上用英语介绍活性炭控油去屑洗发水",
-		},
-		{
-			img: "human_product_two1.png",
-			date: "可通过手动输入文本生成视频，也可由AI全自动生成。云端实时渲染，快速输出视频画面。支持自定义场景，4K分辨率，多镜头角度，在线剪辑等。",
-			header: "展馆导览",
-			description: "在城市博物馆，为游客介绍这座城市发展历史及建设成就",
-		},
-		{
-			img: "human_product_three1.png",
-			date: "基于奥森小冰框架的人工智能创造能力（AIGC），数字人可实现对业务数据的快速学习，获得相应技能，稳定输出高质量文本，图片，音频，视频等内容。",
-			header: "知识种草",
-			description: "在抖音对出版社的图书进行带货",
-		},
-		{
-			img: "human_product_four1.png",
-			date: "拥有情感对话能力和多模态交互能力。可人声定制，支持多语种，多方言，7X24小时与用户进行实时交互。",
-			header: "地产经理",
-			description: "在地产销售大厅介绍楼盘的项目概况",
-		},
-	]
-
-	return (
-		<div className="flex">
-        <Swiper
-          modules={[Scrollbar]}
-          pagination={{ clickable: true }}
-        >
-          {datas.map((data, index) => {
-            return (
-              <SwiperSlide key={index}>
-				<div className=" flex overflow-x-auto whitespace-nowrap mt-3">
-					<div className=" relative flex">
-						<img className=" min-w-96" src={data.img} alt="" />
-						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
-							<div className=" flex flex-col">
-								<div className="flex gap-8">
-									<h2 className=" text-2xl">Rita</h2>
-									<Chip
-										variant="shadow"
-										classNames={{
-											base: "bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
-											content: "drop-shadow shadow-black text-white",
-										}}
-										>
-										跨境电商主播
-									</Chip>
-								</div>
-								<div><p className=" text-xs">{data.description}</p></div>
-							</div>
-						</div>
-					</div>
-					</div>
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-      </div>
-	);
-}
-
-const BgIcon = () => {
-	return (
-		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink"  viewBox="0 0 800 800"><defs><filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-		<feGaussianBlur stdDeviation="69" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur></filter></defs><g filter="url(#bbblurry-filter)"><ellipse rx="148" ry="150" cx="499.62504016926164" cy="276.1115394126763" fill="hsl(37, 99%, 67%)"></ellipse><ellipse rx="148" ry="150" cx="552.2607175477885" cy="477.5444049320603" fill="hsla(179, 40%, 76%, 1.00)"></ellipse><ellipse rx="148" ry="150" cx="215.6923585103786" cy="493.0405874099364" fill="hsl(185, 100%, 57%)"></ellipse></g></svg>
-	);
-}
-
-const BgIconB = () => {
-	return (
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 2600 2600"><g transform="matrix(1,0,0,1,0,0)"><circle r="53.5" cx="684" cy="684" strokeWidth="4" stroke="#006fee" fill="none" opacity="0.1" transform="rotate(100, 400, 400)"></circle><circle r="61.541666666666664" cx="660.3333333333334" cy="660.3333333333334" stroke-width="5" stroke="#1f73ef" fill="none" opacity="0.175" transform="rotate(91.66666666666667, 400, 400)"></circle><circle r="69.58333333333333" cx="636.6666666666666" cy="636.6666666666666" stroke-width="6" stroke="#2c77f1" fill="none" opacity="0.25" transform="rotate(83.33333333333333, 400, 400)"></circle><circle r="77.625" cx="613" cy="613" stroke-width="7" stroke="#367af2" fill="none" opacity="0.32499999999999996" transform="rotate(75, 400, 400)"></circle><circle r="85.66666666666666" cx="589.3333333333334" cy="589.3333333333334" stroke-width="8" stroke="#3e7ef4" fill="none" opacity="0.4" transform="rotate(66.66666666666666, 400, 400)"></circle><circle r="93.70833333333333" cx="565.6666666666666" cy="565.6666666666666" stroke-width="9" stroke="#4581f5" fill="none" opacity="0.475" transform="rotate(58.33333333333333, 400, 400)"></circle><circle r="101.75" cx="542" cy="542" stroke-width="10" stroke="#4c85f7" fill="none" opacity="0.5499999999999999" transform="rotate(50, 400, 400)"></circle><circle r="109.79166666666666" cx="518.3333333333333" cy="518.3333333333333" stroke-width="11" stroke="#5288f8" fill="none" opacity="0.625" transform="rotate(41.666666666666664, 400, 400)"></circle><circle r="117.83333333333333" cx="494.66666666666663" cy="494.66666666666663" stroke-width="12" stroke="#578bf9" fill="none" opacity="0.7" transform="rotate(33.33333333333333, 400, 400)"></circle><circle r="125.875" cx="471" cy="471" stroke-width="13" stroke="#5d8efb" fill="none" opacity="0.7749999999999999" transform="rotate(25, 400, 400)"></circle><circle r="133.91666666666666" cx="447.3333333333333" cy="447.3333333333333" stroke-width="14" stroke="#6291fc" fill="none" opacity="0.85" transform="rotate(16.666666666666657, 400, 400)"></circle><circle r="141.95833333333331" cx="423.66666666666663" cy="423.66666666666663" stroke-width="15" stroke="#6694fe" fill="none" opacity="0.9249999999999999" transform="rotate(8.333333333333329, 400, 400)"></circle><circle r="150" cx="400" cy="400" stroke-width="16" stroke="#6b97ff" fill="none" opacity="0.9999999999999999" transform="rotate(0, 400, 400)"></circle></g></svg>
-	);
-}
-
-  
-
-
 export default function AIBeing() {
 	const [isHovered, setIsHovered] = useState(0);
+	const [isHoveredA, setIsHoveredA] = useState(false);
+	const [isHoveredB, setIsHoveredB] = useState(false);
+	const [isHoveredC, setIsHoveredC] = useState(false);
+	const [isHoveredD, setIsHoveredD] = useState(false);
+
+
 	const [hoveredIndex, setActiveIndex] = useState<number | null>(null);
-	const [open, setOpen] = useState(10);
-
-	const handleClick = (index: number) => {
-		setActiveIndex(index);
-	};
-
-
-	const data = [
-	  { title: '直播', description: '支持直播推流，轻松满足电商带货、赛事解说、新闻资讯、娱乐播报等场景。' },
-	  { title: '企业', description: '定制完美形象，融合企业基因，打造品牌代言人、形象代言人、数字员工、数字专家等，可用于企业内外宣物料制作、营销Campaign创新、RPA数字人化等。' },
-	  { title: '陪伴', description: '拥有EQ和不同人设的数字人可以胜任生活助理、智能座舱助理、陪护师等需要情感交互的工作。' },
-	  { title: '创作', description: '拥有创造力的数字人可以辅助人类进行绘画、音乐、设计、诗歌等创作，如音乐制作人、服装设计师、插画师等。' },
-	];
 
 	const titles: { [key: number]: string} = {
 		0: "形象定制",
@@ -126,32 +30,20 @@ export default function AIBeing() {
 	const [currentContext, setCurrentContext] = useState(contexts[0]);
 	const [scrollPosition, setScrollPosition] = useState(0);
 
-	const breakpoints = [0, 384, 760, 1100];
+	const breakpoints = [0, 384, 760, 1200];
 	useEffect(() => {
 		const index = breakpoints.findIndex(breakpoint => scrollPosition <= breakpoint);		
 		const contextIndex = index === -1 ? 0 : index;
 		setCurrentContext(contexts[contextIndex * 2] || contexts[0]);
-		console.log("当前文本", contexts[contextIndex]);
 	  }, [scrollPosition]);
-	
 
-	const handleMouseEnter = (value: number) => {
-		setIsHovered(value);
-	  };
-	
-	  const handleMouseLeave = (value: number) => {
-		setIsHovered(value);
-	  };
-	
 	  // 384  760  1100
-	  
 	  const scrollRef = useRef<HTMLDivElement>(null);
 	
 	  useEffect(() => {
 		const handleScroll = () => {
 		  	if (scrollRef.current) {
 				setScrollPosition(scrollRef.current.scrollLeft || 0); 
-				console.log('滚动位置：', scrollRef.current?.scrollLeft || 0); // 实时输出滚动位置
 			}
 		};
 	
@@ -277,19 +169,19 @@ export default function AIBeing() {
 		
 			{/** advantage_intro 电脑端 */}
 			<div className="hidden md:block">
-			<div className="relative bg-[#000887] md:block flex-col space-y-8 justify-center text-center bg-cover bg-no-repeat  text-base text-gray-700 flex items-center px-28 leading-10 overflow-hidden p-12 pb-52">
-				{/** products */}
-			    <div className="pb-12">
-					<h2 className=" text-5xl text-white">产品优势</h2>
-					<div className="">
-						<div className=" h-48">
-							<div className={` z-10 transition-all transform duration-1000 ${(isHovered % 2 !== 0) ? 'transition-all' : ' translate-y-14 opacity-100'}`}>
-								<h2 className="z-10 text-2xl text-white font-bold">{titles[isHovered]}</h2>
-								<p className="z-10 text-xl text-white">{contexts[isHovered]}</p>
+				<div className="relative bg-[#000887] md:block flex-col space-y-8 justify-center text-center bg-cover bg-no-repeat  text-base text-gray-700 flex items-center px-28 leading-10 overflow-hidden p-12 pb-52">
+					{/** products */}
+					<div className="pb-12">
+						<h2 className=" text-5xl text-white">产品优势</h2>
+						<div className="">
+							<div className=" h-48">
+								<div className={` z-10 transition-all transform duration-1000 ${(isHovered % 2 !== 0) ? 'transition-all' : ' translate-y-14 opacity-100'}`}>
+									<h2 className="z-10 text-2xl text-white font-bold">{titles[isHovered]}</h2>
+									<p className="z-10 text-xl text-white">{contexts[isHovered]}</p>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 					
 
 				<div className="flex w-full gap-8 justify-center items-center -skew-x-14">
@@ -297,15 +189,15 @@ export default function AIBeing() {
 						{/** item_big */}
 						<div className=" transition-all  duration-700 h-full -skew-x-12">
 							<div 
-								onMouseEnter={() => setIsHovered(0)} 
-								onMouseLeave={() => setIsHovered(1)} 
+								onMouseEnter={() => {setIsHoveredA(true); setIsHovered(0)}}
+								onMouseLeave={() => {setIsHoveredA(false); setIsHovered(1)}}
 								className=" skew-x-20 bg-right-5.2 bg-no-repeat  relative h-[780px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
 								style={{backgroundImage: `url("human_product_one1.png")`}}
 							>
 								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
 										<h2 className=" text-4xl">Rita</h2>
-										{isHovered == 0 && (
+										{isHoveredA && (
 											<Chip
 												variant="shadow"
 												classNames={{
@@ -317,7 +209,7 @@ export default function AIBeing() {
 											</Chip>
 										)}
 									</div>
-									{isHovered == 1 ? (<p className="text-base">跨境电商主播</p>) : (<div className=" p-2"><p className=" text-base">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
+									{!isHoveredA  ? (<p className="text-base">跨境电商主播</p>) : (<div className=" p-2"><p className=" text-base  transition-opacity duration-1000 ease-in-out">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
 								</div>
 							</div>
 						</div>
@@ -327,15 +219,15 @@ export default function AIBeing() {
 						{/** item_big */}
 						<div className=" transition-all  duration-700 h-full -skew-x-12">
 							<div 
-								onMouseEnter={() => setIsHovered(2)} 
-								onMouseLeave={() => setIsHovered(3)} 
+								onMouseEnter={() => {setIsHoveredB(true); setIsHovered(2)}}
+								onMouseLeave={() => {setIsHoveredB(false); setIsHovered(3)}}
 								className=" skew-x-20 bg-right-5.2 bg-no-repeat  relative h-[780px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
 								style={{backgroundImage: `url("product_two1.png")`}}
 							>
 								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
 										<h2 className=" text-4xl">星怡</h2>
-										{isHovered == 4 && (
+										{isHoveredB && (
 											<Chip
 												variant="shadow"
 												classNames={{
@@ -347,7 +239,7 @@ export default function AIBeing() {
 											</Chip>
 										)}
 									</div>
-									{isHovered == 5 ? (<p className="text-base">展馆导览</p>) : (<div className=" p-2"><p className=" text-base">在城市博物馆，为游客介绍这座城市发展历史及建设成就</p></div>)}
+									{!isHoveredB ? (<p className="text-base">展馆导览</p>) : (<div className=" p-2"><p className=" text-base  transition-opacity duration-1000 ease-in-out">在城市博物馆，为游客介绍这座城市发展历史及建设成就</p></div>)}
 								</div>
 							</div>
 						</div>
@@ -355,15 +247,15 @@ export default function AIBeing() {
 						{/** item_big */}
 						<div className=" transition-all  duration-700 h-full -skew-x-12">
 							<div 
-								onMouseEnter={() => setIsHovered(4)} 
-								onMouseLeave={() => setIsHovered(5)} 
+								onMouseEnter={() => {setIsHoveredC(true); setIsHovered(4)}}
+								onMouseLeave={() => {setIsHoveredC(false); setIsHovered(5)}}
 								className=" skew-x-20 bg-right-5.2 bg-no-repeat  relative h-[780px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
 								style={{backgroundImage: `url("product_three1.png")`}}
 							>
 								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
 										<h2 className=" text-4xl">星怡</h2>
-										{isHovered == 4 && (
+										{isHoveredC && (
 											<Chip
 												variant="shadow"
 												classNames={{
@@ -375,7 +267,7 @@ export default function AIBeing() {
 											</Chip>
 										)}
 									</div>
-									{isHovered == 5 ? (<p className="text-base">知识种草</p>) : (<div className=" p-2"><p className=" text-base">在抖音对出版社的图书进行带货</p></div>)}
+									{!isHoveredC ? (<p className="text-base">知识种草</p>) : (<div className=" p-2"><p className=" text-base  transition-opacity duration-1000 ease-in-out">在抖音对出版社的图书进行带货</p></div>)}
 								</div>
 							</div>
 						</div>
@@ -384,15 +276,15 @@ export default function AIBeing() {
 						{/** item_big */}
 						<div className=" transition-all  duration-700 h-full -skew-x-12">
 							<div 
-								onMouseEnter={() => setIsHovered(6)} 
-								onMouseLeave={() => setIsHovered(7)} 
+								onMouseEnter={() => {setIsHoveredD(true); setIsHovered(6)}}
+								onMouseLeave={() => {setIsHoveredD(false); setIsHovered(7)}}
 								className=" skew-x-20 bg-right-5.2 bg-no-repeat  relative h-[780px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
 								style={{backgroundImage: `url("product_four1.png")`}}
 							>
 								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
 										<h2 className=" text-4xl">俊晨</h2>
-										{isHovered == 6 && (
+										{isHoveredD && (
 											<Chip
 												variant="shadow"
 												classNames={{
@@ -404,7 +296,7 @@ export default function AIBeing() {
 											</Chip>
 										)}
 									</div>
-									{isHovered == 7 ? (<p className="text-base">地产经理</p>) : (<div className=" p-2"><p className=" text-base">在地产销售大厅介绍楼盘的项目概况</p></div>)}
+									{!isHoveredD ? (<p className="text-base">地产经理</p>) : (<div className=" p-2"><p className=" text-base transition-opacity duration-1000 ease-in-out">在地产销售大厅介绍楼盘的项目概况</p></div>)}
 								</div>
 							</div>
 						</div>
@@ -467,10 +359,10 @@ export default function AIBeing() {
 											content: "drop-shadow shadow-black text-white",
 										}}
 										>
-										跨境电商主播
+										展馆导览
 									</Chip>
 								</div>
-								<div><p className=" text-xs">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>
+								<div className="w-24 flex justify-center"><p className=" text-xs">在城市博物馆，为游客介绍这座城市发展历史及建设成就</p></div>
 							</div>
 						</div>
 					</div>
@@ -490,10 +382,10 @@ export default function AIBeing() {
 											content: "drop-shadow shadow-black text-white",
 										}}
 										>
-										跨境电商主播
+										知识种草
 									</Chip>
 								</div>
-								<div><p className=" text-xs">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>
+								<div><p className=" text-xs">在抖音对出版社的图书进行带货</p></div>
 							</div>
 						</div>
 					</div>
@@ -506,7 +398,7 @@ export default function AIBeing() {
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">
-									<h2 className=" text-2xl">Rita</h2>
+									<h2 className=" text-2xl">俊晨</h2>
 									<Chip
 										variant="shadow"
 										classNames={{
@@ -514,42 +406,15 @@ export default function AIBeing() {
 											content: "drop-shadow shadow-black text-white",
 										}}
 										>
-										跨境电商主播
+										地产经理
 									</Chip>
 								</div>
-								<div><p className=" text-xs">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>
+								<div><p className=" text-xs">在地产销售大厅介绍楼盘的项目概况</p></div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
-
-
-
-
-			{/** 电脑端 */}
-			{/**
-			 * <div className=" relative hidden md:block">
-				{activeIndex !== -1 && (
-					<img className="max-w-full object-cover transition duration-1000" src={`direct1${activeIndex + 1}.png`} alt="" />
-				)}						
-				<div className=" flex flex-col max-w-screen-md p-4 space-y-4 text-start absolute top-0 left-0 translate-y-1/4 transform md:translate-x-1/4 hover: text-white">
-					<h2 className="text-4xl font-bold pb-4">应用场景</h2>
-					<div className="space-y-8">
-						{data.map((item, index) => (
-							<div key={index} className={`bg-gradient-to-r from-transparent to-transparent pt-5 cursor-pointer ${activeIndex === index ? 'bg-slate-500 bg-opacity-50 p-4 rounded-xl' : ''}`} onClick={() => handleClick(index)}>
-							<h2 className="text-3xl">{item.title}</h2>
-							<p className="text-xl">{item.description}</p>
-							</div>
-						))}
-					</div>
-				</div>
-
-			</div>
-
-			 */}				
-	
 			
 
 			{/** 移动端 */}

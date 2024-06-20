@@ -13,7 +13,7 @@ export const siteConfig = {
 			href: "/AIBeing",
 		},
 		{
-			label: "直播",
+			label: "数字人直播",
 			href: "/live",
 		},
 		{

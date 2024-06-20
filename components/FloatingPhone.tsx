@@ -2,11 +2,11 @@
 import { motion } from "framer-motion";
 import { FiBatteryCharging, FiWifi } from "react-icons/fi";
 
-export const FloatingPhone = ({backgroundImage, context}: {backgroundImage: string, context: string}) => {
+export const FloatingPhone = ({backgroundImage, context, isEnablePreserve}: {backgroundImage: string, context: string, isEnablePreserve:boolean}) => {
   return (
     <div
       style={{
-        transformStyle: "preserve-3d",
+        transformStyle: isEnablePreserve ? "preserve-3d"  : undefined,
         transform: "rotateY(-30deg) rotateX(15deg)",
       }}
       className="rounded-[24px]  flex justify-center w-80"
@@ -47,15 +47,10 @@ const HeaderBar = () => {
 const Screen = ({backgroundImage, context}: {backgroundImage: string, context: string}) => {
   return (
     <div className="relative z-0 grid h-full w-full place-content-center overflow-hidden rounded-[20px] bg-white">
-      {/* Example logo from logoispum */}
       <img className="w-96 h-100 bg-cover" src={backgroundImage} alt="" />
-
-
       <button className="absolute bottom-4 left-4 right-4 z-10 rounded-lg border-[1px] bg-white py-2 text-sm font-medium text-violet-500 backdrop-blur">
         {context}
       </button>
-
-      {/* <div className="absolute -left-32 -top-32 h-64 w-64 rounded-full bg-violet-500" /> */}
       <div className="absolute -bottom-72 left-[50%] h-96 w-96 -translate-x-[50%] rounded-full bg-gradient-to-l from-rose-400 via-fuchsia-500 to-indigo-500" />
     </div>
   );

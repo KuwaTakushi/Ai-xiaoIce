@@ -2,7 +2,6 @@
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import { useState } from "react";
 
-/* eslint-disable @next/next/no-img-element */
 export default function Live() {
 
     const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -36,22 +35,22 @@ export default function Live() {
 			{/** 一键生成高质量音乐作品 页面 */}
 			<div className=" text-center hidden md:block bg-white">
 				<div className="p-36 flex justify-center gap-24">
-				<div className="flex flex-col justify-center items-center w-72 shadow-md p-6 rounded-xl">
+				<div className="flex flex-col justify-center items-center w-72 shadow-md p-6 rounded-xl text-black">
 					<img className=" object-cover w-24 pb-4" src="icon_1.png" alt="" />
 					<h2 className=" font-bold text-xl ">便捷高效</h2>
 					<p>用户可以通过手机扫描二维码或链接访问数字名片，获取联系方式、社交链接、个人简介等信息，省去了传统名片交换的繁琐步骤。</p>
 				</div>
-				<div className="flex flex-col justify-center items-center w-72 shadow-md p-6 rounded-xl">
+				<div className="flex flex-col justify-center items-center w-72 shadow-md p-6 rounded-xl text-black">
 					<img className=" object-cover w-24 pb-4" src="icon_2.png" alt="" />
 					<h2 className=" font-bold text-xl">个性化定制</h2>
 					<p>奥森小冰支持用户根据自身需求和品牌形象定制数字名片，设计独特的风格和版面，展现个性魅力。</p>
 				</div>
-				<div className="flex flex-col justify-center items-center w-72 shadow-md p-6 rounded-xl">
+				<div className="flex flex-col justify-center items-center w-72 shadow-md p-6 rounded-xl text-black">
 					<img className=" object-cover w-24 pb-4" src="icon_3.png" alt="" />
 					<h2 className=" font-bold text-xl">环保节能</h2>
 					<p>减少纸质名片的浪费，符合环保理念。</p>
 				</div>
-				<div className="flex flex-col justify-center items-center w-72 shadow-md p-6 rounded-xl">
+				<div className="flex flex-col justify-center items-center w-72 shadow-md p-6 rounded-xl text-black">
 					<img className=" object-cover w-24 pb-4" src="icon_4.png" alt="" />
 					<h2 className=" font-bold text-xl">基于需求定制化的数字名片</h2>
 					<p>用户可以创建自己的数字名片网站，将个人信息、作品展示、联系方式等整合在一起，方便用户访问和了解。</p>

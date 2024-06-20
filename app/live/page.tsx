@@ -4,12 +4,6 @@ import WaterDropGrid from "@/components/WaterDropGrid";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import { useState } from "react";
 
-const BackgroupIcon = () => {
-	return (
-		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" opacity="0.59"><defs><linearGradient gradientTransform="rotate(315 0.5 0.5)" x1="50%" y1="0%" x2="50%" y2="100%" id="ppperspective-grad2"><stop stop-color="hsl(166, 100%, 73%)" stop-opacity="1" offset="0%"></stop><stop stop-color="hsl(166, 100%, 73%)" stop-opacity="0" offset="100%"></stop></linearGradient></defs><g fill="hsl(166, 100%, 73%)" shape-rendering="crispEdges" transform="skewX(-2) skewY(0)"><polygon points="800,800 576.5,576.5 576.5,223.5 800,447" fill="url(#ppperspective-grad2)" opacity="0.5"></polygon><polygon points="800,800 576.5,576.5 223.5,576.5 447,800" fill="url(#ppperspective-grad2)" opacity="0.15"></polygon><rect width="353" height="353" x="223.5" y="223.5"></rect></g></svg>)
-	}
-
-/* eslint-disable @next/next/no-img-element */
 export default function Live() {
 
     const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -93,7 +87,7 @@ export default function Live() {
 							<span className="text-lg pb-4">AI文本驱动
 						</span>
 						</div>
-						<div className="flex flex-row justify-center text-sm font-thin items-center gap-1 font-thin">
+						<div className="flex flex-row justify-center text-sm font-thin items-center gap-1">
 							<svg y="0" xmlns="http://www.w3.org/2000/svg" x="0" width="100" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" height="100" className="w-4 h-4 stroke-current">
 							<path strokeWidth="8" strokeLinejoin="round" strokeLinecap="round" fill="none" d="M33.9,46V29.9a16.1,16.1,0,0,1,32.2,0M50,62v8.1m-24.1,16H74.1a8,8,0,0,0,8-8V54a8,8,0,0,0-8-8H25.9a8,8,0,0,0-8,8V78.1A8,8,0,0,0,25.9,86.1Z">
 							</path>
@@ -264,23 +258,23 @@ export default function Live() {
 				<AccordionItem
 					key="1" 
 					aria-label="Accordion 1"
-					title={(<p className=" text-black">中国纺织信息中心国家纺织产品开发中心</p>)}
+					title={(<p className=" text-black">数字人播报</p>)}
 				>
-					<p className="text-black text-sm">依托奥森小冰的人工智能创造技术，奥森小冰与中国纺织信息中心、国家纺织产品开发中心共同推出了人工智能纺织服装图案设计平台。随着中国纺织服装制造业的高速发展，创新设计能力已成为新的行业生产力。如何更好地把握时尚设计话语权、打造时尚设计协同平台、构筑时尚设计价值生态、树立时尚设计先锋形象，成为了中国纺织服装制造业优化升级面临的重任。该平台帮助成千上万纺织服装制造企业重塑核心竞争力，实现从中国制造到中国“智”造的优化升级。在奥森小冰人工智能技术的加持下，该平台可实现为企业按需定制100%原创的专属图案纹样，并保持高度的质量稳定性，帮助企业释放设计潜能，实现大规模、多样化、质量稳定的按需设计。</p>
+					<p className="text-black text-sm">奥森小冰打造的精品数字人形象库拥有多种形象，涵盖各种职业、国家和地区的真人写实数字人形象，能够快捷匹配各种场景需求。无论是新闻主播、电商主播还是全领域的数字人员工，奥森小冰都能提供高效、专业的播报和直播服务，提升内容创作质量和传播效果。</p>
 				</AccordionItem>
 				<AccordionItem
 					key="2" 
 					aria-label="Accordion 2"
-					title={(<p className=" text-black">万事利</p>)}
+					title={(<p className=" text-black">新闻主播</p>)}
  				>
-					<p className="text-black text-sm">依托奥森小冰人工智能创造技术，万事利丝绸与奥森小冰共同推出面向消费者的定制化专属丝巾设计及零售平台“西湖一号”。该平台可实现AI设计师奥森小冰与消费者的实时交流，根据消费者自身特点进行一对一的丝巾定制化设计及生产制作，在满足每个消费者个性化需求的同时大大降低制造及零售企业的经营成本。万事利作为中国丝绸服饰产业发展风向标，与奥森小冰的深化合作落地，借助奥森小冰人工智能技术，解决零售场景中的真实痛点，为海量消费者同时进行按需专属设计并保持高度的质量稳定性，不仅突破了人类设计师设计能力的限制，更从根本上解决了需求预测和库存堆积的问题。</p>
+					<p className="text-black text-sm">奥森小冰适用于媒体新闻、广电节目和资讯播报的新闻主播服务，通过AI数字人技术提供逼真、生动的播报体验。新闻主播数字人形象可以根据具体需求进行定制，确保内容呈现专业、准确，增强观众的信任感和参与度，有效提升新闻传播的影响力。</p>
 				</AccordionItem>
 				<AccordionItem
 					key="3" 
 					aria-label="Accordion 3" 
-					title={(<p className=" text-black">鲁丰织染</p>)}
+					title={(<p className=" text-black">电商主播</p>)}
 				>
-					<p className="text-black text-sm">鲁丰织染是世界最大的高档面料制造企业之一，先后获得“国家级企业技术中心”、“国家高新技术企业”等认定，年产高档面料近1亿米，产品远销30多个国家和地区，是众多世界著名品牌的指定服装面料提供商。依托奥森小冰人工智能纺织服装图案设计平台，企业可按需定制100%原创的专属图案纹样，并保持高度的质量稳定性。鲁丰织染是该平台的首批用户之一，目前，奥森小冰已可为鲁丰织染设计几何图形、佩斯利、趣味卡通、植物花卉、数码抽象等五类专属的图案纹样。通过该平台，企业只需要按照自己的诉求输入相关激发源，就可以激发奥森小冰设计出相应风格主题、颜色、版式的图案，并可直接进入生产制作流程，极大地提高企业设计能力和生产效率。</p>
+					<p className="text-black text-sm">奥森小冰为电商平台提供专业的电商主播服务，适用于产品讲解、优惠发放和带货直播。通过AI技术，电商主播可以精准传达产品信息，吸引更多用户关注和购买。相比真人主播，数字电商主播具备成本低、操作灵活和全年无休的优势，有助于企业提升销售业绩。</p>
 				</AccordionItem>
 			</Accordion>
 
@@ -346,6 +340,13 @@ export default function Live() {
 				>
 					<p className=" text-sm text-black">奥森小冰为自媒体内容创作提供专业的播报视频服务，适用于各种内容创作需求。通过AI数字人技术，自媒体运营者可以快速生成高质量的播报视频，提升内容的吸引力和传播效果。相比传统真人直播，数字人更具成本优势，操作灵活，全年无休，助力自媒体创作者提升影响力。</p>
 				</AccordionItem>
+				<AccordionItem
+					key="2" 
+					aria-label="Accordion 2" 
+					title={(<p className=" text-black">可控成本</p>)}
+				>
+					<p className=" text-sm text-black">奥森小冰在直播行业中逐渐取代真人主播，展现出多方面的优势。在场地方面，仅需10平方米的场景即可进行直播，不需要装修，采用虚拟场景。成本方面，数字人直播对比传统真人成本低，尤其采用AI自动直播，无需真人表演。人设方面，行为可控，不会翻车塌房，形象稳定。时间方面，虚拟人全年无休，无需福利和情绪，7</p>
+				</AccordionItem>
 			</Accordion>
 
 			<div className=" divide-y divide-slate-500 pt-4">
@@ -406,7 +407,8 @@ export default function Live() {
 
 		{/** 移动端 */}
 		{/** 依文页面 */}
-		<div className=" md:hidden bg-[#edf3ff] text-[#00305a] p-2">
+		{/**
+		 * 		<div className=" md:hidden bg-[#edf3ff] text-[#00305a] p-2">
 			<Accordion>
 				<AccordionItem
 					key="1" 
@@ -445,6 +447,7 @@ export default function Live() {
 			</div>
 		</div>
 
+		 */}
 
 		{/** 满足音乐 */}
 		<div className="  p-16  text-lg font-bold mt-5  hidden md:block overflow-x-hidden">

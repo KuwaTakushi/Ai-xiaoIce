@@ -1,14 +1,9 @@
-/* eslint-disable react/jsx-key */
-/* eslint-disable react/jsx-no-undef */
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable react/no-children-prop */
-"use client"
+"use client";
 import React, { useRef, useState } from "react";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { useDisclosure, Image, Radio, RadioGroup, Tab, Chip, Tabs, CardFooter, Card as NextUiCard, ModalContent, ModalBody, Link } from "@nextui-org/react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useDisclosure, Radio, RadioGroup, Tab, Chip, Tabs, CardFooter, Card as NextUiCard, ModalContent, ModalBody, Link } from "@nextui-org/react";
 import { FloatingPhone } from "@/components/FloatingPhone";
-import { Carousel, Dialog, DialogBody, DialogFooter, DialogHeader, Typography } from "@material-tailwind/react";
-import Modal from 'react-bootstrap/Modal';
+import { Carousel } from "@material-tailwind/react";
 
 const IMG_PADDING = 12;
 const BackgroundIconA = () => {
@@ -33,7 +28,7 @@ export default function Home() {
   const [hoveredIndex, setActiveIndex] = useState<number | null>(null);
   const [open, setOpen] = useState(10);
 
-  const {isOpen, onOpen, onOpenChange} = useDisclosure();
+  const {onOpen} = useDisclosure();
 
   const handleOpen = (index: number) => {
     setOpen(index);
@@ -51,22 +46,22 @@ export default function Home() {
 
         <div className="md:block hidden">
           <div className="  flex gap-24 bg-gradient-to-bl from-indigo-600 via-purple-700 to-pink-800 w-full justify-center max-w-7xl rounded-full">
-            <FloatingPhone context="智能场景互动" backgroundImage="https://business.xiaoice.com/img/join/huaxizi_poster.png?v=noQF7231AuE7a-ZciXkYh6FrpXp6dYkJvTWdTihf1cw"/>
-            <FloatingPhone context="实时AI" backgroundImage="live_2.jpg"/>
-            <FloatingPhone context="适配各行业场景" backgroundImage="live_1.jpg"/>
+            <FloatingPhone context="智能场景互动" backgroundImage="https://i.p-i.vip/20/20240621-667475869d07d.png" isEnablePreserve={true} />
+            <FloatingPhone context="实时AI" backgroundImage="live_2.jpg" isEnablePreserve={true} />
+            <FloatingPhone context="适配各行业场景" backgroundImage="live_1.jpg" isEnablePreserve={true} />
           </div>
         </div>
         
         <div className="md:hidden">
         <Carousel transition={{ duration: 1 }}>
           <div className="  flex gap-24 bg-gradient-to-bl  w-full justify-center bg-opacity-0">
-            <FloatingPhone context="智能场景互动" backgroundImage="https://business.xiaoice.com/img/join/huaxizi_poster.png?v=noQF7231AuE7a-ZciXkYh6FrpXp6dYkJvTWdTihf1cw"/>
+            <FloatingPhone context="智能场景互动" backgroundImage="https://i.p-i.vip/20/20240621-667475869d07d.png" isEnablePreserve={false} />
           </div>
           <div className="  flex gap-24 bg-gradient-to-bl  w-full justify-center bg-opacity-0">
-            <FloatingPhone context="实时AI" backgroundImage="live_2.jpg"/>
+            <FloatingPhone context="实时AI" backgroundImage="live_2.jpg" isEnablePreserve={false} />
           </div>
           <div className="  flex gap-24 bg-gradient-to-bl  w-full justify-center bg-opacity-0">
-            <FloatingPhone context="适配各行业场景" backgroundImage="live_1.jpg"/>
+            <FloatingPhone context="适配各行业场景" backgroundImage="live_1.jpg"  />
           </div>
         </Carousel>
         </div>
@@ -102,7 +97,7 @@ export default function Home() {
               </div>
 
               <div className=" overflow-hidden max-w-lg">
-                <img className="w-96 bg-cover" src="https://business.xiaoice.com/img/join/huaxizi_poster.png?v=noQF7231AuE7a-ZciXkYh6FrpXp6dYkJvTWdTihf1cw" alt="" />
+                <img className="w-96 bg-cover" src="https://i.p-i.vip/20/20240621-667475869d07d.png" alt="" />
               </div>
             </div>
 
@@ -330,12 +325,6 @@ export default function Home() {
           <h1 className="text-white font-bold text-3xl text-center">探索AI虚拟数字人之旅</h1>
         </div>
       </div>
-    
-    
-
-
-
-    
     </div>
   );
 };
@@ -370,7 +359,6 @@ const StickyImage = ({ imgUrl, videoIndex }: { imgUrl: string[], videoIndex: num
   return (
     <motion.div
       style={{
-        backgroundImage: `url(${imgUrl})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: `calc(100vh - ${IMG_PADDING * 2}px)`,
@@ -462,7 +450,7 @@ const OverlayCopy = () => {
 
           <Link href="http://t1.ink/f/h9ulpg">
             <div className=" cursor-pointer mt-3 self-center md:self-start">
-              <img className=" w-36 md:w-60 md: ml-5" src="https://business.xiaoice.com/img/home/vhuman_btn.png?v=dR4GIst-GIV7cN2zEW8Gvy4ASZeG_K7G8ZU9Gbh-O9E" alt="" />
+              <img className=" w-36 md:w-60 md: ml-5" src="https://i.p-i.vip/20/20240621-667475b6e98e5.png" alt="" />
             </div>
           </Link>
 
@@ -474,253 +462,28 @@ const OverlayCopy = () => {
 
 const cards = [
   {
-    url: "customer_1.png",
+    url: "https://i.p-i.vip/20/20240620-66744dc58e684.png",
     videoUrl: "video.mp4",
     id: 1,
   },
   {
-    url: "customer_2.png",
+    url: "https://i.p-i.vip/20/20240620-66744dc4eb5d3.png",
     videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E5%AF%84%E8%AF%AD_%E5%9B%BD%E5%AE%B6%E7%BA%BA%E7%BB%87%E4%BA%A7%E5%93%81%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83.mp4",
     id: 2,
   },
   {
-    url: "customer_3.png",
+    url: "https://i.p-i.vip/20/20240620-66744dc1452e8.png",
     videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E5%AF%84%E8%AF%AD_%E9%B2%81%E4%B8%B0%E7%BB%87%E6%9F%93.mp4",
     id: 3,
   },
   {
-    url: "customer_4.png",
+    url: "https://i.p-i.vip/20/20240620-66744dc50a590.png",
     videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E5%AF%84%E8%AF%AD_%E5%8D%8E%E4%BA%BA%E8%BF%90%E9%80%9A.mp4",
     id: 4,
   },
   {
-    url: "customer_5.png",
+    url: "https://i.p-i.vip/20/20240620-66744fe2099fb.png",
     videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E5%AF%84%E8%AF%AD_%E4%B8%8A%E9%9F%B3%E9%9F%B3%E5%B7%A5%E7%B3%BB.mp4",
     id: 5,
   },
 ];
-
-const Card = ({ card }: { card: any }) => {
-  const [hoveredIndex, setActiveIndex] = useState<number | null>(null);
-  const {isOpen, onOpen, onOpenChange, onClose} = useDisclosure();
-
-  return (
-    <div className="md:grid md:grid-cols-3 flex flex-wrap justify-center items-center gap-12 max-w-full p-8">
-        <NextUiCard
-          key={cards[0].id}
-          isFooterBlurred
-          radius="sm"
-          className="border-none rounded-lg max-w-7xl w-110 relative"
-          onMouseEnter={() => setActiveIndex(cards[0].id)}
-          onMouseLeave={() => setActiveIndex(null)}
-        >
-          <img
-            alt="Woman listing to music"
-            className="object-cover w-full"
-            src={cards[0].url}
-          />
-          {hoveredIndex === cards[0].id && (
-            <div className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer">
-              <img width={70} src="play.png" alt="" />
-            </div>
-          )}
-
-          <CardFooter className="justify-center gap-12 before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-lg rounded-lg bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-            <p className="text-2xl bg-gradient-to-l from-purple-500 via-orange-500 to-yellow-500 text-transparent bg-clip-text font-bold">奥森小冰</p>
-            <p className="text-2xl text-[#00305a] font-bold">{`客户寄语 0${cards[0].id}`}</p>
-          </CardFooter>
-        </NextUiCard>
-
-        <NextUiCard
-          key={cards[1].id}
-          isFooterBlurred
-          radius="sm"
-          className="border-none rounded-lg max-w-7xl w-110 relative"
-          onMouseEnter={() => setActiveIndex(cards[1].id)}
-          onMouseLeave={() => setActiveIndex(null)}
-        >
-          <img
-            alt="Woman listing to music"
-            className="object-cover w-full"
-            src={cards[1].url}
-          />
-          {hoveredIndex === cards[1].id && (
-            <div className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer">
-              <img width={70} src="play.png" alt="" />
-            </div>
-          )}
-
-          <CardFooter className="justify-center gap-12 before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-lg rounded-lg bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-            <p className="text-2xl bg-gradient-to-l from-purple-500 via-orange-500 to-yellow-500 text-transparent bg-clip-text font-bold">奥森小冰</p>
-            <p className="text-2xl text-[#00305a] font-bold">{`客户寄语 0${cards[1].id}`}</p>
-          </CardFooter>
-        </NextUiCard>
-
-
-    </div>
-  );
-};
-
-const HorizontalScrollCarousel = () => {
-  const targetRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-  });
-
-  const x = useTransform(scrollYProgress, [0, 1], ["2%", "-30%"]);
-
-  return (
-    <section ref={targetRef} className="relative md:h-[125vh]  text-center">
-    {/** 调整h-150vh的高度，不适配 */}
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden -mt-36">
-        <motion.div style={{ x }} className="flex gap-8 gap">
-          {cards.map((card) => {
-            return <Card card={card} key={card.id} />;
-          })}
-        </motion.div>
-      </div>
-    </section>
-  );
-};
-
-const Content = () => {
-
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const handlePlayVideo = () => {
-    setIsPlaying(true);
-  };
-
-
-
-  return (
-    <div>
-
-    <div className="w-full  mt-8 md:mt-8 bg-[#edf3ff] flex justify-between ">
-
-      {/** 圆圈 */}
-
-
-      {/** 客户端 */}
-      <div className="relative flex items-center justify-center ml-auto">
-        <img className="hidden sm:block md:max-w-xl" src="https://business.xiaoice.com/img/circle1.png" alt="" />
-        <div className="absolute top-1/3  -left-3/4 max-w-4xl  w-[450px] text-[#00305a] text-xl">
-          <h2 className=" font-bold text-[#00305a] mb-4 text-4xl">AI数字员工</h2>
-          <p>
-            2019年，奥森小冰率先提出了数字人（AI Being）理念，并基于全球领先的完备人工智能奥森小冰框架，推出了数字专家和数字员工等完整产品线。奥森小冰的数字人具有不同的性格特征、态度观点、生物学特征、创造力、知识和技能，兼具情感交互能力、专业能力和内容生产能力，已被大众熟知，并应用在多个行业场景。随着数字人多样性（Diversity of AI Being）趋势的来临，每个人的日常工作和生活，将由更加丰富多彩的AI Beings所陪伴和环绕。
-          </p>
-        </div>
-      </div>
-    </div>
-
-      {/** 移动端 */}
-      <div className=" bg-[#edf3ff] md:hidden p-4">
-        <h2 className=" font-bold text-[#00305a] mb-4 text-2xl">AI数字员工</h2>
-        <p>
-          2019年，奥森小冰率先提出了数字人（AI Being）理念，并基于全球领先的完备人工智能奥森小冰框架，推出了数字专家和数字员工等完整产品线。奥森小冰的数字人具有不同的性格特征、态度观点、生物学特征、创造力、知识和技能，兼具情感交互能力、专业能力和内容生产能力，已被大众熟知，并应用在多个行业场景。随着数字人多样性（Diversity of AI Being）趋势的来临，每个人的日常工作和生活，将由更加丰富多彩的AI Beings所陪伴和环绕。
-        </p>
-
-        <img className="w-full pt-5 pb-8" src="/img1.png" alt="" />
-      </div>
-      {/** 移动端 */}
-      <div className=" bg-white md:hidden p-4">
-        <h2 className=" font-bold text-[#00305a] mb-4 text-2xl">内容生产</h2>
-        <p>
-          奥森小冰是人工智能内容生产的先行者，拥有全球领先的核心技术并已形成完善的产品线。奥森小冰的人工智能内容生产，着眼于在达到与相应人类生产者同等质量水准的前提下，充分发挥人工智能快速学习、高并发与稳定性等特点，协助弥补 “ 高度定制化内容 ” 的供需关系短板。
-        </p>
-        <img className="w-full pt-5 pb-8" src="/img2.png" alt="" />
-      </div>
-      {/** 移动端 */}
-      <div className=" bg-[#edf3ff] md:hidden p-4">
-        <h2 className=" font-bold text-[#00305a] mb-4 text-2xl">直播+loT</h2>
-        <p>
-          奥森小冰是人工智能内容生产的先行者，拥有全球领先的核心技术并已形成完善的产品线。奥森小冰的人工智能内容生产，着眼于在达到与相应人类生产者同等质量水准的前提下，充分发挥人工智能快速学习、高并发与稳定性等特点，协助弥补 “ 高度定制化内容 ” 的供需关系短板。
-        </p>
-        <img className="w-full pt-5 pb-8" src="/img3.png" alt="" />
-      </div>
-      {/** 移动端 */}
-      <div className=" bg-white md:hidden p-4">
-        <h2 className=" font-bold text-[#00305a] mb-4 text-2xl">数字名片</h2>
-        <p>
-          奥森小冰是人工智能内容生产的先行者，拥有全球领先的核心技术并已形成完善的产品线。奥森小冰的人工智能内容生产，着眼于在达到与相应人类生产者同等质量水准的前提下，充分发挥人工智能快速学习、高并发与稳定性等特点，协助弥补 “ 高度定制化内容 ” 的供需关系短板。
-        </p>
-        <img className="w-full pt-5 pb-8" src="/img3.png" alt="" />
-      </div>
-
-    <div className="w-full bg-white flex justify-between">
-      <img  className="hidden sm:block md:max-w-xl" src="https://business.xiaoice.com/img/home/img2.png" alt="" />
-      <div className="relative flex items-start justify-center ml-auto ">
-        <img className="hidden sm:block md:max-w-xl" src="https://business.xiaoice.com/img/circle2.png" alt="" />
-        <div className="absolute top-1/3  -left-3/4 max-w-4xl  w-[450px] text-[#00305a] text-xl">
-          <h2 className=" font-bold text-[#00305a] mb-4 text-4xl">内容生产</h2>
-          <p>
-            奥森小冰是人工智能内容生产的先行者，拥有全球领先的核心技术并已形成完善的产品线。奥森小冰的人工智能内容生产，着眼于在达到与相应人类生产者同等质量水准的前提下，充分发挥人工智能快速学习、高并发与稳定性等特点，协助弥补 “ 高度定制化内容 ” 的供需关系短板。          </p>
-        </div>
-      </div>
-    </div>
-
-
-    <div className="w-full  mt-8 md:mt-8 bg-[#edf3ff] flex justify-between ">
-      <div className="relative flex justify-center mr-auto">
-        <img  className="hidden sm:block md:max-w-xl scale-x-[-1]" src="https://business.xiaoice.com/img/circle1.png" alt="" />
-        <div className="absolute top-1/3  -right-3/4 max-w-4xl  w-[450px] text-[#00305a] text-xl">
-          <h2 className=" font-bold text-[#00305a] mb-4 text-4xl">AI数字员工</h2>
-          <p>
-            2019年，奥森小冰率先提出了数字人（AI Being）理念，并基于全球领先的完备人工智能奥森小冰框架，推出了数字专家和数字员工等完整产品线。奥森小冰的数字人具有不同的性格特征、态度观点、生物学特征、创造力、知识和技能，兼具情感交互能力、专业能力和内容生产能力，已被大众熟知，并应用在多个行业场景。随着数字人多样性（Diversity of AI Being）趋势的来临，每个人的日常工作和生活，将由更加丰富多彩的AI Beings所陪伴和环绕。
-          </p>
-        </div>
-      </div>
-
-      <img className="hidden sm:block md:max-w-xl" src="https://business.xiaoice.com/img/home/img3.png" alt="" />
-    </div>
-
-
-    <div className="w-full bg-white flex justify-between ">
-      <div className="relative flex justify-center mr-auto">
-        <img  className="hidden sm:block md:max-w-xl scale-x-[-1]" src="https://business.xiaoice.com/img/circle2.png" alt="" />
-        <div className="absolute top-1/3  -right-3/4 max-w-4xl  w-[450px] text-[#00305a] text-xl">
-          <h2 className=" font-bold text-[#00305a] mb-4 text-4xl">AI数字员工</h2>
-          <p>
-            2019年，奥森小冰率先提出了数字人（AI Being）理念，并基于全球领先的完备人工智能奥森小冰框架，推出了数字专家和数字员工等完整产品线。奥森小冰的数字人具有不同的性格特征、态度观点、生物学特征、创造力、知识和技能，兼具情感交互能力、专业能力和内容生产能力，已被大众熟知，并应用在多个行业场景。随着数字人多样性（Diversity of AI Being）趋势的来临，每个人的日常工作和生活，将由更加丰富多彩的AI Beings所陪伴和环绕。
-          </p>
-        </div>
-      </div>
-
-      <img className="hidden sm:block md:max-w-xl" src="https://business.xiaoice.com/img/home/img4.png" alt="" />
-    </div>
-
-
-
-      <div className="flex justify-center items-center h-24 flex-col">
-        <h1 className=" text-center text-[#00305a] font-bold text-3xl md:text-5xl -mt-8 md:-mt-0 -mb-0 md:-mb-24">客户寄语</h1>
-      </div>
-
-      {/** 移动端 */}
-      <div className=" flex flex-col md:hidden gap-5  justify-center mt-48 items-center h-[100vh]">
-        {cards.map((card) => (
-          <div key={card.id} className="relative w-full">
-            { isPlaying ? (<video className=" w-full" src={card.videoUrl} controls> </video>) : (
-                <div>
-                  <img src={card.url} alt={`Video Poster ${card.id}`} className="w-full h-auto" />
-                  <div onClick={handlePlayVideo} className="absolute inset-0 z-5 bg-black opacity-30 flex justify-center items-center cursor-pointer" >
-                    <Image width={40} src="play.png" alt="Home Page" />
-                  </div>
-                </div>
-            )}
-          </div>
-        ))}
-        </div>
-
-      <HorizontalScrollCarousel />
-
-
-
-      <div className=" flex flex-col items-center justify-start -mt-96">
-        <h1 className=" text-[#00305a] font-bold text-3xl md:text-5xl mb-24 md:-mt-0 -mt-12">生态合作伙伴</h1>
-        <img width={1200} src="https://business.xiaoice.com/img/home/logo.png?v=-pfdMEKlplfktfXxOaO1zLgAIhghlr_GVuexryn6fAE" alt="" />
-      </div>
-
-  </div>
-  );
- 
-}

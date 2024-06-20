@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import {
 	Navbar as NextUINavbar,
@@ -17,17 +16,14 @@ import clsx from "clsx";
 import { useState } from "react";
 
 export const Navbar = () => {
-
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [activeItem, setActiveItem] = useState(null);
 
-	const handleClose = () => {
-	  setIsMenuOpen(false); 
+	const handleItemClick = (href) => {
+	  setActiveItem(href);
 	};
 
-	const handleOpenNewPage = () => {
-		window.open('', '_blank'); // 替换'/new-page'为您要打开的页面路径
-	  };
-
+	
 	return (
 		<NextUINavbar maxWidth="lg" position="static" className=" text-white p-2 bg-none rounded-sm bg-[#2e3242]" isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
 			<img className=" object-cover w-64 mr-12" src="logo.png" alt="png" />
@@ -38,20 +34,25 @@ export const Navbar = () => {
 				</NavbarBrand>
 				<ul className="hidden lg:flex gap-8 justify-start ml-2">
 					{siteConfig.navItems.map((item) => (
-						<NavbarItem key={item.href}>
-							<NextLink
-								className={clsx(
-									linkStyles({ color: "foreground" }),
-									"data-[active=true]:text-primary data-[active=true]:font-medium text-xl text-white"
-								)}
-								color="foreground"
-								href={item.href}
-								>
-									<div className="relative inline-block">
-									<span className=" relative z-10">{item.label}</span>
-								</div>
-							</NextLink>
-						</NavbarItem>
+					<NavbarItem key={item.href}>
+						<NextLink
+						className={clsx(
+							linkStyles({ color: "foreground" }),
+							"data-[active=true]:text-primary data-[active=true]:font-medium text-xl text-white"
+						)}
+						color="foreground"
+						href={item.href}
+						onClick={() => handleItemClick(item.href)}
+						>
+						<div className="relative inline-block">
+							<span className="relative z-10">{item.label}</span>
+							<span
+							className={`absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r  transition-all duration-300 ease-in-out ${activeItem === item.href ? 'bg-[#e3196a]' : ''}`}
+							style={{ transformOrigin: "left bottom" }}
+							></span>
+						</div>
+						</NextLink>
+					</NavbarItem>
 					))}
 				</ul>
 			</NavbarContent>
@@ -82,9 +83,10 @@ export const Navbar = () => {
 				<div className="mx-4 mt-8 flex flex-col gap-2 space-y-4 divide-y divide-y-reverse bg-[#2e3242] divide-white divide-opacity-20">
 					{siteConfig.navMenuItems.map((item, index) => (
 						<NavbarMenuItem key={`${item}-${index}`} >
-							<Link
+							<Link 
 								className=" text-white divide-y"
 								href={item.href}
+								onClick={() => setIsMenuOpen(!isMenuOpen)}
 							>
 							{item.label}
 							</Link>

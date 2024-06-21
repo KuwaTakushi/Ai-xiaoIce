@@ -23,7 +23,7 @@ export default function Live() {
 
 	return (
 		<div>
-    		<div className="bg-cover w-full h-110 p-12 flex justify-center md:justify-center text-center" style={{backgroundImage: "url('mathCard-bg.jpg')"}}>
+    		<div className="bg-cover w-full h-110 p-12 flex justify-center md:justify-center text-center" style={{backgroundImage: "url('mathCard_bg.png')"}}>
 				<div className=" flex flex-col text-white w-65 md:w-[38%] mt-12 md:ml-44">
 					<h1 className=" font-bold md:text-5xl text-3xl mb-8">数字名片</h1>
 					<p className=" text-lg md:text-2xl">数字名片是传统纸质名片的数字化升级，它以更便捷、更智能的方式展现您的个人信息和联系方式。告别纸质名片的浪费和繁琐，数字名片让您只需轻轻一扫，就能将所有信息传递给对方。您可以定制专属的数字名片，设计独特的风格，展现您的个人魅力。许多平台还提供数据分析功能，帮助您了解名片的传播效果和用户行为。无论是商务社交还是个人推广，数字名片都将成为您不可或缺的工具。</p>
@@ -65,7 +65,7 @@ export default function Live() {
 					<AccordionItem key="1"
 						isCompact 
 						aria-label="Accordion 1" 
-						title="便捷高效"
+						title={<p className="text-black">便捷高效</p>}
 						startContent={
 							<img className=" object-cover w-8" src="icon_1.png" alt="" />
 						}
@@ -74,9 +74,9 @@ export default function Live() {
 					</AccordionItem>
 					<AccordionItem 
 						key="2" 
-						isCompact 
+						isCompact
 						aria-label="Accordion 2" 
-						title="个性化定制"
+						title={<p className="text-black">个性化定制</p>}
 						startContent={
 							<img className=" object-cover w-8" src="icon_2.png" alt="" />
 						}
@@ -86,8 +86,8 @@ export default function Live() {
 					<AccordionItem 
 						key="3" 
 						isCompact 
-						aria-label="Accordion 3" 
-						title="环保节能"
+						aria-label="Accordion 3"
+						title={<p className="text-black">环保节能</p>}
 						startContent={
 							<img className=" object-cover w-8" src="icon_3.png" alt="" />
 						}
@@ -98,7 +98,7 @@ export default function Live() {
 						key="4" 
 						isCompact 
 						aria-label="Accordion 4" 
-						title="基于需求定制化的数字名片"
+						title={<p className="text-black">基于需求定制化的数字名片</p>}
 						startContent={
 							<img className=" object-cover w-8" src="icon_4.png" alt="" />
 						}

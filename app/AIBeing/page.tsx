@@ -1,5 +1,5 @@
 "use client"
-import { Chip, Tab, Tabs } from "@nextui-org/react";
+import { Chip, Modal, ModalBody, ModalContent, ModalHeader, Tab, Tabs, useDisclosure } from "@nextui-org/react";
 import { useEffect, useRef, useState } from "react";
 import { Carousel } from "@material-tailwind/react";
 
@@ -9,6 +9,9 @@ export default function AIBeing() {
 	const [isHoveredB, setIsHoveredB] = useState(false);
 	const [isHoveredC, setIsHoveredC] = useState(false);
 	const [isHoveredD, setIsHoveredD] = useState(false);
+
+	
+	const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
 
 	const [hoveredIndex, setActiveIndex] = useState<number | null>(null);
@@ -194,14 +197,14 @@ export default function AIBeing() {
 								className=" skew-x-20 bg-right-5.2 bg-no-repeat  relative h-[780px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
 								style={{backgroundImage: `url("human_product_one1.png")`}}
 							>
-								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
+								<div className=" flex flex-col justify-center items-start absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
 										<h2 className=" text-4xl">Rita</h2>
 										{isHoveredA && (
 											<Chip
 												variant="shadow"
 												classNames={{
-													base: "bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
+													base: "absolute top-14 left-24 bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
 													content: "drop-shadow shadow-black text-white",
 												}}
 												>
@@ -209,7 +212,8 @@ export default function AIBeing() {
 											</Chip>
 										)}
 									</div>
-									{!isHoveredA  ? (<p className="text-base">跨境电商主播</p>) : (<div className=" p-2"><p className=" text-base  transition-opacity duration-1000 ease-in-out">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
+									{!isHoveredA ? (<p className="transition-all duration-700 ease-in-out transform absolute top-1/2 left-6 text-base translate-y-6">跨境电商主播</p>) : (<div className=" p-2"><p className=" translate-y-6 absolute top-1/2 left-6 text-base  transition-opacity duration-1000 ease-in-out">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
+
 								</div>
 							</div>
 						</div>
@@ -224,14 +228,14 @@ export default function AIBeing() {
 								className=" skew-x-20 bg-right-5.2 bg-no-repeat  relative h-[780px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
 								style={{backgroundImage: `url("product_two1.png")`}}
 							>
-								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
+								<div className=" flex flex-col justify-center items-start absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
-										<h2 className=" text-4xl">星怡</h2>
+										<h2 className=" text-4xl">晓玲</h2>
 										{isHoveredB && (
 											<Chip
 												variant="shadow"
 												classNames={{
-													base: "bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
+													base: "absolute top-14 left-24 bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
 													content: "drop-shadow shadow-black text-white",
 												}}
 												>
@@ -239,7 +243,7 @@ export default function AIBeing() {
 											</Chip>
 										)}
 									</div>
-									{!isHoveredB ? (<p className="text-base">展馆导览</p>) : (<div className=" p-2"><p className=" text-base  transition-opacity duration-1000 ease-in-out">在城市博物馆，为游客介绍这座城市发展历史及建设成就</p></div>)}
+									{!isHoveredB ? (<p className="transition-all duration-700 ease-in-out transform absolute top-1/2 left-6 text-base translate-y-6">展馆导览</p>) : (<div className=" p-2"><p className=" translate-y-6 absolute top-1/2 left-6 text-base  transition-opacity duration-1000 ease-in-out">在城市博物馆，为游客介绍这座城市发展历史及建设成就</p></div>)}
 								</div>
 							</div>
 						</div>
@@ -252,14 +256,14 @@ export default function AIBeing() {
 								className=" skew-x-20 bg-right-5.2 bg-no-repeat  relative h-[780px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
 								style={{backgroundImage: `url("product_three1.png")`}}
 							>
-								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
+								<div className=" flex flex-col justify-center items-start absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
 										<h2 className=" text-4xl">星怡</h2>
 										{isHoveredC && (
 											<Chip
 												variant="shadow"
 												classNames={{
-													base: "bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
+													base: "absolute top-14 left-28 bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
 													content: "drop-shadow shadow-black text-white",
 												}}
 												>
@@ -267,7 +271,7 @@ export default function AIBeing() {
 											</Chip>
 										)}
 									</div>
-									{!isHoveredC ? (<p className="text-base">知识种草</p>) : (<div className=" p-2"><p className=" text-base  transition-opacity duration-1000 ease-in-out">在抖音对出版社的图书进行带货</p></div>)}
+									{!isHoveredC ? (<p className="transition-all duration-700 ease-in-out transform absolute top-1/2 left-6 text-base translate-y-6">知识种草</p>) : (<div className=" p-2"><p className=" translate-y-6 absolute top-1/2 left-6 text-base  transition-opacity duration-1000 ease-in-out">在抖音对出版社的图书进行带货</p></div>)}
 								</div>
 							</div>
 						</div>
@@ -281,14 +285,14 @@ export default function AIBeing() {
 								className=" skew-x-20 bg-right-5.2 bg-no-repeat  relative h-[780px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
 								style={{backgroundImage: `url("product_four1.png")`}}
 							>
-								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
+								<div className=" flex flex-col justify-center items-start absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
 										<h2 className=" text-4xl">俊晨</h2>
 										{isHoveredD && (
 											<Chip
 												variant="shadow"
 												classNames={{
-													base: "bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
+													base: "absolute top-14 left-28 bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
 													content: "drop-shadow shadow-black text-white",
 												}}
 												>
@@ -296,7 +300,7 @@ export default function AIBeing() {
 											</Chip>
 										)}
 									</div>
-									{!isHoveredD ? (<p className="text-base">地产经理</p>) : (<div className=" p-2"><p className=" text-base transition-opacity duration-1000 ease-in-out">在地产销售大厅介绍楼盘的项目概况</p></div>)}
+									{!isHoveredD ? (<p className="transition-all duration-700 ease-in-out transform absolute top-1/2 left-6 text-base translate-y-6">地产经理</p>) : (<div className=" p-2"><p className=" translate-y-6 absolute top-1/2 left-6 text-base  transition-opacity duration-1000 ease-in-out">在地产销售大厅介绍楼盘的项目概况</p></div>)}
 								</div>
 							</div>
 						</div>
@@ -525,20 +529,28 @@ export default function AIBeing() {
 
 
 
-				<div className=" flex bg-[#edf3ff] w-full flex-col justify-center gap-12 md:gap-24 items-center p-4 md:p-20 flex-wrap  md:flex-nowrap">
+				<div className="flex bg-[#edf3ff] w-full flex-col justify-center gap-12 md:gap-24 items-center p-4 md:p-20 flex-wrap  md:flex-nowrap">
 					<div
 						onMouseEnter={() => setActiveIndex(0)}
 						onMouseLeave={() => setActiveIndex(null)}
+						onClick={onOpen}
 						className=" flex md:gap-16 justify-center flex-col-reverse md:flex-row"
 					>
-						<div className=" relative mr-12">
-							<img className="md:max-w-xl max-w-xs object-cover mr-24 md:h-110 p-2 -mt-16 md:-mt-0" src="video_poster5.png" alt="" />
-							{hoveredIndex === 0 && (
-								<div className="max-w-xl absolute top-0 left-0 inset-0 z-10 bg-black opacity-30 bg-opacity-5 flex justify-center items-center cursor-pointer rounded-xl">
-								<img width={70} className=" object-cover" src="play.png" alt="" />
-								</div>
-							)}
-						</div>
+				<div className="relative w-80">
+					<img
+						className="md:max-w-xl max-w-2xs object-cover md:h-110 p-2 -mt-16 md:-mt-0"
+						src="video_poster5.png"
+						alt=""
+					/>
+				{hoveredIndex === 0 && (
+					<div
+					className="absolute rounded-2xl top-2 h-[462px] w-[350px] left-2  z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
+					>
+					<img width={70} src="play.png" alt="" />
+					</div>
+				)}
+				</div>
+
 
 						<div className=" max-w-lg mb-20 flex justify-around">
 							<div className=" flex flex-col text-left md:max-w-lg max-w-sm md:mt-4 flex-wrap md:p-0  pr-24 justify-center">
@@ -548,6 +560,27 @@ export default function AIBeing() {
 						</div>
 					</div>
 
+
+					<Modal
+						className="bg-[#403d3d] w-96 md:w-full md:max-w-6xl max-w-4xl md:p-2 max-h-[680px]"
+						placement="center"
+						shouldBlockScroll={true}
+						isOpen={isOpen} 
+						onOpenChange={onOpenChange}
+					>
+						<ModalContent>
+							{(onClose) => (
+								<ModalBody>
+							<video 
+								src="https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D.m4v"
+								playsInline={true}
+								autoPlay={true}
+								controls={true}
+							/>
+								</ModalBody>
+							)}
+						</ModalContent>
+					</Modal>
 					<div className=" flex gap-16 flex-col md:flex-row">
 						<div className=" md:mb-20 flex items-center justify-around">
 							<div className=" flex flex-col text-left max-w-lg mt-4 flex-wrap">

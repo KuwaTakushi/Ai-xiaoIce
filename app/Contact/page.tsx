@@ -377,14 +377,14 @@ export default function Contact() {
 									className=" skew-x-6 bg-right-5.2 bg-no-repeat  relative h-[800px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
 									style={{backgroundImage: `url("human_product_three1.png")`}}
 								>
-									<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
-										<div className=" flex gap-4 p-4 justify-center items-center">
+									<div className=" flex flex-col justify-center items-start absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
+										<div className=" relative flex gap-4 p-4 justify-center items-center">
 											<h2 className=" text-4xl">星怡</h2>
 											{isHoveredA && (
 												<Chip
 													variant="shadow"
 													classNames={{
-														base: "bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
+														base: "absolute top-6 left-24 bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
 														content: "drop-shadow shadow-black text-white",
 													}}
 													>
@@ -392,7 +392,7 @@ export default function Contact() {
 												</Chip>
 											)}
 										</div>
-										{!isHoveredA ? (<p className="text-base">跨境电商主播</p>) : (<div className=" p-2"><p className=" text-base  transition-opacity duration-1000 ease-in-out">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
+										{!isHoveredA ? (<p className="transition-all duration-700 ease-in-out transform absolute top-1/2 left-6 text-base translate-y-6">跨境电商主播</p>) : (<div className=" p-2"><p className=" translate-y-6 absolute top-1/2 left-6 text-base  transition-opacity duration-1000 ease-in-out">支持直播推流，轻松满足电商带货、赛事解说、资讯播报等场景。</p></div>)}
 									</div>
 								</div>
 							</div>
@@ -408,14 +408,14 @@ export default function Contact() {
 								className=" skew-x-6 bg-right-5.2 bg-no-repeat  relative h-[800px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
 								style={{backgroundImage: `url("human2.png")`}}
 							>
-								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
+								<div className=" flex flex-col justify-center items-start absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
 										<h2 className=" text-4xl">招小影</h2>
 										{isHoveredB && (
 											<Chip
 												variant="shadow"
 												classNames={{
-													base: "bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
+													base: "absolute top-14 left-36 bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
 													content: "drop-shadow shadow-black text-white",
 												}}
 												>
@@ -423,7 +423,7 @@ export default function Contact() {
 											</Chip>
 										)}
 									</div>
-									{!isHoveredB ? (<p className="text-base">企业数字员工</p>) : (<div className=" p-2"><p className=" text-base  transition-opacity duration-1000 ease-in-out">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
+									{!isHoveredB ? (<p className="transition-all duration-700 ease-in-out transform absolute top-1/2 left-6 text-base translate-y-6">企业数字员工</p>) : (<div className=" p-2"><p className=" translate-y-6 absolute top-1/2 left-6 text-base  transition-opacity duration-1000 ease-in-out">从皮囊到灵魂均可定制，完美契合品牌调性。不仅是品牌代言人，更是每位员工的数字助理。</p></div>)}
 								</div>
 							</div>
 						</div>
@@ -437,14 +437,14 @@ export default function Contact() {
 								className=" skew-x-6 bg-right-5.2 bg-no-repeat  relative h-[800px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
 								style={{backgroundImage: `url("human3.png")`}}
 							>
-								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
+								<div className=" flex flex-col justify-center items-start absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
 										<h2 className=" text-4xl">TORBY</h2>
 										{isHoveredC && (
 											<Chip
 												variant="shadow"
 												classNames={{
-													base: "bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
+													base: "absolute top-14 left-36 bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
 													content: "drop-shadow shadow-black text-white",
 												}}
 												>
@@ -452,7 +452,7 @@ export default function Contact() {
 											</Chip>
 										)}
 									</div>
-									{!isHoveredC ? (<p className="text-base">线下导购迎宾</p>) : (<div className=" p-2"><p className=" text-base  transition-opacity duration-1000 ease-in-out">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
+									{!isHoveredC ? (<p className="transition-all duration-700 ease-in-out transform absolute top-1/2 left-6 text-base translate-y-6">线下导购迎宾</p>) : (<div className=" p-2"><p className=" translate-y-6 absolute top-1/2 left-6 text-base  transition-opacity duration-1000 ease-in-out">线下门店智能迎宾与导购，不仅能推荐全品类SKU，更能实时回答常见问题，显著节约人工。</p></div>)}
 								</div>
 							</div>
 						</div>
@@ -466,14 +466,14 @@ export default function Contact() {
 								className=" skew-x-6 bg-right-5.2 bg-no-repeat  relative h-[800px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
 								style={{backgroundImage: `url("human4.png")`}}
 							>
-								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
+								<div className=" flex flex-col justify-center items-start absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
 										<h2 className=" text-4xl">听枫</h2>
 										{isHoveredD && (
 											<Chip
 												variant="shadow"
 												classNames={{
-													base: "bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
+													base: "absolute top-14 left-24 bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
 													content: "drop-shadow shadow-black text-white",
 												}}
 												>
@@ -481,7 +481,7 @@ export default function Contact() {
 											</Chip>
 										)}
 									</div>
-									{!isHoveredD ? (<p className="text-base">文旅宣传大使</p>) : (<div className=" p-2"><p className=" text-base  transition-opacity duration-1000 ease-in-out">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
+									{!isHoveredD ? (<p className="transition-all duration-700 ease-in-out transform absolute top-1/2 left-6 text-base translate-y-6">文旅宣传大使</p>) : (<div className=" p-2"><p className=" translate-y-6 absolute top-1/2 left-6 text-base  transition-opacity duration-1000 ease-in-out">基于城市与景区特色，定制有文化内核的数字人，为品宣片、文博馆、景区App增色，文化输出新玩法。</p></div>)}
 								</div>
 							</div>
 						</div>
@@ -496,14 +496,14 @@ export default function Contact() {
 								className=" skew-x-6 bg-right-5.2 bg-no-repeat  relative h-[800px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
 								style={{backgroundImage: `url("human5.png")`}}
 							>
-								<div className=" flex flex-col justify-center items-center absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
+								<div className=" flex flex-col justify-center items-start absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
 										<h2 className=" text-4xl">刘建宏</h2>
 										{isHoveredE && (
 											<Chip
 												variant="shadow"
 												classNames={{
-													base: "bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
+													base: "absolute top-14 left-36 bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
 													content: "drop-shadow shadow-black text-white",
 												}}
 												>
@@ -511,7 +511,7 @@ export default function Contact() {
 											</Chip>
 										)}
 									</div>
-									{!isHoveredE ? (<p className="text-base">名人数字分身</p>) : (<div className=" p-2"><p className=" text-base  transition-opacity duration-1000 ease-in-out">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>)}
+									{!isHoveredE ? (<p className="transition-all duration-700 ease-in-out transform absolute top-1/2 left-6 text-base translate-y-6">名人数字分身</p>) : (<div className=" p-2"><p className=" translate-y-6 absolute top-1/2 left-6 text-base  transition-opacity duration-1000 ease-in-out">已定制多位名人的数字分身，帮助他们显著节约视频内容制作精力，扩大IP影响力，提升IP价值。</p></div>)}
 								</div>
 							</div>
 						</div>
@@ -528,11 +528,11 @@ export default function Contact() {
 			<div className=" md:hidden text-black p-4 bg-cover bg-center" style={{backgroundImage: `url("https://business.xiaoice.com/img/vhuman/advantage_intro_bg.png")`}}>
 			<div className=" flex overflow-x-scroll whitespace-nowrap mt-3">
 					<div className=" relative">
-						<img className=" min-w-96" src="https://business.xiaoice.com/img/vhuman/product_one1.png" alt="" />
+						<img className=" min-w-96" src="human_product_three1.png" alt="" />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">
-									<h2 className=" text-2xl">Rita</h2>
+									<h2 className=" text-2xl">星怡</h2>
 									<Chip
 										variant="shadow"
 										classNames={{
@@ -540,10 +540,10 @@ export default function Contact() {
 											content: "drop-shadow shadow-black text-white",
 										}}
 										>
-									企业数字员工
+									跨境电商主播
 									</Chip>
 								</div>
-								<div><p className=" text-xs">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>
+								<div><p className=" text-xs">支持直播推流，轻松满足电商带货、赛事解说、资讯播报等场景。</p></div>
 							</div>
 						</div>
 					</div>
@@ -553,11 +553,34 @@ export default function Contact() {
 
 
 					<div className=" relative">
-						<img className="min-w-96" src="https://business.xiaoice.com/img/vhuman/product_two1.png" alt="" />
+						<img className="min-w-96" src="human2.png" alt="" />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">
-									<h2 className=" text-2xl">Rita</h2>
+									<h2 className=" text-2xl">招小影</h2>
+									<Chip
+										variant="shadow"
+										classNames={{
+											base: "bg-gradient-to-br from-indigo-500 to-pink-500 border-small border-white/50 shadow-pink-500/30",
+											content: "drop-shadow shadow-black text-white",
+										}}
+										>
+										企业数字员工
+									</Chip>
+								</div>
+								<div><p className=" text-xs">从皮囊到灵魂均可定制，完美契合品牌调性。不仅是品牌代言人，更是每位员工的数字助理。</p></div>
+							</div>
+						</div>
+					</div>
+
+
+					
+					<div className="relative">
+						<img className="min-w-96" src="human3.png" alt="" />
+						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
+							<div className=" flex flex-col">
+								<div className="flex gap-8">
+									<h2 className=" text-2xl">TORBY</h2>
 									<Chip
 										variant="shadow"
 										classNames={{
@@ -568,19 +591,18 @@ export default function Contact() {
 										线下导购迎宾
 									</Chip>
 								</div>
-								<div><p className=" text-xs">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>
+								<div><p className=" text-xs">线下门店智能迎宾与导购，不仅能推荐全品类SKU，更能实时回答常见问题，显著节约人工。</p></div>
 							</div>
 						</div>
 					</div>
 
 
-					
-					<div className="relative">
-						<img className="min-w-96" src="https://business.xiaoice.com/img/vhuman/product_three1.png" alt="" />
+					<div className=" relative">
+						<img className="min-w-96" src="human4.png" alt="" />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">
-									<h2 className=" text-2xl">Rita</h2>
+									<h2 className=" text-2xl">听枫</h2>
 									<Chip
 										variant="shadow"
 										classNames={{
@@ -591,12 +613,10 @@ export default function Contact() {
 										文旅宣传大使
 									</Chip>
 								</div>
-								<div><p className=" text-xs">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>
+								<div><p className=" text-xs">基于城市与景区特色，定制有文化内核的数字人，为品宣片、文博馆、景区App增色，文化输出新玩法。</p></div>
 							</div>
 						</div>
 					</div>
-
-
 
 
 					<div className=" relative">
@@ -604,7 +624,7 @@ export default function Contact() {
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">
-									<h2 className=" text-2xl">Rita</h2>
+									<h2 className=" text-2xl">刘建宏</h2>
 									<Chip
 										variant="shadow"
 										classNames={{
@@ -615,10 +635,11 @@ export default function Contact() {
 										名人数字分身
 									</Chip>
 								</div>
-								<div><p className=" text-xs">在TikTok上用英语介绍活性炭控油去屑洗发水</p></div>
+								<div><p className=" text-xs">已定制多位名人的数字分身，帮助他们显著节约视频内容制作精力，扩大IP影响力，提升IP价值。</p></div>
 							</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
 

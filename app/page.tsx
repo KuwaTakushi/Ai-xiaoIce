@@ -1,7 +1,7 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useDisclosure, Radio, RadioGroup, Tab, Chip, Tabs, CardFooter, Card as NextUiCard, ModalContent, ModalBody, Link } from "@nextui-org/react";
+import { useDisclosure, Radio, RadioGroup, Tab, Chip, Tabs, CardFooter, Card as NextUiCard, ModalContent, ModalBody, Link, Modal } from "@nextui-org/react";
 import { FloatingPhone } from "@/components/FloatingPhone";
 import { Carousel } from "@material-tailwind/react";
 
@@ -27,13 +27,19 @@ const BackgroundIconC = () => {
 export default function Home() {
   const [hoveredIndex, setActiveIndex] = useState<number | null>(null);
   const [open, setOpen] = useState(10);
+  const [customerIndex, setCustomerIndex] = useState(0);
+  const [currentVideoUrl, setCurrentVideoUrl] = useState("");
 
-  const {onOpen} = useDisclosure();
+
+	const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
   const handleOpen = (index: number) => {
     setOpen(index);
   }
 
+  useEffect(() => {
+    setCurrentVideoUrl(cards[customerIndex].videoUrl);
+  }, [customerIndex]);
 
   return (
     <div className="bg-white overflow-x-hidden text-black">
@@ -61,7 +67,7 @@ export default function Home() {
             <FloatingPhone context="实时AI" backgroundImage="live_2.jpg" isEnablePreserve={false} />
           </div>
           <div className="  flex gap-24 bg-gradient-to-bl  w-full justify-center bg-opacity-0">
-            <FloatingPhone context="适配各行业场景" backgroundImage="live_1.jpg"  />
+            <FloatingPhone context="适配各行业场景" backgroundImage="live_1.jpg"  isEnablePreserve={false} />
           </div>
         </Carousel>
         </div>
@@ -90,14 +96,14 @@ export default function Home() {
             }
           >
 
-            <div className=" flex justify-between items-center gap-24 p-8 flex-wrap md:flex-nowrap">
+            <div className=" flex justify-between items-center md:gap-24 p-8 flex-wrap md:flex-nowrap">
               <div className=" flex flex-col justify-start items-start min-h-48 text-[#00305a]">
                 <p className=" text-3xl font-bold pb-4">AI数字员工</p>
                 <p className=" max-w-lg text-lg">奥森小冰率先提出了数字人（AI Being）理念，并基于全球领先的完备人工智能奥森小冰框架，推出了数字专家和数字员工等完整产品线。奥森小冰的数字人具有不同的性格特征、态度观点、生物学特征、创造力、知识和技能，兼具情感交互能力、专业能力和内容生产能力，已被大众熟知，并应用在多个行业场景。随着数字人多样性（Diversity of AI Being）趋势的来临，每个人的日常工作和生活，将由更加丰富多彩的AI Beings所陪伴和环绕。</p>
               </div>
 
-              <div className=" overflow-hidden max-w-lg">
-                <img className="w-96 bg-cover" src="https://i.p-i.vip/20/20240621-667475869d07d.png" alt="" />
+              <div className="md:max-w-lg max-w-sm flex justify-center">
+              <img className=" max-w-lg md:max-w-2xl object-cover" src="main_bg_2.png" alt="" />
               </div>
             </div>
 
@@ -110,13 +116,13 @@ export default function Home() {
               </div>
             }
           >
-            <div className=" flex justify-between items-center gap-24 p-4 flex-wrap md:flex-nowrap">
+            <div className=" flex justify-between items-center md:gap-24 p-4 flex-wrap md:flex-nowrap">
               <div className=" flex flex-col justify-start items-start min-h-48 text-[#00305a]">
                 <p className=" text-3xl font-bold  pb-4">内容生产</p>
                 <p className=" max-w-lg text-lg">奥森小冰是人工智能内容生产的先行者，拥有全球领先的核心技术并已形成完善的产品线。奥森小冰的人工智能内容生产，着眼于在达到与相应人类生产者同等质量水准的前提下，充分发挥人工智能快速学习、高并发与稳定性等特点，协助弥补 “ 高度定制化内容 ” 的供需关系短板</p>
               </div>
-              <div className=" overflow-hidden max-w-lg rounded-xl">
-                <img className="w-96 bg-cover" src="context.jpg" alt="" />
+              <div className="md:max-w-lg max-w-sm flex justify-center">
+              <img className=" max-w-2xl object-cover" src="main_bg_3.png" alt="" />
               </div>
             </div>
           </Tab>
@@ -128,13 +134,13 @@ export default function Home() {
               </div>
             }
           >
-            <div className=" flex justify-between items-center gap-24 p-4 flex-wrap md:flex-nowrap">
+            <div className=" flex justify-between items-center md:gap-24 p-4 flex-wrap md:flex-nowrap">
               <div className=" flex flex-col justify-start items-start min-h-48 text-[#00305a]">
-                <p className=" text-3xl font-bold  pb-4">数字直播</p>
-                <p className=" max-w-lg text-lg">2019年，奥森小冰率先提出了数字人（AI Being）理念，并基于全球领先的完备人工智能奥森小冰框架，推出了数字专家和数字员工等完整产品线。奥森小冰的数字人具有不同的性格特征、态度观点、生物学特征、创造力、知识和技能，兼具情感交互能力、专业能力和内容生产能力，已被大众熟知，并应用在多个行业场景。随着数字人多样性（Diversity of AI Being）趋势的来临，每个人的日常工作和生活，将由更加丰富多彩的AI Beings所陪伴和环绕。</p>
+                <p className=" text-3xl font-bold pb-4">数字直播</p>
+                <p className=" max-w-lg text-lg">AI数字人直播是指通过人工智能技术打造的虚拟人物，通过直播平台与观众实时互动。这些AI数字人除了具备逼真的外貌和声音，更重要的是具备了人类智能和情感。他们可以自动理解观众的问题，并给出相应的回答和建议，让互动更加自然流畅。</p>
               </div>
-              <div className=" overflow-hidden max-w-lg">
-                <img className="w-96 bg-cover" src="video_poster5.png" alt="" />
+              <div className="md:max-w-lg max-w-sm flex justify-center">
+                <img className=" max-w-2xl object-cover" src="main_bg_1.png" alt="" />
               </div>
             </div>
           </Tab>
@@ -146,13 +152,13 @@ export default function Home() {
               </div>
             }
           >
-            <div className=" flex justify-between items-center gap-24 p-4 flex-wrap md:flex-nowrap">
+            <div className=" flex justify-between items-center md:gap-24 p-4 flex-wrap md:flex-nowrap">
               <div className=" flex flex-col justify-start items-start min-h-48 text-[#00305a]">
                 <p className=" text-3xl font-bold pb-4">数字名片</p>
                 <p className=" max-w-lg text-lg">数字名片是传统纸质名片的数字化升级，它以更便捷、更智能的方式展现您的个人信息和联系方式。告别纸质名片的浪费和繁琐，数字名片让您只需轻轻一扫，就能将所有信息传递给对方。您可以定制专属的数字名片，设计独特的风格，展现您的个人魅力。许多平台还提供数据分析功能，帮助您了解名片的传播效果和用户行为。无论是商务社交还是个人推广，数字名片都将成为您不可或缺的工具。</p>
               </div>
-              <div className=" overflow-hidden max-w-lg">
-                <img className="w-96 bg-cover rounded-xl" src="context-bg.jpg" alt="" />
+              <div className="md:max-w-lg max-w-sm flex justify-center">
+                <img className="max-w-2xl object-cover rounded-xl" src="mian_bg_4.png" alt="" />
               </div>
             </div>
           </Tab>
@@ -164,6 +170,27 @@ export default function Home() {
       <div className=" bg-[#edf3ff] pt-8 mt-28 w-full flex-col flex justify-center items-center relative">
         <div className=" absolute z-0 top-0 opacity-50 left-1/2 -translate-x-12"><BackgroundIconB /></div>
         <h1 className="z-10 font-bold text-4xl text-[#00305a] pb-8">客户寄语</h1>
+
+        <Modal
+            className="bg-[#403d3d] w-96 md:w-full md:max-w-6xl max-w-4xl md:p-2"
+            placement="center"
+            shouldBlockScroll={true}
+            isOpen={isOpen} 
+            onOpenChange={onOpenChange}
+          >
+						<ModalContent>
+							{(onClose) => (
+								<ModalBody>
+                  <video 
+                    src={currentVideoUrl}
+                    playsInline={true}
+                    autoPlay={true}
+                    controls={true}
+                  />
+								</ModalBody>
+							)}
+						</ModalContent>
+					</Modal>
 
         <div className=" md:grid md:grid-cols-3 flex flex-wrap justify-center items-center gap-12 max-w-full p-8">
           <NextUiCard
@@ -182,7 +209,7 @@ export default function Home() {
             {hoveredIndex === cards[0].id && (
               <div
                 className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
-                onClick={onOpen}
+                onClick={() => {onOpen(); setCustomerIndex(0)}}
             >
                 <img width={70} src="play.png" alt="" />
               </div>
@@ -192,7 +219,6 @@ export default function Home() {
               <p className="text-2xl text-[#00305a] font-bold">{`客户寄语 0${cards[0].id}`}</p>
             </CardFooter>
           </NextUiCard>
-
 
           <NextUiCard
             key={cards[1].id}
@@ -210,7 +236,7 @@ export default function Home() {
             {hoveredIndex === cards[1].id && (
               <div 
                 className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
-                onClick={() => {handleOpen(1)}}
+                onClick={() => {onOpen(); setCustomerIndex(1)}}
               >
                 <img width={70} src="play.png" alt="" />
               </div>
@@ -220,6 +246,7 @@ export default function Home() {
               <p className="text-2xl text-[#00305a] font-bold">{`客户寄语 0${cards[1].id}`}</p>
             </CardFooter>
           </NextUiCard>
+
 
           <NextUiCard
             key={cards[2].id}
@@ -237,7 +264,7 @@ export default function Home() {
             {hoveredIndex === cards[2].id && (
               <div 
                 className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
-                onClick={() => {handleOpen(2)}}
+                onClick={() => {onOpen(); setCustomerIndex(2)}}
               >
                 <img width={70} src="play.png" alt="" />
               </div>
@@ -265,7 +292,7 @@ export default function Home() {
             {hoveredIndex === cards[3].id && (
               <div 
                 className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
-                onClick={() => {handleOpen(3)}}
+                onClick={() => {onOpen(); setCustomerIndex(3)}}
               >
                 <img width={70} src="play.png" alt="" />
               </div>
@@ -292,7 +319,7 @@ export default function Home() {
             />
             {hoveredIndex === cards[4].id && (
               <div 
-                onClick={() => {handleOpen(4)}}
+                onClick={() => {onOpen(); setCustomerIndex(4)}}
                 className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
               >
                 <img width={70} src="play.png" alt="" />
@@ -463,7 +490,7 @@ const OverlayCopy = () => {
 const cards = [
   {
     url: "https://i.p-i.vip/20/20240620-66744dc58e684.png",
-    videoUrl: "video.mp4",
+    videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E5%AF%84%E8%AF%AD_%E4%B8%87%E5%BE%97%E8%B5%84%E8%AE%AF.mp4",
     id: 1,
   },
   {

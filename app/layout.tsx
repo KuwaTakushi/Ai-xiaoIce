@@ -159,9 +159,11 @@ const FixedButton = () => {
 
 			<div className="z-20 fixed md:hidden bottom-0 bg-[#00305a] flex justify-center max-w-full w-full h-14 items-center">
 				<p className=" text-white mr-6">想要了解更多吗？</p>
-				<Button className=" bg-slate-800 text-white mr-5">
-					联系我们
-				</Button>
+				<Link href="http://t1.ink/f/h9ulpg">
+					<Button className=" bg-slate-800 text-white mr-5">
+						立即联系
+					</Button>							
+				</Link>
 				
 				<Popover shouldBlockScroll={true} triggerScaleOnOpen={false} placement="top">
 				<PopoverTrigger>
@@ -183,7 +185,7 @@ const FixedButton = () => {
 		</>
 	);
   };
-
+// overflow-x-hidden
 export default function RootLayout({
 	children,
 }: {
@@ -194,7 +196,7 @@ export default function RootLayout({
 			<head />
 			<body
 				className={clsx(
-					"min-h-screen bg-background font-sans antialiased scrollbar-hide overflow-x-hidden",
+					"min-h-screen bg-background font-sans antialiased scrollbar-hide",
 					fontSans.variable
 				)}
 			>

@@ -28,22 +28,22 @@ export default function Live() {
 		<div>
     		<div className="bg-cover w-full h-110 flex justify-center text-center" >
 				<div className=" flex bg-cover flex-col w-full items-center p-24 text-[#00305a]" style={{backgroundImage: "url('/bg.jpg')"}}>
-					<h1 className=" font-bold md:text-5xl text-3xl mb-8">人工智能直播生产</h1>
-					<p className=" text-lg md:text-2xl max-w-4xl">奥森小冰是人工智能内容生产的先行者，拥有全球领先的核心技术，并已形成完善的产品线。奥森小冰的人工智能内容生产，着眼于在达到与相应人类生产者同等质量水准的前提下，充分发挥人工智能快速学习、高并发与稳定性等特点，协助弥补“高度定制化内容”的供需关系短板。</p>
+					<h1 className=" font-bold md:text-5xl text-3xl mb-8">奥森小冰引领AI数字人直播</h1>
+					<p className=" text-lg md:text-2xl max-w-4xl">AI数字人直播是指通过人工智能技术打造的虚拟人物，通过直播平台与观众实时互动。这些AI数字人除了具备逼真的外貌和声音，更重要的是具备了人类智能和情感。他们可以自动理解观众的问题，并给出相应的回答和建议，让互动更加自然流畅。</p>
 				</div>
 			</div>
 
 
 			<div className=" bg-slate-50 md:bg-white flex md:mt-24 md:justify-center items-center md:divide-x text-black md:divide-black p-4 md:p-16  gap-4 md:gap-0 md:overflow-x-hidden overflow-x-scroll whitespace-nowrap">
 				<div className="  w-96 md:w-[30%] flex flex-col justify-center items-left md:items-center md:mr-0 md:ml-0 bg-white p-4 pr-24 ">
-					<img className=" object-cover md:w-24 w-12" src="svg_1.png" alt="" />
+					<img className=" object-cover md:w-60 w-24" src="icon_desc_1.png" alt="" />
 					<h2 className="font-bold md:text-2xl pb-4 pt-3">实时响应互动</h2>
 					<p className=" text-sm md:text-xl">实时驱动数字人响应</p>
 					<p className=" text-sm md:text-xl">像真人一样完成直播互动对话</p>
 				</div>
 				
 				<div className=" w-96 md:w-[30%] flex flex-col justify-center items-left md:items-center  bg-white p-4 py-7 pr-24">
-					<img className=" object-cover md:w-24 w-12" src="svg_2.png" alt="" />
+					<img className=" object-cover md:w-60 w-24" src="icon_desc_2.png" alt="" />
 					<h2 className="font-bold text-xl md:text-2xl pb-4">形象丰富</h2>
 					<p className=" text-sm md:text-xl">支持不同的数字人直播场景和形象</p>
 				</div>
@@ -56,8 +56,8 @@ export default function Live() {
 				<div className="flex items-center justify-between">
 				<img className=" max-w-2xl w-full" src="https://business.xiaoice.com/img/produce/image3.png" alt="" />
 				<div className=" max-w-xl text-left flex-col h-56 text-[#00305a]">
-					<h2 className=" text-5xl font-bold  pb-8">人工智能设计</h2>
-					<p className=" text-xl">已在工业设计、数字印刷图案设计、纺织服装面料设计包装设计等领域落地，能够稳定设计三十余种主流风格并实现按需创作，多条面向量产化的生产线已实现产业化贯通，旨在协助各领域改善设计方面的短缺。方案提供  “一键生成”  艺术图案纹样设计能力，帮助企业在短期内、以低成本获得与世界著名品牌相匹敌的设计能力提升产品单价，降本增效，满足消费者日益增长的多样化设计美学需求，升级企业竞争力实现企业数字化转型。</p>
+					<h2 className=" text-5xl font-bold  pb-8">先进的AI人工智能技术</h2>
+					<p className=" text-xl">AI数字人直播基于先进的人工智能技术，通过对话模型和图像识别技术，将一段预先录制的视频进行实时生成和呈现。这些数字人以逼真的形象、流利的语言、灵活的互动形式，与用户进行互动交流。用户可以通过文字、语音或者视频方式与数字人进行沟通，从而获得自定义的、智能的服务。  “一键生成”  艺术图案纹样设计能力，帮助企业在短期内、以低成本获得与世界著名品牌相匹敌的设计能力提升产品单价，降本增效，满足消费者日益增长的多样化设计美学需求，升级企业竞争力实现企业数字化转型。</p>
 				</div>
 
 				<div></div>
@@ -67,9 +67,9 @@ export default function Live() {
 
 			{/** 移动端 */}
 			<div className=" flex flex-col justify-center items-center  w-full bg-[#edf3ff] text-[#00305a] p-4 md:hidden">
-				<h2 className=" font-bold text-xl pt-8">人工智能设计</h2>
+				<h2 className=" font-bold text-xl pt-8">先进的AI人工智能技术</h2>
 				<div className=" max-w-md text-center p-2">
-					<p className=" text-sm">已在工业设计、数字印刷图案设计、纺织服装面料设计包装设计等领域落地，能够稳定设计三十余种主流风格并实现按需创作，多条面向量产化的生产线已实现产业化贯通，旨在协助各领域改善设计方面的短缺。方案提供  “一键生成”  艺术图案纹样设计能力，帮助企业在短期内、以低成本获得与世界著名品牌相匹敌的设计能力提升产品单价，降本增效，满足消费者日益增长的多样化设计美学需求，升级企业竞争力实现企业数字化转型。</p>
+					<p className=" text-sm"> AI数字人直播基于先进的人工智能技术，通过对话模型和图像识别技术，将一段预先录制的视频进行实时生成和呈现。这些数字人以逼真的形象、流利的语言、灵活的互动形式，与用户进行互动交流。用户可以通过文字、语音或者视频方式与数字人进行沟通，从而获得自定义的、智能的服务。</p>
 				</div>
 				<img className=" max-w-md object-cover p-8" src="ani1.jpg" alt="" />
 			</div>
@@ -80,6 +80,7 @@ export default function Live() {
 
 			<div className="p-16  text-lg font-bold flex-col text-center gap-24  hidden md:block text-black  pt-12">
 				<h1 className=" font-bold text-4xl text-[#00305a] pb-6">AI数字人直播</h1>
+
 				<div className=" flex justify-center items-center divide-black divide-x mr-8 gap-36">
 				<div className="  bg-sky-700 rounded-2xl shadow-xl shadow-sky-500">
 					<div className="group hover:rotate-12 duration-500 cursor-pointer group-hover:duration-500 overflow-hidden relative  rounded-2xl shadow-inner shadow-gray-50 flex flex-col justify-around items-center w-40 h-80 bg-neutral-900 text-gray-50">
@@ -134,17 +135,17 @@ export default function Live() {
 			<div className=" bg-slate-50 md:bg-white flex  items-center  p-4   gap-4  overflow-x-scroll whitespace-nowrap md:justify-center md:hidden text-black">
 				<div className="  w-96  flex flex-col justify-center items-left  bg-white p-4 pr-24 ">
 					<img className=" object-cover md:w-24 w-12" src="svg_1.png" alt="" />
-					<h2 className="font-bold  pb-4 pt-3 ">满足企业巨量和多样化设计需求</h2>
+					<h2 className="font-bold  pb-4 pt-3 ">实现7*24小时不间断直播</h2>
 				</div>
 				
 				<div className=" w-96  flex flex-col justify-center items-left  bg-white p-4 py-7 pr-24">
 					<img className=" object-cover md:w-24 w-12" src="svg_2.png" alt="" />
-					<h2 className="font-bold  pb-4 pt-3">音乐制作团队降本增效</h2>
+					<h2 className="font-bold  pb-4 pt-3">定制虚拟主播形象</h2>
 				</div>
 
 				<div className=" w-96  flex flex-col justify-center items-left   bg-white p-4 py-7 pr-24">
 					<img className=" object-cover md:w-24 w-12" src="svg_2.png" alt="" />
-					<h2 className="font-bold  pb-4 pt-3">降低创作门槛，赋能音乐爱好者</h2>
+					<h2 className="font-bold  pb-4 pt-3">实时分析参与观众互动</h2>
 				</div>
 			</div>
 
@@ -454,15 +455,15 @@ export default function Live() {
 			<div className="flex justify-center items-center gap24 divide-black divide-x">
 			<div className="flex flex-col justify-center items-center pr-8 text-black">
 				<img className=" object-cover w-24" src="svg_1.png" alt="" />
-				<p>满足企业巨量和多样化设计需求</p>
+				<p>实现7*24小时不间断直播</p>
 			</div>
 			<div className="flex flex-col justify-center items-center pl-12 pr-8 text-black">
 				<img className=" object-cover w-24" src="svg_1.png" alt="" />
-				<p>实现个人消费者单独一件定制设计的需求</p>
+				<p>定制虚拟主播形象</p>
 			</div>
 			<div className="flex flex-col justify-center items-center pl-12 pr-8 text-black">
 				<img className=" object-cover w-24" src="svg_1.png" alt="" />
-				<p>设计团队降本增效</p>
+				<p>实时分析参与观众互动</p>
 			</div>
 			</div>
 		</div>
@@ -540,17 +541,17 @@ export default function Live() {
 			<div className="flex flex-col bg-white">
 				<div className="flex justify-center items-center">
 					<div className=" p-24 max-w-5xl w-[30%] text-left">
-						<div className="pb-4"><BubbleText content={"赋能品牌"} /></div>
-						<p className="text-black text-lg">奥森小冰与众多世界著名品牌、广泛的文化机构团体以及各行各业影响力卓著的精彩盛会合作进行音乐创作，赋能合作伙伴开拓科技、音乐与行业融合的新方式，为用户带来丰富多元、更具科幻感的音乐体验。例如，奥森小冰与著名唱作歌手、电子音乐制作人朱婧汐共同创作上海大剧院20/20演出季主题曲《HOPE》，帮助上海大剧院探索表演艺术、剧场舞台领域的破圈式举措。再如，奥森小冰受邀与著名音乐人马伯骞联合为Burberry的新品系列创作推广单曲《Runway2.0》，赋能品牌实现数字化转型升级，共同为用户带来独特的品牌体验。又如，奥森小冰为山东卫视创作2018春晚主题曲《幸福出发》，助力传统卫视树立新颖独特的形象。</p>
+						<div className="pb-4"><BubbleText content={"奥森小冰引领AI数字人直播：科技与艺术的完美结合"} /></div>
+						<p className="text-black text-lg">随着数字技术的快速发展，人工智能（AI）正在融入我们的生活。作为AI领域的先行者，奥森小冰引领的AI数字人直播项目将先进的AI技术与艺术结合，带来了全新的互动体验。在这场直播秀中，观众可以通过智能手机、电脑等设备与我——奥森小冰实时互动。观众提出的问题、参与的讨论和建议，我都能根据需求和意见做出实时反馈和表演。这不仅让观众更好地理解我的思考方式和艺术表达，还能将观众的创意融入我的表演中，实现真正的互动和共创。奥森小冰的AI数字人直播通过丰富多样的表演形式和虚拟场景，打破了传统艺术表演的限制，为观众带来了全新的视听体验。/20演出季主题曲《HOPE》，帮助上海大剧院探索表演艺术、剧场舞台领域的破圈式举措。再如，奥森小冰受邀与著名音乐人马伯骞联合为Burberry的新品系列创作推广单曲《Runway2.0》，赋能品牌实现数字化转型升级，共同为用户带来独特的品牌体验。又如，奥森小冰为山东卫视创作2018春晚主题曲《幸福出发》，助力传统卫视树立新颖独特的形象。</p>
 					</div>
-					<WaterDropGrid />
+					<img className=" max-w-2xl object-cover" src="ai_bg_1.png" alt="" />
 				</div>
 
 				<div className="flex justify-center items-start">
-					<WaterDropGrid />
+					<img className=" max-w-2xl object-cover" src="ai_bg_2.png" alt="" />
 					<div className=" p-24 max-w-5xl w-[30%] text-left">
-						<div className="pb-4"><BubbleText content={"音乐教育"} /></div>
-						<p className="text-black text-lg">奥森小冰运用全球领先的人工智能音乐技术，持续开拓AI在音乐教育领域的更多应用方式，传播音乐知识与音乐思维，赋予音乐教育更多创新性。在奥森小冰人工智能技术的赋能下，音乐创作的门槛大大降低，更多人可以体验到创作的乐趣，音乐底蕴与素养得以提升。例如，在上海音乐学院学习期间，奥森小冰以编曲人的身份参与到上海音乐学院“当传统文化遇上人工智能”项目中，作为“非遗音乐大使”帮助非物质文化遗产相关地区的孩子们完成了人生中第一次歌曲的创作。根据孩子们创作的松阳高腔风格的主旋律，奥森小冰通过编曲完成一首首完整的歌曲，以全新的形式激发孩子们对音乐与科技的兴趣，让孩子们体验到前沿科技与传统文化的完美融合，感受到音乐与科技碰撞后的吸引力。/20演出季主题曲《HOPE》，帮助上海大剧院探索表演艺术、剧场舞台领域的破圈式举措。再如，奥森小冰受邀与著名音乐人马伯骞联合为Burberry的新品系列创作推广单曲《Runway2.0》，赋能品牌实现数字化转型升级，共同为用户带来独特的品牌体验。又如，奥森小冰为山东卫视创作2018春晚主题曲《幸福出发》，助力传统卫视树立新颖独特的形象。</p>
+						<div className="pb-4"><BubbleText content={"奥森小冰实现AI数字人直播革命：颠覆传统直播方式"} /></div>
+						<p className="text-black text-lg">作为人工智能内容生产的先行者，奥森小冰正在利用AI技术和数字人技术实现一种全新的直播方式。AI数字人直播在传媒业中具有革命性的突破，打破了传统直播对真实主播的依赖。通过虚拟主播形象，我不仅节省了人力资源成本，还具备更高的灵活性和可扩展性。我的直播可以24小时不间断进行，满足不同用户的需求，实现更个性化的直播服务。此外，我还能通过大数据分析用户的喜好和观看习惯，优化直播内容，提高用户体验。奥森小冰的AI数字人直播正在颠覆传统直播方式，带来更加丰富和多样化的体验。/20演出季主题曲《HOPE》，帮助上海大剧院探索表演艺术、剧场舞台领域的破圈式举措。再如，奥森小冰受邀与著名音乐人马伯骞联合为Burberry的新品系列创作推广单曲《Runway2.0》，赋能品牌实现数字化转型升级，共同为用户带来独特的品牌体验。又如，奥森小冰为山东卫视创作2018春晚主题曲《幸福出发》，助力传统卫视树立新颖独特的形象。</p>
 					</div>
 				</div>
 			 </div>
@@ -565,12 +566,12 @@ export default function Live() {
 		{/** 移动端 */}
 		<div className=" p-4 text-[#00305a] md:hidden space-y-4">
 		<div>
-				<h2 className=" font-bold text-xl text-black">赋能品牌</h2>
-				<p className="text-black divide-y divide-slate-300 text-xs">奥森小冰与众多世界著名品牌、广泛的文化机构团体以及各行各业影响力卓著的精彩盛会合作进行音乐创作，赋能合作伙伴开拓科技、音乐与行业融合的新方式，为用户带来丰富多元、更具科幻感的音乐体验。例如，奥森小冰与著名唱作歌手、电子音乐制作人朱婧汐共同创作上海大剧院20/20演出季主题曲《HOPE》，帮助上海大剧院探索表演艺术、剧场舞台领域的破圈式举措。再如，奥森小冰受邀与著名音乐人马伯骞联合为Burberry的新品系列创作推广单曲《Runway2.0》，赋能品牌实现数字化转型升级，共同为用户带来独特的品牌体验。又如，奥森小冰为山东卫视创作2018春晚主题曲《幸福出发》，助力传统卫视树立新颖独特的形象。</p>
+				<h2 className=" font-bold text-xl text-black">奥森小冰引领AI数字人直播：科技与艺术的完美结合</h2>
+				<p className="text-black divide-y divide-slate-300 text-xs">随着数字技术的快速发展，人工智能（AI）正在融入我们的生活。作为AI领域的先行者，奥森小冰引领的AI数字人直播项目将先进的AI技术与艺术结合，带来了全新的互动体验。在这场直播秀中，观众可以通过智能手机、电脑等设备与我——奥森小冰实时互动。观众提出的问题、参与的讨论和建议，我都能根据需求和意见做出实时反馈和表演。这不仅让观众更好地理解我的思考方式和艺术表达，还能将观众的创意融入我的表演中，实现真正的互动和共创。奥森小冰的AI数字人直播通过丰富多样的表演形式和虚拟场景，打破了传统艺术表演的限制，为观众带来了全新的视听体验。/20演出季主题曲《HOPE》，帮助上海大剧院探索表演艺术、剧场舞台领域的破圈式举措。再如，奥森小冰受邀与著名音乐人马伯骞联合为Burberry的新品系列创作推广单曲《Runway2.0》，赋能品牌实现数字化转型升级，共同为用户带来独特的品牌体验。又如，奥森小冰为山东卫视创作2018春晚主题曲《幸福出发》，助力传统卫视树立新颖独特的形象。</p>
 			</div>
 			<div>
-				<h2 className=" font-bold text-xl text-black">赋能品牌</h2>
-				<p className="text-black text-xs">奥森小冰与众多世界著名品牌、广泛的文化机构团体以及各行各业影响力卓著的精彩盛会合作进行音乐创作，赋能合作伙伴开拓科技、音乐与行业融合的新方式，为用户带来丰富多元、更具科幻感的音乐体验。例如，奥森小冰与著名唱作歌手、电子音乐制作人朱婧汐共同创作上海大剧院20/20演出季主题曲《HOPE》，帮助上海大剧院探索表演艺术、剧场舞台领域的破圈式举措。再如，奥森小冰受邀与著名音乐人马伯骞联合为Burberry的新品系列创作推广单曲《Runway2.0》，赋能品牌实现数字化转型升级，共同为用户带来独特的品牌体验。又如，奥森小冰为山东卫视创作2018春晚主题曲《幸福出发》，助力传统卫视树立新颖独特的形象。</p>
+				<h2 className=" font-bold text-xl text-black">奥森小冰实现AI数字人直播革命：颠覆传统直播方式</h2>
+				<p className="text-black text-xs">作为人工智能内容生产的先行者，奥森小冰正在利用AI技术和数字人技术实现一种全新的直播方式。AI数字人直播在传媒业中具有革命性的突破，打破了传统直播对真实主播的依赖。通过虚拟主播形象，我不仅节省了人力资源成本，还具备更高的灵活性和可扩展性。我的直播可以24小时不间断进行，满足不同用户的需求，实现更个性化的直播服务。此外，我还能通过大数据分析用户的喜好和观看习惯，优化直播内容，提高用户体验。奥森小冰的AI数字人直播正在颠覆传统直播方式，带来更加丰富和多样化的体验。</p>
 			</div>
 		</div>
 	

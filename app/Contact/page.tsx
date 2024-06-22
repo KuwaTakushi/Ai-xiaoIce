@@ -100,29 +100,29 @@ const IconA = () => {
                             </mask>
                             <g id="矩形">
                                 <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlinkHref="#path-3"></use>
-                                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlinkHref="#path-3"></use>
+                                <use fill="black" fillOpacity="1" filter="url(#filter-5)" xlinkHref="#path-3"></use>
                             </g>
                             <path d="M5.49227985,30.3287458 L15.473333,23.5558883 C16.056847,23.1599324 16.2955461,23.0575765 16.5780862,22.990237 C16.8606263,22.9228976 17.1393737,22.9228976 17.4219138,22.990237 C17.7044539,23.0575765 17.943153,23.1599324 18.526667,23.5558883 L28.5077201,30.3287458 C29.5055934,31.0058741 29.8255057,31.2978341 30.1343923,31.6756343 C30.4432789,32.0534346 30.6596808,32.4617993 30.7988611,32.9295309 C30.9380414,33.3972624 31,33.825918 31,35.0318425 L31,43.3941999 C31,45.1772373 30.8143488,45.8238098 30.4657346,46.4756617 C30.1171204,47.1275135 29.6055433,47.6390907 28.9536914,47.9877049 C28.3018396,48.336319 27.6552671,48.5219703 25.8722296,48.5219703 L8.1277704,48.5219703 C6.34473292,48.5219703 5.69816044,48.336319 5.04630859,47.9877049 C4.39445674,47.6390907 3.88287959,47.1275135 3.53426541,46.4756617 C3.18565122,45.8238098 3,45.1772373 3,43.3941999 L3,35.0318425 C3,33.825918 3.06195862,33.3972624 3.20113889,32.9295309 C3.34031916,32.4617993 3.55672109,32.0534346 3.8656077,31.6756343 C4.17449432,31.2978341 4.49440657,31.0058741 5.49227985,30.3287458 Z" id="矩形" fill="#FFFFFF" opacity="0.3" filter="url(#filter-6)" mask="url(#mask-4)"></path>
                         </g>
                         <g id="矩形">
-                            <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlinkHref="#path-8"></use>
+                            <use fill="black" fillOpacity="1" filter="url(#filter-9)" xlinkHref="#path-8"></use>
                             <use fill="url(#linearGradient-7)" fill-rule="evenodd" xlinkHref="#path-8"></use>
-                            <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlinkHref="#path-8"></use>
+                            <use fill="black" fillOpacity="1" filter="url(#filter-10)" xlinkHref="#path-8"></use>
                         </g>
                         <g id="矩形">
-                            <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlinkHref="#path-11"></use>
+                            <use fill="black" fillOpacity="1" filter="url(#filter-12)" xlinkHref="#path-11"></use>
                             <use fill="url(#linearGradient-7)" fill-rule="evenodd" xlinkHref="#path-11"></use>
-                            <use fill="black" fill-opacity="1" filter="url(#filter-13)" xlinkHref="#path-11"></use>
+                            <use fill="black" fillOpacity="1" filter="url(#filter-13)" xlinkHref="#path-11"></use>
                         </g>
                         <g id="矩形">
-                            <use fill="black" fill-opacity="1" filter="url(#filter-15)" xlinkHref="#path-14"></use>
+                            <use fill="black" fillOpacity="1" filter="url(#filter-15)" xlinkHref="#path-14"></use>
                             <use fill="url(#linearGradient-7)" fill-rule="evenodd" xlinkHref="#path-14"></use>
-                            <use fill="black" fill-opacity="1" filter="url(#filter-16)" xlinkHref="#path-14"></use>
+                            <use fill="black" fillOpacity="1" filter="url(#filter-16)" xlinkHref="#path-14"></use>
                         </g>
                         <g id="矩形">
-                            <use fill="black" fill-opacity="1" filter="url(#filter-18)" xlinkHref="#path-17"></use>
+                            <use fill="black" fillOpacity="1" filter="url(#filter-18)" xlinkHref="#path-17"></use>
                             <use fill="url(#linearGradient-7)" fill-rule="evenodd" xlinkHref="#path-17"></use>
-                            <use fill="black" fill-opacity="1" filter="url(#filter-19)" xlinkHref="#path-17"></use>
+                            <use fill="black" fillOpacity="1" filter="url(#filter-19)" xlinkHref="#path-17"></use>
                         </g>
                     </g>
                 </g>
@@ -207,18 +207,18 @@ const IconB = () => {
                     </mask>
                     <g id="椭圆形">
                         <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlinkHref="#path-3"></use>
-                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlinkHref="#path-3"></use>
+                        <use fill="black" fillOpacity="1" filter="url(#filter-5)" xlinkHref="#path-3"></use>
                     </g>
                     <path d="M3.05431336,34.4927791 L17.7145258,27.1626729 C18.2343217,26.9027749 18.4304033,26.8355904 18.6600212,26.79139 C18.8896391,26.7471897 19.1103609,26.7471897 19.3399788,26.79139 C19.5695967,26.8355904 19.7656783,26.9027749 20.2854742,27.1626729 L34.9456866,34.4927791 C36.134909,35.0873902 36.5255135,35.3756978 36.9060937,35.7653686 C37.2866739,36.1550394 37.5601505,36.5975338 37.738482,37.1122012 C37.9168135,37.6268686 38,38.1051709 38,39.4347619 L38,47.3941999 C38,49.1772373 37.8143488,49.8238098 37.4657346,50.4756617 C37.1171204,51.1275135 36.6055433,51.6390907 35.9536914,51.9877049 C35.3018396,52.336319 34.6552671,52.5219703 32.8722296,52.5219703 L5.1277704,52.5219703 C3.34473292,52.5219703 2.69816044,52.336319 2.04630859,51.9877049 C1.39445674,51.6390907 0.882879593,51.1275135 0.534265408,50.4756617 C0.185651222,49.8238098 4.54827598e-13,49.1772373 4.54609239e-13,47.3941999 L4.5353053e-13,39.4347619 C4.53367702e-13,38.1051709 0.0831864713,37.6268686 0.261517998,37.1122012 C0.439849525,36.5975338 0.713326107,36.1550394 1.09390633,35.7653686 C1.47448655,35.3756978 1.86509104,35.0873902 3.05431336,34.4927791 Z" id="矩形" fill="#FFFFFF" opacity="0.2" filter="url(#filter-6)" mask="url(#mask-4)"></path>
                     <g id="形状" mask="url(#mask-4)">
-                        <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlinkHref="#path-8"></use>
+                        <use fill="black" fillOpacity="1" filter="url(#filter-9)" xlinkHref="#path-8"></use>
                         <use fill="url(#linearGradient-7)" fill-rule="evenodd" xlinkHref="#path-8"></use>
-                        <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlinkHref="#path-8"></use>
+                        <use fill="black" fillOpacity="1" filter="url(#filter-10)" xlinkHref="#path-8"></use>
                     </g>
                     <g id="椭圆形" mask="url(#mask-4)">
-                        <use fill="black" fill-opacity="1" filter="url(#filter-13)" xlinkHref="#path-12"></use>
+                        <use fill="black" fillOpacity="1" filter="url(#filter-13)" xlinkHref="#path-12"></use>
                         <use fill="url(#linearGradient-11)" fill-rule="evenodd" xlinkHref="#path-12"></use>
-                        <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlinkHref="#path-12"></use>
+                        <use fill="black" fillOpacity="1" filter="url(#filter-14)" xlinkHref="#path-12"></use>
                     </g>
                 </g>
                 <polygon id="矩形" opacity="0.362165179" points="0 0 52 0 52 52 0 52"></polygon>
@@ -298,22 +298,22 @@ const IconC = () => {
                     <g>
                         <g id="矩形-copy-3">
                             <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlinkHref="#path-3"></use>
-                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlinkHref="#path-3"></use>
+                            <use fill="black" fillOpacity="1" filter="url(#filter-4)" xlinkHref="#path-3"></use>
                         </g>
                         <g id="分组-12" transform="translate(4.000000, 4.000000)">
                             <mask id="mask-7" fill="white">
                                 <use xlinkHref="#path-6"></use>
                             </mask>
                             <g id="矩形-copy-3">
-                                <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlinkHref="#path-6"></use>
+                                <use fill="black" fillOpacity="1" filter="url(#filter-8)" xlinkHref="#path-6"></use>
                                 <use fill="url(#linearGradient-5)" fill-rule="evenodd" xlinkHref="#path-6"></use>
-                                <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlinkHref="#path-6"></use>
+                                <use fill="black" fillOpacity="1" filter="url(#filter-9)" xlinkHref="#path-6"></use>
                             </g>
                             <path d="M1.34969016,24.7829187 L10.4150819,18.1582094 C11.0114283,17.7224178 11.2608606,17.6097642 11.556926,17.5356499 C11.8529914,17.4615357 12.1470086,17.4615357 12.443074,17.5356499 C12.7391394,17.6097642 12.9885717,17.7224178 13.5849181,18.1582094 L22.6503098,24.7829187 C23.59797,25.4754396 23.8998756,25.7665767 24.1906741,26.1396398 C24.4814727,26.5127028 24.6838041,26.9111595 24.813436,27.366061 C24.9430678,27.8209626 25,28.2364942 25,29.4102254 L25,37.8742641 C25,39.6573016 24.8143488,40.3038741 24.4657346,40.9557259 C24.1171204,41.6075778 23.6055433,42.1191549 22.9536914,42.4677691 C22.3018396,42.8163833 21.6552671,43.0020345 19.8722296,43.0020345 L4.1277704,43.0020345 C2.34473292,43.0020345 1.69816044,42.8163833 1.04630859,42.4677691 C0.394456741,42.1191549 -0.117120407,41.6075778 -0.465734592,40.9557259 C-0.814348778,40.3038741 -1,39.6573016 -1,37.8742641 L-1,29.4102254 C-1,28.2364942 -0.943067796,27.8209626 -0.813435959,27.366061 C-0.683804122,26.9111595 -0.481472652,26.5127028 -0.19067412,26.1396398 C0.100124412,25.7665767 0.402029993,25.4754396 1.34969016,24.7829187 Z" id="矩形" fill="#FFFFFF" opacity="0.2" filter="url(#filter-10)" mask="url(#mask-7)"></path>
                         </g>
-                        <g id="路径-4" stroke-linecap="round" stroke-linejoin="round">
-                            <use fill="black" fill-opacity="1" filter="url(#filter-13)" xlinkHref="#path-12"></use>
-                            <use stroke="url(#linearGradient-11)" stroke-width="3.5" xlinkHref="#path-12"></use>
+                        <g id="路径-4" stroke-linecap="round" strokeLinejoin="round">
+                            <use fill="black" fillOpacity="1" filter="url(#filter-13)" xlinkHref="#path-12"></use>
+                            <use stroke="url(#linearGradient-11)" strokeWidth="3.5" xlinkHref="#path-12"></use>
                         </g>
                     </g>
                 </g>
@@ -530,7 +530,7 @@ export default function Contact() {
 					<div className=" relative">
 						<img className=" min-w-96" src="human_product_three1.png" alt="" />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
-							<div className=" flex flex-col">
+							<div className=" flex flex-col justify-center">
 								<div className="flex gap-8">
 									<h2 className=" text-2xl">星怡</h2>
 									<Chip
@@ -543,7 +543,8 @@ export default function Contact() {
 									跨境电商主播
 									</Chip>
 								</div>
-								<div><p className=" text-xs">支持直播推流，轻松满足电商带货、赛事解说、资讯播报等场景。</p></div>
+								<div className="w-24"><p className=" text-xs">支持直播推流，轻松满足电商带货、赛事解说、</p></div>
+								<div className="w-24 mr-36"><p className=" text-xs">资讯播报等场景。</p></div>
 							</div>
 						</div>
 					</div>
@@ -554,8 +555,8 @@ export default function Contact() {
 
 					<div className=" relative">
 						<img className="min-w-96" src="human2.png" alt="" />
-						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
-							<div className=" flex flex-col">
+						<div className=" p-4 absolute bottom-0 pr-16  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
+						<div className=" flex flex-col justify-center">
 								<div className="flex gap-8">
 									<h2 className=" text-2xl">招小影</h2>
 									<Chip
@@ -568,7 +569,8 @@ export default function Contact() {
 										企业数字员工
 									</Chip>
 								</div>
-								<div><p className=" text-xs">从皮囊到灵魂均可定制，完美契合品牌调性。不仅是品牌代言人，更是每位员工的数字助理。</p></div>
+								<div className="w-24"><p className=" text-xs">从皮囊到灵魂均可定制，完美契合品牌调性。不仅是品牌代言人，更是每位员工的数字助理。</p></div>
+								<div className="w-24"><p className=" text-xs">不仅是品牌代言人，更是每位员工的数字助理。</p></div>
 							</div>
 						</div>
 					</div>
@@ -578,7 +580,7 @@ export default function Contact() {
 					<div className="relative">
 						<img className="min-w-96" src="human3.png" alt="" />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
-							<div className=" flex flex-col">
+						<div className=" flex flex-col justify-center">
 								<div className="flex gap-8">
 									<h2 className=" text-2xl">TORBY</h2>
 									<Chip
@@ -591,7 +593,8 @@ export default function Contact() {
 										线下导购迎宾
 									</Chip>
 								</div>
-								<div><p className=" text-xs">线下门店智能迎宾与导购，不仅能推荐全品类SKU，更能实时回答常见问题，显著节约人工。</p></div>
+								<div className="w-24"><p className=" text-xs">线下门店智能迎宾与导购，不仅能推荐全品类SKU，</p></div>
+								<div className="w-24 mr-4"><p className=" text-xs">更能实时回答常见问题，显著节约人工。</p></div>
 							</div>
 						</div>
 					</div>
@@ -600,7 +603,7 @@ export default function Contact() {
 					<div className=" relative">
 						<img className="min-w-96" src="human4.png" alt="" />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
-							<div className=" flex flex-col">
+						<div className=" flex flex-col justify-center">
 								<div className="flex gap-8">
 									<h2 className=" text-2xl">听枫</h2>
 									<Chip
@@ -613,7 +616,8 @@ export default function Contact() {
 										文旅宣传大使
 									</Chip>
 								</div>
-								<div><p className=" text-xs">基于城市与景区特色，定制有文化内核的数字人，为品宣片、文博馆、景区App增色，文化输出新玩法。</p></div>
+								<div className="w-24"><p className=" text-xs">基于城市与景区特色，定制有文化内核的数字人，为品宣片、文博馆、</p></div>
+								<div className="w-24 mr-4"><p className=" text-xs">景区App增色，文化输出新玩法。</p></div>
 							</div>
 						</div>
 					</div>
@@ -635,7 +639,8 @@ export default function Contact() {
 										名人数字分身
 									</Chip>
 								</div>
-								<div><p className=" text-xs">已定制多位名人的数字分身，帮助他们显著节约视频内容制作精力，扩大IP影响力，提升IP价值。</p></div>
+								<div className="w-24"><p className=" text-xs">已定制多位名人的数字分身，帮助他们显著节约视频内容制作精力，</p></div>
+								<div className="w-24 mr-4"><p className=" text-xs">扩大IP影响力，提升IP价值。</p></div>
 							</div>
 						</div>
 					</div>
@@ -675,13 +680,13 @@ export default function Contact() {
 				<h1 className=" text-5xl pb-14 text-[#333333]">加盟合作保障</h1>
 				<div className="flex flex-col md:flex-row flex-wrap justify-between text-[#00305a] gap-8 md:max-w-5xl max-w-96 pt-8">
 					<div className="  flex flex-col justify-center items-center space-y-2">
-						<IconA />
+						<img className=" object-cover md:w-36 w-16" src="contact_inco_1.png" alt="" />
 						<h2 className=" font-bold text-3xl">多元化市场支持</h2>
 						<p className=" text-sm">全域市场营销玩法，协助区域伙伴获得市场优势</p>
 					</div>
 
 					<div className=" flex flex-col justify-center items-center space-y-2">
-					<IconB />
+					<img className=" object-cover md:w-36 w-16" src="contact_inco_2.png" alt="" />
 						<h2 className=" font-bold text-3xl">全方位技术支持</h2>
 						<p className=" text-sm">专业售前团队项目支持，强大的售后团队支撑</p>
 					</div>

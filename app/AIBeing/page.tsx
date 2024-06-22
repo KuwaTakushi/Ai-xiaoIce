@@ -347,9 +347,6 @@ export default function AIBeing() {
 					</div>
 
 
-
-
-
 					<div className=" relative">
 						<img className="min-w-96" src="human_product_two1.png" alt="" />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">

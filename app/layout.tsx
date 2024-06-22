@@ -233,9 +233,6 @@ export default function RootLayout({
 											<p>网站地图  XML地图</p>	
 										</div>
 								</div>
-
-
-						
 							</div>
 						</footer>
 					</div>

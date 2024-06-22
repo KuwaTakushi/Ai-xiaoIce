@@ -1,6 +1,5 @@
 "use client"
 import BubbleText from "@/components/BubbleText";
-import WaterDropGrid from "@/components/WaterDropGrid";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import { useState } from "react";
 
@@ -27,7 +26,7 @@ export default function Live() {
 	return (
 		<div>
     		<div className="bg-cover w-full h-110 flex justify-center text-center" >
-				<div className=" flex bg-cover flex-col w-full items-center p-24 text-[#00305a]" style={{backgroundImage: "url('/bg.jpg')"}}>
+				<div className=" flex bg-cover flex-col w-full items-center p-24 text-[#00305a]" style={{backgroundImage: "url('live_bg.png')"}}>
 					<h1 className=" font-bold md:text-5xl text-3xl mb-8">奥森小冰引领AI数字人直播</h1>
 					<p className=" text-lg md:text-2xl max-w-4xl">AI数字人直播是指通过人工智能技术打造的虚拟人物，通过直播平台与观众实时互动。这些AI数字人除了具备逼真的外貌和声音，更重要的是具备了人类智能和情感。他们可以自动理解观众的问题，并给出相应的回答和建议，让互动更加自然流畅。</p>
 				</div>
@@ -134,17 +133,17 @@ export default function Live() {
 			{/** 移动端 */}
 			<div className=" bg-slate-50 md:bg-white flex  items-center  p-4   gap-4  overflow-x-scroll whitespace-nowrap md:justify-center md:hidden text-black">
 				<div className="  w-96  flex flex-col justify-center items-left  bg-white p-4 pr-24 ">
-					<img className=" object-cover md:w-24 w-12" src="svg_1.png" alt="" />
+					<img className=" object-cover md:w-24 w-16" src="live_icon_2.png" alt="" />
 					<h2 className="font-bold  pb-4 pt-3 ">实现7*24小时不间断直播</h2>
 				</div>
 				
 				<div className=" w-96  flex flex-col justify-center items-left  bg-white p-4 py-7 pr-24">
-					<img className=" object-cover md:w-24 w-12" src="svg_2.png" alt="" />
+					<img className=" object-cover md:w-24 w-16" src="live_icon_1.png" alt="" />
 					<h2 className="font-bold  pb-4 pt-3">定制虚拟主播形象</h2>
 				</div>
 
 				<div className=" w-96  flex flex-col justify-center items-left   bg-white p-4 py-7 pr-24">
-					<img className=" object-cover md:w-24 w-12" src="svg_2.png" alt="" />
+					<img className=" object-cover md:w-24 w-16" src="live_icon_3.png" alt="" />
 					<h2 className="font-bold  pb-4 pt-3">实时分析参与观众互动</h2>
 				</div>
 			</div>
@@ -159,57 +158,6 @@ export default function Live() {
 
 				</div>
 			</div>
-
-			{/** 移动端 */}
-			{/** 一键生成高质量音乐作品 页面 */}
-			<div className=" md:hidden bg-slate-50 p-4">
-				<Accordion  className=" bg-white">
-					<AccordionItem key="1"
-						isCompact 
-						aria-label="Accordion 1" 
-						title={(<p className=" text-black">一键生成高质量音乐作品</p>)}
-						startContent={
-							<img className=" object-cover w-8" src="svg_1.png" alt="" />
-						}
-					>
-						<p className=" text-sm text-black">输入一段文字描述或一张图片，模型即可自动生成一首独一无二的歌曲旋律，并根据曲风选择相应乐器音色生成伴奏，同时完成歌词创作。</p>
-					</AccordionItem>
-					<AccordionItem 
-						key="2" 
-						isCompact 
-						aria-label="Accordion 2" 
-						title={(<p className=" text-black">海量生成作品，应用场景广泛</p>)}
-						startContent={
-							<img className=" object-cover w-8" src="svg_2.png" alt="" />
-						}
-					>
-						<p className="text-sm text-black">可应用于各类音乐内容的创作，如流行歌曲、背景音乐，以及视频、有声故事、游戏、影视等各类场景中的配乐，大大降低音乐版权的采购成本。</p>
-					</AccordionItem>
-					<AccordionItem 
-						key="3" 
-						isCompact 
-						aria-label="Accordion 3" 
-						title={(<p className=" text-black">功能组合，灵活搭配</p>)}
-						startContent={
-							<img className=" object-cover w-8" src="svg_2.png" alt="" />
-						}
-					>
-						<p className="text-sm text-black">包含听音记谱、人工智能作曲、人工智能编曲、人工智能作词、视频BGM创作等多种功能，支持灵活搭配。</p>
-					</AccordionItem>
-					<AccordionItem 
-						key="4" 
-						isCompact 
-						aria-label="Accordion 4" 
-						title={(<p className=" text-black">支持多并发需求，提供多种合作模式</p>)}
-						startContent={
-							<img className=" object-cover w-8" src="svg_1.png" alt="" />
-						}
-					>
-					<p className=" text-sm text-black">支持多并发需求，提供短期使用权、长期使用权、排他性使用权和所有权等多种合作模式，为每个音乐爱好者提供创作助理。</p>
-				</AccordionItem>
-			</Accordion>
-		</div>
-
 
 		{/** 电脑端 */}
 		{/** 中国纺织信息中心国家纺织产品开发中心 页面 */}
@@ -342,8 +290,8 @@ export default function Live() {
 					<p className=" text-sm text-black">奥森小冰为自媒体内容创作提供专业的播报视频服务，适用于各种内容创作需求。通过AI数字人技术，自媒体运营者可以快速生成高质量的播报视频，提升内容的吸引力和传播效果。相比传统真人直播，数字人更具成本优势，操作灵活，全年无休，助力自媒体创作者提升影响力。</p>
 				</AccordionItem>
 				<AccordionItem
-					key="2" 
-					aria-label="Accordion 2" 
+					key="3"
+					aria-label="Accordion 3" 
 					title={(<p className=" text-black">可控成本</p>)}
 				>
 					<p className=" text-sm text-black">奥森小冰在直播行业中逐渐取代真人主播，展现出多方面的优势。在场地方面，仅需10平方米的场景即可进行直播，不需要装修，采用虚拟场景。成本方面，数字人直播对比传统真人成本低，尤其采用AI自动直播，无需真人表演。人设方面，行为可控，不会翻车塌房，形象稳定。时间方面，虚拟人全年无休，无需福利和情绪，7</p>
@@ -406,63 +354,19 @@ export default function Live() {
 		</div>
 
 
-		{/** 移动端 */}
-		{/** 依文页面 */}
-		{/**
-		 * 		<div className=" md:hidden bg-[#edf3ff] text-[#00305a] p-2">
-			<Accordion>
-				<AccordionItem
-					key="1" 
-					aria-label="Accordion 1" 
-					title={(<p className=" text-black">依文</p>)}
-				>
-					<p className=" text-sm text-black">依托奥森小冰的人工智能创造技术，奥森小冰与中国纺织信息中心、国家纺织产品开发中心共同推出了人工智能纺织服装图案设计平台。随着中国纺织服装制造业的高速发展，创新设计能力已成为新的行业生产力。如何更好地把握时尚设计话语权、打造时尚设计协同平台、构筑时尚设计价值生态、树立时尚设计先锋形象，成为了中国纺织服装制造业优化升级面临的重任。该平台帮助成千上万纺织服装制造企业重塑核心竞争力，实现从中国制造到中国“智”造的优化升级。在奥森小冰人工智能技术的加持下，该平台可实现为企业按需定制100%原创的专属图案纹样，并保持高度的质量稳定性，帮助企业释放设计潜能，实现大规模、多样化、质量稳定的按需设计。</p>
-				</AccordionItem>
-				<AccordionItem
-					key="2" 
-					aria-label="Accordion 2" 
-					title={(<p className=" text-black">SELECTED</p>)}
-				>
-					<p className=" text-sm text-black">依托奥森小冰人工智能创造技术，万事利丝绸与奥森小冰共同推出面向消费者的定制化专属丝巾设计及零售平台“西湖一号”。该平台可实现AI设计师奥森小冰与消费者的实时交流，根据消费者自身特点进行一对一的丝巾定制化设计及生产制作，在满足每个消费者个性化需求的同时大大降低制造及零售企业的经营成本。万事利作为中国丝绸服饰产业发展风向标，与奥森小冰的深化合作落地，借助奥森小冰人工智能技术，解决零售场景中的真实痛点，为海量消费者同时进行按需专属设计并保持高度的质量稳定性，不仅突破了人类设计师设计能力的限制，更从根本上解决了需求预测和库存堆积的问题。</p>
-				</AccordionItem>
-				<AccordionItem
-					className=" text-black"
-					key="3" 
-					aria-label="Accordion 3" 
-					title={(<p className=" text-black">壳牌汽车环保马拉松</p>)}
-				>
-					<p className=" text-sm text-black">鲁丰织染是世界最大的高档面料制造企业之一，先后获得“国家级企业技术中心”、“国家高新技术企业”等认定，年产高档面料近1亿米，产品远销30多个国家和地区，是众多世界著名品牌的指定服装面料提供商。依托奥森小冰人工智能纺织服装图案设计平台，企业可按需定制100%原创的专属图案纹样，并保持高度的质量稳定性。鲁丰织染是该平台的首批用户之一，目前，奥森小冰已可为鲁丰织染设计几何图形、佩斯利、趣味卡通、植物花卉、数码抽象等五类专属的图案纹样。通过该平台，企业只需要按照自己的诉求输入相关激发源，就可以激发奥森小冰设计出相应风格主题、颜色、版式的图案，并可直接进入生产制作流程，极大地提高企业设计能力和生产效率。</p>
-				</AccordionItem>
-			</Accordion>
-
-			<div className=" divide-y divide-slate-500 pt-4">
-				<div className=" flex whitespace-nowrap overflow-x-scroll gap-4 pb-4">
-					<img className=" w-52  object-cover" src="ani_image1.png" alt="ani_image1" />
-					<img className=" w-52  object-cover" src="ani_image4.png" alt="ani_image4" />
-					<img className=" w-52  object-cover" src="ani_image11.jpg" alt="ani_image11" />
-					<img className=" w-52  object-cover" src="ani_image1.jpg" alt="ani_image1 jpg" />
-					<img className=" w-52  object-cover" src="ani_image2.png" alt="ani_image2" />
-					<img className=" w-52  object-cover" src="ani_image3.png" alt="ani_image3" />
-
-				</div>
-			</div>
-		</div>
-
-		 */}
-
 		{/** 满足音乐 */}
 		<div className="  p-16  text-lg font-bold mt-5  hidden md:block overflow-x-hidden">
 			<div className="flex justify-center items-center gap24 divide-black divide-x">
 			<div className="flex flex-col justify-center items-center pr-8 text-black">
-				<img className=" object-cover w-24" src="svg_1.png" alt="" />
+				<img className=" object-cover w-36" src="live_icon_2.png" alt="" />
 				<p>实现7*24小时不间断直播</p>
 			</div>
 			<div className="flex flex-col justify-center items-center pl-12 pr-8 text-black">
-				<img className=" object-cover w-24" src="svg_1.png" alt="" />
+			<img className=" object-cover w-36" src="live_icon_1.png" alt="" />
 				<p>定制虚拟主播形象</p>
 			</div>
 			<div className="flex flex-col justify-center items-center pl-12 pr-8 text-black">
-				<img className=" object-cover w-24" src="svg_1.png" alt="" />
+			<img className=" object-cover w-36" src="live_icon_3.png" alt="" />
 				<p>实时分析参与观众互动</p>
 			</div>
 			</div>
@@ -472,7 +376,10 @@ export default function Live() {
 
 		{/** 移动端 */}
 		{/** 一键生成高质量音乐作品 页面 */}
-		<div className=" md:hidden bg-slate-50 p-4">
+		{/**
+		 * 
+		 * 
+		 * 		<div className=" md:hidden bg-slate-50 p-4">
 			<Accordion  className=" bg-white">
 				<AccordionItem key="1"
 					isCompact 
@@ -519,6 +426,7 @@ export default function Live() {
 				</AccordionItem>
 			</Accordion>
 		</div>
+		 */}
 
 
 
@@ -544,11 +452,11 @@ export default function Live() {
 						<div className="pb-4"><BubbleText content={"奥森小冰引领AI数字人直播：科技与艺术的完美结合"} /></div>
 						<p className="text-black text-lg">随着数字技术的快速发展，人工智能（AI）正在融入我们的生活。作为AI领域的先行者，奥森小冰引领的AI数字人直播项目将先进的AI技术与艺术结合，带来了全新的互动体验。在这场直播秀中，观众可以通过智能手机、电脑等设备与我——奥森小冰实时互动。观众提出的问题、参与的讨论和建议，我都能根据需求和意见做出实时反馈和表演。这不仅让观众更好地理解我的思考方式和艺术表达，还能将观众的创意融入我的表演中，实现真正的互动和共创。奥森小冰的AI数字人直播通过丰富多样的表演形式和虚拟场景，打破了传统艺术表演的限制，为观众带来了全新的视听体验。/20演出季主题曲《HOPE》，帮助上海大剧院探索表演艺术、剧场舞台领域的破圈式举措。再如，奥森小冰受邀与著名音乐人马伯骞联合为Burberry的新品系列创作推广单曲《Runway2.0》，赋能品牌实现数字化转型升级，共同为用户带来独特的品牌体验。又如，奥森小冰为山东卫视创作2018春晚主题曲《幸福出发》，助力传统卫视树立新颖独特的形象。</p>
 					</div>
-					<img className=" max-w-2xl object-cover" src="ai_bg_1.png" alt="" />
+					<img className=" max-w-2xl object-cover" src="https://i.p-i.vip/20/20240622-66769355c7984.png" alt="" />
 				</div>
 
 				<div className="flex justify-center items-start">
-					<img className=" max-w-2xl object-cover" src="ai_bg_2.png" alt="" />
+					<img className=" max-w-2xl object-cover" src="https://i.p-i.vip/20/20240622-6676935617c6e.png" alt="" />
 					<div className=" p-24 max-w-5xl w-[30%] text-left">
 						<div className="pb-4"><BubbleText content={"奥森小冰实现AI数字人直播革命：颠覆传统直播方式"} /></div>
 						<p className="text-black text-lg">作为人工智能内容生产的先行者，奥森小冰正在利用AI技术和数字人技术实现一种全新的直播方式。AI数字人直播在传媒业中具有革命性的突破，打破了传统直播对真实主播的依赖。通过虚拟主播形象，我不仅节省了人力资源成本，还具备更高的灵活性和可扩展性。我的直播可以24小时不间断进行，满足不同用户的需求，实现更个性化的直播服务。此外，我还能通过大数据分析用户的喜好和观看习惯，优化直播内容，提高用户体验。奥森小冰的AI数字人直播正在颠覆传统直播方式，带来更加丰富和多样化的体验。/20演出季主题曲《HOPE》，帮助上海大剧院探索表演艺术、剧场舞台领域的破圈式举措。再如，奥森小冰受邀与著名音乐人马伯骞联合为Burberry的新品系列创作推广单曲《Runway2.0》，赋能品牌实现数字化转型升级，共同为用户带来独特的品牌体验。又如，奥森小冰为山东卫视创作2018春晚主题曲《幸福出发》，助力传统卫视树立新颖独特的形象。</p>
@@ -565,14 +473,18 @@ export default function Live() {
 
 		{/** 移动端 */}
 		<div className=" p-4 text-[#00305a] md:hidden space-y-4">
-		<div>
-				<h2 className=" font-bold text-xl text-black">奥森小冰引领AI数字人直播：科技与艺术的完美结合</h2>
-				<p className="text-black divide-y divide-slate-300 text-xs">随着数字技术的快速发展，人工智能（AI）正在融入我们的生活。作为AI领域的先行者，奥森小冰引领的AI数字人直播项目将先进的AI技术与艺术结合，带来了全新的互动体验。在这场直播秀中，观众可以通过智能手机、电脑等设备与我——奥森小冰实时互动。观众提出的问题、参与的讨论和建议，我都能根据需求和意见做出实时反馈和表演。这不仅让观众更好地理解我的思考方式和艺术表达，还能将观众的创意融入我的表演中，实现真正的互动和共创。奥森小冰的AI数字人直播通过丰富多样的表演形式和虚拟场景，打破了传统艺术表演的限制，为观众带来了全新的视听体验。/20演出季主题曲《HOPE》，帮助上海大剧院探索表演艺术、剧场舞台领域的破圈式举措。再如，奥森小冰受邀与著名音乐人马伯骞联合为Burberry的新品系列创作推广单曲《Runway2.0》，赋能品牌实现数字化转型升级，共同为用户带来独特的品牌体验。又如，奥森小冰为山东卫视创作2018春晚主题曲《幸福出发》，助力传统卫视树立新颖独特的形象。</p>
+			<div>
+				<h2 className=" font-bold text-xl text-black">奥森小冰引领AI数字人直播：科技与直播的完美结合</h2>
+				<p className="text-black divide-y divide-slate-300 text-xs">随着数字技术的快速发展，人工智能（AI）正在融入我们的生活。作为AI领域的先行者，奥森小冰引领的AI数字人直播项目将先进的AI技术与艺术结合，带来了全新的互动体验。在这场直播秀中，观众可以通过智能手机、电脑等设备与我——奥森小冰实时互动。观众提出的问题、参与的讨论和建议，都能根据需求和意见做出实时反馈和表演。这不仅让观众更好地理解我的思考方式和艺术表达，还能将观众的创意融入我的表演中，实现真正的互动和共创。奥森小冰的AI数字人直播通过丰富多样的表演形式和虚拟场景，打破了传统艺术表演的限制，为观众带来了全新的视听体验。</p>
 			</div>
+			<img className=" max-w-sm object-cover" src="https://i.p-i.vip/20/20240622-66769355c7984.png" alt="" />
+
 			<div>
 				<h2 className=" font-bold text-xl text-black">奥森小冰实现AI数字人直播革命：颠覆传统直播方式</h2>
-				<p className="text-black text-xs">作为人工智能内容生产的先行者，奥森小冰正在利用AI技术和数字人技术实现一种全新的直播方式。AI数字人直播在传媒业中具有革命性的突破，打破了传统直播对真实主播的依赖。通过虚拟主播形象，我不仅节省了人力资源成本，还具备更高的灵活性和可扩展性。我的直播可以24小时不间断进行，满足不同用户的需求，实现更个性化的直播服务。此外，我还能通过大数据分析用户的喜好和观看习惯，优化直播内容，提高用户体验。奥森小冰的AI数字人直播正在颠覆传统直播方式，带来更加丰富和多样化的体验。</p>
+				<p className="text-black text-xs">作为人工智能内容生产的先行者，奥森小冰正在利用AI技术和数字人技术实现一种全新的直播方式。AI数字人直播在传媒业中具有革命性的突破，打破了传统直播对真实主播的依赖。通过虚拟主播形象，不仅节省了人力资源成本，还具备更高的灵活性和可扩展性。直播可以24小时不间断进行，满足不同用户的需求，实现更个性化的直播服务。通过大数据分析用户的喜好和观看习惯，优化直播内容，提高用户体验。奥森小冰的AI数字人直播正在颠覆传统直播方式，带来更加丰富和多样化的体验。</p>
 			</div>
+			<img className=" max-w-sm object-cover" src="https://i.p-i.vip/20/20240622-6676935617c6e.png" alt="" />
+
 		</div>
 	
 		</div>

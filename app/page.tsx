@@ -53,8 +53,8 @@ export default function Home() {
         <div className="md:block hidden">
           <div className="  flex gap-24 bg-gradient-to-bl from-indigo-600 via-purple-700 to-pink-800 w-full justify-center max-w-7xl rounded-full">
             <FloatingPhone context="智能场景互动" backgroundImage="https://i.p-i.vip/20/20240621-667475869d07d.png" isEnablePreserve={true} />
-            <FloatingPhone context="实时AI" backgroundImage="live_2.jpg" isEnablePreserve={true} />
-            <FloatingPhone context="适配各行业场景" backgroundImage="live_1.jpg" isEnablePreserve={true} />
+            <FloatingPhone context="实时AI" backgroundImage="https://i.p-i.vip/20/20240622-66769425bdbfb.jpg" isEnablePreserve={true} />
+            <FloatingPhone context="适配各行业场景" backgroundImage="https://i.p-i.vip/20/20240622-66769424965b0.jpg" isEnablePreserve={true} />
           </div>
         </div>
         
@@ -64,10 +64,10 @@ export default function Home() {
             <FloatingPhone context="智能场景互动" backgroundImage="https://i.p-i.vip/20/20240621-667475869d07d.png" isEnablePreserve={false} />
           </div>
           <div className="  flex gap-24 bg-gradient-to-bl  w-full justify-center bg-opacity-0">
-            <FloatingPhone context="实时AI" backgroundImage="live_2.jpg" isEnablePreserve={false} />
+            <FloatingPhone context="实时AI" backgroundImage="https://i.p-i.vip/20/20240622-66769425bdbfb.jpg" isEnablePreserve={false} />
           </div>
           <div className="  flex gap-24 bg-gradient-to-bl  w-full justify-center bg-opacity-0">
-            <FloatingPhone context="适配各行业场景" backgroundImage="live_1.jpg"  isEnablePreserve={false} />
+            <FloatingPhone context="适配各行业场景" backgroundImage="https://i.p-i.vip/20/20240622-66769424965b0.jpg"  isEnablePreserve={false} />
           </div>
         </Carousel>
         </div>
@@ -140,7 +140,7 @@ export default function Home() {
                 <p className=" max-w-lg text-lg">AI数字人直播是指通过人工智能技术打造的虚拟人物，通过直播平台与观众实时互动。这些AI数字人除了具备逼真的外貌和声音，更重要的是具备了人类智能和情感。他们可以自动理解观众的问题，并给出相应的回答和建议，让互动更加自然流畅。</p>
               </div>
               <div className="md:max-w-lg max-w-sm flex justify-center">
-                <img className=" max-w-2xl object-cover" src="main_bg_1.png" alt="" />
+                <img className=" max-w-2xl object-cover" src="https://i.p-i.vip/20/20240622-6676935594942.png" alt="" />
               </div>
             </div>
           </Tab>
@@ -341,7 +341,7 @@ export default function Home() {
       <div className=" mt-28 w-full flex-col flex justify-center items-center relative bg-cover">
         <div className=" absolute z-0 -top-6 opacity-50 left-1/2 -translate-x-12"><BackgroundIconC /></div>
         <h1 className="z-10 font-bold text-4xl text-[#00305a] pb-8">生态合作伙伴</h1>
-        <img className=" md:max-w-7xl w-full object-cover" src="parnent.png" alt="" />
+        <img className=" md:max-w-7xl w-full object-cover" src="https://i.p-i.vip/20/20240622-667694ae1c226.png" alt="" />
       </div>
 
 
@@ -462,7 +462,7 @@ const OverlayCopy = () => {
 
       <div className="relative space-y-8 flex justify-center md:w-1/2 p-0 md:p-8">
         {/** 定制体验图片 */}
-        <img className=" md:min-w-[500px] lg:min-w-[500px]   max-w-full h-[400px] md:h-full md: w-full" src="/vhuman_card.png" alt="vhuman_card.png" />
+        <img className=" md:min-w-[500px] lg:min-w-[500px]   max-w-full h-[400px] md:h-full md: w-full" src="https://i.p-i.vip/20/20240622-6676950aef4d0.png" alt="vhuman_card.png" />
 
         <div className=" text-left -translate-y-1/4 top-1/4 p-6 md:p-0 absolute md:top-2/4 md:left-1/3 transform md:-translate-x-1/4 md:-translate-y-1/2  flex flex-col space-y-6">
           <p className="text-white bg-opacity-50 md:text-lg  text-xs">

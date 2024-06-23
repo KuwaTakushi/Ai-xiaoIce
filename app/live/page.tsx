@@ -1,5 +1,6 @@
 "use client"
 import BubbleText from "@/components/BubbleText";
+import { Carousel } from "@material-tailwind/react";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import { useState } from "react";
 
@@ -130,6 +131,59 @@ export default function Live() {
 			</div>
 
 
+
+			{/** 移动端 */}
+			<div className="md:hidden p-4 bg-[#edf3ff] text-center overflow-y-hidden">
+				<h1 className=" font-bold text-4xl text-[#00305a] pb-6">AI数字人直播</h1>
+
+				<Carousel transition={{ duration: 1 }} className=" overflow-y-hidden">
+				<div className="flex justify-center bg-[#edf3ff]">
+					<div className="group hover:rotate-12 duration-500 cursor-pointer group-hover:duration-500 overflow-hidden relative  rounded-2xl shadow-inner shadow-gray-50 flex flex-col justify-around items-center w-40 h-80 bg-neutral-900 text-gray-50">
+						<div className="p-8 justify-center text-center after:duration-500 before:duration-500 duration-500  group-hover:before:translate-x-11 group-hover:before:-translate-y-11  group-hover:after:translate-x-11 group-hover:after:translate-y-16 after:absolute after:w-12 after:h-12 after:bg-orange-400 after:rounded-full after:-z-10 after:blur-xl after:bottom-32 after:right-16 after:w-12 after:h-12 before:absolute before:w-20 before:h-20 before:bg-sky-400 before:rounded-full before:-z-10 before:blur-xl before:top-20 before:right-16 before:w-12 before:h-12 flex flex-col font-extrabold text-6xl z-10">
+							<span className="text-lg pb-4">AI文本驱动
+						</span>
+						</div>
+						<div className="flex flex-row justify-center text-sm font-thin items-center gap-1">
+							<svg y="0" xmlns="http://www.w3.org/2000/svg" x="0" width="100" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" height="100" className="w-4 h-4 stroke-current">
+							<path strokeWidth="8" strokeLinejoin="round" strokeLinecap="round" fill="none" d="M33.9,46V29.9a16.1,16.1,0,0,1,32.2,0M50,62v8.1m-24.1,16H74.1a8,8,0,0,0,8-8V54a8,8,0,0,0-8-8H25.9a8,8,0,0,0-8,8V78.1A8,8,0,0,0,25.9,86.1Z">
+							</path>
+						</svg></div>
+						</div>
+					</div>
+
+
+					<div className="flex justify-center bg-[#edf3ff]">
+					<div className="group hover:rotate-12 duration-500 cursor-pointer group-hover:duration-500 overflow-hidden relative  rounded-2xl shadow-inner shadow-gray-50 flex flex-col justify-around items-center w-40 h-80 bg-neutral-900 text-gray-50">
+						<div className="p-8 justify-center text-center after:duration-500 before:duration-500 duration-500  group-hover:before:translate-x-11 group-hover:before:-translate-y-11  group-hover:after:translate-x-11 group-hover:after:translate-y-16 after:absolute after:w-12 after:h-12 after:bg-orange-400 after:rounded-full after:-z-10 after:blur-xl after:bottom-32 after:right-16 after:w-12 after:h-12 before:absolute before:w-20 before:h-20 before:bg-sky-400 before:rounded-full before:-z-10 before:blur-xl before:top-20 before:right-16 before:w-12 before:h-12 flex flex-col font-extrabold text-6xl z-10">
+							<span className="text-lg pb-4">数字人实时在线互动
+						</span>
+						</div>
+						<div className="flex flex-row justify-center text-sm font-thin items-center gap-1 font-thin">
+							<svg y="0" xmlns="http://www.w3.org/2000/svg" x="0" width="100" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" height="100" className="w-4 h-4 stroke-current">
+							<path strokeWidth="8" strokeLinejoin="round" strokeLinecap="round" fill="none" d="M33.9,46V29.9a16.1,16.1,0,0,1,32.2,0M50,62v8.1m-24.1,16H74.1a8,8,0,0,0,8-8V54a8,8,0,0,0-8-8H25.9a8,8,0,0,0-8,8V78.1A8,8,0,0,0,25.9,86.1Z">
+							</path>
+						</svg></div>
+						</div>
+					</div>
+
+
+					<div className="flex justify-center bg-[#edf3ff]">
+					<div className="group hover:rotate-12 duration-500 cursor-pointer group-hover:duration-500 overflow-hidden relative  rounded-2xl shadow-inner shadow-gray-50 flex flex-col justify-around items-center w-40 h-80 bg-neutral-900 text-gray-50">
+						<div className="p-8 justify-center text-center after:duration-500 before:duration-500 duration-500  group-hover:before:translate-x-11 group-hover:before:-translate-y-11  group-hover:after:translate-x-11 group-hover:after:translate-y-16 after:absolute after:w-12 after:h-12 after:bg-orange-400 after:rounded-full after:-z-10 after:blur-xl after:bottom-32 after:right-16 after:w-12 after:h-12 before:absolute before:w-20 before:h-20 before:bg-sky-400 before:rounded-full before:-z-10 before:blur-xl before:top-20 before:right-16 before:w-12 before:h-12 flex flex-col font-extrabold text-6xl z-10">
+							<span className="text-lg pb-4">极高的直播效率
+						</span>
+						</div>
+						<div className="flex flex-row justify-center text-sm font-thin items-center gap-1 font-thin">
+							<svg y="0" xmlns="http://www.w3.org/2000/svg" x="0" width="100" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" height="100" className="w-4 h-4 stroke-current">
+							<path strokeWidth="8" strokeLinejoin="round" strokeLinecap="round" fill="none" d="M33.9,46V29.9a16.1,16.1,0,0,1,32.2,0M50,62v8.1m-24.1,16H74.1a8,8,0,0,0,8-8V54a8,8,0,0,0-8-8H25.9a8,8,0,0,0-8,8V78.1A8,8,0,0,0,25.9,86.1Z">
+							</path>
+						</svg></div>
+						</div>
+					</div>
+				</Carousel>
+			</div>
+
+
 			{/** 移动端 */}
 			<div className=" bg-slate-50 md:bg-white flex  items-center  p-4   gap-4  overflow-x-scroll whitespace-nowrap md:justify-center md:hidden text-black">
 				<div className="  w-96  flex flex-col justify-center items-left  bg-white p-4 pr-24 ">
@@ -165,7 +219,7 @@ export default function Live() {
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center pt-24">
 				<div className=" relative mt-24 min-w-68">
 					<img className="object-cover w-110 min-w-28" src="mathCard_1.jpg" alt="" />
-					<img className=" absolute top-3/4 -right-2/4 z-10 object-cover w-46 min-w-36" src="ani_image2.png" alt="" />
+					<img className=" absolute top-3/4 -right-2/4 z-10 object-cover w-46 min-w-36" src="ani_image1.jpg" alt="" />
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">
@@ -176,7 +230,7 @@ export default function Live() {
 
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center">
 				<div className=" relative  z-20 min-w-68">
-					<img className=" z-40 object-cover w-80 min-w-28" src="mathCard_2.jpg" alt="" />
+					<img className=" z-40 object-cover w-100" src="mathCard_2.jpg" alt="" />
 					<img className=" -z-10 absolute top-3/4 -right-2/4 object-cover w-46 min-w-36" src="ani_image4.png" alt="" />
 				</div>
 
@@ -229,12 +283,12 @@ export default function Live() {
 
 			<div className=" divide-y divide-slate-500 pt-4">
 				<div className=" flex whitespace-nowrap overflow-x-scroll gap-4 pb-4">
-					<img className=" w-52  object-cover" src="ani_image1.png" alt="ani_image1" />
+					<img className=" w-52  object-cover" src="mathCard_1.jpg" alt="ani_image1" />
 					<img className=" w-52  object-cover" src="ani_image4.png" alt="ani_image4" />
 					<img className=" w-52  object-cover" src="ani_image11.jpg" alt="ani_image11" />
 					<img className=" w-52  object-cover" src="ani_image1.jpg" alt="ani_image1 jpg" />
-					<img className=" w-52  object-cover" src="ani_image2.png" alt="ani_image2" />
-					<img className=" w-52  object-cover" src="ani_image3.png" alt="ani_image3" />
+					<img className=" w-52  object-cover" src="mathCard_3.jpg" alt="ani_image2" />
+					<img className=" w-52  object-cover" src="mathCard_2.jpg" alt="ani_image3" />
 
 				</div>
 			</div>
@@ -252,7 +306,7 @@ export default function Live() {
 
 				<div className=" relative mt-24 min-w-68">
 					<img className="object-cover w-110 min-w-28" src="ani_image3.jpg" alt="" />
-					<img className=" absolute top-3/4 -left-2/4 z-20 object-cover w-46 min-w-36" src="ani_image6.png" alt="" />
+					<img className=" absolute top-3/4 -left-2/4 z-20 object-cover w-46 min-w-36" src="ani_image6.jpg" alt="" />
 				</div>
 
 			</div>
@@ -263,10 +317,24 @@ export default function Live() {
 					<p className=" text-lg text-black">奥森小冰为自媒体内容创作提供专业的播报视频服务，适用于各种内容创作需求。通过AI数字人技术，自媒体运营者可以快速生成高质量的播报视频，提升内容的吸引力和传播效果。相比传统真人直播，数字人更具成本优势，操作灵活，全年无休，助力自媒体创作者提升影响力。</p>
 				</div>
 
+
 				<div className=" relative  z-10 min-w-68">
 					<img className=" object-cover w-110 min-w-28" src="ani_image7.png" alt="" />
 				</div>
 			</div>
+
+
+			<div className=" w-full bg-white p-16 flex justify-around items-center mb-24">
+				<div className=" flex flex-col w-110 min-w-64 text-left">
+					<h2 className=" text-3xl text-[#00305a] font-bold pb-4">可控成本</h2>
+					<p className=" text-lg text-black">奥森小冰在直播行业中逐渐取代真人主播，展现出多方面的优势。在场地方面，仅需10平方米的场景即可进行直播，不需要装修，采用虚拟场景。成本方面，数字人直播对比传统真人成本低，尤其采用AI自动直播，无需真人表演。人设方面，行为可控，不会翻车塌房，形象稳定。时间方面，虚拟人全年无休，无需福利和情绪，7</p>
+				</div>
+				
+				<div className=" relative  z-10 min-w-68">
+					<img className=" object-cover w-110 min-w-28" src="ani_image7.png" alt="" />
+				</div>
+			</div>
+
 		</div>
 
 
@@ -301,7 +369,7 @@ export default function Live() {
 			<div className=" divide-y divide-slate-500 pt-4">
 				<div className=" flex whitespace-nowrap overflow-x-scroll gap-4 pb-4">
 					<img className=" w-52  object-cover" src="ani_image3.jpg" alt="ani_image3" />
-					<img className=" w-52  object-cover" src="ani_image6.png" alt="ani_image6" />
+					<img className=" w-52  object-cover" src="ani_image6.jpg" alt="ani_image6" />
 					<img className=" w-52  object-cover" src="ani_image7.png" alt="ani_image7" />
 				</div>
 			</div>
@@ -309,49 +377,6 @@ export default function Live() {
 
 
 
-
-
-
-
-
-		{ /** 依文页面 */}
-		<div className=" hidden md:block">
-			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center pt-24">
-				<div className=" relative mt-24 min-w-68">
-					<img className="object-cover w-110 min-w-28" src="ani_image1.png" alt="" />
-					<img className=" absolute top-3/4 -right-2/4 z-10 object-cover w-46 min-w-36" src="ani_image2.png" alt="" />
-				</div>
-
-				<div className=" flex flex-col w-110 min-w-64 text-left">
-					<h2 className=" text-3xl text-[#00305a] font-bold pb-4">可控成本</h2>
-					<p className=" text-lg text-black">奥森小冰在直播行业中逐渐取代真人主播，展现出多方面的优势。在场地方面，仅需10平方米的场景即可进行直播，不需要装修，采用虚拟场景。成本方面，数字人直播对比传统真人成本低，尤其采用AI自动直播，无需真人表演。人设方面，行为可控，不会翻车塌房，形象稳定。时间方面，虚拟人全年无休，无需福利和情绪，7*24小时不间断直播，极大提高了直播效率。</p>
-				</div>
-			</div>
-
-			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center">
-				<div className=" relative  z-20 min-w-68">
-					<img className=" z-40 object-cover w-110 min-w-28" src="ani_image3.png" alt="" />
-					<img className=" -z-10 absolute top-3/4 -right-2/4 object-cover w-46 min-w-36" src="ani_image4.png" alt="" />
-				</div>
-
-				<div className=" flex flex-col w-110 min-w-64 text-left">
-					<h2 className=" text-3xl text-[#00305a] font-bold pb-4">万事利</h2>
-					<p className=" text-lg text-black">依托奥森小冰人工智能创造技术，万事利丝绸与奥森小冰共同推出面向消费者的定制化专属丝巾设计及零售平台“西湖一号”。该平台可实现AI设计师奥森小冰与消费者的实时交流，根据消费者自身特点进行一对一的丝巾定制化设计及生产制作，在满足每个消费者个性化需求的同时大大降低制造及零售企业的经营成本。万事利作为中国丝绸服饰产业发展风向标，与奥森小冰的深化合作落地，借助奥森小冰人工智能技术，解决零售场景中的真实痛点，为海量消费者同时进行按需专属设计并保持高度的质量稳定性，不仅突破了人类设计师设计能力的限制，更从根本上解决了需求预测和库存堆积的问题。</p>
-				</div>
-			</div>
-
-			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-start pb-64">
-				<div className=" relative  z-20 min-w-68">
-					<img className=" z-40 object-cover w-110 min-w-28" src="ani_image1.jpg" alt="" />
-					<img className=" -z-10 absolute top-3/4 -right-2/4 object-cover w-46 min-w-36" src="ani_image11.jpg" alt="" />
-				</div>
-
-				<div className=" flex flex-col w-110 min-w-64 text-left  pt-16">
-					<h2 className=" text-3xl text-[#00305a] font-bold pb-4">鲁丰织染</h2>
-					<p className=" text-lg text-black">鲁丰织染是世界最大的高档面料制造企业之一，先后获得“国家级企业技术中心”、“国家高新技术企业”等认定，年产高档面料近1亿米，产品远销30多个国家和地区，是众多世界著名品牌的指定服装面料提供商。依托奥森小冰人工智能纺织服装图案设计平台，企业可按需定制100%原创的专属图案纹样，并保持高度的质量稳定性。鲁丰织染是该平台的首批用户之一，目前，奥森小冰已可为鲁丰织染设计几何图形、佩斯利、趣味卡通、植物花卉、数码抽象等五类专属的图案纹样。通过该平台，企业只需要按照自己的诉求输入相关激发源，就可以激发奥森小冰设计出相应风格主题、颜色、版式的图案，并可直接进入生产制作流程，极大地提高企业设计能力和生产效率。</p>
-				</div>
-			</div>
-		</div>
 
 
 		{/** 满足音乐 */}
@@ -450,7 +475,7 @@ export default function Live() {
 				<div className="flex justify-center items-center">
 					<div className=" p-24 max-w-5xl w-[30%] text-left">
 						<div className="pb-4"><BubbleText content={"奥森小冰引领AI数字人直播：科技与艺术的完美结合"} /></div>
-						<p className="text-black text-lg">随着数字技术的快速发展，人工智能（AI）正在融入我们的生活。作为AI领域的先行者，奥森小冰引领的AI数字人直播项目将先进的AI技术与艺术结合，带来了全新的互动体验。在这场直播秀中，观众可以通过智能手机、电脑等设备与我——奥森小冰实时互动。观众提出的问题、参与的讨论和建议，我都能根据需求和意见做出实时反馈和表演。这不仅让观众更好地理解我的思考方式和艺术表达，还能将观众的创意融入我的表演中，实现真正的互动和共创。奥森小冰的AI数字人直播通过丰富多样的表演形式和虚拟场景，打破了传统艺术表演的限制，为观众带来了全新的视听体验。/20演出季主题曲《HOPE》，帮助上海大剧院探索表演艺术、剧场舞台领域的破圈式举措。再如，奥森小冰受邀与著名音乐人马伯骞联合为Burberry的新品系列创作推广单曲《Runway2.0》，赋能品牌实现数字化转型升级，共同为用户带来独特的品牌体验。又如，奥森小冰为山东卫视创作2018春晚主题曲《幸福出发》，助力传统卫视树立新颖独特的形象。</p>
+						<p className="text-black text-lg">随着数字技术的快速发展，人工智能（AI）正在融入我们的生活。作为AI领域的先行者，奥森小冰引领的AI数字人直播项目将先进的AI技术与艺术结合，带来了全新的互动体验。在这场直播秀中，观众可以通过智能手机、电脑等设备与奥森小冰实时互动。观众提出的问题、参与的讨论和建议，都能根据需求和意见做出实时反馈和表演。这不仅让观众更好地理解思考方式和艺术表达，还能将观众的创意融入表演中，实现真正的互动和共创。奥森小冰的AI数字人直播通过丰富多样的表演形式和虚拟场景，打破了传统艺术表演的限制，为观众带来了全新的视听体验。</p>
 					</div>
 					<img className=" max-w-2xl object-cover" src="https://i.p-i.vip/20/20240622-66769355c7984.png" alt="" />
 				</div>
@@ -459,7 +484,7 @@ export default function Live() {
 					<img className=" max-w-2xl object-cover" src="https://i.p-i.vip/20/20240622-6676935617c6e.png" alt="" />
 					<div className=" p-24 max-w-5xl w-[30%] text-left">
 						<div className="pb-4"><BubbleText content={"奥森小冰实现AI数字人直播革命：颠覆传统直播方式"} /></div>
-						<p className="text-black text-lg">作为人工智能内容生产的先行者，奥森小冰正在利用AI技术和数字人技术实现一种全新的直播方式。AI数字人直播在传媒业中具有革命性的突破，打破了传统直播对真实主播的依赖。通过虚拟主播形象，我不仅节省了人力资源成本，还具备更高的灵活性和可扩展性。我的直播可以24小时不间断进行，满足不同用户的需求，实现更个性化的直播服务。此外，我还能通过大数据分析用户的喜好和观看习惯，优化直播内容，提高用户体验。奥森小冰的AI数字人直播正在颠覆传统直播方式，带来更加丰富和多样化的体验。/20演出季主题曲《HOPE》，帮助上海大剧院探索表演艺术、剧场舞台领域的破圈式举措。再如，奥森小冰受邀与著名音乐人马伯骞联合为Burberry的新品系列创作推广单曲《Runway2.0》，赋能品牌实现数字化转型升级，共同为用户带来独特的品牌体验。又如，奥森小冰为山东卫视创作2018春晚主题曲《幸福出发》，助力传统卫视树立新颖独特的形象。</p>
+						<p className="text-black text-lg">作为人工智能内容生产的先行者，奥森小冰正在利用AI技术和数字人技术实现一种全新的直播方式。AI数字人直播在传媒业中具有革命性的突破，打破了传统直播对真实主播的依赖。通过虚拟主播形象，不仅节省了人力资源成本，还具备更高的灵活性和可扩展性。直播可以24小时不间断进行，满足不同用户的需求，实现更个性化的直播服务。此外，还能通过大数据分析用户的喜好和观看习惯，优化直播内容，提高用户体验。奥森小冰的AI数字人直播正在颠覆传统直播方式，带来更加丰富和多样化的体验。</p>
 					</div>
 				</div>
 			 </div>
@@ -475,7 +500,7 @@ export default function Live() {
 		<div className=" p-4 text-[#00305a] md:hidden space-y-4">
 			<div>
 				<h2 className=" font-bold text-xl text-black">奥森小冰引领AI数字人直播：科技与直播的完美结合</h2>
-				<p className="text-black divide-y divide-slate-300 text-xs">随着数字技术的快速发展，人工智能（AI）正在融入我们的生活。作为AI领域的先行者，奥森小冰引领的AI数字人直播项目将先进的AI技术与艺术结合，带来了全新的互动体验。在这场直播秀中，观众可以通过智能手机、电脑等设备与我——奥森小冰实时互动。观众提出的问题、参与的讨论和建议，都能根据需求和意见做出实时反馈和表演。这不仅让观众更好地理解我的思考方式和艺术表达，还能将观众的创意融入我的表演中，实现真正的互动和共创。奥森小冰的AI数字人直播通过丰富多样的表演形式和虚拟场景，打破了传统艺术表演的限制，为观众带来了全新的视听体验。</p>
+				<p className="text-black divide-y divide-slate-300 text-xs">随着数字技术的快速发展，人工智能（AI）正在融入我们的生活。作为AI领域的先行者，奥森小冰引领的AI数字人直播项目将先进的AI技术与艺术结合，带来了全新的互动体验。在这场直播秀中，观众可以通过智能手机、电脑等设备与奥森小冰实时互动。观众提出的问题、参与的讨论和建议，都能根据需求和意见做出实时反馈和表演。这不仅让观众更好地理解思考方式和艺术表达，还能将观众的创意融入我的表演中，实现真正的互动和共创。奥森小冰的AI数字人直播通过丰富多样的表演形式和虚拟场景，打破了传统艺术表演的限制，为观众带来了全新的视听体验。</p>
 			</div>
 			<img className=" max-w-sm object-cover" src="https://i.p-i.vip/20/20240622-66769355c7984.png" alt="" />
 

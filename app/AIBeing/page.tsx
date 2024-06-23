@@ -1,20 +1,63 @@
-"use client"
-import { Chip, Modal, ModalBody, ModalContent, ModalHeader, Tab, Tabs, useDisclosure } from "@nextui-org/react";
+"use client";
+import { Card, Chip, Modal, ModalBody, ModalContent, Tab, Tabs, useDisclosure } from "@nextui-org/react";
 import { useEffect, useRef, useState } from "react";
 import { Carousel } from "@material-tailwind/react";
 
+const cards = [
+	{
+	  url: "ani_image111.png",
+	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E6%8B%9B%E5%B0%8F%E5%BD%B1%E5%A4%96%E5%AE%A3_Final_1026%E6%97%A0%E5%B0%81%E9%9D%A2_%E4%BD%8E%E7%A0%81%E7%8E%87_39MB.mp4",
+	  id: 1,
+	},
+	{
+	  url: "video_poster4.png",
+	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%5B%E4%BB%8A%E6%97%A5%E7%8E%AF%E7%90%83%5D%E9%87%91%E7%89%8C%E8%83%8C%E5%90%8E%EF%BC%9A%E2%80%9CAI%E5%8A%A9%E7%90%86%E6%95%99%E7%BB%83%E2%80%9D%E5%8A%A9%E5%8A%9B%E4%B8%AD%E5%9B%BD%E9%9B%AA%E4%B8%8A%E9%A1%B9%E7%9B%AE%E8%AE%AD%E7%BB%83%5B%E4%B8%8B%E8%BD%BD%E7%89%88%5D_batch.m4v",
+	  id: 2,
+	},
+	{
+	  url: "video_poster7.png",
+	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E6%AF%8F%E6%97%A5%E7%BB%8F%E6%B5%8E%E6%96%B0%E9%97%BB%E8%A7%86%E9%A2%911.mp4",
+	  id: 3,
+	},
+	{
+	  url: "video_poster5.png",
+	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D.m4v",
+	  id: 4,
+	},
+	{
+	  url: "video_poster3.png",
+	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E9%83%8E%E5%92%B8%E5%B9%B3%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F%E8%99%9A%E6%8B%9F%E4%BA%BA.mp4",
+	  id: 5,
+	},
+	{
+	  url: "video_poster4 .png",
+	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E8%93%9D%E8%89%B2%E5%85%89%E6%A0%87%E8%91%A3%E4%BA%8B%E9%95%BF%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F%E8%99%9A%E6%8B%9F%E4%BA%BA.mp4",
+	  id: 6,
+	},
+];
+
+
 export default function AIBeing() {
+
+
 	const [isHovered, setIsHovered] = useState(0);
 	const [isHoveredA, setIsHoveredA] = useState(false);
 	const [isHoveredB, setIsHoveredB] = useState(false);
 	const [isHoveredC, setIsHoveredC] = useState(false);
 	const [isHoveredD, setIsHoveredD] = useState(false);
 
-	
+
+	const [customerIndex, setCustomerIndex] = useState(0);
+	const [currentVideoUrl, setCurrentVideoUrl] = useState("");
+
 	const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
 
 	const [hoveredIndex, setActiveIndex] = useState<number | null>(null);
+
+	useEffect(() => {
+		setCurrentVideoUrl(cards[customerIndex].videoUrl);
+	}, [customerIndex]);
 
 	const titles: { [key: number]: string} = {
 		0: "形象定制",
@@ -33,7 +76,7 @@ export default function AIBeing() {
 	const [currentContext, setCurrentContext] = useState(contexts[0]);
 	const [scrollPosition, setScrollPosition] = useState(0);
 
-	const breakpoints = [0, 384, 760, 1200];
+	const breakpoints = [0, 370, 760, 1200];
 	useEffect(() => {
 		const index = breakpoints.findIndex(breakpoint => scrollPosition <= breakpoint);		
 		const contextIndex = index === -1 ? 0 : index;
@@ -51,7 +94,7 @@ export default function AIBeing() {
 		};
 	
 		if (scrollRef.current) {
-		  scrollRef.current.addEventListener('scroll', handleScroll);
+			scrollRef.current.addEventListener('scroll', handleScroll);
 		}
 	
 		return () => {
@@ -70,7 +113,7 @@ export default function AIBeing() {
 					<h1 className="md:pb-8 font-bold text-2xl pb-3 md:text-8xl">AI数字员工</h1>
 					<p className="md:text-2xl max-w-4xl">奥森小冰基于全球领先的完备人工智能奥森小冰框架，推出了数字专家和数字员工等完整产品线，从数据采集、训练到上线，最快仅需10小时。支持创建拥有情感交互能力、专业技能和内容生产能力的数字人，目前已被应用于多个工作和生活场景中。</p>
 				</div>
-				<img className=" bg-cover max-w-2xl" src="banner-2.jpg" alt="human" />
+				<img className=" bg-cover max-w-xl" src="banner-2.jpg" alt="human" />
 				</div>
 			</div>
 
@@ -80,7 +123,7 @@ export default function AIBeing() {
 			{/** title 移动端 */}
 			<div className="flex flex-col md:hidden bg-[#000887] p-4">
 				<div className=" relative">
-					<img className="object-cover" src="banner-2.jpg" alt="" />
+					<img className="object-cover ml-8" src="banner-2.jpg" alt="" />
 					<div className=" absolute top-12 left-9 flex flex-col justify-center text-start text-white mb-5">
 						<h1 className="font-bold text-2xl pb-3">AI数字员工</h1>
 						<p className=" text-sm">奥森小冰基于全球领先的完备人工智能奥森小冰框架，推出了数字专家和数字员工等完整产品线，从数据采集、训练到上线，最快仅需10小时。支持创建拥有情感交互能力、专业技能和内容生产能力的数字人，目前已被应用于多个工作和生活场景中。</p>
@@ -477,11 +520,61 @@ export default function AIBeing() {
 
 			<div className=" flex flex-col justify-center items-center md:mt-12 bg-white">
 				<h1 className=" font-bold text-4xl mb-12 hidden md:block text-black">客户案例</h1>
+				<Modal
+					className="bg-[#403d3d] w-96 md:w-full md:max-w-6xl max-w-4xl md:p-2"
+					placement="center"
+					shouldBlockScroll={true}
+					isOpen={isOpen} 
+					onOpenChange={onOpenChange}
+				>
+					<ModalContent>
+						{(onClose) => (
+							<ModalBody>
+							<video 
+								src={currentVideoUrl}
+								playsInline={true}
+								autoPlay={true}
+								controls={true}
+							/>
+							</ModalBody>
+						)}
+					</ModalContent>
+				</Modal>
+
 
 				<div className=" flex bg-[#edf3ff] w-full justify-center gap-2 md:gap-24 items-start p-4 md:p-20 flex-wrap-reverse">
-					<div className="md:w-[580px] md:h-[350px] pb-12 md:p-0">
-						<img width={580} src="ani_image111.png" alt="" />
+					<div
+						className=" flex md:gap-16 justify-center flex-col-reverse md:flex-row"
+					>
+						<Card
+						 	key={cards[0].id}
+							isFooterBlurred
+							radius="sm"
+							className="border-none rounded-lg max-w-xl relative"
+							onMouseEnter={() => setActiveIndex(cards[0].id)}
+							onMouseLeave={() => setActiveIndex(null)}
+						>
+							<img
+								alt="Woman listing to music"
+								className="object-cover w-full"
+								src={cards[0].url}
+							/>
+            				{hoveredIndex === cards[0].id && (
+							<div 
+								onClick={() => {onOpen(); setCustomerIndex(0)}}
+								className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
+							>
+								<img width={70} src="play.png" alt="" />
+							</div>
+							)}
+						</Card>
 					</div>
+
+
+
+
+
+
 
 					<div className=" flex flex-col text-left max-w-[550px] md:mt-4 flex-wrap gap-4 md:gap-24">
 						<h2 className=" text-[#00305a] md:pb-4 text-2xl md:text-4xl font-bold md:mt-0 mt-12">招商局集团 - 招小影，数字员工</h2>
@@ -503,9 +596,34 @@ export default function AIBeing() {
 
 
 				<div className=" flex bg-white w-full justify-center gap-12 md:gap-12 items-start p-4 md:p-20 flex-wrap-reverse md:flex-nowrap ">
-					<div className="-mt-8 md:-mt-0">
-						<img className="object-cover  md:max-w-xl" src="video_poster4.png" alt="" />
+					<div
+						className=" flex md:gap-16 justify-center flex-col-reverse md:flex-row"
+					>
+						<Card
+						  	key={cards[1].id}
+							isFooterBlurred
+							radius="sm"
+							className="border-none rounded-lg max-w-xl relative"
+							onMouseEnter={() => setActiveIndex(cards[1].id)}
+							onMouseLeave={() => setActiveIndex(null)}
+						>
+							<img
+								alt="Woman listing to music"
+								className="object-cover w-full"
+								src={cards[1].url}
+							/>
+            				{hoveredIndex === cards[1].id && (
+							<div 
+								onClick={() => {onOpen(); setCustomerIndex(1)}}
+								className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
+							>
+								<img width={70} src="play.png" alt="" />
+							</div>
+							)}
+						</Card>
 					</div>
+
+
 
 					<div className=" flex flex-col text-left md:mt-0 mt-8 flex-wrap max-w-xl md:ml-8">
 						<h2 className=" text-[#00305a] pb-4 text-2xl md:text-4xl font-bold ">国家体育总局冬运中心 – 观君，冬奥AI裁判与教练，数字专家</h2>
@@ -519,65 +637,72 @@ export default function AIBeing() {
 						<p className="text-[#00305a] md:text-xl text-base">2021年，每经与奥森小冰共同打造的数字主播N小黑、N小白，与“AI电视”一同正式上线。每经“AI电视”是全球首个由人工智能技术驱动的视频直播电视栏目，采编播全流程均由AI自动完成，可7x24小时不间断播报全球财经资讯，极大提高了信息传播及时度和覆盖广度。奥森小冰的数字人，协助传统财经媒体实现业务创新，加速向新型智慧媒体的转型。</p>
 					</div>
 
-					<div className="md:w-[580px] md:h-[400px]">
-						<img className=" max-w-1/3 md:min-w-[300px]" src="video_poster7.png" alt="" />
+
+
+
+
+					<div
+						className=" flex md:gap-16 justify-center flex-col-reverse md:flex-row"
+					>
+						<Card
+							key={cards[2].id}
+							isFooterBlurred
+							radius="sm"
+							className="border-none rounded-lg max-w-xl relative"
+							onMouseEnter={() => setActiveIndex(cards[2].id)}
+							onMouseLeave={() => setActiveIndex(null)}
+						>
+							<img
+								alt="Woman listing to music"
+								className="object-cover w-full"
+								src={cards[2].url}
+							/>
+            				{hoveredIndex === cards[2].id && (
+							<div 
+								onClick={() => {onOpen(); setCustomerIndex(2)}}
+								className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
+							>
+								<img width={70} src="play.png" alt="" />
+							</div>
+							)}
+						</Card>
 					</div>
 				</div>
 
 
 
 				<div className="flex bg-[#edf3ff] w-full flex-col justify-center gap-12 md:gap-24 items-center p-4 md:p-20 flex-wrap  md:flex-nowrap">
-					<div
-						onMouseEnter={() => setActiveIndex(0)}
-						onMouseLeave={() => setActiveIndex(null)}
-						onClick={onOpen}
-						className=" flex md:gap-16 justify-center flex-col-reverse md:flex-row"
-					>
-				<div className="relative w-80">
-					<img
-						className="md:max-w-xl max-w-2xs object-cover md:h-110 p-2 -mt-16 md:-mt-0"
-						src="video_poster5.png"
-						alt=""
-					/>
-				{hoveredIndex === 0 && (
-					<div
-					className="absolute rounded-2xl top-2 h-[462px] w-[350px] left-2  z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
-					>
-					<img width={70} src="play.png" alt="" />
-					</div>
-				)}
-				</div>
-
-
+					<div className=" flex md:gap-16 justify-center flex-col-reverse md:flex-row">
+						<Card
+						    key={cards[3].id}
+							isFooterBlurred
+							radius="sm"
+							className="border-none rounded-lg max-w-md relative"
+							onMouseEnter={() => setActiveIndex(cards[3].id)}
+							onMouseLeave={() => setActiveIndex(null)}
+						>
+							<img
+							alt="Woman listing to music"
+							className="object-cover w-full"
+							src={cards[3].url}
+							/>
+							{hoveredIndex === cards[3].id && (
+							<div
+								onClick={() => {onOpen(); setCustomerIndex(3)}}
+								className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
+							>
+								<img width={70} src="play.png" alt="" />
+							</div>
+							)}
+						</Card>
 						<div className=" max-w-lg mb-20 flex justify-around">
-							<div className=" flex flex-col text-left md:max-w-lg max-w-sm md:mt-4 flex-wrap md:p-0  pr-24 justify-center">
+							<div className=" flex flex-col text-left max-w-lg mt-4 flex-wrap">
 								<h2 className=" text-[#00305a] pb-4 pt-8 md:pt-0 text-2xl md:text-4xl font-bold">红杉资本 – Hóng，分析师，数字员工</h2>
 								<p className="text-[#00305a] text-sm md:text-xl">2022年7月11日，红杉中国首位数字员工Hóng正式亮相，她是奥森小冰团队为红杉资本量身定制的数字人，基于深度神经网络渲染技术小样本学习，经过一周的训练期即诞生。结合奥森小冰框架的全域能力，Hóng将不断成长，并在红杉资本各个业务流程中承担重要职责。</p>
 							</div>
 						</div>
 					</div>
 
-
-					<Modal
-						className="bg-[#403d3d] w-96 md:w-full md:max-w-6xl max-w-4xl md:p-2 max-h-[680px]"
-						placement="center"
-						shouldBlockScroll={true}
-						isOpen={isOpen} 
-						onOpenChange={onOpenChange}
-					>
-						<ModalContent>
-							{(onClose) => (
-								<ModalBody>
-							<video 
-								src="https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D.m4v"
-								playsInline={true}
-								autoPlay={true}
-								controls={true}
-							/>
-								</ModalBody>
-							)}
-						</ModalContent>
-					</Modal>
 					<div className=" flex gap-16 flex-col md:flex-row">
 						<div className=" md:mb-20 flex items-center justify-around">
 							<div className=" flex flex-col text-left max-w-lg mt-4 flex-wrap">
@@ -586,15 +711,31 @@ export default function AIBeing() {
 							</div>
 						</div>
 						
-						<div className="" onMouseEnter={() => setActiveIndex(1)} onMouseLeave={() => setActiveIndex(null)}>
-							<div className=" relative">
-								<img className="rounded-xl max-w-xl object-cover h-110 p-2 -mt-16 md:-mt-0" src="video_poster3.png" alt="" />
-								{hoveredIndex === 1 && (
-									<div className="max-w-xl absolute top-0 left-0 inset-0 z-10 bg-black opacity-30 bg-opacity-5 flex justify-center items-center cursor-pointer rounded-xl h-110">
-									<img width={70} className=" object-cover" src="play.png" alt="" />
-									</div>
+						<div
+							className=" flex md:gap-16 justify-center flex-col-reverse md:flex-row"
+						>
+							<Card
+								key={cards[4].id}
+								isFooterBlurred
+								radius="sm"
+								className="border-none rounded-lg max-w-xl relative"
+								onMouseEnter={() => setActiveIndex(cards[4].id)}
+								onMouseLeave={() => setActiveIndex(null)}
+							>
+								<img
+									alt="Woman listing to music"
+									className="object-cover w-full"
+									src={cards[4].url}
+								/>
+            					{hoveredIndex === cards[4].id && (
+								<div 
+									onClick={() => {onOpen(); setCustomerIndex(4)}}
+									className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
+								>
+									<img width={70} src="play.png" alt="" />
+								</div>
 								)}
-							</div>
+							</Card>
 						</div>
 
 					</div>
@@ -602,16 +743,33 @@ export default function AIBeing() {
 
 
 				<div className=" flex bg-white w-full justify-center items-center gap-12 md:gap-24 p-4 md:p-20 flex-wrap-reverse md:flex-nowrap">
-						<div className="" 						
-							onMouseEnter={() => setActiveIndex(2)}
-							onMouseLeave={() => setActiveIndex(null)}>
-							<img className="max-w-xl object-cover" src="video_poster4.png" alt="" />
-							{hoveredIndex === 2 && (
-								<div className="max-w-xl absolute top-0 left-0 inset-0 z-10 bg-black opacity-30 bg-opacity-5 flex justify-center items-center cursor-pointer rounded-xl h-110">
-									<img width={70} className=" object-cover" src="play.png" alt="" />
-								</div>
+					<div
+						className=" flex md:gap-16 justify-center flex-col-reverse md:flex-row"
+					>
+						<Card
+							key={cards[5].id}
+							isFooterBlurred
+							radius="sm"
+							className="border-none rounded-lg max-w-xl relative"
+							onMouseEnter={() => setActiveIndex(cards[5].id)}
+							onMouseLeave={() => setActiveIndex(null)}
+							onClick={() => {onOpen(); setCustomerIndex(5)}}
+						>
+							<img
+								alt="Woman listing to music"
+								className="object-cover w-full"
+								src={cards[5].url}
+							/>
+            				{hoveredIndex === cards[5].id && (
+							<div 
+								onClick={() => {onOpen(); setCustomerIndex(5)}}
+								className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
+							>
+								<img width={70} src="play.png" alt="" />
+							</div>
 							)}
-						</div>
+						</Card>
+					</div>
 
 						<div className=" flex flex-col text-left max-w-[550px] flex-wrap ">
 							<h2 className=" text-[#00305a] pb-4 text-2xl md:text-4xl font-bold ">蓝色光标 – 数字孪生赵文权，企业高管，数字专家</h2>

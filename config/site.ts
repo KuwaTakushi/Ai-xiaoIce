@@ -22,7 +22,7 @@ export const siteConfig = {
 		},
 		{
 			label: "招商加盟",
-			href: "/Contact",
+			href: "/ChannelPartners",
 		},
 	],
 	navMenuItems: [
@@ -44,7 +44,7 @@ export const siteConfig = {
 		},
 		{
 			label: "招商加盟",
-			href: "/Contact",
+			href: "/ChannelPartners",
 		},
 	],
 	links: {

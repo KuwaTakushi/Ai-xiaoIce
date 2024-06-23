@@ -26,16 +26,12 @@ const BackgroundIconC = () => {
 
 export default function Home() {
   const [hoveredIndex, setActiveIndex] = useState<number | null>(null);
-  const [open, setOpen] = useState(10);
   const [customerIndex, setCustomerIndex] = useState(0);
   const [currentVideoUrl, setCurrentVideoUrl] = useState("");
 
 
 	const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
-  const handleOpen = (index: number) => {
-    setOpen(index);
-  }
 
   useEffect(() => {
     setCurrentVideoUrl(cards[customerIndex].videoUrl);
@@ -122,7 +118,7 @@ export default function Home() {
                 <p className=" max-w-lg text-lg">奥森小冰是人工智能内容生产的先行者，拥有全球领先的核心技术并已形成完善的产品线。奥森小冰的人工智能内容生产，着眼于在达到与相应人类生产者同等质量水准的前提下，充分发挥人工智能快速学习、高并发与稳定性等特点，协助弥补 “ 高度定制化内容 ” 的供需关系短板</p>
               </div>
               <div className="md:max-w-lg max-w-sm flex justify-center">
-              <img className=" max-w-2xl object-cover" src="main_bg_3.png" alt="" />
+              <img className=" max-w-xl object-cover" src="main_bg_3.png" alt="" />
               </div>
             </div>
           </Tab>
@@ -158,7 +154,7 @@ export default function Home() {
                 <p className=" max-w-lg text-lg">数字名片是传统纸质名片的数字化升级，它以更便捷、更智能的方式展现您的个人信息和联系方式。告别纸质名片的浪费和繁琐，数字名片让您只需轻轻一扫，就能将所有信息传递给对方。您可以定制专属的数字名片，设计独特的风格，展现您的个人魅力。许多平台还提供数据分析功能，帮助您了解名片的传播效果和用户行为。无论是商务社交还是个人推广，数字名片都将成为您不可或缺的工具。</p>
               </div>
               <div className="md:max-w-lg max-w-sm flex justify-center">
-                <img className="max-w-2xl object-cover rounded-xl" src="mian_bg_4.png" alt="" />
+                <img className="max-w-xl object-cover rounded-xl" src="mian_bg_4.png" alt="" />
               </div>
             </div>
           </Tab>
@@ -282,7 +278,6 @@ export default function Home() {
             className="border-none rounded-lg max-w-7xl w-110 relative"
             onMouseEnter={() => setActiveIndex(cards[3].id)}
             onMouseLeave={() => setActiveIndex(null)}
-            onClick={() => {handleOpen(3)}}
           >
             <img
               alt="Woman listing to music"

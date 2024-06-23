@@ -27,10 +27,6 @@ export const viewport: Viewport = {
 	],
 }
 
-
-
-
-
 const FixedButton = () => {
 	const WechatIcon = () => {
 		return (
@@ -199,6 +195,7 @@ export default function RootLayout({
 					"min-h-screen bg-background font-sans antialiased scrollbar-hide",
 					fontSans.variable
 				)}
+				style={{ width: '100vw' }}
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
 					<div className="relative flex flex-col h-screen">

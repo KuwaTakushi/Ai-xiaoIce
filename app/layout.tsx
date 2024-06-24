@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @next/next/no-Image-element */
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import { siteConfig } from "@/config/site";
@@ -8,6 +8,7 @@ import { Navbar } from "@/components/navbar";
 import clsx from "clsx";
 import { Button, Link, Popover, PopoverContent, PopoverTrigger, Tooltip } from "@nextui-org/react";
 import { ChatCompound } from "@/components/chat";
+import Image from 'next/image';
 
 export const metadata: Metadata = {
 	title: {
@@ -111,7 +112,7 @@ const FixedButton = () => {
 						placement="left-start"
 						content={
 							<div className=" flex flex-col p-6 justify-center items-center rounded-xl ">
-							<img width={100} src="contact.jpg" alt="" />
+							<Image width={100} src="/contact.jpg" alt="" height={100} />
 							<p className=" mt-4 text-lg">
 								微信扫码, 添加客服
 							</p>
@@ -138,7 +139,7 @@ const FixedButton = () => {
 						placement="left-start"
 						content={
 							<div className=" flex flex-col p-6 justify-center items-center rounded-xl ">
-							<img width={100} src="contact.jpg" alt="" />
+							<Image width={100} src="/contact.jpg" alt="" height={100} />
 							<p className=" mt-4 text-lg">
 								扫一扫 添加好友
 							</p>
@@ -169,7 +170,7 @@ const FixedButton = () => {
 				</PopoverTrigger>
 				<PopoverContent>
 					<div className=" flex flex-col p-4 justify-center items-center">
-						<img width={100} src="contact.jpg" alt="" />
+						<Image width={100} src="/contact.jpg" alt="" height={100} />
 						<p className=" mt-4 text-lg">
 							扫一扫 添加奥森小冰好友
 						</p>
@@ -195,7 +196,6 @@ export default function RootLayout({
 					"min-h-screen bg-background font-sans antialiased scrollbar-hide",
 					fontSans.variable
 				)}
-				style={{ width: '100vw' }}
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
 					<div className="relative flex flex-col h-screen">
@@ -210,8 +210,8 @@ export default function RootLayout({
 							<div className=" relative w-full overflow-hidden flex md:flex-row flex-col justify-center items-center md:gap-36">
 
 								<div className="flex justify-center flex-col items-center text-left">
-									<img className=" object-cover w-64 pb-4" src="logo.png" alt="logo" />
-									<p className=" font-bold md:text-3xl text-lg"> 奥森小冰</p>
+									<img className=" object-cover w-64 pb-4" src="logo.png" alt="logo" width={64} />
+									<p className=" font-bold md:text-3xl text-lg"> 奥森小冰</p> 
 								</div>
 
 

@@ -2,35 +2,36 @@
 import { Card, Chip, Modal, ModalBody, ModalContent, Tab, Tabs, useDisclosure } from "@nextui-org/react";
 import { useEffect, useRef, useState } from "react";
 import { Carousel } from "@material-tailwind/react";
+import Image from 'next/image';
 
 const cards = [
 	{
-	  url: "ani_image111.png",
+	  url: "/ani_image111.png",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E6%8B%9B%E5%B0%8F%E5%BD%B1%E5%A4%96%E5%AE%A3_Final_1026%E6%97%A0%E5%B0%81%E9%9D%A2_%E4%BD%8E%E7%A0%81%E7%8E%87_39MB.mp4",
 	  id: 1,
 	},
 	{
-	  url: "video_poster4.png",
+	  url: "/video_poster4.png",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%5B%E4%BB%8A%E6%97%A5%E7%8E%AF%E7%90%83%5D%E9%87%91%E7%89%8C%E8%83%8C%E5%90%8E%EF%BC%9A%E2%80%9CAI%E5%8A%A9%E7%90%86%E6%95%99%E7%BB%83%E2%80%9D%E5%8A%A9%E5%8A%9B%E4%B8%AD%E5%9B%BD%E9%9B%AA%E4%B8%8A%E9%A1%B9%E7%9B%AE%E8%AE%AD%E7%BB%83%5B%E4%B8%8B%E8%BD%BD%E7%89%88%5D_batch.m4v",
 	  id: 2,
 	},
 	{
-	  url: "video_poster7.png",
+	  url: "/video_poster7.png",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E6%AF%8F%E6%97%A5%E7%BB%8F%E6%B5%8E%E6%96%B0%E9%97%BB%E8%A7%86%E9%A2%911.mp4",
 	  id: 3,
 	},
 	{
-	  url: "video_poster5.png",
+	  url: "/video_poster5.png",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D.m4v",
 	  id: 4,
 	},
 	{
-	  url: "video_poster3.png",
+	  url: "/video_poster3.png",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E9%83%8E%E5%92%B8%E5%B9%B3%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F%E8%99%9A%E6%8B%9F%E4%BA%BA.mp4",
 	  id: 5,
 	},
 	{
-	  url: "video_poster4 .png",
+	  url: "/video_poster4 .png",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E8%93%9D%E8%89%B2%E5%85%89%E6%A0%87%E8%91%A3%E4%BA%8B%E9%95%BF%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F%E8%99%9A%E6%8B%9F%E4%BA%BA.mp4",
 	  id: 6,
 	},
@@ -113,7 +114,7 @@ export default function AIBeing() {
 					<h1 className="md:pb-8 font-bold text-2xl pb-3 md:text-8xl">AI数字员工</h1>
 					<p className="md:text-2xl max-w-4xl">奥森小冰基于全球领先的完备人工智能奥森小冰框架，推出了数字专家和数字员工等完整产品线，从数据采集、训练到上线，最快仅需10小时。支持创建拥有情感交互能力、专业技能和内容生产能力的数字人，目前已被应用于多个工作和生活场景中。</p>
 				</div>
-				<img className=" bg-cover max-w-xl" src="banner-2.jpg" alt="human" />
+				<Image className=" bg-cover max-w-xl" src="/banner-2.jpg" alt="human" width={1500} height={800}/>
 				</div>
 			</div>
 
@@ -123,7 +124,7 @@ export default function AIBeing() {
 			{/** title 移动端 */}
 			<div className="flex flex-col md:hidden bg-[#000887] p-4">
 				<div className=" relative">
-					<img className="object-cover ml-8" src="banner-2.jpg" alt="" />
+					<Image className="object-cover ml-8" src="/banner-2.jpg" alt="" width={800} height={800}/> 
 					<div className=" absolute top-12 left-9 flex flex-col justify-center text-start text-white mb-5">
 						<h1 className="font-bold text-2xl pb-3">AI数字员工</h1>
 						<p className=" text-sm">奥森小冰基于全球领先的完备人工智能奥森小冰框架，推出了数字专家和数字员工等完整产品线，从数据采集、训练到上线，最快仅需10小时。支持创建拥有情感交互能力、专业技能和内容生产能力的数字人，目前已被应用于多个工作和生活场景中。</p>
@@ -151,7 +152,7 @@ export default function AIBeing() {
 										<span className=" w-24 bg-[#000887] h-4 bg-opacity-50"> </span>
 										<p className=" text-black font-bold">支持直播推流，轻松满足电商带货、赛事解说、新闻资讯、娱乐播报等场景。</p>
 									</div>
-									<img className="bg-cover max-w-xl" src="direct1.png" alt="" />
+									<Image className="bg-cover max-w-xl" src="/direct1.png" alt="" width={600} height={450}/>
 								</div>
 							</Tab>
 							<Tab
@@ -168,7 +169,7 @@ export default function AIBeing() {
 										<span className=" w-24 bg-[#2db2e2] h-4 bg-opacity-50"> </span>
 										<p className=" text-black font-bold max-w-xl">定制完美形象，融合企业基因，打造品牌代言人、形象代言人、数字员工、数字专家等，可用于企业内外宣物料制作、营销Campaign创新、RPA数字人化等。</p>
 									</div>
-									<img className="bg-cover max-w-xl" src="direct2.png" alt="" />
+									<Image className="bg-cover max-w-xl" src="/direct2.png" alt="" width={600} height={450}/>
 								</div>
 							</Tab>
 							<Tab
@@ -185,7 +186,7 @@ export default function AIBeing() {
 										<span className=" w-24 bg-[#3af8bf] h-4 bg-opacity-50"> </span>
 										<p className=" text-black font-bold">拥有EQ和不同人设的数字人可以胜任生活助理、智能座舱助理、陪护师等需要情感交互的工作。</p>
 									</div>
-									<img className="bg-cover max-w-xl" src="direct3.png" alt="" />
+									<Image className="bg-cover max-w-xl" src="/direct3.png" alt="" width={600} height={450} />
 								</div>
 							</Tab>
 
@@ -203,7 +204,7 @@ export default function AIBeing() {
 										<span className=" w-24 bg-[#3af8bf] h-4 bg-opacity-50"> </span>
 										<p className=" text-black font-bold">拥有创造力的数字人可以辅助人类进行绘画、音乐、设计、诗歌等创作，如音乐制作人、服装设计师、插画师等。</p>
 									</div>
-									<img className="bg-cover max-w-xl" src="direct4.png" alt="" />
+									<Image className="bg-cover max-w-xl" src="/direct4.png" alt="" width={600} height={450} />
 								</div>
 							</Tab>
 						</Tabs>
@@ -356,7 +357,7 @@ export default function AIBeing() {
 
 
 			{/** 移动端 */}
-			<div className=" md:hidden text-black p-4 bg-cover bg-center" style={{backgroundImage: `url("https://business.xiaoice.com/img/vhuman/advantage_intro_bg.png")`}}>
+			<div className=" md:hidden text-black p-4 bg-cover bg-center" style={{backgroundImage: `url("https://business.xiaoice.com/Image/vhuman/advantage_intro_bg.png")`}}>
 				<div className=" m-4 space-y-2">
 					<h2 className=" text-2xl pb-4">产品优势</h2>
 					<div className=" relative h-36">
@@ -369,7 +370,7 @@ export default function AIBeing() {
 
 
 					<div className=" relative">
-						<img className=" min-w-96" src="human_product_one1.png" alt="" />
+						<Image className=" min-w-96" src="/human_product_one1.png" alt="" width={550} height={450}/>
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">
@@ -391,7 +392,7 @@ export default function AIBeing() {
 
 
 					<div className=" relative">
-						<img className="min-w-96" src="human_product_two1.png" alt="" />
+						<Image className="min-w-96" src="/human_product_two1.png" alt="" width={550} height={450} />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">
@@ -414,7 +415,7 @@ export default function AIBeing() {
 
 					
 					<div className="relative">
-						<img className="min-w-96" src="human_product_three1.png" alt="" />
+						<Image className="min-w-96" src="/human_product_three1.png" alt="" width={550} height={450}/>
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">
@@ -438,7 +439,7 @@ export default function AIBeing() {
 
 
 					<div className=" relative">
-						<img className="min-w-96" src="human_product_four1.png" alt="" />
+						<Image className="min-w-96" src="/human_product_four1.png" alt="" width={550} height={450}/>
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">
@@ -479,7 +480,7 @@ export default function AIBeing() {
 					)}
 				>
 					<div className=" relative bg-white">
-						<img className=" object-cover h-110 w-full" src="direct4.jpg" alt="" />
+						<Image className=" object-cover h-110 w-full" src="/direct4.jpg" alt="" width={550} height={450}/>
 						<div className=" absolute top-8 left-8 text-white w-72">
 							<h1 className=" pb-8 text-2xl font-bold">应用场景</h1>
 							<h2 className=" text-xl">直播</h2>
@@ -488,7 +489,7 @@ export default function AIBeing() {
 					</div>
 
 					<div className=" relative">
-						<img className=" object-cover h-110 w-full" src="direct2.jpg" alt="" />
+						<Image className=" object-cover h-110 w-full" src="/direct2.jpg" alt="" width={550} height={450}/>
 						<div className=" absolute top-8 left-8 text-white w-72">
 							<h1 className=" pb-8 text-2xl font-bold">应用场景</h1>
 							<h2 className=" text-xl">企业</h2>
@@ -497,7 +498,7 @@ export default function AIBeing() {
 					</div>
 
 					<div className=" relative">
-						<img className=" object-cover h-110 w-full" src="direct3.jpg" alt="" />
+						<Image className=" object-cover h-110 w-full" src="/direct3.jpg" alt="" width={550} height={450}/>
 						<div className=" absolute top-8 left-8 text-white w-72">
 							<h1 className=" pb-8 text-2xl font-bold">应用场景</h1>
 							<h2 className=" text-xl">陪伴</h2>
@@ -506,7 +507,7 @@ export default function AIBeing() {
 					</div>
 
 					<div className=" relative">
-						<img className=" object-cover h-110 w-full" src="direct1.jpg" alt="" />
+						<Image className=" object-cover h-110 w-full" src="/direct1.jpg" alt="" width={550} height={450}/>
 						<div className=" absolute top-8 left-8 text-white w-72">
 							<h1 className=" pb-8 text-2xl font-bold">应用场景</h1>
 							<h2 className=" text-xl">创作</h2>
@@ -554,17 +555,18 @@ export default function AIBeing() {
 							onMouseEnter={() => setActiveIndex(cards[0].id)}
 							onMouseLeave={() => setActiveIndex(null)}
 						>
-							<img
+							<Image
 								alt="Woman listing to music"
 								className="object-cover w-full"
 								src={cards[0].url}
+								width={550} height={450}
 							/>
             				{hoveredIndex === cards[0].id && (
 							<div 
 								onClick={() => {onOpen(); setCustomerIndex(0)}}
 								className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
 							>
-								<img width={70} src="play.png" alt="" />
+								<Image width={70} src="/play.png" alt="" height={450}/>
 							</div>
 							)}
 						</Card>
@@ -590,7 +592,7 @@ export default function AIBeing() {
 					</div>
 
 					<div>
-						<img className="object-cover md:max-w-xl" src="ani_image5.png" alt="" />
+						<Image className="object-cover md:max-w-xl" src="/ani_image5.png" alt="" width={550} height={450}/>
 					</div>
 				</div>
 
@@ -607,17 +609,18 @@ export default function AIBeing() {
 							onMouseEnter={() => setActiveIndex(cards[1].id)}
 							onMouseLeave={() => setActiveIndex(null)}
 						>
-							<img
+							<Image
 								alt="Woman listing to music"
 								className="object-cover w-full"
 								src={cards[1].url}
+								width={550} height={450}
 							/>
             				{hoveredIndex === cards[1].id && (
 							<div 
 								onClick={() => {onOpen(); setCustomerIndex(1)}}
 								className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
 							>
-								<img width={70} src="play.png" alt="" />
+								<Image width={70} src="/play.png" alt="" height={70} />
 							</div>
 							)}
 						</Card>
@@ -652,17 +655,18 @@ export default function AIBeing() {
 							onMouseEnter={() => setActiveIndex(cards[2].id)}
 							onMouseLeave={() => setActiveIndex(null)}
 						>
-							<img
+							<Image
 								alt="Woman listing to music"
 								className="object-cover w-full"
 								src={cards[2].url}
+								width={550} height={450}
 							/>
             				{hoveredIndex === cards[2].id && (
 							<div 
 								onClick={() => {onOpen(); setCustomerIndex(2)}}
 								className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
 							>
-								<img width={70} src="play.png" alt="" />
+								<Image width={70} src="/play.png" alt="" height={450}/>
 							</div>
 							)}
 						</Card>
@@ -677,21 +681,22 @@ export default function AIBeing() {
 						    key={cards[3].id}
 							isFooterBlurred
 							radius="sm"
-							className="border-none rounded-lg max-w-md relative"
+							className=" border-none rounded-lg max-w-md md:max-w-2xl relative"
 							onMouseEnter={() => setActiveIndex(cards[3].id)}
 							onMouseLeave={() => setActiveIndex(null)}
 						>
-							<img
-							alt="Woman listing to music"
-							className="object-cover w-full"
-							src={cards[3].url}
+							<Image
+								alt="红杉资本"
+								className="object-cover max-w-4xl w-110"
+								src={cards[3].url}
+								width={650} height={450}
 							/>
 							{hoveredIndex === cards[3].id && (
 							<div
 								onClick={() => {onOpen(); setCustomerIndex(3)}}
 								className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
 							>
-								<img width={70} src="play.png" alt="" />
+								<Image width={70} src="/play.png" alt="" height={70}/>
 							</div>
 							)}
 						</Card>
@@ -722,17 +727,18 @@ export default function AIBeing() {
 								onMouseEnter={() => setActiveIndex(cards[4].id)}
 								onMouseLeave={() => setActiveIndex(null)}
 							>
-								<img
+								<Image
 									alt="Woman listing to music"
 									className="object-cover w-full"
 									src={cards[4].url}
+									width={550} height={450}
 								/>
             					{hoveredIndex === cards[4].id && (
 								<div 
 									onClick={() => {onOpen(); setCustomerIndex(4)}}
 									className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
 								>
-									<img width={70} src="play.png" alt="" />
+									<Image width={70} src="/play.png" alt="" height={450}/>
 								</div>
 								)}
 							</Card>
@@ -755,17 +761,18 @@ export default function AIBeing() {
 							onMouseLeave={() => setActiveIndex(null)}
 							onClick={() => {onOpen(); setCustomerIndex(5)}}
 						>
-							<img
+							<Image
 								alt="Woman listing to music"
 								className="object-cover w-full"
 								src={cards[5].url}
+								width={550} height={450}
 							/>
             				{hoveredIndex === cards[5].id && (
 							<div 
 								onClick={() => {onOpen(); setCustomerIndex(5)}}
 								className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
 							>
-								<img width={70} src="play.png" alt="" />
+								<Image width={70} src="/play.png" alt="" height={450}/>
 							</div>
 							)}
 						</Card>

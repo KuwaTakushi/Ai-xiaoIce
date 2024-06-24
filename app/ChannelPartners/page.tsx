@@ -1,8 +1,9 @@
 "use client"
-/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @next/next/no-Image-element */
 import { Card, Chip, Modal, ModalBody, ModalContent, useDisclosure } from "@nextui-org/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Image from 'next/image';
 
 const IconA = () => {
 	return (
@@ -390,7 +391,7 @@ export default function ChannelPartners() {
 	return (
 		<div className=" w-full">
 			<div className=" relative">
-				<img className=" object-cover h-100 md:h-auto" src="banner2.png" alt="banner2" />
+				<Image className=" object-cover h-100 md:h-auto" src="banner2.png" alt="banner2" />
 				<div className=" flex flex-col md:items-start items-center absolute md:top-1/5 md:left-64 left-24 top-12 right-1/3 -translate-x-12 md:-translate-x-0 text-white">
 					<div className=" md:text-2xl text-left md:pt-4 text-base max-w-2xl">
 						<h1 className=" md:text-5xl text-base pb-4">招商加盟</h1>
@@ -577,10 +578,10 @@ export default function ChannelPartners() {
 
 
 			{/** 移动端 */}
-			<div className=" md:hidden text-black p-4 bg-cover bg-center" style={{backgroundImage: `url("https://business.xiaoice.com/img/vhuman/advantage_intro_bg.png")`}}>
+			<div className=" md:hidden text-black p-4 bg-cover bg-center" style={{backgroundImage: `url("https://business.xiaoice.com/Image/vhuman/advantage_intro_bg.png")`}}>
 			<div className=" flex overflow-x-scroll whitespace-nowrap mt-3">
 					<div className=" relative">
-						<img className=" min-w-96" src="human_product_three1.png" alt="" />
+						<Image className=" min-w-96" src="human_product_three1.png" alt="" />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col justify-center">
 								<div className="flex gap-8">
@@ -606,7 +607,7 @@ export default function ChannelPartners() {
 
 
 					<div className=" relative">
-						<img className="min-w-96" src="human2.png" alt="" />
+						<Image className="min-w-96" src="human2.png" alt="" />
 						<div className=" p-4 absolute bottom-0 pr-16  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 						<div className=" flex flex-col justify-center">
 								<div className="flex gap-8">
@@ -630,7 +631,7 @@ export default function ChannelPartners() {
 
 					
 					<div className="relative">
-						<img className="min-w-96" src="human3.png" alt="" />
+						<Image className="min-w-96" src="human3.png" alt="" />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 						<div className=" flex flex-col justify-center text-left ml-6">
 								<div className="flex gap-8">
@@ -653,7 +654,7 @@ export default function ChannelPartners() {
 
 
 					<div className=" relative">
-						<img className="min-w-96" src="human4.png" alt="" />
+						<Image className="min-w-96" src="human4.png" alt="" />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 						<div className=" flex flex-col justify-center">
 								<div className="flex gap-8">
@@ -676,7 +677,7 @@ export default function ChannelPartners() {
 
 
 					<div className=" relative">
-						<img className="min-w-96" src="human5.png" alt="" />
+						<Image className="min-w-96" src="human5.png" alt="" />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">
@@ -745,7 +746,7 @@ export default function ChannelPartners() {
 							onMouseEnter={() => setActiveIndex(cards[6].id)}
 							onMouseLeave={() => setActiveIndex(null)}
 						>
-							<img
+							<Image
 							alt="Woman listing to music"
 							className="object-cover w-full"
 							src={cards[6].url}
@@ -755,7 +756,7 @@ export default function ChannelPartners() {
 								onClick={() => {onOpen(); setCustomerIndex(6)}}
 								className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
 							>
-								<img width={70} src="play.png" alt="" />
+								<Image width={70} src="play.png" alt="" />
 							</div>
 							)}
 						</Card>
@@ -775,7 +776,7 @@ export default function ChannelPartners() {
 							onMouseEnter={() => setActiveIndex(cards[0].id)}
 							onMouseLeave={() => setActiveIndex(null)}
 						>
-							<img
+							<Image
 								alt="Woman listing to music"
 								className="object-cover w-full"
 								src={cards[0].url}
@@ -785,7 +786,7 @@ export default function ChannelPartners() {
 								onClick={() => {onOpen(); setCustomerIndex(0)}}
 								className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
 							>
-								<img width={70} src="play.png" alt="" />
+								<Image width={70} src="play.png" alt="" />
 							</div>
 							)}
 						</Card>
@@ -825,7 +826,7 @@ export default function ChannelPartners() {
 							onMouseEnter={() => setActiveIndex(cards[2].id)}
 							onMouseLeave={() => setActiveIndex(null)}
 						>
-							<img
+							<Image
 								alt="Woman listing to music"
 								className="object-cover w-full"
 								src={cards[2].url}
@@ -835,7 +836,7 @@ export default function ChannelPartners() {
 								onClick={() => {onOpen(); setCustomerIndex(2)}}
 								className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
 							>
-								<img width={70} src="play.png" alt="" />
+								<Image width={70} src="play.png" alt="" />
 							</div>
 							)}
 						</Card>
@@ -854,7 +855,7 @@ export default function ChannelPartners() {
 							onMouseEnter={() => setActiveIndex(cards[3].id)}
 							onMouseLeave={() => setActiveIndex(null)}
 						>
-							<img
+							<Image
 							alt="Woman listing to music"
 							className="object-cover w-full"
 							src={cards[3].url}
@@ -864,7 +865,7 @@ export default function ChannelPartners() {
 								onClick={() => {onOpen(); setCustomerIndex(3)}}
 								className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
 							>
-								<img width={70} src="play.png" alt="" />
+								<Image width={70} src="play.png" alt="" />
 							</div>
 							)}
 						</Card>
@@ -891,32 +892,32 @@ export default function ChannelPartners() {
 				<h1 className=" text-5xl pb-14 text-[#333333]">加盟合作保障</h1>
 				<div className="flex flex-col md:flex-row flex-wrap justify-between text-[#00305a] gap-8 md:max-w-5xl max-w-96 pt-8">
 					<div className="  flex flex-col justify-center items-center space-y-2">
-						<img className=" object-cover md:w-36 w-24" src="partners1.png" alt="" />
+						<Image className=" object-cover md:w-36 w-24" src="partners1.png" alt="" />
 						<h2 className=" font-bold text-3xl">多元化市场支持</h2>
 						<p className=" text-sm">全域市场营销玩法，协助区域伙伴获得市场优势</p>
 					</div>
 
 					<div className=" flex flex-col justify-center items-center space-y-2">
-					<img className=" object-cover md:w-36 w-24" src="partners2.png" alt="" />
+					<Image className=" object-cover md:w-36 w-24" src="partners2.png" alt="" />
 						<h2 className=" font-bold text-3xl">全方位技术支持</h2>
 						<p className=" text-sm">专业售前团队项目支持，强大的售后团队支撑</p>
 					</div>
 
 					<div className=" flex flex-col justify-center items-center space-y-2">
-					<img className=" object-cover md:w-36 w-24" src="partners3.png" alt="" />
+					<Image className=" object-cover md:w-36 w-24" src="partners3.png" alt="" />
 						<h2 className=" font-bold text-3xl">成熟的方案支持</h2>
 						<p className=" text-sm">众多合作案例，引领伙伴区域市场拓展</p>
 					</div>
 
 					<div className=" flex flex-col justify-center items-center space-y-2 pt-8">
-					<img className=" object-cover md:w-36 w-24" src="partners4.png" alt="" />
+					<Image className=" object-cover md:w-36 w-24" src="partners4.png" alt="" />
 						<h2 className=" font-bold text-3xl">顾问式伙伴扶持</h2>
 						<p className=" text-sm">协助伙伴进行销售、运营团队搭建与管理；协助进行当地市场拓展与业务规划</p>
 					</div>
 
 
 					<div className=" flex flex-col justify-center items-center space-y-2 pt-8">
-					<img className=" object-cover md:w-36 w-24" src="partners5.png" alt="" />
+					<Image className=" object-cover md:w-36 w-24" src="partners5.png" alt="" />
 						<h2 className=" font-bold text-3xl">扁平化渠道政策</h2>
 						<p className=" text-sm">低门槛、高返利、不压货，线下市场区域保护，真诚、平等、无套路</p>
 					</div>

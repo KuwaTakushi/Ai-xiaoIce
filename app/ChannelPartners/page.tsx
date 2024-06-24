@@ -1,5 +1,4 @@
 "use client"
-/* eslint-disable @next/next/no-Image-element */
 import { Card, Chip, Modal, ModalBody, ModalContent, useDisclosure } from "@nextui-org/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -330,40 +329,40 @@ const IconC = () => {
 
 const cards = [
 	{
-	  url: "ani_image111.png",
+	  url: "/ani_image111.png",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E6%8B%9B%E5%B0%8F%E5%BD%B1%E5%A4%96%E5%AE%A3_Final_1026%E6%97%A0%E5%B0%81%E9%9D%A2_%E4%BD%8E%E7%A0%81%E7%8E%87_39MB.mp4",
 	  id: 1,
 	},
 	{
-	  url: "video_poster4.png",
+	  url: "/video_poster4.png",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%5B%E4%BB%8A%E6%97%A5%E7%8E%AF%E7%90%83%5D%E9%87%91%E7%89%8C%E8%83%8C%E5%90%8E%EF%BC%9A%E2%80%9CAI%E5%8A%A9%E7%90%86%E6%95%99%E7%BB%83%E2%80%9D%E5%8A%A9%E5%8A%9B%E4%B8%AD%E5%9B%BD%E9%9B%AA%E4%B8%8A%E9%A1%B9%E7%9B%AE%E8%AE%AD%E7%BB%83%5B%E4%B8%8B%E8%BD%BD%E7%89%88%5D_batch.m4v",
 	  id: 2,
 	},
 	{
-	  url: "video_poster7.png",
+	  url: "/video_poster7.png",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E6%AF%8F%E6%97%A5%E7%BB%8F%E6%B5%8E%E6%96%B0%E9%97%BB%E8%A7%86%E9%A2%911.mp4",
 	  id: 3,
 	},
 	{
-	  url: "video_poster5.png",
+	  url: "/video_poster5.png",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D.m4v",
 	  id: 4,
 	},
 	{
-	  url: "video_poster3.png",
+	  url: "/video_poster3.png",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E9%83%8E%E5%92%B8%E5%B9%B3%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F%E8%99%9A%E6%8B%9F%E4%BA%BA.mp4",
 	  id: 5,
 	},
 	{
-	  url: "video_poster4 .png",
+	  url: "/video_poster4 .png",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E8%93%9D%E8%89%B2%E5%85%89%E6%A0%87%E8%91%A3%E4%BA%8B%E9%95%BF%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F%E8%99%9A%E6%8B%9F%E4%BA%BA.mp4",
 	  id: 6,
 	},
 	{
-		url: "huaxizi_poster.png",
-		videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E8%93%9D%E8%89%B2%E5%85%89%E6%A0%87%E8%91%A3%E4%BA%8B%E9%95%BF%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F%E8%99%9A%E6%8B%9F%E4%BA%BA.mp4",
-		id: 7,
-	  },
+	  url: "/huaxizi_poster.png",
+      videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E8%93%9D%E8%89%B2%E5%85%89%E6%A0%87%E8%91%A3%E4%BA%8B%E9%95%BF%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F%E8%99%9A%E6%8B%9F%E4%BA%BA.mp4",
+	  id: 7,
+	},
 ];
 
 export default function ChannelPartners() {
@@ -391,7 +390,7 @@ export default function ChannelPartners() {
 	return (
 		<div className=" w-full">
 			<div className=" relative">
-				<Image className=" object-cover h-100 md:h-auto" src="banner2.png" alt="banner2" />
+				<Image className=" object-cover h-100 md:h-auto" src="/banner2.png" alt="banner2" width={1500} height={750} />
 				<div className=" flex flex-col md:items-start items-center absolute md:top-1/5 md:left-64 left-24 top-12 right-1/3 -translate-x-12 md:-translate-x-0 text-white">
 					<div className=" md:text-2xl text-left md:pt-4 text-base max-w-2xl">
 						<h1 className=" md:text-5xl text-base pb-4">招商加盟</h1>
@@ -581,7 +580,7 @@ export default function ChannelPartners() {
 			<div className=" md:hidden text-black p-4 bg-cover bg-center" style={{backgroundImage: `url("https://business.xiaoice.com/Image/vhuman/advantage_intro_bg.png")`}}>
 			<div className=" flex overflow-x-scroll whitespace-nowrap mt-3">
 					<div className=" relative">
-						<Image className=" min-w-96" src="human_product_three1.png" alt="" />
+						<Image className=" min-w-96" src="/human_product_three1.png" alt="" width={500} height={300} />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col justify-center">
 								<div className="flex gap-8">
@@ -607,7 +606,7 @@ export default function ChannelPartners() {
 
 
 					<div className=" relative">
-						<Image className="min-w-96" src="human2.png" alt="" />
+						<Image className="min-w-96" src="/human2.png" alt="" width={500} height={800} />
 						<div className=" p-4 absolute bottom-0 pr-16  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 						<div className=" flex flex-col justify-center">
 								<div className="flex gap-8">
@@ -631,7 +630,7 @@ export default function ChannelPartners() {
 
 					
 					<div className="relative">
-						<Image className="min-w-96" src="human3.png" alt="" />
+						<Image className="min-w-96" src="/human3.png" alt="" width={500} height={800} />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 						<div className=" flex flex-col justify-center text-left ml-6">
 								<div className="flex gap-8">
@@ -654,7 +653,7 @@ export default function ChannelPartners() {
 
 
 					<div className=" relative">
-						<Image className="min-w-96" src="human4.png" alt="" />
+						<Image className="min-w-96" src="/human4.png" alt="" width={500} height={800} />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 						<div className=" flex flex-col justify-center">
 								<div className="flex gap-8">
@@ -677,7 +676,7 @@ export default function ChannelPartners() {
 
 
 					<div className=" relative">
-						<Image className="min-w-96" src="human5.png" alt="" />
+						<Image className="min-w-96" src="/human5.png" alt="" width={500} height={800} />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">
@@ -756,7 +755,7 @@ export default function ChannelPartners() {
 								onClick={() => {onOpen(); setCustomerIndex(6)}}
 								className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
 							>
-								<Image width={70} src="play.png" alt="" />
+								<Image width={70} src="/play.png" alt=""  height={70}/>
 							</div>
 							)}
 						</Card>
@@ -780,13 +779,14 @@ export default function ChannelPartners() {
 								alt="Woman listing to music"
 								className="object-cover w-full"
 								src={cards[0].url}
+								width={350} height={300}
 							/>
             				{hoveredIndex === cards[0].id && (
 							<div 
 								onClick={() => {onOpen(); setCustomerIndex(0)}}
 								className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
 							>
-								<Image width={70} src="play.png" alt="" />
+								<Image width={70} src="/play.png" alt=""  height={70}/>
 							</div>
 							)}
 						</Card>
@@ -830,13 +830,14 @@ export default function ChannelPartners() {
 								alt="Woman listing to music"
 								className="object-cover w-full"
 								src={cards[2].url}
+								width={350} height={300}
 							/>
             				{hoveredIndex === cards[2].id && (
 							<div 
 								onClick={() => {onOpen(); setCustomerIndex(2)}}
 								className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
 							>
-								<Image width={70} src="play.png" alt="" />
+								<Image width={70} src="/play.png" alt=""  height={70}/>
 							</div>
 							)}
 						</Card>
@@ -856,16 +857,17 @@ export default function ChannelPartners() {
 							onMouseLeave={() => setActiveIndex(null)}
 						>
 							<Image
-							alt="Woman listing to music"
-							className="object-cover w-full"
-							src={cards[3].url}
+								alt="Woman listing to music"
+								className="object-cover w-full"
+								src={cards[3].url}
+								width={350} height={300}
 							/>
 							{hoveredIndex === cards[3].id && (
 							<div
 								onClick={() => {onOpen(); setCustomerIndex(3)}}
 								className="absolute inset-0 z-10 bg-black opacity-30 flex justify-center items-center cursor-pointer"
 							>
-								<Image width={70} src="play.png" alt="" />
+								<Image width={70} src="/play.png" alt=""  height={70}/>
 							</div>
 							)}
 						</Card>
@@ -892,32 +894,32 @@ export default function ChannelPartners() {
 				<h1 className=" text-5xl pb-14 text-[#333333]">加盟合作保障</h1>
 				<div className="flex flex-col md:flex-row flex-wrap justify-between text-[#00305a] gap-8 md:max-w-5xl max-w-96 pt-8">
 					<div className="  flex flex-col justify-center items-center space-y-2">
-						<Image className=" object-cover md:w-36 w-24" src="partners1.png" alt="" />
+						<Image className=" object-cover md:w-36 w-24" src="/partners1.png" alt="" width={250} height={250} />
 						<h2 className=" font-bold text-3xl">多元化市场支持</h2>
 						<p className=" text-sm">全域市场营销玩法，协助区域伙伴获得市场优势</p>
 					</div>
 
 					<div className=" flex flex-col justify-center items-center space-y-2">
-					<Image className=" object-cover md:w-36 w-24" src="partners2.png" alt="" />
+					<Image className=" object-cover md:w-36 w-24" src="/partners2.png" alt="" width={250} height={250} />
 						<h2 className=" font-bold text-3xl">全方位技术支持</h2>
 						<p className=" text-sm">专业售前团队项目支持，强大的售后团队支撑</p>
 					</div>
 
 					<div className=" flex flex-col justify-center items-center space-y-2">
-					<Image className=" object-cover md:w-36 w-24" src="partners3.png" alt="" />
+					<Image className=" object-cover md:w-36 w-24" src="/partners3.png" alt="" width={250} height={250} />
 						<h2 className=" font-bold text-3xl">成熟的方案支持</h2>
 						<p className=" text-sm">众多合作案例，引领伙伴区域市场拓展</p>
 					</div>
 
 					<div className=" flex flex-col justify-center items-center space-y-2 pt-8">
-					<Image className=" object-cover md:w-36 w-24" src="partners4.png" alt="" />
+					<Image className=" object-cover md:w-36 w-24" src="/partners4.png" alt="" width={250} height={250} />
 						<h2 className=" font-bold text-3xl">顾问式伙伴扶持</h2>
 						<p className=" text-sm">协助伙伴进行销售、运营团队搭建与管理；协助进行当地市场拓展与业务规划</p>
 					</div>
 
 
 					<div className=" flex flex-col justify-center items-center space-y-2 pt-8">
-					<Image className=" object-cover md:w-36 w-24" src="partners5.png" alt="" />
+					<Image className=" object-cover md:w-36 w-24" src="/partners5.png" alt="" width={250} height={250} />
 						<h2 className=" font-bold text-3xl">扁平化渠道政策</h2>
 						<p className=" text-sm">低门槛、高返利、不压货，线下市场区域保护，真诚、平等、无套路</p>
 					</div>

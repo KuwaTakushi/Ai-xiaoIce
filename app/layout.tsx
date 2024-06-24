@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-Image-element */
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import { siteConfig } from "@/config/site";

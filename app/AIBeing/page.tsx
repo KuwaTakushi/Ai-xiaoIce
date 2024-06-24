@@ -107,7 +107,7 @@ export default function AIBeing() {
 
 	return (
 		<div>
-			<div className="hidden md:block text-left bg-[#000887]">
+			<div className="hidden md:block text-left bg-[#061a55]">
 				{/** 电脑端 */}
 				<div className="flex justify-between">
 				<div className="flex  items-left justify-center p-24 pl-48 flex-col relative text-white">
@@ -122,7 +122,7 @@ export default function AIBeing() {
 
 
 			{/** title 移动端 */}
-			<div className="flex flex-col md:hidden bg-[#000887] p-4">
+			<div className="flex flex-col md:hidden bg-[#061a55] p-4">
 				<div className=" relative">
 					<Image className="object-cover ml-8" src="/banner-2.jpg" alt="" width={800} height={800}/> 
 					<div className=" absolute top-12 left-9 flex flex-col justify-center text-start text-white mb-5">
@@ -133,7 +133,7 @@ export default function AIBeing() {
 			</div>
 
 			<div className="hidden md:block">
-			<div className=" flex flex-col justify-center items-center bg-[#000887] text-white p-8">
+			<div className=" flex flex-col justify-center items-center bg-[#061a55] text-white p-8">
 			 	<h1 className=" font-bold text-3xl">应用场景</h1>
 				<div className="flex justify-center pt-8">
 					<div className="flex w-full flex-col gap-8 justify-center items-center">
@@ -216,7 +216,7 @@ export default function AIBeing() {
 		
 			{/** advantage_intro 电脑端 */}
 			<div className="hidden md:block">
-				<div className="relative bg-[#000887] md:block flex-col space-y-8 justify-center text-center bg-cover bg-no-repeat  text-base text-gray-700 flex items-center px-28 leading-10 overflow-hidden p-12 pb-52">
+				<div className="relative bg-[#061a55] md:block flex-col space-y-8 justify-center text-center bg-cover bg-no-repeat  text-base text-gray-700 flex items-center px-28 leading-10 overflow-hidden p-12 pb-52">
 					{/** products */}
 					<div className="pb-12">
 						<h2 className=" text-5xl text-white">产品优势</h2>
@@ -610,10 +610,10 @@ export default function AIBeing() {
 							onMouseLeave={() => setActiveIndex(null)}
 						>
 							<Image
-								alt="Woman listing to music"
-								className="object-cover w-full"
+								alt=""
+								className="object-cover"
 								src={cards[1].url}
-								width={550} height={450}
+								width={580} height={450}
 							/>
             				{hoveredIndex === cards[1].id && (
 							<div 
@@ -656,8 +656,8 @@ export default function AIBeing() {
 							onMouseLeave={() => setActiveIndex(null)}
 						>
 							<Image
-								alt="Woman listing to music"
-								className="object-cover w-full"
+								alt=""
+								className="object-cover"
 								src={cards[2].url}
 								width={550} height={450}
 							/>
@@ -687,7 +687,7 @@ export default function AIBeing() {
 						>
 							<Image
 								alt="红杉资本"
-								className="object-cover max-w-4xl w-110"
+								className="object-cover md:max-w-4xl  md:w-110"
 								src={cards[3].url}
 								width={650} height={450}
 							/>
@@ -700,7 +700,7 @@ export default function AIBeing() {
 							</div>
 							)}
 						</Card>
-						<div className=" max-w-lg mb-20 flex justify-around">
+						<div className=" max-w-lg md:mb-20 mb-12 flex justify-around">
 							<div className=" flex flex-col text-left max-w-lg mt-4 flex-wrap">
 								<h2 className=" text-[#00305a] pb-4 pt-8 md:pt-0 text-2xl md:text-4xl font-bold">红杉资本 – Hóng，分析师，数字员工</h2>
 								<p className="text-[#00305a] text-sm md:text-xl">2022年7月11日，红杉中国首位数字员工Hóng正式亮相，她是奥森小冰团队为红杉资本量身定制的数字人，基于深度神经网络渲染技术小样本学习，经过一周的训练期即诞生。结合奥森小冰框架的全域能力，Hóng将不断成长，并在红杉资本各个业务流程中承担重要职责。</p>

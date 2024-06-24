@@ -4,24 +4,6 @@ import { useState } from "react";
 import Image from 'next/image';
 
 export default function Live() {
-
-    const [isVideoOpen, setIsVideoOpen] = useState(false);
-
-    const handleVideoClick = () => {
-        setIsVideoOpen(true);
-    };
-
-    const handleCloseVideo = () => {
-        setIsVideoOpen(false);
-    };
-
-	const handleScroll = () => {
-		const element = document.getElementById('details-section');
-		if (element) {
-			element.scrollIntoView({ behavior: 'smooth' });
-		}
-	};
-
 	return (
 		<div>
     		<div className="bg-cover w-full h-110 p-12 flex justify-center md:justify-center text-center" style={{backgroundImage: "url('mathCard_bg.png')"}}>
@@ -120,8 +102,8 @@ export default function Live() {
 		<div className=" hidden md:block">
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center pt-24">
 				<div className=" relative mt-24 min-w-68">
-					<Image className="object-cover w-110 min-w-28" src="/ani_image1.png" alt="" width={110} height={150} />
-					<Image className=" absolute top-3/4 -right-2/4 z-10 object-cover w-46 min-w-36" src="/ani_image2.png" alt="" width={110} height={150} />
+					<Image className="object-cover max-w-xl min-w-28" src="/ani_image1.png" alt="" width={500} height={150} />
+					<Image className=" absolute top-3/4 -right-2/4 z-10 object-cover max-w-xl min-w-36" src="/ani_image2.png" alt="" width={500} height={150} />
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">
@@ -132,7 +114,7 @@ export default function Live() {
 
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center">
 				<div className=" relative  z-20 min-w-68">
-					<Image className=" z-40 object-cover w-110 min-w-28" src="/ani_image3.png" alt="" width={110} height={150} />
+					<Image className=" z-40 object-cover max-w-xl min-w-28" src="/ani_image3.png" alt="" width={500} height={150} />
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">
@@ -179,12 +161,9 @@ export default function Live() {
 
 			<div className=" divide-y divide-slate-500 pt-4">
 				<div className=" flex whitespace-nowrap overflow-x-scroll gap-4 pb-4">
-					<Image className=" w-52  object-cover" src="/ani_image1.png" alt="ani_image1" width={110} height={150} />
-					<Image className=" w-52  object-cover" src="/ani_image4.png" alt="ani_image4" width={110} height={150} />
-					<Image className=" w-52  object-cover" src="/ani_image11.jpg" alt="ani_image11" width={110} height={150} />
-					<Image className=" w-52  object-cover" src="/ani_image1.jpg" alt="ani_image1 jpg" width={110} height={150} />
-					<Image className=" w-52  object-cover" src="/ani_image2.png" alt="ani_image2" width={110} height={150} />
-					<Image className=" w-52  object-cover" src="/ani_image3.png" alt="ani_image3" width={110} height={150} />
+					<Image className=" w-52  object-cover" src="/ani_image6.png" alt="ani_image6" width={110} height={150} />
+					<Image className=" w-52  object-cover" src="/ani_image8.png" alt="ani_image8" width={110} height={150} />
+					<Image className=" w-52  object-cover" src="/ani_image3.jpg" alt="ani_image3" width={110} height={150} />
 
 				</div>
 			</div>
@@ -226,7 +205,7 @@ export default function Live() {
 
 				<div className=" relative mt-24 min-w-68">
 					<Image className="object-cover w-110 min-w-28" src="/ani_image3.jpg" alt="" width={110} height={150}/>
-					<Image className=" absolute top-3/4 -left-2/4 z-20 object-cover w-46 min-w-36" src="/ani_image6.png" alt="" width={110} height={150}/>
+					<Image className=" absolute top-3/4 -left-2/4 z-20 object-cover max-w-xl min-w-36" src="/ani_image6.png" alt="" width={450} height={150}/>
 				</div>
 
 			</div>
@@ -238,7 +217,7 @@ export default function Live() {
 				</div>
 
 				<div className=" relative  z-10 min-w-68">
-					<Image className=" object-cover w-110 min-w-28" src="/ani_image7.png" alt="" width={110} height={150}/>
+					<Image className=" object-cover w-110 min-w-28" src="/ani_image8.png" alt="" width={110} height={150}/>
 				</div>
 			</div>
 		</div>
@@ -248,7 +227,7 @@ export default function Live() {
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center pt-24">
 				<div className=" relative mt-24 min-w-68">
 					<Image className="object-cover w-110 min-w-28" src="/ani_image1.png" alt="" width={110} height={150}/>
-					<Image className=" absolute top-3/4 -right-2/4 z-10 object-cover w-46 min-w-36" src="/ani_image2.png" alt="" width={110} height={150}/>
+					<Image className=" absolute top-3/4 -right-2/4 z-10 object-cover max-w-xl min-w-36" src="/ani_image2.png" alt="" width={450} height={150}/>
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">

@@ -72,7 +72,7 @@ export default function Live() {
 				<div className=" max-w-md text-center p-2">
 					<p className=" text-sm"> AI数字人直播基于先进的人工智能技术，通过对话模型和图像识别技术，将一段预先录制的视频进行实时生成和呈现。这些数字人以逼真的形象、流利的语言、灵活的互动形式，与用户进行互动交流。用户可以通过文字、语音或者视频方式与数字人进行沟通，从而获得自定义的、智能的服务。</p>
 				</div>
-				<Image className=" max-w-md object-cover p-8" src="/ani1.jpg" alt=""  width={250} height={250}/>
+				<Image className=" max-w-md object-cover p-8" src="/ani1.jpg" alt=""  width={420} height={250}/>
 			</div>
 
 
@@ -84,10 +84,9 @@ export default function Live() {
 
 				<div className=" flex justify-center items-center divide-black divide-x mr-8 gap-36">
 				<div className="  bg-sky-700 rounded-2xl shadow-xl shadow-sky-500">
-					<div className="group hover:rotate-12 duration-500 cursor-pointer group-hover:duration-500 overflow-hidden relative  rounded-2xl shadow-inner shadow-gray-50 flex flex-col justify-around items-center w-40 h-80 bg-neutral-900 text-gray-50">
+					<div className=" group hover:rotate-12 duration-500 cursor-pointer group-hover:duration-500 overflow-hidden relative  rounded-2xl shadow-inner shadow-gray-50 flex flex-col justify-around items-center w-40 h-80 bg-neutral-900 text-gray-50">
 						<div className="p-8 justify-center text-center after:duration-500 before:duration-500 duration-500  group-hover:before:translate-x-11 group-hover:before:-translate-y-11  group-hover:after:translate-x-11 group-hover:after:translate-y-16 after:absolute after:w-12 after:h-12 after:bg-orange-400 after:rounded-full after:-z-10 after:blur-xl after:bottom-32 after:right-16 after:w-12 after:h-12 before:absolute before:w-20 before:h-20 before:bg-sky-400 before:rounded-full before:-z-10 before:blur-xl before:top-20 before:right-16 before:w-12 before:h-12 flex flex-col font-extrabold text-6xl z-10">
-							<span className="text-lg pb-4">AI文本驱动
-						</span>
+							<span className="text-lg pb-4">AI文本驱动</span>
 						</div>
 						<div className="flex flex-row justify-center text-sm font-thin items-center gap-1">
 							<svg y="0" xmlns="http://www.w3.org/2000/svg" x="0" width="100" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" height="100" className="w-4 h-4 stroke-current">
@@ -219,8 +218,8 @@ export default function Live() {
 		<div className="hidden md:block">
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center pt-24">
 				<div className=" relative mt-24 min-w-68">
-					<Image className="object-cover w-110 min-w-28" src="/mathCard_1.jpg" alt="" width={150} height={150} />
-					<Image className=" absolute top-3/4 -right-2/4 z-10 object-cover w-46 min-w-36" src="/ani_image1.jpg" alt="" width={150} height={150} />
+					<Image className="object-cover max-w-xl min-w-28" src="/mathCard_1.jpg" alt="" width={450} height={150} />
+					<Image className=" absolute top-3/4 -right-2/4 z-10 object-cover max-w-xl min-w-36" src="/ani_image1.jpg" alt="" width={450} height={150} />
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">
@@ -231,8 +230,8 @@ export default function Live() {
 
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center">
 				<div className=" relative  z-20 min-w-68">
-					<Image className=" z-40 object-cover w-100" src="/mathCard_2.jpg" alt="" width={150} height={150} />
-					<Image className=" -z-10 absolute top-3/4 -right-2/4 object-cover w-46 min-w-36" src="/ani_image4.png" alt="" width={150} height={150} />
+					<Image className=" z-40 object-cover max-w-xl" src="/mathCard_2.jpg" alt="" width={450} height={150} />
+					<Image className=" -z-10 absolute top-3/4 -right-2/4 object-cover max-w-xl min-w-36" src="/ani_image4.png" alt="" width={450} height={150} />
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">
@@ -244,7 +243,7 @@ export default function Live() {
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-start pb-64">
 				<div className=" relative  z-20 min-w-68">
 					<Image className=" z-40 object-cover w-110 min-w-28" src="/mathCard_3.jpg" alt="" width={150} height={150} />
-					<Image className=" -z-10 absolute top-3/4 -right-2/4 object-cover w-46 min-w-36" src="/ani_image11.jpg" alt="" width={150} height={150} />
+					<Image className=" -z-10 absolute top-3/4 -right-2/4 object-cover max-w-xl min-w-36" src="/ani_image11.jpg" alt="" width={450} height={150} />
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left  pt-16">
@@ -307,7 +306,7 @@ export default function Live() {
 
 				<div className=" relative mt-24 min-w-68">
 					<Image className="object-cover w-110 min-w-28" src="/ani_image3.jpg" alt="" width={150} height={150}/>
-					<Image className=" absolute top-3/4 -left-2/4 z-20 object-cover w-46 min-w-36" src="/ani_image6.jpg" alt="" width={150} height={150}/>
+					<Image className=" absolute top-3/4 -left-2/4 z-20 object-cover max-w-xl min-w-36" src="/ani_image6.jpg" alt="" width={450} height={150}/>
 				</div>
 
 			</div>
@@ -398,73 +397,15 @@ export default function Live() {
 			</div>
 		</div>
 
-
-
-		{/** 移动端 */}
-		{/** 一键生成高质量音乐作品 页面 */}
-		{/**
-		 * 
-		 * 
-		 * 		<div className=" md:hidden bg-slate-50 p-4">
-			<Accordion  className=" bg-white">
-				<AccordionItem key="1"
-					isCompact 
-					aria-label="Accordion 1" 
-					title={(<p className=" text-black">一键生成高质量音乐作品</p>)}
-					startContent={
-						<Image className=" object-cover w-8" src="/svg_1.png" alt="" />
-					}
-				>
-					<p className=" text-black text-sm">输入一段文字描述或一张图片，模型即可自动生成一首独一无二的歌曲旋律，并根据曲风选择相应乐器音色生成伴奏，同时完成歌词创作。</p>
-				</AccordionItem>
-				<AccordionItem 
-					key="2" 
-					isCompact 
-					aria-label="Accordion 2" 
-					title={(<p className=" text-black">海量生成作品，应用场景广泛</p>)}
-					startContent={
-						<Image className=" object-cover w-8" src="/svg_2.png" alt="" />
-					}
-				>
-					<p className="text-black text-sm">可应用于各类音乐内容的创作，如流行歌曲、背景音乐，以及视频、有声故事、游戏、影视等各类场景中的配乐，大大降低音乐版权的采购成本。</p>
-				</AccordionItem>
-				<AccordionItem 
-					key="3" 
-					isCompact 
-					aria-label="Accordion 3" 
-					title={(<p className=" text-black">功能组合，灵活搭配</p>)}
-					startContent={
-						<Image className=" object-cover w-8" src="/svg_2.png" alt="" />
-					}
-				>
-					<p className="text-black text-sm">包含听音记谱、人工智能作曲、人工智能编曲、人工智能作词、视频BGM创作等多种功能，支持灵活搭配。</p>
-				</AccordionItem>
-				<AccordionItem 
-					key="4" 
-					isCompact 
-					aria-label="Accordion 4" 
-					title={(<p className=" text-black">支持多并发需求，提供多种合作模式</p>)}
-					startContent={
-						<Image className=" object-cover w-8" src="/svg_1.png" alt="" />
-					}
-				>
-					<p className="text-black text-sm">支持多并发需求，提供短期使用权、长期使用权、排他性使用权和所有权等多种合作模式，为每个音乐爱好者提供创作助理。</p>
-				</AccordionItem>
-			</Accordion>
-		</div>
-		 */}
-
-
-
 		{/** 视频 */}
         <div className=" md:w-full md:p-24 flex justify-center max-w-full">
 			{isVideoOpen ? (
-				<video className="md:w-2/3 object-cover cursor-pointer self-center" controls onClick={handleCloseVideo}>
+				<video className="max-w-7xl md:w-2/3 w-full object-cover cursor-pointer self-center" controls onClick={handleCloseVideo}>
 					<source src="https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E5%86%85%E5%AE%B9_bilibili.mp4" type="video/mp4" />
 				</video>
 			) : (
 				<div className="relative justify-center flex">
-					<Image className="md:w-2/3 w-full object-cover cursor-pointer self-center" src="/video_poster1.png" alt="" onClick={handleVideoClick} width={150} height={150}/>
+					<Image className=" max-w-7xl w-full object-cover cursor-pointer self-center" src="/video_poster1.png" alt="" onClick={handleVideoClick} width={1680} height={150}/>
 					<div className=" absolute top-10 left-0 bg-black bg-opacity-50 flex justify-center">
 					</div>
 				</div>
@@ -490,12 +431,6 @@ export default function Live() {
 				</div>
 			 </div>
 		</div>
-
-
-
-
-
-
 
 		{/** 移动端 */}
 		<div className=" p-4 text-[#00305a] md:hidden space-y-4">

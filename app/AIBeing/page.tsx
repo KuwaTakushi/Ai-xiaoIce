@@ -11,27 +11,27 @@ const cards = [
 	  id: 1,
 	},
 	{
-	  url: "/video_poster4.png",
+	  url: "/video_poster4.webp",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%5B%E4%BB%8A%E6%97%A5%E7%8E%AF%E7%90%83%5D%E9%87%91%E7%89%8C%E8%83%8C%E5%90%8E%EF%BC%9A%E2%80%9CAI%E5%8A%A9%E7%90%86%E6%95%99%E7%BB%83%E2%80%9D%E5%8A%A9%E5%8A%9B%E4%B8%AD%E5%9B%BD%E9%9B%AA%E4%B8%8A%E9%A1%B9%E7%9B%AE%E8%AE%AD%E7%BB%83%5B%E4%B8%8B%E8%BD%BD%E7%89%88%5D_batch.m4v",
 	  id: 2,
 	},
 	{
-	  url: "/video_poster7.png",
+	  url: "/video_poster7.webp",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E6%AF%8F%E6%97%A5%E7%BB%8F%E6%B5%8E%E6%96%B0%E9%97%BB%E8%A7%86%E9%A2%911.mp4",
 	  id: 3,
 	},
 	{
-	  url: "/video_poster5.png",
+	  url: "/video_poster5.webp",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D.m4v",
 	  id: 4,
 	},
 	{
-	  url: "/video_poster3.png",
+	  url: "/video_poster3.webp",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E9%83%8E%E5%92%B8%E5%B9%B3%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F%E8%99%9A%E6%8B%9F%E4%BA%BA.mp4",
 	  id: 5,
 	},
 	{
-	  url: "/video_poster4 .png",
+	  url: "/video_poster4 .webp",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E8%93%9D%E8%89%B2%E5%85%89%E6%A0%87%E8%91%A3%E4%BA%8B%E9%95%BF%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F%E8%99%9A%E6%8B%9F%E4%BA%BA.mp4",
 	  id: 6,
 	},
@@ -152,7 +152,7 @@ export default function AIBeing() {
 										<span className=" w-24 bg-[#000887] h-4 bg-opacity-50"> </span>
 										<p className=" text-black font-bold">支持直播推流，轻松满足电商带货、赛事解说、新闻资讯、娱乐播报等场景。</p>
 									</div>
-									<Image className="bg-cover max-w-xl" src="/direct1.png" alt="" width={600} height={450} unoptimized={false}/>
+									<Image className="bg-cover max-w-xl" src="/direct1.webp" alt="" width={600} height={450} unoptimized={false}/>
 								</div>
 							</Tab>
 							<Tab
@@ -186,7 +186,7 @@ export default function AIBeing() {
 										<span className=" w-24 bg-[#3af8bf] h-4 bg-opacity-50"> </span>
 										<p className=" text-black font-bold">拥有EQ和不同人设的数字人可以胜任生活助理、智能座舱助理、陪护师等需要情感交互的工作。</p>
 									</div>
-									<Image className="bg-cover max-w-xl" src="/direct3.png" alt="" width={600} height={450} unoptimized={false}/>
+									<Image className="bg-cover max-w-xl" src="/direct3.webp" alt="" width={600} height={450} unoptimized={false}/>
 								</div>
 							</Tab>
 
@@ -204,7 +204,7 @@ export default function AIBeing() {
 										<span className=" w-24 bg-[#3af8bf] h-4 bg-opacity-50"> </span>
 										<p className=" text-black font-bold">拥有创造力的数字人可以辅助人类进行绘画、音乐、设计、诗歌等创作，如音乐制作人、服装设计师、插画师等。</p>
 									</div>
-									<Image className="bg-cover max-w-xl" src="/direct4.png" alt="" width={600} height={450} unoptimized={false}/>
+									<Image className="bg-cover max-w-xl" src="/direct4.webp" alt="" width={600} height={450} unoptimized={false}/>
 								</div>
 							</Tab>
 						</Tabs>
@@ -239,7 +239,7 @@ export default function AIBeing() {
 								onMouseEnter={() => {setIsHoveredA(true); setIsHovered(0)}}
 								onMouseLeave={() => {setIsHoveredA(false); setIsHovered(1)}}
 								className=" skew-x-20 bg-right-5.2 bg-no-repeat  relative h-[780px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
-								style={{backgroundImage: `url("human_product_one1.png")`}}
+								style={{backgroundImage: `url("human_product_one1.webp")`}}
 							>
 								<div className=" flex flex-col justify-center items-start absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
@@ -270,7 +270,7 @@ export default function AIBeing() {
 								onMouseEnter={() => {setIsHoveredB(true); setIsHovered(2)}}
 								onMouseLeave={() => {setIsHoveredB(false); setIsHovered(3)}}
 								className=" skew-x-20 bg-right-5.2 bg-no-repeat  relative h-[780px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
-								style={{backgroundImage: `url("product_two1.png")`}}
+								style={{backgroundImage: `url("product_two1.webp")`}}
 							>
 								<div className=" flex flex-col justify-center items-start absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
@@ -298,7 +298,7 @@ export default function AIBeing() {
 								onMouseEnter={() => {setIsHoveredC(true); setIsHovered(4)}}
 								onMouseLeave={() => {setIsHoveredC(false); setIsHovered(5)}}
 								className=" skew-x-20 bg-right-5.2 bg-no-repeat  relative h-[780px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
-								style={{backgroundImage: `url("product_three1.png")`}}
+								style={{backgroundImage: `url("product_three1.webp")`}}
 							>
 								<div className=" flex flex-col justify-center items-start absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
@@ -327,7 +327,7 @@ export default function AIBeing() {
 								onMouseEnter={() => {setIsHoveredD(true); setIsHovered(6)}}
 								onMouseLeave={() => {setIsHoveredD(false); setIsHovered(7)}}
 								className=" skew-x-20 bg-right-5.2 bg-no-repeat  relative h-[780px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
-								style={{backgroundImage: `url("product_four1.png")`}}
+								style={{backgroundImage: `url("product_four1.webp")`}}
 							>
 								<div className=" flex flex-col justify-center items-start absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
@@ -357,7 +357,7 @@ export default function AIBeing() {
 
 
 			{/** 移动端 */}
-			<div className=" md:hidden text-black p-4 bg-cover bg-center" style={{backgroundImage: `url("https://business.xiaoice.com/Image/vhuman/advantage_intro_bg.png")`}}>
+			<div className=" md:hidden text-black p-4 bg-cover bg-center" style={{backgroundImage: `url("https://business.xiaoice.com/Image/vhuman/advantage_intro_bg.webp")`}}>
 				<div className=" m-4 space-y-2">
 					<h2 className=" text-2xl pb-4">产品优势</h2>
 					<div className=" relative h-36">
@@ -370,7 +370,7 @@ export default function AIBeing() {
 
 
 					<div className=" relative">
-						<Image className=" min-w-96" src="/human_product_one1.png" alt="" width={550} height={450}/>
+						<Image className=" min-w-96" src="/human_product_one1.webp" alt="" width={550} height={450}/>
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">
@@ -392,7 +392,7 @@ export default function AIBeing() {
 
 
 					<div className=" relative">
-						<Image className="min-w-96" src="/human_product_two1.png" alt="" width={550} height={450} />
+						<Image className="min-w-96" src="/human_product_two1.webp" alt="" width={550} height={450} />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">
@@ -415,7 +415,7 @@ export default function AIBeing() {
 
 					
 					<div className="relative">
-						<Image className="min-w-96" src="/human_product_three1.png" alt="" width={550} height={450}/>
+						<Image className="min-w-96" src="/human_product_three1.webp" alt="" width={550} height={450}/>
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">
@@ -439,7 +439,7 @@ export default function AIBeing() {
 
 
 					<div className=" relative">
-						<Image className="min-w-96" src="/human_product_four1.png" alt="" width={550} height={450}/>
+						<Image className="min-w-96" src="/human_product_four1.webp" alt="" width={550} height={450}/>
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">
@@ -480,7 +480,7 @@ export default function AIBeing() {
 					)}
 				>
 					<div className=" relative bg-white">
-						<Image className=" object-cover h-110 w-full" src="/direct4.jpg" alt="" width={550} height={450}/>
+						<Image className=" object-cover h-110 w-full" src="/direct4.webp" alt="" width={550} height={450}/>
 						<div className=" absolute top-8 left-8 text-white w-72">
 							<h1 className=" pb-8 text-2xl font-bold">应用场景</h1>
 							<h2 className=" text-xl">直播</h2>
@@ -507,7 +507,7 @@ export default function AIBeing() {
 					</div>
 
 					<div className=" relative">
-						<Image className=" object-cover h-110 w-full" src="/direct1.jpg" alt="" width={550} height={450}/>
+						<Image className=" object-cover h-110 w-full" src="/direct1.webp" alt="" width={550} height={450}/>
 						<div className=" absolute top-8 left-8 text-white w-72">
 							<h1 className=" pb-8 text-2xl font-bold">应用场景</h1>
 							<h2 className=" text-xl">创作</h2>
@@ -592,7 +592,7 @@ export default function AIBeing() {
 					</div>
 
 					<div>
-						<Image className="object-cover md:max-w-xl" src="/ani_image5.png" alt="" width={550} height={450}/>
+						<Image className="object-cover md:max-w-xl" src="/ani_image5.webp" alt="" width={550} height={450}/>
 					</div>
 				</div>
 

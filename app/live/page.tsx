@@ -28,7 +28,7 @@ export default function Live() {
 	return (
 		<div>
     		<div className="bg-cover w-full h-110 flex justify-center text-center" >
-				<div className=" flex bg-cover flex-col w-full items-center p-24 text-[#00305a]" style={{backgroundImage: "url('live_bg.png')"}}>
+				<div className=" flex bg-cover flex-col w-full items-center p-24 text-[#00305a]" style={{backgroundImage: "url('live_bg.webp')"}}>
 					<h1 className=" font-bold md:text-5xl text-3xl mb-8">奥森小冰引领AI数字人直播</h1>
 					<p className=" text-lg md:text-2xl max-w-4xl">AI数字人直播是指通过人工智能技术打造的虚拟人物，通过直播平台与观众实时互动。这些AI数字人除了具备逼真的外貌和声音，更重要的是具备了人类智能和情感。他们可以自动理解观众的问题，并给出相应的回答和建议，让互动更加自然流畅。</p>
 				</div>
@@ -37,14 +37,14 @@ export default function Live() {
 
 			<div className=" bg-slate-50 md:bg-white flex md:mt-24 md:justify-center items-center md:divide-x text-black md:divide-black p-4 md:p-16  gap-4 md:gap-0 md:overflow-x-hidden overflow-x-scroll whitespace-nowrap">
 				<div className="  w-96 md:w-[30%] flex flex-col justify-center items-left md:items-center md:mr-0 md:ml-0 bg-white p-4 pr-24 ">
-					<Image className=" object-cover md:w-60 w-24" src="/icon_desc_1.png" alt="" width={250} height={250} />
+					<Image className=" object-cover md:w-60 w-24" src="/icon_desc_1.webp" alt="" width={250} height={250} />
 					<h2 className="font-bold md:text-2xl pb-4 pt-3">实时响应互动</h2>
 					<p className=" text-sm md:text-xl">实时驱动数字人响应</p>
 					<p className=" text-sm md:text-xl">像真人一样完成直播互动对话</p>
 				</div>
 				
 				<div className=" w-96 md:w-[30%] flex flex-col justify-center items-left md:items-center  bg-white p-4 py-7 pr-24">
-					<Image className=" object-cover md:w-60 w-24" src="/icon_desc_2.png" alt="" width={250} height={250} />
+					<Image className=" object-cover md:w-60 w-24" src="/icon_desc_2.webp" alt="" width={250} height={250} />
 					<h2 className="font-bold text-xl md:text-2xl pb-4">形象丰富</h2>
 					<p className=" text-sm md:text-xl">支持不同的数字人直播场景和形象</p>
 				</div>
@@ -72,7 +72,7 @@ export default function Live() {
 				<div className=" max-w-md text-center p-2">
 					<p className=" text-sm"> AI数字人直播基于先进的人工智能技术，通过对话模型和图像识别技术，将一段预先录制的视频进行实时生成和呈现。这些数字人以逼真的形象、流利的语言、灵活的互动形式，与用户进行互动交流。用户可以通过文字、语音或者视频方式与数字人进行沟通，从而获得自定义的、智能的服务。</p>
 				</div>
-				<Image className=" max-w-md object-cover p-8" src="/ani1.jpg" alt=""  width={420} height={250}/>
+				<Image className=" max-w-md object-cover p-8" src="/ani1.webp" alt=""  width={420} height={250}/>
 			</div>
 
 
@@ -187,17 +187,17 @@ export default function Live() {
 			{/** 移动端 */}
 			<div className=" bg-slate-50 md:bg-white flex  items-center  p-4   gap-4  overflow-x-scroll whitespace-nowrap md:justify-center md:hidden text-black">
 				<div className="  w-96  flex flex-col justify-center items-left  bg-white p-4 pr-24 ">
-					<Image className=" object-cover md:w-24 w-16" src="/live_icon_2.png" alt="" width={150} height={150} />
+					<Image className=" object-cover md:w-24 w-16" src="/live_icon_2.webp" alt="" width={150} height={150} />
 					<h2 className="font-bold  pb-4 pt-3 ">实现7*24小时不间断直播</h2>
 				</div>
 				
 				<div className=" w-96  flex flex-col justify-center items-left  bg-white p-4 py-7 pr-24">
-					<Image className=" object-cover md:w-24 w-16" src="/live_icon_1.png" alt="" width={150} height={150}/>
+					<Image className=" object-cover md:w-24 w-16" src="/live_icon_1.webp" alt="" width={150} height={150}/>
 					<h2 className="font-bold  pb-4 pt-3">定制虚拟主播形象</h2>
 				</div>
 
 				<div className=" w-96  flex flex-col justify-center items-left   bg-white p-4 py-7 pr-24">
-					<Image className=" object-cover md:w-24 w-16" src="/live_icon_3.png" alt="" width={150} height={150}/>
+					<Image className=" object-cover md:w-24 w-16" src="/live_icon_3.webp" alt="" width={150} height={150}/>
 					<h2 className="font-bold  pb-4 pt-3">实时分析参与观众互动</h2>
 				</div>
 			</div>
@@ -218,8 +218,8 @@ export default function Live() {
 		<div className="hidden md:block">
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center pt-24">
 				<div className=" relative mt-24 min-w-68">
-					<Image className="object-cover max-w-xl min-w-28" src="/mathCard_1.jpg" alt="" width={450} height={150} />
-					<Image className=" absolute top-3/4 -right-2/4 z-10 object-cover max-w-xl min-w-36" src="/ani_image1.jpg" alt="" width={450} height={150} />
+					<Image className="object-cover max-w-xl min-w-28" src="/mathCard_1.webp" alt="" width={450} height={150} />
+					<Image className=" absolute top-3/4 -right-2/4 z-10 object-cover max-w-xl min-w-36" src="/ani_image1.webp" alt="" width={450} height={150} />
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">
@@ -230,8 +230,8 @@ export default function Live() {
 
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center">
 				<div className=" relative  z-20 min-w-68">
-					<Image className=" z-40 object-cover max-w-xl" src="/mathCard_2.jpg" alt="" width={450} height={150} loading="lazy" />
-					<Image className=" -z-10 absolute top-3/4 -right-2/4 object-cover max-w-xl min-w-36" src="/ani_image4.png" alt="" width={450} height={150} loading="lazy" />
+					<Image className=" z-40 object-cover max-w-xl" src="/mathCard_2.webp" alt="" width={450} height={150}  />
+					<Image className=" -z-10 absolute top-3/4 -right-2/4 object-cover max-w-xl min-w-36" src="/ani_image4.webp" alt="" width={450} height={150}  />
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">
@@ -242,7 +242,7 @@ export default function Live() {
 
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-start pb-64">
 				<div className=" relative  z-20 min-w-68">
-					<Image className=" z-40 object-cover w-110 min-w-28" src="/mathCard_3.jpg" alt="" width={150} height={150} loading="lazy" />
+					<Image className=" z-40 object-cover w-110 min-w-28" src="/mathCard_3.webp" alt="" width={150} height={150}  />
 					<Image className=" -z-10 absolute top-3/4 -right-2/4 object-cover max-w-xl min-w-36" src="/ani_image11.jpg" alt="" width={450} height={150} />
 				</div>
 
@@ -283,12 +283,12 @@ export default function Live() {
 
 			<div className=" divide-y divide-slate-500 pt-4">
 				<div className=" flex whitespace-nowrap overflow-x-scroll gap-4 pb-4">
-					<Image className=" w-52  object-cover" src="/mathCard_1.jpg" alt="ani_image1"  width={150} height={150} loading="lazy" />
-					<Image className=" w-52  object-cover" src="/ani_image4.png" alt="ani_image4" width={150} height={150} loading="lazy" />
-					<Image className=" w-52  object-cover" src="/ani_image11.jpg" alt="ani_image11" width={150} height={150} loading="lazy" />
-					<Image className=" w-52  object-cover" src="/ani_image1.jpg" alt="ani_image1 jpg" width={150} height={150} loading="lazy" />
-					<Image className=" w-52  object-cover" src="/mathCard_3.jpg" alt="ani_image2" width={150} height={150} loading="lazy" />
-					<Image className=" w-52  object-cover" src="/mathCard_2.jpg" alt="ani_image3" width={150} height={150} loading="lazy"/>
+					<Image className=" w-52  object-cover" src="/mathCard_1.webp" alt="ani_image1"  width={150} height={150}  />
+					<Image className=" w-52  object-cover" src="/ani_image4.webp" alt="ani_image4" width={150} height={150}  />
+					<Image className=" w-52  object-cover" src="/ani_image11.jpg" alt="ani_image11" width={150} height={150}  />
+					<Image className=" w-52  object-cover" src="/ani_image1. webp" alt="ani_image1 jpg" width={150} height={150}  />
+					<Image className=" w-52  object-cover" src="/mathCard_3.webp" alt="ani_image2" width={150} height={150}  />
+					<Image className=" w-52  object-cover" src="/mathCard_2.webp" alt="ani_image3" width={150} height={150} />
 
 				</div>
 			</div>
@@ -305,8 +305,8 @@ export default function Live() {
 				</div>
 
 				<div className=" relative mt-24 min-w-68">
-					<Image className="object-cover w-110 min-w-28" src="/ani_image3.jpg" alt="" width={150} height={150} loading="lazy" />
-					<Image className=" absolute top-3/4 -left-2/4 z-20 object-cover max-w-xl min-w-36" src="/ani_image6.jpg" alt="" width={450} height={150} loading="lazy" />
+					<Image className="object-cover w-110 min-w-28" src="/ani_image3.webp" alt="" width={150} height={150}  />
+					<Image className=" absolute top-3/4 -left-2/4 z-20 object-cover max-w-xl min-w-36" src="/ani_image6.jpg" alt="" width={450} height={150}  />
 				</div>
 
 			</div>
@@ -319,7 +319,7 @@ export default function Live() {
 
 
 				<div className=" relative  z-10 min-w-68">
-					<Image className=" object-cover w-110 min-w-28" src="/ani_image7.png" alt="" width={150} height={150} loading="lazy" />
+					<Image className=" object-cover w-110 min-w-28" src="/ani_image7.png" alt="" width={150} height={150}  />
 				</div>
 			</div>
 
@@ -331,8 +331,8 @@ export default function Live() {
 				</div>
 				
 				<div className=" relative  min-w-68">
-					<Image className="object-cover w-110 min-w-28" src="/ani_image13.jpg" alt="" width={150} height={150} loading="lazy" />
-					<Image className=" absolute bottom-3/4 -translate-y-10 -left-2/4 z-20 object-cover max-w-xl min-w-36" src="/ani_image12.jpg" alt="" width={450} height={150} loading="lazy"/>
+					<Image className="object-cover w-110 min-w-28" src="/ani_image13.jpg" alt="" width={150} height={150}  />
+					<Image className=" absolute bottom-3/4 -translate-y-10 -left-2/4 z-20 object-cover max-w-xl min-w-36" src="/ani_image12.jpg" alt="" width={450} height={150} />
 				</div>
 			</div>
 
@@ -369,32 +369,29 @@ export default function Live() {
 
 			<div className=" divide-y divide-slate-500 pt-4">
 				<div className=" flex whitespace-nowrap overflow-x-scroll gap-4 pb-4">
-					<Image className=" w-52  object-cover" src="/ani_image3.jpg" alt="ani_image3" width={150} height={150} loading="lazy" />
-					<Image className=" w-52  object-cover" src="/ani_image6.jpg" alt="ani_image6" width={150} height={150} loading="lazy" />
-					<Image className=" w-52  object-cover" src="/ani_image7.png" alt="ani_image7" width={150} height={150} loading="lazy" />
-					<Image className=" w-52  object-cover" src="/ani_image13.jpg" alt="ani_image13" width={150} height={150} loading="lazy" />
-					<Image className=" w-52  object-cover" src="/ani_image12.jpg" alt="ani_image12" width={150} height={150} loading="lazy" />
+					<Image className=" w-52  object-cover" src="/ani_image3 .webp" alt="ani_image3" width={150} height={150}  />
+					<Image className=" w-52  object-cover" src="/ani_image6.jpg" alt="ani_image6" width={150} height={150}  />
+					<Image className=" w-52  object-cover" src="/ani_image7.png" alt="ani_image7" width={150} height={150}  />
+					<Image className=" w-52  object-cover" src="/ani_image13.jpg" alt="ani_image13" width={150} height={150}  />
+					<Image className=" w-52  object-cover" src="/ani_image12.jpg" alt="ani_image12" width={150} height={150}  />
 				</div>
 			</div>
 		</div>
-
-
-
 
 
 		{/** 满足音乐 */}
 		<div className="  p-16  text-lg font-bold mt-5  hidden md:block overflow-x-hidden">
 			<div className="flex justify-center items-center gap24 divide-black divide-x">
 			<div className="flex flex-col justify-center items-center pr-8 text-black">
-				<Image className=" object-cover w-36" src="/live_icon_2.png" alt="" width={150} height={150}/>
+				<Image className=" object-cover w-36" src="/live_icon_2.webp" alt="" width={150} height={150}/>
 				<p>实现7*24小时不间断直播</p>
 			</div>
 			<div className="flex flex-col justify-center items-center pl-12 pr-8 text-black">
-			<Image className=" object-cover w-36" src="/live_icon_1.png" alt="" width={150} height={150}/>
+			<Image className=" object-cover w-36" src="/live_icon_1.webp" alt="" width={150} height={150}/>
 				<p>定制虚拟主播形象</p>
 			</div>
 			<div className="flex flex-col justify-center items-center pl-12 pr-8 text-black">
-			<Image className=" object-cover w-36" src="/live_icon_3.png" alt="" width={150} height={150} />
+			<Image className=" object-cover w-36" src="/live_icon_3.webp" alt="" width={150} height={150} />
 				<p>实时分析参与观众互动</p>
 			</div>
 			</div>
@@ -408,7 +405,7 @@ export default function Live() {
 				</video>
 			) : (
 				<div className="relative justify-center flex">
-					<Image className=" max-w-7xl w-full object-cover cursor-pointer self-center" src="/video_poster1.png" alt="" onClick={handleVideoClick} width={1680} height={150}/>
+					<Image className=" max-w-7xl w-full object-cover cursor-pointer self-center" src="/video_poster1.webp" alt="" onClick={handleVideoClick} width={1680} height={150}/>
 					<div className=" absolute top-10 left-0 bg-black bg-opacity-50 flex justify-center">
 					</div>
 				</div>
@@ -422,11 +419,11 @@ export default function Live() {
 						<div className="pb-4"><BubbleText content={"奥森小冰引领AI数字人直播：科技与艺术的完美结合"} /></div>
 						<p className="text-black text-lg">随着数字技术的快速发展，人工智能（AI）正在融入我们的生活。作为AI领域的先行者，奥森小冰引领的AI数字人直播项目将先进的AI技术与艺术结合，带来了全新的互动体验。在这场直播秀中，观众可以通过智能手机、电脑等设备与奥森小冰实时互动。观众提出的问题、参与的讨论和建议，都能根据需求和意见做出实时反馈和表演。这不仅让观众更好地理解思考方式和艺术表达，还能将观众的创意融入表演中，实现真正的互动和共创。奥森小冰的AI数字人直播通过丰富多样的表演形式和虚拟场景，打破了传统艺术表演的限制，为观众带来了全新的视听体验。</p>
 					</div>
-					<Image className=" max-w-2xl object-cover" src="https://i.p-i.vip/20/20240622-66769355c7984.png" alt="" width={550} height={450}/>
+					<Image className=" max-w-2xl object-cover" src="ai_bg_1.webp" alt="" width={550} height={450}/>
 				</div>
 
 				<div className="flex justify-center items-start">
-					<Image className=" max-w-2xl object-cover" src="https://i.p-i.vip/20/20240622-6676935617c6e.png" alt="" width={550} height={450}/>
+					<Image className=" max-w-2xl object-cover" src="ai_bg_2.webp" alt="" width={550} height={450}/>
 					<div className=" p-24 max-w-5xl w-[30%] text-left">
 						<div className="pb-4"><BubbleText content={"奥森小冰实现AI数字人直播革命：颠覆传统直播方式"} /></div>
 						<p className="text-black text-lg">作为人工智能内容生产的先行者，奥森小冰正在利用AI技术和数字人技术实现一种全新的直播方式。AI数字人直播在传媒业中具有革命性的突破，打破了传统直播对真实主播的依赖。通过虚拟主播形象，不仅节省了人力资源成本，还具备更高的灵活性和可扩展性。直播可以24小时不间断进行，满足不同用户的需求，实现更个性化的直播服务。此外，还能通过大数据分析用户的喜好和观看习惯，优化直播内容，提高用户体验。奥森小冰的AI数字人直播正在颠覆传统直播方式，带来更加丰富和多样化的体验。</p>
@@ -441,13 +438,13 @@ export default function Live() {
 				<h2 className=" font-bold text-xl text-black">奥森小冰引领AI数字人直播：科技与直播的完美结合</h2>
 				<p className="text-black divide-y divide-slate-300 text-xs">随着数字技术的快速发展，人工智能（AI）正在融入我们的生活。作为AI领域的先行者，奥森小冰引领的AI数字人直播项目将先进的AI技术与艺术结合，带来了全新的互动体验。在这场直播秀中，观众可以通过智能手机、电脑等设备与奥森小冰实时互动。观众提出的问题、参与的讨论和建议，都能根据需求和意见做出实时反馈和表演。这不仅让观众更好地理解思考方式和艺术表达，还能将观众的创意融入我的表演中，实现真正的互动和共创。奥森小冰的AI数字人直播通过丰富多样的表演形式和虚拟场景，打破了传统艺术表演的限制，为观众带来了全新的视听体验。</p>
 			</div>
-			<Image className=" max-w-sm object-cover" src="https://i.p-i.vip/20/20240622-66769355c7984.png" alt="" width={550} height={450}/>
+			<Image className=" max-w-sm object-cover" src="ai_bg_1.webp" alt="" width={550} height={450}/>
 
 			<div>
 				<h2 className=" font-bold text-xl text-black">奥森小冰实现AI数字人直播革命：颠覆传统直播方式</h2>
 				<p className="text-black text-xs">作为人工智能内容生产的先行者，奥森小冰正在利用AI技术和数字人技术实现一种全新的直播方式。AI数字人直播在传媒业中具有革命性的突破，打破了传统直播对真实主播的依赖。通过虚拟主播形象，不仅节省了人力资源成本，还具备更高的灵活性和可扩展性。直播可以24小时不间断进行，满足不同用户的需求，实现更个性化的直播服务。通过大数据分析用户的喜好和观看习惯，优化直播内容，提高用户体验。奥森小冰的AI数字人直播正在颠覆传统直播方式，带来更加丰富和多样化的体验。</p>
 			</div>
-			<Image className=" max-w-sm object-cover" src="https://i.p-i.vip/20/20240622-6676935617c6e.png" alt="" width={550} height={450}/>
+			<Image className=" max-w-sm object-cover" src="ai_bg_2.webp" alt="" width={550} height={450}/>
 
 		</div>
 	

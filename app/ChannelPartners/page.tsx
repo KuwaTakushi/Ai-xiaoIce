@@ -104,7 +104,7 @@ export default function ChannelPartners() {
 									onMouseEnter={() => {setIsHoveredA(true); setIsHovered(0)}} 
 									onMouseLeave={() => {setIsHoveredA(false); setIsHovered(1)}} 
 									className=" skew-x-6 bg-right-5.2 bg-no-repeat  relative h-[800px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
-									style={{backgroundImage: `url("human_product_three1.png")`}}
+									style={{backgroundImage: `url("human_product_three1.webp")`}}
 								>
 									<div className=" flex flex-col justify-center items-start absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 										<div className=" relative flex gap-4 p-4 justify-center items-center">
@@ -135,7 +135,7 @@ export default function ChannelPartners() {
 								onMouseEnter={() => {setIsHoveredB(true); setIsHovered(2)}} 
 								onMouseLeave={() => {setIsHoveredB(false); setIsHovered(3)}} 
 								className=" skew-x-6 bg-right-5.2 bg-no-repeat  relative h-[800px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
-								style={{backgroundImage: `url("human2.png")`}}
+								style={{backgroundImage: `url("human2.webp")`}}
 							>
 								<div className=" flex flex-col justify-center items-start absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
@@ -164,7 +164,7 @@ export default function ChannelPartners() {
 								onMouseEnter={() => {setIsHoveredC(true); setIsHovered(4)}} 
 								onMouseLeave={() => {setIsHoveredC(false); setIsHovered(5)}} 
 								className=" skew-x-6 bg-right-5.2 bg-no-repeat  relative h-[800px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
-								style={{backgroundImage: `url("human3.png")`}}
+								style={{backgroundImage: `url("human3.webp")`}}
 							>
 								<div className=" flex flex-col justify-center items-start absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
@@ -193,7 +193,7 @@ export default function ChannelPartners() {
 								onMouseEnter={() => {setIsHoveredD(true); setIsHovered(6)}} 
 								onMouseLeave={() => {setIsHoveredD(false); setIsHovered(7)}} 
 								className=" skew-x-6 bg-right-5.2 bg-no-repeat  relative h-[800px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
-								style={{backgroundImage: `url("human4.png")`}}
+								style={{backgroundImage: `url("human4.webp")`}}
 							>
 								<div className=" flex flex-col justify-center items-start absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
@@ -223,7 +223,7 @@ export default function ChannelPartners() {
 								onMouseEnter={() => {setIsHoveredE(true); setIsHovered(8)}} 
 								onMouseLeave={() => {setIsHoveredE(false); setIsHovered(9)}} 
 								className=" skew-x-6 bg-right-5.2 bg-no-repeat  relative h-[800px] bg-cover transition-all duration-700 ease-in-out transform overflow-hidden w-56 hover:w-100" 
-								style={{backgroundImage: `url("human5.png")`}}
+								style={{backgroundImage: `url("human5.webp")`}}
 							>
 								<div className=" flex flex-col justify-center items-start absolute bottom-0 left-0 text-white bg-black w-full bg-opacity-30 p-2 backdrop-blur-sm h-40 backdrop-filter">
 									<div className=" flex gap-4 p-4 justify-center items-center">
@@ -257,7 +257,7 @@ export default function ChannelPartners() {
 			<div className=" md:hidden text-black p-4 bg-cover bg-center" style={{backgroundImage: `url("https://business.xiaoice.com/Image/vhuman/advantage_intro_bg.png")`}}>
 			<div className=" flex overflow-x-scroll whitespace-nowrap mt-3">
 					<div className=" relative">
-						<Image className=" min-w-96" src="/human_product_three1.png" alt="" width={500} height={300} loading="lazy"/>
+						<Image className=" min-w-96" src="/human_product_three1.webp" alt="" width={500} height={300} loading="lazy"/>
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col justify-center">
 								<div className="flex gap-8">
@@ -283,7 +283,7 @@ export default function ChannelPartners() {
 
 
 					<div className=" relative">
-						<Image className="min-w-96" src="/human2.png" alt="" width={500} height={800} loading="lazy"/>
+						<Image className="min-w-96" src="/human2.webp" alt="" width={500} height={800} loading="lazy"/>
 						<div className=" p-4 absolute bottom-0 pr-16  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 						<div className=" flex flex-col justify-center">
 								<div className="flex gap-8">
@@ -307,7 +307,7 @@ export default function ChannelPartners() {
 
 					
 					<div className="relative">
-						<Image className="min-w-96" src="/human3.png" alt="" width={500} height={800} loading="lazy"/>
+						<Image className="min-w-96" src="/human3.webp" alt="" width={500} height={800} loading="lazy"/>
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 						<div className=" flex flex-col justify-center text-left ml-6">
 								<div className="flex gap-8">
@@ -330,7 +330,7 @@ export default function ChannelPartners() {
 
 
 					<div className=" relative">
-						<Image className="min-w-96" src="/human4.png" alt="" width={500} height={800} loading="lazy"/>
+						<Image className="min-w-96" src="/human4.webp" alt="" width={500} height={800} loading="lazy"/>
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 						<div className=" flex flex-col justify-center ml-4 text-left">
 								<div className="flex gap-8">
@@ -353,7 +353,7 @@ export default function ChannelPartners() {
 
 
 					<div className=" relative">
-						<Image className="min-w-96" src="/human5.png" alt="" width={500} height={800} loading="lazy"/>
+						<Image className="min-w-96" src="/human5.webp" alt="" width={500} height={800} loading="lazy"/>
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col text-left ml-2">
 								<div className="flex gap-8">
@@ -561,32 +561,32 @@ export default function ChannelPartners() {
 				<h1 className=" text-5xl pb-14 text-[#333333]">加盟合作保障</h1>
 				<div className="flex flex-col md:flex-row flex-wrap justify-between text-[#00305a] gap-8 md:max-w-5xl max-w-96 pt-8">
 					<div className="  flex flex-col justify-center items-center space-y-2">
-						<Image className=" object-cover md:w-36 w-24" src="/partners1.png" alt="" width={250} height={250} />
+						<Image className=" object-cover md:w-36 w-24" src="/partners1.webp" alt="" width={250} height={250} />
 						<h2 className=" font-bold text-3xl">多元化市场支持</h2>
 						<p className=" text-sm">全域市场营销玩法，协助区域伙伴获得市场优势</p>
 					</div>
 
 					<div className=" flex flex-col justify-center items-center space-y-2">
-					<Image className=" object-cover md:w-36 w-24" src="/partners2.png" alt="" width={250} height={250} />
+					<Image className=" object-cover md:w-36 w-24" src="/partners2.webp" alt="" width={250} height={250} />
 						<h2 className=" font-bold text-3xl">全方位技术支持</h2>
 						<p className=" text-sm">专业售前团队项目支持，强大的售后团队支撑</p>
 					</div>
 
 					<div className=" flex flex-col justify-center items-center space-y-2">
-					<Image className=" object-cover md:w-36 w-24" src="/partners3.png" alt="" width={250} height={250} />
+					<Image className=" object-cover md:w-36 w-24" src="/partners3.webp" alt="" width={250} height={250} />
 						<h2 className=" font-bold text-3xl">成熟的方案支持</h2>
 						<p className=" text-sm">众多合作案例，引领伙伴区域市场拓展</p>
 					</div>
 
 					<div className=" flex flex-col justify-center items-center space-y-2 pt-8">
-					<Image className=" object-cover md:w-36 w-24" src="/partners4.png" alt="" width={250} height={250} />
+					<Image className=" object-cover md:w-36 w-24" src="/partners4.webp" alt="" width={250} height={250} />
 						<h2 className=" font-bold text-3xl">顾问式伙伴扶持</h2>
 						<p className=" text-sm">协助伙伴进行销售、运营团队搭建与管理；协助进行当地市场拓展与业务规划</p>
 					</div>
 
 
 					<div className=" flex flex-col justify-center items-center space-y-2 pt-8">
-					<Image className=" object-cover md:w-36 w-24" src="/partners5.png" alt="" width={250} height={250} />
+					<Image className=" object-cover md:w-36 w-24" src="/partners5.webp" alt="" width={250} height={250} />
 						<h2 className=" font-bold text-3xl">扁平化渠道政策</h2>
 						<p className=" text-sm">低门槛、高返利、不压货，线下市场区域保护，真诚、平等、无套路</p>
 					</div>

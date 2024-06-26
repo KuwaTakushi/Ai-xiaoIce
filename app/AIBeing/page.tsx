@@ -152,7 +152,7 @@ export default function AIBeing() {
 										<span className=" w-24 bg-[#000887] h-4 bg-opacity-50"> </span>
 										<p className=" text-black font-bold">支持直播推流，轻松满足电商带货、赛事解说、新闻资讯、娱乐播报等场景。</p>
 									</div>
-									<Image className="bg-cover max-w-xl" src="/direct1.png" alt="" width={600} height={450}/>
+									<Image className="bg-cover max-w-xl" src="/direct1.png" alt="" width={600} height={450} unoptimized={false}/>
 								</div>
 							</Tab>
 							<Tab
@@ -169,7 +169,7 @@ export default function AIBeing() {
 										<span className=" w-24 bg-[#2db2e2] h-4 bg-opacity-50"> </span>
 										<p className=" text-black font-bold max-w-xl">定制完美形象，融合企业基因，打造品牌代言人、形象代言人、数字员工、数字专家等，可用于企业内外宣物料制作、营销Campaign创新、RPA数字人化等。</p>
 									</div>
-									<Image className="bg-cover max-w-xl" src="/direct2.png" alt="" width={600} height={450}/>
+									<Image className="bg-cover max-w-xl" src="/direct2.png" alt="" width={600} height={450} unoptimized={false}/>
 								</div>
 							</Tab>
 							<Tab
@@ -186,7 +186,7 @@ export default function AIBeing() {
 										<span className=" w-24 bg-[#3af8bf] h-4 bg-opacity-50"> </span>
 										<p className=" text-black font-bold">拥有EQ和不同人设的数字人可以胜任生活助理、智能座舱助理、陪护师等需要情感交互的工作。</p>
 									</div>
-									<Image className="bg-cover max-w-xl" src="/direct3.png" alt="" width={600} height={450} />
+									<Image className="bg-cover max-w-xl" src="/direct3.png" alt="" width={600} height={450} unoptimized={false}/>
 								</div>
 							</Tab>
 
@@ -204,7 +204,7 @@ export default function AIBeing() {
 										<span className=" w-24 bg-[#3af8bf] h-4 bg-opacity-50"> </span>
 										<p className=" text-black font-bold">拥有创造力的数字人可以辅助人类进行绘画、音乐、设计、诗歌等创作，如音乐制作人、服装设计师、插画师等。</p>
 									</div>
-									<Image className="bg-cover max-w-xl" src="/direct4.png" alt="" width={600} height={450} />
+									<Image className="bg-cover max-w-xl" src="/direct4.png" alt="" width={600} height={450} unoptimized={false}/>
 								</div>
 							</Tab>
 						</Tabs>

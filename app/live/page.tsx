@@ -230,8 +230,8 @@ export default function Live() {
 
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center">
 				<div className=" relative  z-20 min-w-68">
-					<Image className=" z-40 object-cover max-w-xl" src="/mathCard_2.jpg" alt="" width={450} height={150} />
-					<Image className=" -z-10 absolute top-3/4 -right-2/4 object-cover max-w-xl min-w-36" src="/ani_image4.png" alt="" width={450} height={150} />
+					<Image className=" z-40 object-cover max-w-xl" src="/mathCard_2.jpg" alt="" width={450} height={150} loading="lazy" />
+					<Image className=" -z-10 absolute top-3/4 -right-2/4 object-cover max-w-xl min-w-36" src="/ani_image4.png" alt="" width={450} height={150} loading="lazy" />
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">
@@ -242,11 +242,11 @@ export default function Live() {
 
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-start pb-64">
 				<div className=" relative  z-20 min-w-68">
-					<Image className=" z-40 object-cover w-110 min-w-28" src="/mathCard_3.jpg" alt="" width={150} height={150} />
+					<Image className=" z-40 object-cover w-110 min-w-28" src="/mathCard_3.jpg" alt="" width={150} height={150} loading="lazy" />
 					<Image className=" -z-10 absolute top-3/4 -right-2/4 object-cover max-w-xl min-w-36" src="/ani_image11.jpg" alt="" width={450} height={150} />
 				</div>
 
-				<div className=" flex flex-col w-110 min-w-64 text-left  pt-16">
+				<div className=" flex flex-col w-110 min-w-64 text-left  pt-16 pb-24">
 					<h2 className=" text-3xl text-[#00305a] font-bold pb-4">电商主播</h2>
 					<p className=" text-lg text-black">奥森小冰为电商平台提供专业的电商主播服务，适用于产品讲解、优惠发放和带货直播。通过AI技术，电商主播可以精准传达产品信息，吸引更多用户关注和购买。相比真人主播，数字电商主播具备成本低、操作灵活和全年无休的优势，有助于企业提升销售业绩。</p>
 				</div>
@@ -283,12 +283,12 @@ export default function Live() {
 
 			<div className=" divide-y divide-slate-500 pt-4">
 				<div className=" flex whitespace-nowrap overflow-x-scroll gap-4 pb-4">
-					<Image className=" w-52  object-cover" src="/mathCard_1.jpg" alt="ani_image1"  width={150} height={150}/>
-					<Image className=" w-52  object-cover" src="/ani_image4.png" alt="ani_image4" width={150} height={150}/>
-					<Image className=" w-52  object-cover" src="/ani_image11.jpg" alt="ani_image11" width={150} height={150}/>
-					<Image className=" w-52  object-cover" src="/ani_image1.jpg" alt="ani_image1 jpg" width={150} height={150}/>
-					<Image className=" w-52  object-cover" src="/mathCard_3.jpg" alt="ani_image2" width={150} height={150}/>
-					<Image className=" w-52  object-cover" src="/mathCard_2.jpg" alt="ani_image3" width={150} height={150}/>
+					<Image className=" w-52  object-cover" src="/mathCard_1.jpg" alt="ani_image1"  width={150} height={150} loading="lazy" />
+					<Image className=" w-52  object-cover" src="/ani_image4.png" alt="ani_image4" width={150} height={150} loading="lazy" />
+					<Image className=" w-52  object-cover" src="/ani_image11.jpg" alt="ani_image11" width={150} height={150} loading="lazy" />
+					<Image className=" w-52  object-cover" src="/ani_image1.jpg" alt="ani_image1 jpg" width={150} height={150} loading="lazy" />
+					<Image className=" w-52  object-cover" src="/mathCard_3.jpg" alt="ani_image2" width={150} height={150} loading="lazy" />
+					<Image className=" w-52  object-cover" src="/mathCard_2.jpg" alt="ani_image3" width={150} height={150} loading="lazy"/>
 
 				</div>
 			</div>
@@ -305,8 +305,8 @@ export default function Live() {
 				</div>
 
 				<div className=" relative mt-24 min-w-68">
-					<Image className="object-cover w-110 min-w-28" src="/ani_image3.jpg" alt="" width={150} height={150}/>
-					<Image className=" absolute top-3/4 -left-2/4 z-20 object-cover max-w-xl min-w-36" src="/ani_image6.jpg" alt="" width={450} height={150}/>
+					<Image className="object-cover w-110 min-w-28" src="/ani_image3.jpg" alt="" width={150} height={150} loading="lazy" />
+					<Image className=" absolute top-3/4 -left-2/4 z-20 object-cover max-w-xl min-w-36" src="/ani_image6.jpg" alt="" width={450} height={150} loading="lazy" />
 				</div>
 
 			</div>
@@ -319,7 +319,7 @@ export default function Live() {
 
 
 				<div className=" relative  z-10 min-w-68">
-					<Image className=" object-cover w-110 min-w-28" src="/ani_image7.png" alt="" width={150} height={150}/>
+					<Image className=" object-cover w-110 min-w-28" src="/ani_image7.png" alt="" width={150} height={150} loading="lazy" />
 				</div>
 			</div>
 
@@ -330,8 +330,9 @@ export default function Live() {
 					<p className=" text-lg text-black">奥森小冰在直播行业中逐渐取代真人主播，展现出多方面的优势。在场地方面，仅需10平方米的场景即可进行直播，不需要装修，采用虚拟场景。成本方面，数字人直播对比传统真人成本低，尤其采用AI自动直播，无需真人表演。人设方面，行为可控，不会翻车塌房，形象稳定。时间方面，虚拟人全年无休，无需福利和情绪，7</p>
 				</div>
 				
-				<div className=" relative  z-10 min-w-68">
-					<Image className=" object-cover w-110 min-w-28" src="/ani_image7.png" alt="" width={150} height={150}/>
+				<div className=" relative  min-w-68">
+					<Image className="object-cover w-110 min-w-28" src="/ani_image13.jpg" alt="" width={150} height={150} loading="lazy" />
+					<Image className=" absolute bottom-3/4 -translate-y-10 -left-2/4 z-20 object-cover max-w-xl min-w-36" src="/ani_image12.jpg" alt="" width={450} height={150} loading="lazy"/>
 				</div>
 			</div>
 
@@ -368,9 +369,11 @@ export default function Live() {
 
 			<div className=" divide-y divide-slate-500 pt-4">
 				<div className=" flex whitespace-nowrap overflow-x-scroll gap-4 pb-4">
-					<Image className=" w-52  object-cover" src="/ani_image3.jpg" alt="ani_image3" width={150} height={150}/>
-					<Image className=" w-52  object-cover" src="/ani_image6.jpg" alt="ani_image6" width={150} height={150}/>
-					<Image className=" w-52  object-cover" src="/ani_image7.png" alt="ani_image7" width={150} height={150}/>
+					<Image className=" w-52  object-cover" src="/ani_image3.jpg" alt="ani_image3" width={150} height={150} loading="lazy" />
+					<Image className=" w-52  object-cover" src="/ani_image6.jpg" alt="ani_image6" width={150} height={150} loading="lazy" />
+					<Image className=" w-52  object-cover" src="/ani_image7.png" alt="ani_image7" width={150} height={150} loading="lazy" />
+					<Image className=" w-52  object-cover" src="/ani_image13.jpg" alt="ani_image13" width={150} height={150} loading="lazy" />
+					<Image className=" w-52  object-cover" src="/ani_image12.jpg" alt="ani_image12" width={150} height={150} loading="lazy" />
 				</div>
 			</div>
 		</div>

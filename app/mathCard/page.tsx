@@ -1,6 +1,5 @@
 "use client";
 import { Accordion, AccordionItem } from "@nextui-org/react";
-import { useState } from "react";
 import Image from 'next/image';
 
 export default function Live() {
@@ -13,28 +12,27 @@ export default function Live() {
 				</div>
 			</div>
 			
-			
 
 			{/** 一键生成高质量音乐作品 页面 */}
 			<div className=" text-center hidden md:block bg-white">
 				<div className="p-36 flex justify-center gap-24">
 				<div className="flex flex-col justify-center items-center w-72 shadow-md p-6 rounded-xl text-black">
-					<Image className=" object-cover w-24 pb-4" src="/icon_1.png" alt="" width={80} height={80} />
+					<Image className=" object-cover w-24 pb-4" src="/icon_1.png" alt="" width={80} height={80} loading="lazy"/>
 					<h2 className=" font-bold text-xl ">便捷高效</h2>
 					<p>用户可以通过手机扫描二维码或链接访问数字名片，获取联系方式、社交链接、个人简介等信息，省去了传统名片交换的繁琐步骤。</p>
 				</div>
 				<div className="flex flex-col justify-center items-center w-72 shadow-md p-6 rounded-xl text-black">
-					<Image className=" object-cover w-24 pb-4" src="/icon_2.png" alt="" width={80} height={80} />
+					<Image className=" object-cover w-24 pb-4" src="/icon_2.png" alt="" width={80} height={80} loading="lazy"/>
 					<h2 className=" font-bold text-xl">个性化定制</h2>
 					<p>奥森小冰支持用户根据自身需求和品牌形象定制数字名片，设计独特的风格和版面，展现个性魅力。</p>
 				</div>
 				<div className="flex flex-col justify-center items-center w-72 shadow-md p-6 rounded-xl text-black">
-					<Image className=" object-cover w-24 pb-4" src="/icon_3.png" alt="" width={80} height={80} />
+					<Image className=" object-cover w-24 pb-4" src="/icon_3.png" alt="" width={80} height={80} loading="lazy"/>
 					<h2 className=" font-bold text-xl">环保节能</h2>
 					<p>减少纸质名片的浪费，符合环保理念。</p>
 				</div>
 				<div className="flex flex-col justify-center items-center w-72 shadow-md p-6 rounded-xl text-black">
-					<Image className=" object-cover w-24 pb-4" src="/icon_4.png" alt="" width={80} height={80} />
+					<Image className=" object-cover w-24 pb-4" src="/icon_4.png" alt="" width={80} height={80} loading="lazy"/>
 					<h2 className=" font-bold text-xl">基于需求定制化的数字名片</h2>
 					<p>用户可以创建自己的数字名片网站，将个人信息、作品展示、联系方式等整合在一起，方便用户访问和了解。</p>
 				</div>
@@ -50,7 +48,7 @@ export default function Live() {
 						aria-label="Accordion 1" 
 						title={<p className="text-black">便捷高效</p>}
 						startContent={
-							<Image className=" object-cover w-8" src="/icon_1.png" alt="" width={80} height={80} />
+							<Image className=" object-cover w-8" src="/icon_1.png" alt="" width={80} height={80} loading="lazy"/>
 						}
 					>
 						<p className="text-black text-sm">用户可以通过手机扫描二维码或链接访问数字名片，获取联系方式、社交链接、个人简介等信息，省去了传统名片交换的繁琐步骤。</p>
@@ -61,7 +59,7 @@ export default function Live() {
 						aria-label="Accordion 2" 
 						title={<p className="text-black">个性化定制</p>}
 						startContent={
-							<Image className=" object-cover w-8" src="/icon_2.png" alt="" width={80} height={80} />
+							<Image className=" object-cover w-8" src="/icon_2.png" alt="" width={80} height={80} loading="lazy"/>
 						}
 					>
 						<p className="text-black text-sm">奥森小冰支持用户根据自身需求和品牌形象定制数字名片，设计独特的风格和版面，展现个性魅力。</p>
@@ -72,7 +70,7 @@ export default function Live() {
 						aria-label="Accordion 3"
 						title={<p className="text-black">环保节能</p>}
 						startContent={
-							<Image className=" object-cover w-8" src="/icon_3.png" alt="" width={80} height={80} />
+							<Image className=" object-cover w-8" src="/icon_3.png" alt="" width={80} height={80} loading="lazy"/>
 						}
 					>
 						<p className="text-black text-sm">减少纸质名片的浪费，符合环保理念。</p>
@@ -83,7 +81,7 @@ export default function Live() {
 						aria-label="Accordion 4" 
 						title={<p className="text-black">基于需求定制化的数字名片</p>}
 						startContent={
-							<Image className=" object-cover w-8" src="/icon_4.png" alt="" width={80} height={80} />
+							<Image className=" object-cover w-8" src="/icon_4.png" alt="" width={80} height={80} loading="lazy"/>
 						}
 					>
 					<p className="text-black text-sm">用户可以创建自己的数字名片网站，将个人信息、作品展示、联系方式等整合在一起，方便用户访问和了解。</p>
@@ -102,8 +100,8 @@ export default function Live() {
 		<div className=" hidden md:block">
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center pt-24">
 				<div className=" relative mt-24 min-w-68">
-					<Image className="object-cover max-w-xl min-w-28" src="/ani_image1.png" alt="" width={500} height={150} />
-					<Image className=" absolute top-3/4 -right-2/4 z-10 object-cover max-w-xl min-w-36" src="/ani_image2.png" alt="" width={500} height={150} />
+					<Image className="object-cover max-w-xl min-w-28" src="/ani_image1.png" alt="" width={500} height={150} loading="lazy"/>
+					<Image className=" absolute top-3/4 -right-2/4 z-10 object-cover max-w-xl min-w-36" src="/ani_image2.png" alt="" width={500} height={150} loading="lazy"/>
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">
@@ -114,7 +112,7 @@ export default function Live() {
 
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center">
 				<div className=" relative  z-20 min-w-68">
-					<Image className=" z-40 object-cover max-w-xl min-w-28" src="/ani_image3.png" alt="" width={500} height={150} />
+					<Image className=" z-40 object-cover max-w-xl min-w-28" src="/ani_image3.png" alt="" width={500} height={150} loading="lazy"/>
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">
@@ -140,12 +138,9 @@ export default function Live() {
 
 			<div className=" divide-y divide-slate-500 pt-4">
 				<div className=" flex whitespace-nowrap overflow-x-scroll gap-4 pb-4">
-					<Image className=" w-52  object-cover" src="/ani_image1.png" alt="ani_image1" width={110} height={150} />
-					<Image className=" w-52  object-cover" src="/ani_image4.png" alt="ani_image4" width={110} height={150} />
-					<Image className=" w-52  object-cover" src="/ani_image11.jpg" alt="ani_image11" width={110} height={150} />
-					<Image className=" w-52  object-cover" src="/ani_image1.jpg" alt="ani_image1 jpg" width={110} height={150} />
-					<Image className=" w-52  object-cover" src="/ani_image2.png" alt="ani_image2" width={110} height={150} />
-					<Image className=" w-52  object-cover" src="/ani_image3.png" alt="ani_image3" width={110} height={150} />
+					<Image className=" w-52  object-cover" src="/ani_image1.png" alt="ani_image1" width={110} height={150} loading="lazy"/>
+					<Image className=" w-52  object-cover" src="/ani_image2.png" alt="ani_image2" width={110} height={150} loading="lazy"/>
+					<Image className=" w-52  object-cover" src="/ani_image3.png" alt="ani_image3" width={110} height={150} loading="lazy"/>
 
 				</div>
 			</div>
@@ -161,9 +156,9 @@ export default function Live() {
 
 			<div className=" divide-y divide-slate-500 pt-4">
 				<div className=" flex whitespace-nowrap overflow-x-scroll gap-4 pb-4">
-					<Image className=" w-52  object-cover" src="/ani_image6.png" alt="ani_image6" width={110} height={150} />
-					<Image className=" w-52  object-cover" src="/ani_image8.png" alt="ani_image8" width={110} height={150} />
-					<Image className=" w-52  object-cover" src="/ani_image3.jpg" alt="ani_image3" width={110} height={150} />
+					<Image className=" w-52  object-cover" src="/ani_image6.png" alt="ani_image6" width={110} height={150} loading="lazy"/>
+					<Image className=" w-52  object-cover" src="/ani_image8.png" alt="ani_image8" width={110} height={150} loading="lazy"/>
+					<Image className=" w-52  object-cover" src="/ani_image14.jpg" alt="ani_image3" width={110} height={150} loading="lazy"/>
 
 				</div>
 			</div>
@@ -181,13 +176,9 @@ export default function Live() {
 
 			<div className=" divide-y divide-slate-500 pt-4 bg-white">
 				<div className=" flex whitespace-nowrap overflow-x-scroll gap-4 pb-4">
-					<Image className=" w-52  object-cover" src="/ani_image1.png" alt="ani_image1" width={110} height={150}/>
-					<Image className=" w-52  object-cover" src="/ani_image4.png" alt="ani_image4" width={110} height={150}/>
-					<Image className=" w-52  object-cover" src="/ani_image11.jpg" alt="ani_image11" width={110} height={150}/>
-					<Image className=" w-52  object-cover" src="/ani_image1.jpg" alt="ani_image1 jpg" width={110} height={150}/>
-					<Image className=" w-52  object-cover" src="/ani_image2.png" alt="ani_image2" width={110} height={150}/>
-					<Image className=" w-52  object-cover" src="/ani_image3.png" alt="ani_image3" width={110} height={150}/>
-
+					<Image className=" w-52  object-cover" src="/ani_image9.png" alt="ani_image1" width={110} height={150} loading="lazy" />
+					<Image className=" w-52  object-cover" src="/ani_image10.png" alt="ani_image4" width={110} height={150} loading="lazy"/>
+					<Image className=" w-52  object-cover" src="/ani_image11.png" alt="ani_image11" width={110} height={150} loading="lazy"/>
 				</div>
 			</div>
 		</div>
@@ -204,8 +195,8 @@ export default function Live() {
 				</div>
 
 				<div className=" relative mt-24 min-w-68">
-					<Image className="object-cover w-110 min-w-28" src="/ani_image3.jpg" alt="" width={110} height={150}/>
-					<Image className=" absolute top-3/4 -left-2/4 z-20 object-cover max-w-xl min-w-36" src="/ani_image6.png" alt="" width={450} height={150}/>
+					<Image className="object-cover w-110 min-w-28" src="/ani_image14.jpg" alt="" width={110} height={150} loading="lazy"/>
+					<Image className=" absolute top-3/4 -left-2/4 z-20 object-cover max-w-xl min-w-36" src="/ani_image6.png" alt="" width={450} height={150} loading="lazy"/>
 				</div>
 
 			</div>
@@ -217,7 +208,7 @@ export default function Live() {
 				</div>
 
 				<div className=" relative  z-10 min-w-68">
-					<Image className=" object-cover w-110 min-w-28" src="/ani_image8.png" alt="" width={110} height={150}/>
+					<Image className=" object-cover w-110 min-w-28" src="/ani_image8.png" alt="" width={110} height={150} loading="lazy"/>
 				</div>
 			</div>
 		</div>
@@ -226,8 +217,8 @@ export default function Live() {
 		<div className=" hidden md:block">
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center pt-24">
 				<div className=" relative mt-24 min-w-68">
-					<Image className="object-cover w-110 min-w-28" src="/ani_image1.png" alt="" width={110} height={150}/>
-					<Image className=" absolute top-3/4 -right-2/4 z-10 object-cover max-w-xl min-w-36" src="/ani_image2.png" alt="" width={450} height={150}/>
+					<Image className="object-cover w-110 min-w-28" src="/ani_image9.png" alt="" width={110} height={150} loading="lazy"/>
+					<Image className=" absolute top-3/4 -right-2/4 z-10 object-cover max-w-xl min-w-36" src="/ani_image10.png" alt="" width={450} height={150} loading="lazy"/>
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">
@@ -238,7 +229,7 @@ export default function Live() {
 
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center">
 				<div className=" relative  z-20 min-w-68">
-					<Image className=" z-40 object-cover w-110 min-w-28" src="/ani_image3.png" alt="" width={110} height={150}/>
+					<Image className=" z-40 object-cover w-110 min-w-28" src="/ani_image11.png" alt="" width={110} height={150} loading="lazy"/>
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">

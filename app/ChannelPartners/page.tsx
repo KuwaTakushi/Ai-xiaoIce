@@ -257,7 +257,7 @@ export default function ChannelPartners() {
 			<div className=" md:hidden text-black p-4 bg-cover bg-center" style={{backgroundImage: `url("https://business.xiaoice.com/Image/vhuman/advantage_intro_bg.png")`}}>
 			<div className=" flex overflow-x-scroll whitespace-nowrap mt-3">
 					<div className=" relative">
-						<Image className=" min-w-96" src="/human_product_three1.png" alt="" width={500} height={300} />
+						<Image className=" min-w-96" src="/human_product_three1.png" alt="" width={500} height={300} loading="lazy"/>
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col justify-center">
 								<div className="flex gap-8">
@@ -283,7 +283,7 @@ export default function ChannelPartners() {
 
 
 					<div className=" relative">
-						<Image className="min-w-96" src="/human2.png" alt="" width={500} height={800} />
+						<Image className="min-w-96" src="/human2.png" alt="" width={500} height={800} loading="lazy"/>
 						<div className=" p-4 absolute bottom-0 pr-16  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 						<div className=" flex flex-col justify-center">
 								<div className="flex gap-8">
@@ -307,7 +307,7 @@ export default function ChannelPartners() {
 
 					
 					<div className="relative">
-						<Image className="min-w-96" src="/human3.png" alt="" width={500} height={800} />
+						<Image className="min-w-96" src="/human3.png" alt="" width={500} height={800} loading="lazy"/>
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 						<div className=" flex flex-col justify-center text-left ml-6">
 								<div className="flex gap-8">
@@ -330,7 +330,7 @@ export default function ChannelPartners() {
 
 
 					<div className=" relative">
-						<Image className="min-w-96" src="/human4.png" alt="" width={500} height={800} />
+						<Image className="min-w-96" src="/human4.png" alt="" width={500} height={800} loading="lazy"/>
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 						<div className=" flex flex-col justify-center ml-4 text-left">
 								<div className="flex gap-8">
@@ -353,7 +353,7 @@ export default function ChannelPartners() {
 
 
 					<div className=" relative">
-						<Image className="min-w-96" src="/human5.png" alt="" width={500} height={800} />
+						<Image className="min-w-96" src="/human5.png" alt="" width={500} height={800} loading="lazy"/>
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col text-left ml-2">
 								<div className="flex gap-8">

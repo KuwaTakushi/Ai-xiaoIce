@@ -6,37 +6,37 @@ import Image from 'next/image';
 
 const cards = [
 	{
-	  url: "/ani_image111.png",
+	  url: "/ani_image111.webp",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E6%8B%9B%E5%B0%8F%E5%BD%B1%E5%A4%96%E5%AE%A3_Final_1026%E6%97%A0%E5%B0%81%E9%9D%A2_%E4%BD%8E%E7%A0%81%E7%8E%87_39MB.mp4",
 	  id: 1,
 	},
 	{
-	  url: "/video_poster4.png",
+	  url: "/video_poster4.webp",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%5B%E4%BB%8A%E6%97%A5%E7%8E%AF%E7%90%83%5D%E9%87%91%E7%89%8C%E8%83%8C%E5%90%8E%EF%BC%9A%E2%80%9CAI%E5%8A%A9%E7%90%86%E6%95%99%E7%BB%83%E2%80%9D%E5%8A%A9%E5%8A%9B%E4%B8%AD%E5%9B%BD%E9%9B%AA%E4%B8%8A%E9%A1%B9%E7%9B%AE%E8%AE%AD%E7%BB%83%5B%E4%B8%8B%E8%BD%BD%E7%89%88%5D_batch.m4v",
 	  id: 2,
 	},
 	{
-	  url: "/video_poster7.png",
+	  url: "/video_poster7.webp",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E6%AF%8F%E6%97%A5%E7%BB%8F%E6%B5%8E%E6%96%B0%E9%97%BB%E8%A7%86%E9%A2%911.mp4",
 	  id: 3,
 	},
 	{
-	  url: "/video_poster5.png",
+	  url: "/video_poster5.webp",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D.m4v",
 	  id: 4,
 	},
 	{
-	  url: "/video_poster3.png",
+	  url: "/video_poster3.webp",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E9%83%8E%E5%92%B8%E5%B9%B3%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F%E8%99%9A%E6%8B%9F%E4%BA%BA.mp4",
 	  id: 5,
 	},
 	{
-	  url: "/video_poster4 .png",
+	  url: "/video_poster4 .webp",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E8%93%9D%E8%89%B2%E5%85%89%E6%A0%87%E8%91%A3%E4%BA%8B%E9%95%BF%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F%E8%99%9A%E6%8B%9F%E4%BA%BA.mp4",
 	  id: 6,
 	},
 	{
-	  url: "/huaxizi_poster.png",
+	  url: "/huaxizi_poster.webp",
       videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E8%8A%B1%E8%A5%BF%E5%AD%90-%E8%9C%9C%E7%B2%89demo.mp4",
 	  id: 7,
 	},
@@ -67,7 +67,7 @@ export default function ChannelPartners() {
 	return (
 		<div className=" w-full">
 			<div className=" relative">
-				<Image className=" object-cover h-110 md:h-auto w-full" src="/banner2.png" alt="banner2" width={1500} height={750} />
+				<Image className=" object-cover h-110 md:h-auto w-full" src="/banner2.webp" alt="banner2" width={1500} height={750} />
 				<div className=" flex flex-col md:items-start items-center absolute md:top-1/5 md:left-64 left-24 top-12 right-1/3 -translate-x-12 md:-translate-x-0 text-white">
 					<div className=" md:text-2xl text-left md:pt-4 text-base max-w-2xl">
 						<h1 className=" md:text-5xl text-base pb-4">招商加盟</h1>

@@ -100,7 +100,7 @@ export default function Home() {
               </div>
 
               <div className="md:max-w-lg max-w-sm flex justify-center">
-              <Image className=" max-w-lg md:max-w-2xl object-cover" src="/main_bg_2.png" alt="" width={600} height={550} />
+              <Image className=" max-w-lg md:max-w-2xl object-cover" src="/main_bg_2.webp" alt="" width={600} height={550} />
               </div>
             </div>
 
@@ -119,7 +119,7 @@ export default function Home() {
                 <p className=" max-w-lg text-lg">奥森小冰是人工智能内容生产的先行者，拥有全球领先的核心技术并已形成完善的产品线。奥森小冰的人工智能内容生产，着眼于在达到与相应人类生产者同等质量水准的前提下，充分发挥人工智能快速学习、高并发与稳定性等特点，协助弥补 “ 高度定制化内容 ” 的供需关系短板</p>
               </div>
               <div className="md:max-w-lg max-w-sm flex justify-center">
-              <Image className=" max-w-xl object-cover" src="/main_bg_3.png" alt="" width={600} height={550} />
+              <Image className=" max-w-xl object-cover" src="/main_bg_3.webp" alt="" width={600} height={550} />
               </div>
             </div>
           </Tab>
@@ -137,7 +137,7 @@ export default function Home() {
                 <p className=" max-w-lg text-lg">AI数字人直播是指通过人工智能技术打造的虚拟人物，通过直播平台与观众实时互动。这些AI数字人除了具备逼真的外貌和声音，更重要的是具备了人类智能和情感。他们可以自动理解观众的问题，并给出相应的回答和建议，让互动更加自然流畅。</p>
               </div>
               <div className="md:max-w-lg max-w-sm flex justify-center">
-                <Image className=" max-w-2xl object-cover" src="https://i.p-i.vip/20/20240622-6676935594942.png" alt="" width={600} height={550} />
+                <Image className=" max-w-2xl object-cover" src="main_bg_1.webp" alt="" width={600} height={550} />
               </div>
             </div>
           </Tab>
@@ -155,7 +155,7 @@ export default function Home() {
                 <p className=" max-w-lg text-lg">数字名片是传统纸质名片的数字化升级，它以更便捷、更智能的方式展现您的个人信息和联系方式。告别纸质名片的浪费和繁琐，数字名片让您只需轻轻一扫，就能将所有信息传递给对方。您可以定制专属的数字名片，设计独特的风格，展现您的个人魅力。许多平台还提供数据分析功能，帮助您了解名片的传播效果和用户行为。无论是商务社交还是个人推广，数字名片都将成为您不可或缺的工具。</p>
               </div>
               <div className="md:max-w-lg max-w-sm flex justify-center">
-                <Image className="max-w-xl object-cover rounded-xl" src="/mian_bg_4.png" alt="" width={600} height={550} />
+                <Image className="max-w-xl object-cover rounded-xl" src="/main_bg_4.webp" alt="" width={600} height={550} />
               </div>
             </div>
           </Tab>
@@ -352,13 +352,13 @@ export default function Home() {
       <div className=" mt-28 w-full flex-col flex justify-center items-center relative bg-cover">
         <div className=" absolute z-0 -top-6 opacity-50 left-1/2 -translate-x-12"><BackgroundIconC /></div>
         <h1 className="z-10 font-bold text-4xl text-[#00305a] pb-8">生态合作伙伴</h1>
-        <Image className=" md:max-w-7xl w-full object-cover" src="https://i.p-i.vip/20/20240622-667694ae1c226.png" alt="" width={1200} height={800} />
+        <Image className=" md:max-w-7xl w-full object-cover" src="parnent.webp" alt="" width={1200} height={800} />
       </div>
 
 
 
       <div className="md:p-12 md:mb-0 mb-4 flex justify-center items-center mt-24">
-        <div className="rounded-xl  flex justify-center flex-col space-y-3 items-center p-16 max-w-7xl w-full bg-[#edf3ff]" style={{ backgroundImage: `url(bg-bottom.png)`}}>
+        <div className="rounded-xl  flex justify-center flex-col space-y-3 items-center p-16 max-w-7xl w-full bg-[#edf3ff]" style={{ backgroundImage: `url(bg-bottom.webp)`}}>
           <h1 className="text-white font-bold text-3xl">奥森小冰</h1>
           <h1 className="text-white font-bold text-3xl text-center">探索AI虚拟数字人之旅</h1>
         </div>
@@ -473,7 +473,7 @@ const OverlayCopy = () => {
 
       <div className="relative space-y-8 flex justify-center md:w-1/2 p-0 md:p-8">
         {/** 定制体验图片 */}
-        <Image className=" md:min-w-[500px] lg:min-w-[500px]   max-w-full h-[400px] md:h-full md: w-full" src="https://i.p-i.vip/20/20240622-6676950aef4d0.png" alt="vhuman_card.png" width={500} height={450} />
+        <Image className=" md:min-w-[500px] lg:min-w-[500px]   max-w-full h-[400px] md:h-full md: w-full" src="https://i.p-i.vip/20/20240622-6676950aef4d0.png" alt="vhuman_card.webp" width={500} height={450} />
 
         <div className=" text-left -translate-y-1/4 top-1/4 p-6 md:p-0 absolute md:top-2/4 md:left-1/3 transform md:-translate-x-1/4 md:-translate-y-1/2  flex flex-col space-y-6">
           <p className="text-white bg-opacity-50 md:text-lg  text-xs">
@@ -488,7 +488,7 @@ const OverlayCopy = () => {
 
           <Link href="http://t1.ink/f/h9ulpg">
             <div className=" cursor-pointer mt-3 self-center md:self-start">
-              <Image className=" w-36 md:w-60 md: ml-5" src="https://i.p-i.vip/20/20240621-667475b6e98e5.png" quality={100} alt="" width={36} height={40} />
+              <Image className=" w-36 md:w-60 md: ml-5" src="https://i.p-i.vip/20/20240621-667475b6e98e5.png" alt="" width={36} height={40} />
             </div>
           </Link>
 
@@ -500,27 +500,27 @@ const OverlayCopy = () => {
 
 const cards = [
   {
-    url: "customer1.webp",
+    url: "customer_1.webp",
     videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E5%AF%84%E8%AF%AD_%E4%B8%87%E5%BE%97%E8%B5%84%E8%AE%AF.mp4",
     id: 1,
   },
   {
-    url: "customer2.webp",
+    url: "customer_2.webp",
     videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E5%AF%84%E8%AF%AD_%E5%9B%BD%E5%AE%B6%E7%BA%BA%E7%BB%87%E4%BA%A7%E5%93%81%E7%A0%94%E5%8F%91%E4%B8%AD%E5%BF%83.mp4",
     id: 2,
   },
   {
-    url: "customer3.webp",
+    url: "customer_3.webp",
     videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E5%AF%84%E8%AF%AD_%E9%B2%81%E4%B8%B0%E7%BB%87%E6%9F%93.mp4",
     id: 3,
   },
   {
-    url: "customer4.webp",
+    url: "customer_4.webp",
     videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E5%AF%84%E8%AF%AD_%E5%8D%8E%E4%BA%BA%E8%BF%90%E9%80%9A.mp4",
     id: 4,
   },
   {
-    url: "customer5.webp",
+    url: "customer_5.webp",
     videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E5%AF%84%E8%AF%AD_%E4%B8%8A%E9%9F%B3%E9%9F%B3%E5%B7%A5%E7%B3%BB.mp4",
     id: 5,
   },

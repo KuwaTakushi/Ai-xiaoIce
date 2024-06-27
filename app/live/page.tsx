@@ -243,7 +243,7 @@ export default function Live() {
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-start pb-64">
 				<div className=" relative  z-20 min-w-68">
 					<Image className=" z-40 object-cover w-110 min-w-28" src="/mathCard_3.webp" alt="" width={150} height={150}  />
-					<Image className=" -z-10 absolute top-3/4 -right-2/4 object-cover max-w-xl min-w-36" src="/ani_image11.jpg" alt="" width={450} height={150} />
+					<Image className=" -z-10 absolute top-3/4 -right-2/4 object-cover max-w-xl min-w-36" src="/ani_image11_1.webp" alt="" width={450} height={150} />
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left  pt-16 pb-24">
@@ -285,8 +285,8 @@ export default function Live() {
 				<div className=" flex whitespace-nowrap overflow-x-scroll gap-4 pb-4">
 					<Image className=" w-52  object-cover" src="/mathCard_1.webp" alt="ani_image1"  width={150} height={150}  />
 					<Image className=" w-52  object-cover" src="/ani_image4.webp" alt="ani_image4" width={150} height={150}  />
-					<Image className=" w-52  object-cover" src="/ani_image11.jpg" alt="ani_image11" width={150} height={150}  />
-					<Image className=" w-52  object-cover" src="/ani_image1. webp" alt="ani_image1 jpg" width={150} height={150}  />
+					<Image className=" w-52  object-cover" src="/ani_image11_1.webp" alt="ani_image11" width={150} height={150}  />
+					<Image className=" w-52  object-cover" src="/ani_image1.webp" alt="ani_image1 jpg" width={150} height={150}  />
 					<Image className=" w-52  object-cover" src="/mathCard_3.webp" alt="ani_image2" width={150} height={150}  />
 					<Image className=" w-52  object-cover" src="/mathCard_2.webp" alt="ani_image3" width={150} height={150} />
 
@@ -306,7 +306,7 @@ export default function Live() {
 
 				<div className=" relative mt-24 min-w-68">
 					<Image className="object-cover w-110 min-w-28" src="/ani_image3.webp" alt="" width={150} height={150}  />
-					<Image className=" absolute top-3/4 -left-2/4 z-20 object-cover max-w-xl min-w-36" src="/ani_image6.jpg" alt="" width={450} height={150}  />
+					<Image className=" absolute top-3/4 -left-2/4 z-20 object-cover max-w-xl min-w-36" src="/ani_image6.webp" alt="" width={450} height={150}  />
 				</div>
 
 			</div>
@@ -319,7 +319,7 @@ export default function Live() {
 
 
 				<div className=" relative  z-10 min-w-68">
-					<Image className=" object-cover w-110 min-w-28" src="/ani_image7.png" alt="" width={150} height={150}  />
+					<Image className=" object-cover w-110 min-w-28" src="/ani_image7.webp" alt="" width={150} height={150}  />
 				</div>
 			</div>
 
@@ -331,8 +331,8 @@ export default function Live() {
 				</div>
 				
 				<div className=" relative  min-w-68">
-					<Image className="object-cover w-110 min-w-28" src="/ani_image13.jpg" alt="" width={150} height={150}  />
-					<Image className=" absolute bottom-3/4 -translate-y-10 -left-2/4 z-20 object-cover max-w-xl min-w-36" src="/ani_image12.jpg" alt="" width={450} height={150} />
+					<Image className="object-cover w-110 min-w-28" src="/ani_image13_1.webp" alt="" width={150} height={150}  />
+					<Image className=" absolute bottom-3/4 -translate-y-10 -left-2/4 z-20 object-cover max-w-xl min-w-36" src="/ani_image12_1.webp" alt="" width={450} height={150} />
 				</div>
 			</div>
 
@@ -370,10 +370,10 @@ export default function Live() {
 			<div className=" divide-y divide-slate-500 pt-4">
 				<div className=" flex whitespace-nowrap overflow-x-scroll gap-4 pb-4">
 					<Image className=" w-52  object-cover" src="/ani_image3 .webp" alt="ani_image3" width={150} height={150}  />
-					<Image className=" w-52  object-cover" src="/ani_image6.jpg" alt="ani_image6" width={150} height={150}  />
-					<Image className=" w-52  object-cover" src="/ani_image7.png" alt="ani_image7" width={150} height={150}  />
-					<Image className=" w-52  object-cover" src="/ani_image13.jpg" alt="ani_image13" width={150} height={150}  />
-					<Image className=" w-52  object-cover" src="/ani_image12.jpg" alt="ani_image12" width={150} height={150}  />
+					<Image className=" w-52  object-cover" src="/ani_image6.webp" alt="ani_image6" width={150} height={150}  />
+					<Image className=" w-52  object-cover" src="/ani_image7.webp" alt="ani_image7" width={150} height={150}  />
+					<Image className=" w-52  object-cover" src="/ani_image13_1.webp" alt="ani_image13" width={150} height={150}  />
+					<Image className=" w-52  object-cover" src="/ani_image12_1.webp" alt="ani_image12" width={150} height={150}  />
 				</div>
 			</div>
 		</div>

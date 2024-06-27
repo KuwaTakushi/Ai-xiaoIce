@@ -100,7 +100,7 @@ export default function Live() {
 		<div className=" hidden md:block">
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center pt-24">
 				<div className=" relative mt-24 min-w-68">
-					<Image className="object-cover max-w-xl min-w-28" src="/ani_image1.webp" alt="" width={500} height={150} />
+					<Image className="object-cover max-w-xl min-w-28" src="/ani_image1 .webp" alt="" width={500} height={150} />
 					<Image className=" absolute top-3/4 -right-2/4 z-10 object-cover max-w-xl min-w-36" src="/ani_image2.webp" alt="" width={500} height={150} />
 				</div>
 
@@ -138,7 +138,7 @@ export default function Live() {
 
 			<div className=" divide-y divide-slate-500 pt-4">
 				<div className=" flex whitespace-nowrap overflow-x-scroll gap-4 pb-4">
-					<Image className=" w-52  object-cover" src="/ani_image1.webp" alt="ani_image1" width={110} height={150} />
+					<Image className=" w-52  object-cover" src="/ani_image1 .webp" alt="ani_image1" width={110} height={150} />
 					<Image className=" w-52  object-cover" src="/ani_image2.webp" alt="ani_image2" width={110} height={150} />
 					<Image className=" w-52  object-cover" src="/ani_image3 .webp" alt="ani_image3" width={110} height={150} />
 
@@ -156,9 +156,9 @@ export default function Live() {
 
 			<div className=" divide-y divide-slate-500 pt-4">
 				<div className=" flex whitespace-nowrap overflow-x-scroll gap-4 pb-4">
-					<Image className=" w-52  object-cover" src="/ani_image6.png" alt="ani_image6" width={110} height={150} />
-					<Image className=" w-52  object-cover" src="/ani_image8.png" alt="ani_image8" width={110} height={150} />
-					<Image className=" w-52  object-cover" src="/ani_image14.jpg" alt="ani_image3" width={110} height={150} />
+					<Image className=" w-52  object-cover" src="/ani_image6.webp" alt="ani_image6" width={110} height={150} />
+					<Image className=" w-52  object-cover" src="/ani_image8.webp" alt="ani_image8" width={110} height={150} />
+					<Image className=" w-52  object-cover" src="/ani_image14_1.webp" alt="ani_image3" width={110} height={150} />
 
 				</div>
 			</div>
@@ -176,9 +176,9 @@ export default function Live() {
 
 			<div className=" divide-y divide-slate-500 pt-4 bg-white">
 				<div className=" flex whitespace-nowrap overflow-x-scroll gap-4 pb-4">
-					<Image className=" w-52  object-cover" src="/ani_image9.png" alt="ani_image1" width={110} height={150}  />
-					<Image className=" w-52  object-cover" src="/ani_image10.png" alt="ani_image4" width={110} height={150} />
-					<Image className=" w-52  object-cover" src="/ani_image11.png" alt="ani_image11" width={110} height={150} />
+					<Image className=" w-52  object-cover" src="/ani_image9.webp" alt="ani_image1" width={110} height={150}  />
+					<Image className=" w-52  object-cover" src="/ani_image10.webp" alt="ani_image4" width={110} height={150} />
+					<Image className=" w-52  object-cover" src="/ani_image11.webp" alt="ani_image11" width={110} height={150} />
 				</div>
 			</div>
 		</div>
@@ -195,8 +195,8 @@ export default function Live() {
 				</div>
 
 				<div className=" relative mt-24 min-w-68">
-					<Image className="object-cover w-110 min-w-28" src="/ani_image14.jpg" alt="" width={110} height={150} />
-					<Image className=" absolute top-3/4 -left-2/4 z-20 object-cover max-w-xl min-w-36" src="/ani_image6.png" alt="" width={450} height={150} />
+					<Image className="object-cover w-110 min-w-28" src="/ani_image14_1.webp" alt="" width={110} height={150} />
+					<Image className=" absolute top-3/4 -left-2/4 z-20 object-cover max-w-xl min-w-36" src="/ani_image6.webp" alt="" width={450} height={150} />
 				</div>
 
 			</div>
@@ -208,7 +208,7 @@ export default function Live() {
 				</div>
 
 				<div className=" relative  z-10 min-w-68">
-					<Image className=" object-cover w-110 min-w-28" src="/ani_image8.png" alt="" width={110} height={150} />
+					<Image className=" object-cover w-110 min-w-28" src="/ani_image8.webp" alt="" width={110} height={150} />
 				</div>
 			</div>
 		</div>
@@ -217,8 +217,8 @@ export default function Live() {
 		<div className=" hidden md:block">
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center pt-24">
 				<div className=" relative mt-24 min-w-68">
-					<Image className="object-cover w-110 min-w-28" src="/ani_image9.png" alt="" width={110} height={150} />
-					<Image className=" absolute top-3/4 -right-2/4 z-10 object-cover max-w-xl min-w-36" src="/ani_image10.png" alt="" width={450} height={150} />
+					<Image className="object-cover w-110 min-w-28" src="/ani_image9.webp" alt="" width={110} height={150} />
+					<Image className=" absolute top-3/4 -right-2/4 z-10 object-cover max-w-xl min-w-36" src="/ani_image10.webp" alt="" width={450} height={150} />
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">
@@ -229,7 +229,7 @@ export default function Live() {
 
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center">
 				<div className=" relative  z-20 min-w-68">
-					<Image className=" z-40 object-cover w-110 min-w-28" src="/ani_image11.png" alt="" width={110} height={150} />
+					<Image className=" z-40 object-cover w-110 min-w-28" src="/ani_image11.webp" alt="" width={110} height={150} />
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">

@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const cards = [
 	{
-	  url: "/ani_image111.png",
+	  url: "/ani_image111.webp",
 	  videoUrl: "https://aicplatform.blob.core.chinacloudapi.cn/business-home/%E6%8B%9B%E5%B0%8F%E5%BD%B1%E5%A4%96%E5%AE%A3_Final_1026%E6%97%A0%E5%B0%81%E9%9D%A2_%E4%BD%8E%E7%A0%81%E7%8E%87_39MB.mp4",
 	  id: 1,
 	},
@@ -114,7 +114,7 @@ export default function AIBeing() {
 					<h1 className="md:pb-8 font-bold text-2xl pb-3 md:text-8xl">AI数字员工</h1>
 					<p className="md:text-2xl max-w-4xl">奥森小冰基于全球领先的完备人工智能奥森小冰框架，推出了数字专家和数字员工等完整产品线，从数据采集、训练到上线，最快仅需10小时。支持创建拥有情感交互能力、专业技能和内容生产能力的数字人，目前已被应用于多个工作和生活场景中。</p>
 				</div>
-				<Image className=" bg-cover max-w-xl" src="/banner-2.jpg" alt="human" width={1500} height={800}/>
+				<Image className=" bg-cover max-w-xl" src="/banner-2.webp" alt="human" width={1500} height={800}/>
 				</div>
 			</div>
 
@@ -124,7 +124,7 @@ export default function AIBeing() {
 			{/** title 移动端 */}
 			<div className="flex flex-col md:hidden bg-[#061a55] p-4">
 				<div className=" relative">
-					<Image className="object-cover ml-8" src="/banner-2.jpg" alt="" width={800} height={800}/> 
+					<Image className="object-cover ml-8" src="/banner-2.webp" alt="" width={800} height={800}/> 
 					<div className=" absolute top-12 left-9 flex flex-col justify-center text-start text-white mb-5">
 						<h1 className="font-bold text-2xl pb-3">AI数字员工</h1>
 						<p className=" text-sm">奥森小冰基于全球领先的完备人工智能奥森小冰框架，推出了数字专家和数字员工等完整产品线，从数据采集、训练到上线，最快仅需10小时。支持创建拥有情感交互能力、专业技能和内容生产能力的数字人，目前已被应用于多个工作和生活场景中。</p>
@@ -169,7 +169,7 @@ export default function AIBeing() {
 										<span className=" w-24 bg-[#2db2e2] h-4 bg-opacity-50"> </span>
 										<p className=" text-black font-bold max-w-xl">定制完美形象，融合企业基因，打造品牌代言人、形象代言人、数字员工、数字专家等，可用于企业内外宣物料制作、营销Campaign创新、RPA数字人化等。</p>
 									</div>
-									<Image className="bg-cover max-w-xl" src="/direct2.png" alt="" width={600} height={450} unoptimized={false}/>
+									<Image className="bg-cover max-w-xl" src="/direct2.webp" alt="" width={600} height={450} unoptimized={false}/>
 								</div>
 							</Tab>
 							<Tab
@@ -357,7 +357,7 @@ export default function AIBeing() {
 
 
 			{/** 移动端 */}
-			<div className=" md:hidden text-black p-4 bg-cover bg-center" style={{backgroundImage: `url("https://business.xiaoice.com/Image/vhuman/advantage_intro_bg.webp")`}}>
+			<div className=" md:hidden text-black p-4 bg-cover bg-center" style={{backgroundImage: `url("advantage_intro_bg.webp")`}}>
 				<div className=" m-4 space-y-2">
 					<h2 className=" text-2xl pb-4">产品优势</h2>
 					<div className=" relative h-36">
@@ -489,7 +489,7 @@ export default function AIBeing() {
 					</div>
 
 					<div className=" relative">
-						<Image className=" object-cover h-110 w-full" src="/direct2.jpg" alt="" width={550} height={450}/>
+						<Image className=" object-cover h-110 w-full" src="/direct2.webp" alt="" width={550} height={450}/>
 						<div className=" absolute top-8 left-8 text-white w-72">
 							<h1 className=" pb-8 text-2xl font-bold">应用场景</h1>
 							<h2 className=" text-xl">企业</h2>
@@ -498,7 +498,7 @@ export default function AIBeing() {
 					</div>
 
 					<div className=" relative">
-						<Image className=" object-cover h-110 w-full" src="/direct3.jpg" alt="" width={550} height={450}/>
+						<Image className=" object-cover h-110 w-full" src="/direct3.webp" alt="" width={550} height={450}/>
 						<div className=" absolute top-8 left-8 text-white w-72">
 							<h1 className=" pb-8 text-2xl font-bold">应用场景</h1>
 							<h2 className=" text-xl">陪伴</h2>

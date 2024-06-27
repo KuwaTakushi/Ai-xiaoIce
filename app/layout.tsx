@@ -225,7 +225,9 @@ export default function RootLayout({
 										<div className=" space-y-4 pt-6 md:text-base pr-10">
 											<p> 粤ICP备2024267174号-1 </p>
 											<p> 粤ICP备2024267174号 </p>
-											<p>前往⽇本⼩冰りんな站 </p>
+											<Link href="https://rinna.co.jp/AI-rinna/">
+												<p className="text-white md:text-base text-sm">前往⽇本⼩冰りんな站 </p>
+											</Link>
 											<p>网站地图  XML地图</p>	
 										</div>
 								</div>

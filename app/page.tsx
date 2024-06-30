@@ -473,10 +473,10 @@ const OverlayCopy = () => {
 
       <div className="relative space-y-8 flex justify-center md:w-1/2 p-0 md:p-8">
         {/** 定制体验图片 */}
-        <Image className=" md:min-w-[500px] lg:min-w-[500px]   max-w-full h-[400px] md:h-full md: w-full" src="https://i.p-i.vip/20/20240622-6676950aef4d0.png" alt="vhuman_card.webp" width={500} height={450} />
+        <Image className=" md:min-w-[600px] lg:min-w-[500px] max-w-full md:h-[575px] h-[370px] md: w-full" src="https://i.p-i.vip/20/20240622-6676950aef4d0.png" alt="vhuman_card.webp" width={500} height={450} />
 
         <div className=" text-left -translate-y-1/4 top-1/4 p-6 md:p-0 absolute md:top-2/4 md:left-1/3 transform md:-translate-x-1/4 md:-translate-y-1/2  flex flex-col space-y-6">
-          <p className="text-white bg-opacity-50 md:text-lg  text-xs">
+          <p className="text-white bg-opacity-50 md:text-lg  text-xs pt-2">
             为助力国内中小企业的数字化转型，奥森小冰公司现推出“限时定制体验”活动，诚邀符合条件的中小企业、领域达人及个体经营者，创建自己的AI数字员工。
           </p>
           <p className="text-white md:text-lg bg-opacity-50 text-xs">

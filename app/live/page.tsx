@@ -43,7 +43,7 @@ export default function Live() {
 					<p className=" text-sm md:text-xl">像真人一样完成直播互动对话</p>
 				</div>
 				
-				<div className=" w-96 md:w-[30%] flex flex-col justify-center items-left md:items-center  bg-white p-4 py-7 pr-24">
+				<div className=" w-96 xl:w-[40%] 2xl:w-[30%] flex flex-col justify-center items-left md:items-center  bg-white p-4 py-7 pr-24">
 					<Image className=" object-cover md:w-60 w-24" src="/icon_desc_2.webp" alt="" width={250} height={250} />
 					<h2 className="font-bold text-xl md:text-2xl pb-4">形象丰富</h2>
 					<p className=" text-sm md:text-xl">支持不同的数字人直播场景和形象</p>
@@ -217,9 +217,9 @@ export default function Live() {
 		{/** 中国纺织信息中心国家纺织产品开发中心 页面 */}
 		<div className="hidden md:block">
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center pt-24">
-				<div className=" relative mt-24 min-w-68">
-					<Image className="object-cover max-w-xl min-w-28" src="/mathCard_1.webp" alt="" width={450} height={150} />
-					<Image className=" absolute top-3/4 -right-2/4 z-10 object-cover max-w-xl min-w-36" src="/ani_image1.webp" alt="" width={450} height={150} />
+				<div className=" relative mt-24 min-w-68 xl:mr-28 2xl:mr-0">
+					<Image className="object-cover xl:max-w-md xl:w-96 2xl:max-w-xl min-w-28" src="/mathCard_1.webp" alt="" width={450} height={150} />
+					<Image className=" absolute top-3/4 -right-2/4 z-10 object-cover xl:max-w-md 2xl:w-96 2xl:max-w-xl min-w-36" src="/ani_image1.webp" alt="" width={450} height={150} />
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">
@@ -229,9 +229,9 @@ export default function Live() {
 			</div>
 
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center">
-				<div className=" relative  z-20 min-w-68">
-					<Image className=" z-40 object-cover max-w-xl" src="/mathCard_2.webp" alt="" width={450} height={150}  />
-					<Image className=" -z-10 absolute top-3/4 -right-2/4 object-cover max-w-xl min-w-36" src="/ani_image4.webp" alt="" width={450} height={150}  />
+				<div className=" relative  z-20 min-w-68 xl:mr-28 2xl:mr-0">
+					<Image className=" z-40 object-cover max-w-xl xl:max-w-md xl:w-96 2xl:max-w-xl" src="/mathCard_2.webp" alt="" width={450} height={150}  />
+					<Image className=" -z-10 absolute top-3/4 -right-2/4 object-cover xl:max-w-md xl:w-80 2xl:max-w-xl min-w-36" src="/ani_image4.webp" alt="" width={450} height={150}  />
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">
@@ -241,9 +241,9 @@ export default function Live() {
 			</div>
 
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-start pb-64">
-				<div className=" relative  z-20 min-w-68">
-					<Image className=" z-40 object-cover w-110 min-w-28" src="/mathCard_3.webp" alt="" width={150} height={150}  />
-					<Image className=" -z-10 absolute top-3/4 -right-2/4 object-cover max-w-xl min-w-36" src="/ani_image11_1.webp" alt="" width={450} height={150} />
+				<div className=" relative  z-20 min-w-68 xl:mr-28 2xl:mr-0">
+					<Image className=" z-40 object-cover  xl:max-w-md xl:w-96 2xl:max-w-xl min-w-28" src="/mathCard_3.webp" alt="" width={150} height={150}  />
+					<Image className=" -z-10 absolute top-3/4 xl:max-w-md xl:w-96 2xl:max-w-xl -right-2/4 object-cover max-w-xl min-w-36" src="/ani_image11_1.webp" alt="" width={450} height={150} />
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left  pt-16 pb-24">
@@ -304,9 +304,9 @@ export default function Live() {
 					<p className=" text-lg text-black">奥森小冰适用于全领域播报与直播服务的数字人员工，通过AI数字人技术实现高效、专业的工作表现。无论是企业内部培训、客户支持还是市场推广，数字人员工都能提供持续稳定的服务，节约企业成本，提升运营效率，打造创新的工作环境。</p>
 				</div>
 
-				<div className=" relative mt-24 min-w-68">
-					<Image className="object-cover w-110 min-w-28" src="/ani_image3.webp" alt="" width={150} height={150}  />
-					<Image className=" absolute top-3/4 -left-2/4 z-20 object-cover max-w-xl min-w-36" src="/ani_image6.webp" alt="" width={450} height={150}  />
+				<div className=" relative mt-24 min-w-68 xl:ml-8 2xl:ml-0">
+					<Image className="object-cover xl:max-w-md xl:w-80 2xl:max-w-xl min-w-28" src="/ani_image3.webp" alt="" width={150} height={150}  />
+					<Image className=" absolute top-3/4 -left-2/4 z-20 object-cover xl:max-w-md xl:w-80 2xl:max-w-xl min-w-36" src="/ani_image6.webp" alt="" width={450} height={150}  />
 				</div>
 
 			</div>
@@ -318,8 +318,8 @@ export default function Live() {
 				</div>
 
 
-				<div className=" relative  z-10 min-w-68">
-					<Image className=" object-cover w-110 min-w-28" src="/ani_image7.webp" alt="" width={150} height={150}  />
+				<div className=" relative  z-10 min-w-68 xl:ml-8 2xl:ml-0">
+					<Image className=" object-coverxl:max-w-md xl:w-80 2xl:max-w-xl min-w-28" src="/ani_image7.webp" alt="" width={150} height={150}  />
 				</div>
 			</div>
 
@@ -330,9 +330,9 @@ export default function Live() {
 					<p className=" text-lg text-black">奥森小冰在直播行业中逐渐取代真人主播，展现出多方面的优势。在场地方面，仅需10平方米的场景即可进行直播，不需要装修，采用虚拟场景。成本方面，数字人直播对比传统真人成本低，尤其采用AI自动直播，无需真人表演。人设方面，行为可控，不会翻车塌房，形象稳定。时间方面，虚拟人全年无休，无需福利和情绪，7</p>
 				</div>
 				
-				<div className=" relative  min-w-68">
-					<Image className="object-cover w-110 min-w-28" src="/ani_image13_1.webp" alt="" width={150} height={150}  />
-					<Image className=" absolute bottom-3/4 -translate-y-10 -left-2/4 z-20 object-cover max-w-xl min-w-36" src="/ani_image12_1.webp" alt="" width={450} height={150} />
+				<div className=" relative  min-w-68 xl:ml-8 2xl:ml-0 xl:-mt-16 2xl:-mt-24">
+					<Image className="object-cover xl:max-w-md xl:w-80 2xl:max-w-xl min-w-28" src="/ani_image13_1.webp" alt="" width={150} height={150}  />
+					<Image className=" absolute bottom-3/4 -translate-y-10 -left-2/4 z-20 object-cover xl:max-w-md xl:w-80 2xl:max-w-xl min-w-36" src="/ani_image12_1.webp" alt="" width={450} height={150} />
 				</div>
 			</div>
 
@@ -415,16 +415,16 @@ export default function Live() {
 		<div className="hidden md:block">
 			<div className="flex flex-col bg-white">
 				<div className="flex justify-center items-center">
-					<div className=" p-24 max-w-5xl w-[30%] text-left">
+					<div className=" p-24 2xl:max-w-5xl 2xl:w-[30%] xl:w-[50%] text-left">
 						<div className="pb-4"><BubbleText content={"奥森小冰引领AI数字人直播：科技与艺术的完美结合"} /></div>
 						<p className="text-black text-lg">随着数字技术的快速发展，人工智能（AI）正在融入我们的生活。作为AI领域的先行者，奥森小冰引领的AI数字人直播项目将先进的AI技术与艺术结合，带来了全新的互动体验。在这场直播秀中，观众可以通过智能手机、电脑等设备与奥森小冰实时互动。观众提出的问题、参与的讨论和建议，都能根据需求和意见做出实时反馈和表演。这不仅让观众更好地理解思考方式和艺术表达，还能将观众的创意融入表演中，实现真正的互动和共创。奥森小冰的AI数字人直播通过丰富多样的表演形式和虚拟场景，打破了传统艺术表演的限制，为观众带来了全新的视听体验。</p>
 					</div>
-					<Image className=" max-w-2xl object-cover" src="ai_bg_1.webp" alt="" width={550} height={450}/>
+					<Image className="xl:max-w-md 2xl:max-w-2xl object-cover" src="ai_bg_1.webp" alt="" width={550} height={450}/>
 				</div>
 
 				<div className="flex justify-center items-start">
-					<Image className=" max-w-2xl object-cover" src="ai_bg_2.webp" alt="" width={550} height={450}/>
-					<div className=" p-24 max-w-5xl w-[30%] text-left">
+					<Image className="xl:max-w-md 2xl:max-w-2xl object-cover" src="ai_bg_2.webp" alt="" width={550} height={450}/>
+					<div className=" p-24 2xl:max-w-5xl 2xl:w-[30%] xl:w-[50%] text-left">
 						<div className="pb-4"><BubbleText content={"奥森小冰实现AI数字人直播革命：颠覆传统直播方式"} /></div>
 						<p className="text-black text-lg">作为人工智能内容生产的先行者，奥森小冰正在利用AI技术和数字人技术实现一种全新的直播方式。AI数字人直播在传媒业中具有革命性的突破，打破了传统直播对真实主播的依赖。通过虚拟主播形象，不仅节省了人力资源成本，还具备更高的灵活性和可扩展性。直播可以24小时不间断进行，满足不同用户的需求，实现更个性化的直播服务。此外，还能通过大数据分析用户的喜好和观看习惯，优化直播内容，提高用户体验。奥森小冰的AI数字人直播正在颠覆传统直播方式，带来更加丰富和多样化的体验。</p>
 					</div>

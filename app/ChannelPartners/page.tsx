@@ -67,7 +67,7 @@ export default function ChannelPartners() {
 	return (
 		<div className=" w-full">
 			<div className=" relative">
-				<Image className=" object-cover h-110 md:h-auto w-full" src="/banner2.webp" alt="banner2" width={1500} height={750} />
+				<Image className=" object-cover 2xl:h-110 xl:h-[450px]  md:h-auto w-full" src="/banner2.webp" alt="banner2" width={1500} height={750} />
 				<div className=" flex flex-col md:items-start items-center absolute md:top-1/5 md:left-64 left-24 top-12 right-1/3 -translate-x-12 md:-translate-x-0 text-white">
 					<div className=" md:text-2xl text-left md:pt-4 text-base max-w-2xl">
 						<h1 className=" md:text-5xl text-base pb-4">招商加盟</h1>

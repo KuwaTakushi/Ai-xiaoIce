@@ -99,9 +99,9 @@ export default function Live() {
 		{/** 中国纺织信息中心国家纺织产品开发中心 页面 */}
 		<div className=" hidden md:block">
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center pt-24">
-				<div className=" relative mt-24 min-w-68">
-					<Image className="object-cover max-w-xl min-w-28" src="/ani_image1 .webp" alt="" width={500} height={150} />
-					<Image className=" absolute top-3/4 -right-2/4 z-10 object-cover max-w-xl min-w-36" src="/ani_image2.webp" alt="" width={500} height={150} />
+				<div className=" relative mt-24 min-w-68 xl:mr-12 2xl:mr-0">
+					<Image className="object-cover xl:max-w-md xl:w-96 2xl:max-w-xl min-w-28" src="/ani_image1 .webp" alt="" width={500} height={150} />
+					<Image className=" absolute top-3/4 -right-2/4 z-10 object-cover xl:max-w-md xl:w-96 2xl:max-w-xl min-w-36" src="/ani_image2.webp" alt="" width={500} height={150} />
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">
@@ -111,8 +111,8 @@ export default function Live() {
 			</div>
 
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center">
-				<div className=" relative  z-20 min-w-68">
-					<Image className=" z-40 object-cover max-w-xl min-w-28" src="/ani_image3 .webp" alt="" width={500} height={150} />
+				<div className=" relative  z-20 min-w-68 xl:mr-12 2xl:mr-0">
+					<Image className=" z-40 object-cover xl:max-w-md xl:w-96 2xl:max-w-xl min-w-28" src="/ani_image3 .webp" alt="" width={500} height={150} />
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">
@@ -194,9 +194,9 @@ export default function Live() {
 					<p className=" text-lg text-black">针对展览会、沙龙等线下销售推广场景，奥森小冰全面打通物料触客、信息采集和客户跟进等业务流程。通过AI数字名片和智能分析工具，奥森小冰实时获取访客信息，提供个性化的接待服务。有效整合资源，优化流程，既能节约推广成本，又能提升推广效率。实现从客户初次接触到最终成交的全生命周期管理，奥森小冰打造先进的销售体验，提升企业竞争力和客户满意度。</p>
 				</div>
 
-				<div className=" relative mt-24 min-w-68">
-					<Image className="object-cover w-110 min-w-28" src="/ani_image14_1.webp" alt="" width={110} height={150} />
-					<Image className=" absolute top-3/4 -left-2/4 z-20 object-cover max-w-xl min-w-36" src="/ani_image6.webp" alt="" width={450} height={150} />
+				<div className=" relative mt-24 min-w-68 xl:mr-20 2xl:mr-0">
+					<Image className="object-cover xl:max-w-md xl:w-96 2xl:max-w-xl min-w-28" src="/ani_image14_1.webp" alt="" width={110} height={150} />
+					<Image className=" absolute top-3/4 xl:-left-1/4 2xl:-left-2/4 z-20 object-cover xl:max-w-md xl:w-96 2xl:max-w-xl min-w-36" src="/ani_image6.webp" alt="" width={450} height={150} />
 				</div>
 
 			</div>
@@ -207,8 +207,8 @@ export default function Live() {
 					<p className=" text-lg text-black">在社交媒体环境中，加推的企业销售工具帮助外部销售人员携带企业的销售物料，如PPT、官网、企业新闻、成功案例等内容。一键分享至朋友圈和微信群，即可智能获取访客的电话号码和其他联系方式。借助AI数字名片，奥森小冰实现更高效的客户管理和互动，助力企业通过社交网络进行客户转介绍，扩大客户资源，增强品牌影响力和市场覆盖率。</p>
 				</div>
 
-				<div className=" relative  z-10 min-w-68">
-					<Image className=" object-cover w-110 min-w-28" src="/ani_image8.webp" alt="" width={110} height={150} />
+				<div className=" relative  z-10 min-w-68 xl:ml-20 2xl:mrl-0">
+					<Image className=" object-cover xl:max-w-md xl:w-96 2xl:max-w-xl min-w-28" src="/ani_image8.webp" alt="" width={110} height={150} />
 				</div>
 			</div>
 		</div>
@@ -216,9 +216,9 @@ export default function Live() {
 		{ /** 依文页面 */}
 		<div className=" hidden md:block">
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center pt-24">
-				<div className=" relative mt-24 min-w-68">
-					<Image className="object-cover w-110 min-w-28" src="/ani_image9.webp" alt="" width={110} height={150} />
-					<Image className=" absolute top-3/4 -right-2/4 z-10 object-cover max-w-xl min-w-36" src="/ani_image10.webp" alt="" width={450} height={150} />
+				<div className=" relative mt-24 min-w-68 xl:mr-20 2xl:mr-0">
+					<Image className="object-cover xl:max-w-md xl:w-96 2xl:max-w-xl min-w-28" src="/ani_image9.webp" alt="" width={110} height={150} />
+					<Image className=" absolute top-3/4 -right-2/4 z-10 object-coverxl:max-w-md xl:w-96 2xl:max-w-xl min-w-36" src="/ani_image10.webp" alt="" width={450} height={150} />
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">
@@ -228,8 +228,8 @@ export default function Live() {
 			</div>
 
 			<div className=" w-full bg-[#edf3ff] p-16 flex justify-around items-center">
-				<div className=" relative  z-20 min-w-68">
-					<Image className=" z-40 object-cover w-110 min-w-28" src="/ani_image11.webp" alt="" width={110} height={150} />
+				<div className=" relative  z-20 min-w-68 xl:mr-20 2xl:mr-0">
+					<Image className=" z-40 object-cover xl:max-w-md xl:w-96 2xl:max-w-xl min-w-28" src="/ani_image11.webp" alt="" width={110} height={150} />
 				</div>
 
 				<div className=" flex flex-col w-110 min-w-64 text-left">

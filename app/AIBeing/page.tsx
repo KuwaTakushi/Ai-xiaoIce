@@ -395,8 +395,8 @@ export default function AIBeing() {
 						<Image className="min-w-96" src="/human_product_two1.webp" alt="" width={550} height={450} />
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
-								<div className="flex gap-8">
-									<h2 className=" text-2xl">Rita</h2>
+								<div className="flex gap-8 pr-6">
+									<h2 className=" text-2xl">晓玲</h2>
 									<Chip
 										variant="shadow"
 										classNames={{
@@ -407,7 +407,10 @@ export default function AIBeing() {
 										展馆导览
 									</Chip>
 								</div>
-								<div className="w-24 flex justify-center"><p className=" text-xs">在城市博物馆，为游客介绍这座城市发展历史及建设成就</p></div>
+								<div className="w-24 flex justify-center flex-col">
+									<p className=" text-xs">在城市博物馆，</p>
+									<p className=" text-xs">为游客介绍这座城市发展历史及建设成就</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -419,7 +422,7 @@ export default function AIBeing() {
 						<div className=" p-4 absolute bottom-0  -skew-x-12 left-4 w-72 h-24 bg-black text-white bg-opacity-35 flex justify-center">
 							<div className=" flex flex-col">
 								<div className="flex gap-8">
-									<h2 className=" text-2xl">Rita</h2>
+									<h2 className=" text-2xl">星怡</h2>
 									<Chip
 										variant="shadow"
 										classNames={{

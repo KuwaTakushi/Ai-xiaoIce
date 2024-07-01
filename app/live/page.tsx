@@ -327,7 +327,7 @@ export default function Live() {
 			<div className=" w-full bg-white p-16 flex justify-around items-center mb-24">
 				<div className=" flex flex-col w-110 min-w-64 text-left">
 					<h2 className=" text-3xl text-[#00305a] font-bold pb-4">可控成本</h2>
-					<p className=" text-lg text-black">奥森小冰在直播行业中逐渐取代真人主播，展现出多方面的优势。在场地方面，仅需10平方米的场景即可进行直播，不需要装修，采用虚拟场景。成本方面，数字人直播对比传统真人成本低，尤其采用AI自动直播，无需真人表演。人设方面，行为可控，不会翻车塌房，形象稳定。时间方面，虚拟人全年无休，无需福利和情绪，7</p>
+					<p className=" text-lg text-black">奥森小冰在直播行业中逐渐取代真人主播，展现出多方面的优势。在场地方面，仅需10平方米的场景即可进行直播，不需要装修，采用虚拟场景。成本方面，数字人直播对比传统真人成本低，尤其采用AI自动直播，无需真人表演。人设方面，行为可控，不会翻车塌房，形象稳定。时间方面，虚拟人全年无休，无需福利和情绪。</p>
 				</div>
 				
 				<div className=" relative  min-w-68 xl:ml-8 2xl:ml-0 xl:-mt-16 2xl:-mt-24">
@@ -363,7 +363,7 @@ export default function Live() {
 					aria-label="Accordion 3" 
 					title={(<p className=" text-black">可控成本</p>)}
 				>
-					<p className=" text-sm text-black">奥森小冰在直播行业中逐渐取代真人主播，展现出多方面的优势。在场地方面，仅需10平方米的场景即可进行直播，不需要装修，采用虚拟场景。成本方面，数字人直播对比传统真人成本低，尤其采用AI自动直播，无需真人表演。人设方面，行为可控，不会翻车塌房，形象稳定。时间方面，虚拟人全年无休，无需福利和情绪，7</p>
+					<p className=" text-sm text-black">奥森小冰在直播行业中逐渐取代真人主播，展现出多方面的优势。在场地方面，仅需10平方米的场景即可进行直播，不需要装修，采用虚拟场景。成本方面，数字人直播对比传统真人成本低，尤其采用AI自动直播，无需真人表演。人设方面，行为可控，不会翻车塌房，形象稳定。时间方面，虚拟人全年无休，无需福利和情绪。</p>
 				</AccordionItem>
 			</Accordion>
 

@@ -116,7 +116,7 @@ export default function Home() {
             <div className=" flex justify-between items-center md:gap-24 p-4 flex-wrap md:flex-nowrap">
               <div className=" flex flex-col justify-start items-start min-h-48 text-[#00305a]">
                 <p className=" text-3xl font-bold  pb-4">内容生产</p>
-                <p className=" max-w-lg text-lg">奥森小冰是人工智能内容生产的先行者，拥有全球领先的核心技术并已形成完善的产品线。奥森小冰的人工智能内容生产，着眼于在达到与相应人类生产者同等质量水准的前提下，充分发挥人工智能快速学习、高并发与稳定性等特点，协助弥补 “ 高度定制化内容 ” 的供需关系短板</p>
+                <p className=" max-w-lg text-lg">奥森小冰是人工智能内容生产的先行者，拥有全球领先的核心技术并已形成完善的产品线。奥森小冰的人工智能内容生产，着眼于在达到与相应人类生产者同等质量水准的前提下，充分发挥人工智能快速学习、高并发与稳定性等特点，协助弥补 “ 高度定制化内容 ” 的供需关系短板。</p>
               </div>
               <div className="md:max-w-lg max-w-sm flex justify-center">
               <Image className=" max-w-xl object-cover" src="/main_bg_3.webp" alt="" width={600} height={550} />

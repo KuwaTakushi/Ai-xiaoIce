@@ -67,7 +67,7 @@ export default function ChannelPartners() {
 	return (
 		<div className=" w-full">
 			<div className=" relative">
-				<Image className=" object-cover 2xl:h-110 xl:h-[450px]  md:h-auto w-full" src="/banner2.webp" alt="banner2" width={1500} height={750} />
+				<Image className=" object-cover 2xl:h-110 xl:h-[450px] h-110  md:h-auto w-full" src="/banner2.webp" alt="banner2" width={1500} height={750} />
 				<div className=" flex flex-col md:items-start items-center absolute md:top-1/5 md:left-64 left-24 top-12 right-1/3 -translate-x-12 md:-translate-x-0 text-white">
 					<div className=" md:text-2xl text-left md:pt-4 text-base max-w-2xl">
 						<h1 className=" md:text-5xl text-base pb-4">招商加盟</h1>
@@ -93,7 +93,7 @@ export default function ChannelPartners() {
 				<div className=" flex justify-center w-full flex-col">
 
 					<div className=" bg-[#e9f1fc]">
-						<h1 className=" text-5xl mt-16">应用场景</h1>
+						<h1 className=" text-5xl mt-16 text-black">应用场景</h1>
 					</div>
 
 					<div style={{backgroundImage: `url("https://i.p-i.vip/20/20240621-6674794212d78.png")`}} className=" justify-center bg-cover bg-no-repeat w-full  text-base text-gray-700 flex items-center px-28 leading-10 overflow-hidden h-120 p-12">
